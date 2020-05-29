@@ -1,0 +1,13 @@
+syntax: regexp
+
+hg\.h
+^.*\.orig
+^.*\.rej
+^.*\.bak
+(.*)~
+^.cproject
+^.project
+
+build/(.*)
+dist/(.*)
+doc/(.*)

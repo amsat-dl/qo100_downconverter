@@ -1,0 +1,1843 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"65 src/driver/si5328.c
+[; ;src/driver/si5328.c: 65: typedef struct {
+[s S262 `uc 1 `uc 1 ]
+[n S262 . addr value ]
+"18 src/gps.h
+[; ;src/gps.h: 18: u32 getGPSfrequency(void);
+[v _getGPSfrequency `(ul ~T0 @X0 0 ef ]
+"111 /opt/microchip/xc8/v2.10/pic/include/c99/stdio.h
+[v _printf `(i ~T0 @X0 0 ev`*Cuc ]
+"18 src/secretsettings.h
+[; ;src/secretsettings.h: 18: extern u8 tcxo_no_GPS;
+[v _tcxo_no_GPS `uc ~T0 @X0 0 e ]
+"28 src/gps.h
+[; ;src/gps.h: 28: extern u8 ubx_ack;
+[v _ubx_ack `uc ~T0 @X0 0 e ]
+"25
+[; ;src/gps.h: 25: extern u8 GPS_lock;
+[v _GPS_lock `uc ~T0 @X0 0 e ]
+"37 src/driver/base/i2c.h
+[; ;src/driver/base/i2c.h: 37: struct i2c_dev__ { int unused; }; typedef struct i2c_dev__ *i2c_dev;
+[s S259 `i 1 ]
+[n S259 i2c_dev__ unused ]
+"48
+[; ;src/driver/base/i2c.h: 48: extern int i2c_probe_addr(i2c_dev dev, u8 addr);
+[v _i2c_probe_addr `(i ~T0 @X0 0 ef2`*S259`uc ]
+"55
+[; ;src/driver/base/i2c.h: 55: extern int smbus8_write_byte (i2c_dev dev, u8 addr, u8 reg, u8 data);
+[v _smbus8_write_byte `(i ~T0 @X0 0 ef4`*S259`uc`uc`uc ]
+[v F2246 `(v ~T0 @X0 1 tf1`ul ]
+"189 /opt/microchip/xc8/v2.10/pic/include/pic18.h
+[v __delaywdt `JF2246 ~T0 @X0 0 e ]
+[p i __delaywdt ]
+"418 src/driver/si5328.c
+[; ;src/driver/si5328.c: 418: static void write_regset(i2c_dev i2c, u8 addr, const reg_set *set, u16 len);
+[v _write_regset `(v ~T0 @X0 0 sf4`*S259`uc`*CS262`us ]
+"56
+[; ;src/driver/si5328.c: 56: void setQRG(void);
+[v _setQRG `(v ~T0 @X0 0 ef ]
+"419
+[; ;src/driver/si5328.c: 419: static void si5328_perform_ical(i2c_dev i2c, u8 addr);
+[v _si5328_perform_ical `(v ~T0 @X0 0 sf2`*S259`uc ]
+"7 src/driver/gpio.h
+[; ;src/driver/gpio.h: 7: typedef struct gpio_pin_def {
+[s S253 `*Vuc 1 `*Vuc 1 `uc 1 ]
+[n S253 gpio_pin_def pPORT pTRIS mask ]
+[v F2269 `*CS253 ~T0 @X0 1 t ]
+"12 src/pinmap.h
+[; ;src/pinmap.h: 12: extern const gpio_pin PIN_SI5328_LOL;
+[v _PIN_SI5328_LOL `C*CS253 ~T0 @X0 0 e ]
+[v F2271 `*CS253 ~T0 @X0 1 t ]
+"13
+[; ;src/pinmap.h: 13: extern const gpio_pin PIN_LED_SI_LOCK;
+[v _PIN_LED_SI_LOCK `C*CS253 ~T0 @X0 0 e ]
+"420 src/driver/si5328.c
+[; ;src/driver/si5328.c: 420: static u8 read_reg(i2c_dev i2c, u8 addr, u8 reg);
+[v _read_reg `(uc ~T0 @X0 0 sf3`*S259`uc`uc ]
+"26 src/gps.h
+[; ;src/gps.h: 26: extern u8 GPS_fix;
+[v _GPS_fix `uc ~T0 @X0 0 e ]
+"57 src/driver/base/i2c.h
+[; ;src/driver/base/i2c.h: 57: extern int smbus8_read_byte (i2c_dev dev, u8 addr, u8 reg, u8 *data);
+[v _smbus8_read_byte `(i ~T0 @X0 0 ef4`*S259`uc`uc`*uc ]
+"54 /opt/microchip/xc8/v2.10/pic/include/pic18f2520.h
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 54: __asm("PORTA equ 0F80h");
+[; <" PORTA equ 0F80h ;# ">
+"273
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 273: __asm("PORTB equ 0F81h");
+[; <" PORTB equ 0F81h ;# ">
+"452
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 452: __asm("PORTC equ 0F82h");
+[; <" PORTC equ 0F82h ;# ">
+"627
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 627: __asm("PORTE equ 0F84h");
+[; <" PORTE equ 0F84h ;# ">
+"702
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 702: __asm("LATA equ 0F89h");
+[; <" LATA equ 0F89h ;# ">
+"814
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 814: __asm("LATB equ 0F8Ah");
+[; <" LATB equ 0F8Ah ;# ">
+"926
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 926: __asm("LATC equ 0F8Bh");
+[; <" LATC equ 0F8Bh ;# ">
+"1038
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1038: __asm("TRISA equ 0F92h");
+[; <" TRISA equ 0F92h ;# ">
+"1043
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1043: __asm("DDRA equ 0F92h");
+[; <" DDRA equ 0F92h ;# ">
+"1260
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1260: __asm("TRISB equ 0F93h");
+[; <" TRISB equ 0F93h ;# ">
+"1265
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1265: __asm("DDRB equ 0F93h");
+[; <" DDRB equ 0F93h ;# ">
+"1482
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1482: __asm("TRISC equ 0F94h");
+[; <" TRISC equ 0F94h ;# ">
+"1487
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1487: __asm("DDRC equ 0F94h");
+[; <" DDRC equ 0F94h ;# ">
+"1704
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1704: __asm("OSCTUNE equ 0F9Bh");
+[; <" OSCTUNE equ 0F9Bh ;# ">
+"1769
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1769: __asm("PIE1 equ 0F9Dh");
+[; <" PIE1 equ 0F9Dh ;# ">
+"1840
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1840: __asm("PIR1 equ 0F9Eh");
+[; <" PIR1 equ 0F9Eh ;# ">
+"1911
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1911: __asm("IPR1 equ 0F9Fh");
+[; <" IPR1 equ 0F9Fh ;# ">
+"1982
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1982: __asm("PIE2 equ 0FA0h");
+[; <" PIE2 equ 0FA0h ;# ">
+"2048
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2048: __asm("PIR2 equ 0FA1h");
+[; <" PIR2 equ 0FA1h ;# ">
+"2114
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2114: __asm("IPR2 equ 0FA2h");
+[; <" IPR2 equ 0FA2h ;# ">
+"2180
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2180: __asm("EECON1 equ 0FA6h");
+[; <" EECON1 equ 0FA6h ;# ">
+"2246
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2246: __asm("EECON2 equ 0FA7h");
+[; <" EECON2 equ 0FA7h ;# ">
+"2253
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2253: __asm("EEDATA equ 0FA8h");
+[; <" EEDATA equ 0FA8h ;# ">
+"2260
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2260: __asm("EEADR equ 0FA9h");
+[; <" EEADR equ 0FA9h ;# ">
+"2267
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2267: __asm("RCSTA equ 0FABh");
+[; <" RCSTA equ 0FABh ;# ">
+"2272
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2272: __asm("RCSTA1 equ 0FABh");
+[; <" RCSTA1 equ 0FABh ;# ">
+"2477
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2477: __asm("TXSTA equ 0FACh");
+[; <" TXSTA equ 0FACh ;# ">
+"2482
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2482: __asm("TXSTA1 equ 0FACh");
+[; <" TXSTA1 equ 0FACh ;# ">
+"2733
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2733: __asm("TXREG equ 0FADh");
+[; <" TXREG equ 0FADh ;# ">
+"2738
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2738: __asm("TXREG1 equ 0FADh");
+[; <" TXREG1 equ 0FADh ;# ">
+"2745
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2745: __asm("RCREG equ 0FAEh");
+[; <" RCREG equ 0FAEh ;# ">
+"2750
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2750: __asm("RCREG1 equ 0FAEh");
+[; <" RCREG1 equ 0FAEh ;# ">
+"2757
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2757: __asm("SPBRG equ 0FAFh");
+[; <" SPBRG equ 0FAFh ;# ">
+"2762
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2762: __asm("SPBRG1 equ 0FAFh");
+[; <" SPBRG1 equ 0FAFh ;# ">
+"2769
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2769: __asm("SPBRGH equ 0FB0h");
+[; <" SPBRGH equ 0FB0h ;# ">
+"2776
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2776: __asm("T3CON equ 0FB1h");
+[; <" T3CON equ 0FB1h ;# ">
+"2888
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2888: __asm("TMR3 equ 0FB2h");
+[; <" TMR3 equ 0FB2h ;# ">
+"2895
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2895: __asm("TMR3L equ 0FB2h");
+[; <" TMR3L equ 0FB2h ;# ">
+"2902
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2902: __asm("TMR3H equ 0FB3h");
+[; <" TMR3H equ 0FB3h ;# ">
+"2909
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2909: __asm("CMCON equ 0FB4h");
+[; <" CMCON equ 0FB4h ;# ">
+"2999
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2999: __asm("CVRCON equ 0FB5h");
+[; <" CVRCON equ 0FB5h ;# ">
+"3078
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3078: __asm("ECCP1AS equ 0FB6h");
+[; <" ECCP1AS equ 0FB6h ;# ">
+"3083
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3083: __asm("ECCPAS equ 0FB6h");
+[; <" ECCPAS equ 0FB6h ;# ">
+"3208
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3208: __asm("PWM1CON equ 0FB7h");
+[; <" PWM1CON equ 0FB7h ;# ">
+"3213
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3213: __asm("ECCP1DEL equ 0FB7h");
+[; <" ECCP1DEL equ 0FB7h ;# ">
+"3248
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3248: __asm("BAUDCON equ 0FB8h");
+[; <" BAUDCON equ 0FB8h ;# ">
+"3253
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3253: __asm("BAUDCTL equ 0FB8h");
+[; <" BAUDCTL equ 0FB8h ;# ">
+"3428
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3428: __asm("CCP2CON equ 0FBAh");
+[; <" CCP2CON equ 0FBAh ;# ">
+"3507
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3507: __asm("CCPR2 equ 0FBBh");
+[; <" CCPR2 equ 0FBBh ;# ">
+"3514
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3514: __asm("CCPR2L equ 0FBBh");
+[; <" CCPR2L equ 0FBBh ;# ">
+"3521
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3521: __asm("CCPR2H equ 0FBCh");
+[; <" CCPR2H equ 0FBCh ;# ">
+"3528
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3528: __asm("CCP1CON equ 0FBDh");
+[; <" CCP1CON equ 0FBDh ;# ">
+"3607
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3607: __asm("CCPR1 equ 0FBEh");
+[; <" CCPR1 equ 0FBEh ;# ">
+"3614
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3614: __asm("CCPR1L equ 0FBEh");
+[; <" CCPR1L equ 0FBEh ;# ">
+"3621
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3621: __asm("CCPR1H equ 0FBFh");
+[; <" CCPR1H equ 0FBFh ;# ">
+"3628
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3628: __asm("ADCON2 equ 0FC0h");
+[; <" ADCON2 equ 0FC0h ;# ">
+"3699
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3699: __asm("ADCON1 equ 0FC1h");
+[; <" ADCON1 equ 0FC1h ;# ">
+"3784
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3784: __asm("ADCON0 equ 0FC2h");
+[; <" ADCON0 equ 0FC2h ;# ">
+"3903
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3903: __asm("ADRES equ 0FC3h");
+[; <" ADRES equ 0FC3h ;# ">
+"3910
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3910: __asm("ADRESL equ 0FC3h");
+[; <" ADRESL equ 0FC3h ;# ">
+"3917
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3917: __asm("ADRESH equ 0FC4h");
+[; <" ADRESH equ 0FC4h ;# ">
+"3924
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3924: __asm("SSPCON2 equ 0FC5h");
+[; <" SSPCON2 equ 0FC5h ;# ">
+"4019
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4019: __asm("SSPCON1 equ 0FC6h");
+[; <" SSPCON1 equ 0FC6h ;# ">
+"4089
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4089: __asm("SSPSTAT equ 0FC7h");
+[; <" SSPSTAT equ 0FC7h ;# ">
+"4310
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4310: __asm("SSPADD equ 0FC8h");
+[; <" SSPADD equ 0FC8h ;# ">
+"4317
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4317: __asm("SSPBUF equ 0FC9h");
+[; <" SSPBUF equ 0FC9h ;# ">
+"4324
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4324: __asm("T2CON equ 0FCAh");
+[; <" T2CON equ 0FCAh ;# ">
+"4422
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4422: __asm("PR2 equ 0FCBh");
+[; <" PR2 equ 0FCBh ;# ">
+"4427
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4427: __asm("MEMCON equ 0FCBh");
+[; <" MEMCON equ 0FCBh ;# ">
+"4532
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4532: __asm("TMR2 equ 0FCCh");
+[; <" TMR2 equ 0FCCh ;# ">
+"4539
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4539: __asm("T1CON equ 0FCDh");
+[; <" T1CON equ 0FCDh ;# ">
+"4642
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4642: __asm("TMR1 equ 0FCEh");
+[; <" TMR1 equ 0FCEh ;# ">
+"4649
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4649: __asm("TMR1L equ 0FCEh");
+[; <" TMR1L equ 0FCEh ;# ">
+"4656
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4656: __asm("TMR1H equ 0FCFh");
+[; <" TMR1H equ 0FCFh ;# ">
+"4663
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4663: __asm("RCON equ 0FD0h");
+[; <" RCON equ 0FD0h ;# ">
+"4796
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4796: __asm("WDTCON equ 0FD1h");
+[; <" WDTCON equ 0FD1h ;# ">
+"4824
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4824: __asm("HLVDCON equ 0FD2h");
+[; <" HLVDCON equ 0FD2h ;# ">
+"4829
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4829: __asm("LVDCON equ 0FD2h");
+[; <" LVDCON equ 0FD2h ;# ">
+"5094
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5094: __asm("OSCCON equ 0FD3h");
+[; <" OSCCON equ 0FD3h ;# ">
+"5177
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5177: __asm("T0CON equ 0FD5h");
+[; <" T0CON equ 0FD5h ;# ">
+"5260
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5260: __asm("TMR0 equ 0FD6h");
+[; <" TMR0 equ 0FD6h ;# ">
+"5267
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5267: __asm("TMR0L equ 0FD6h");
+[; <" TMR0L equ 0FD6h ;# ">
+"5274
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5274: __asm("TMR0H equ 0FD7h");
+[; <" TMR0H equ 0FD7h ;# ">
+"5281
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5281: __asm("STATUS equ 0FD8h");
+[; <" STATUS equ 0FD8h ;# ">
+"5352
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5352: __asm("FSR2 equ 0FD9h");
+[; <" FSR2 equ 0FD9h ;# ">
+"5359
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5359: __asm("FSR2L equ 0FD9h");
+[; <" FSR2L equ 0FD9h ;# ">
+"5366
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5366: __asm("FSR2H equ 0FDAh");
+[; <" FSR2H equ 0FDAh ;# ">
+"5373
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5373: __asm("PLUSW2 equ 0FDBh");
+[; <" PLUSW2 equ 0FDBh ;# ">
+"5380
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5380: __asm("PREINC2 equ 0FDCh");
+[; <" PREINC2 equ 0FDCh ;# ">
+"5387
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5387: __asm("POSTDEC2 equ 0FDDh");
+[; <" POSTDEC2 equ 0FDDh ;# ">
+"5394
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5394: __asm("POSTINC2 equ 0FDEh");
+[; <" POSTINC2 equ 0FDEh ;# ">
+"5401
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5401: __asm("INDF2 equ 0FDFh");
+[; <" INDF2 equ 0FDFh ;# ">
+"5408
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5408: __asm("BSR equ 0FE0h");
+[; <" BSR equ 0FE0h ;# ">
+"5415
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5415: __asm("FSR1 equ 0FE1h");
+[; <" FSR1 equ 0FE1h ;# ">
+"5422
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5422: __asm("FSR1L equ 0FE1h");
+[; <" FSR1L equ 0FE1h ;# ">
+"5429
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5429: __asm("FSR1H equ 0FE2h");
+[; <" FSR1H equ 0FE2h ;# ">
+"5436
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5436: __asm("PLUSW1 equ 0FE3h");
+[; <" PLUSW1 equ 0FE3h ;# ">
+"5443
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5443: __asm("PREINC1 equ 0FE4h");
+[; <" PREINC1 equ 0FE4h ;# ">
+"5450
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5450: __asm("POSTDEC1 equ 0FE5h");
+[; <" POSTDEC1 equ 0FE5h ;# ">
+"5457
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5457: __asm("POSTINC1 equ 0FE6h");
+[; <" POSTINC1 equ 0FE6h ;# ">
+"5464
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5464: __asm("INDF1 equ 0FE7h");
+[; <" INDF1 equ 0FE7h ;# ">
+"5471
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5471: __asm("WREG equ 0FE8h");
+[; <" WREG equ 0FE8h ;# ">
+"5483
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5483: __asm("FSR0 equ 0FE9h");
+[; <" FSR0 equ 0FE9h ;# ">
+"5490
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5490: __asm("FSR0L equ 0FE9h");
+[; <" FSR0L equ 0FE9h ;# ">
+"5497
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5497: __asm("FSR0H equ 0FEAh");
+[; <" FSR0H equ 0FEAh ;# ">
+"5504
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5504: __asm("PLUSW0 equ 0FEBh");
+[; <" PLUSW0 equ 0FEBh ;# ">
+"5511
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5511: __asm("PREINC0 equ 0FECh");
+[; <" PREINC0 equ 0FECh ;# ">
+"5518
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5518: __asm("POSTDEC0 equ 0FEDh");
+[; <" POSTDEC0 equ 0FEDh ;# ">
+"5525
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5525: __asm("POSTINC0 equ 0FEEh");
+[; <" POSTINC0 equ 0FEEh ;# ">
+"5532
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5532: __asm("INDF0 equ 0FEFh");
+[; <" INDF0 equ 0FEFh ;# ">
+"5539
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5539: __asm("INTCON3 equ 0FF0h");
+[; <" INTCON3 equ 0FF0h ;# ">
+"5631
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5631: __asm("INTCON2 equ 0FF1h");
+[; <" INTCON2 equ 0FF1h ;# ">
+"5701
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5701: __asm("INTCON equ 0FF2h");
+[; <" INTCON equ 0FF2h ;# ">
+"5818
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5818: __asm("PROD equ 0FF3h");
+[; <" PROD equ 0FF3h ;# ">
+"5825
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5825: __asm("PRODL equ 0FF3h");
+[; <" PRODL equ 0FF3h ;# ">
+"5832
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5832: __asm("PRODH equ 0FF4h");
+[; <" PRODH equ 0FF4h ;# ">
+"5839
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5839: __asm("TABLAT equ 0FF5h");
+[; <" TABLAT equ 0FF5h ;# ">
+"5848
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5848: __asm("TBLPTR equ 0FF6h");
+[; <" TBLPTR equ 0FF6h ;# ">
+"5855
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5855: __asm("TBLPTRL equ 0FF6h");
+[; <" TBLPTRL equ 0FF6h ;# ">
+"5862
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5862: __asm("TBLPTRH equ 0FF7h");
+[; <" TBLPTRH equ 0FF7h ;# ">
+"5869
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5869: __asm("TBLPTRU equ 0FF8h");
+[; <" TBLPTRU equ 0FF8h ;# ">
+"5878
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5878: __asm("PCLAT equ 0FF9h");
+[; <" PCLAT equ 0FF9h ;# ">
+"5885
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5885: __asm("PC equ 0FF9h");
+[; <" PC equ 0FF9h ;# ">
+"5892
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5892: __asm("PCL equ 0FF9h");
+[; <" PCL equ 0FF9h ;# ">
+"5899
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5899: __asm("PCLATH equ 0FFAh");
+[; <" PCLATH equ 0FFAh ;# ">
+"5906
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5906: __asm("PCLATU equ 0FFBh");
+[; <" PCLATU equ 0FFBh ;# ">
+"5913
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5913: __asm("STKPTR equ 0FFCh");
+[; <" STKPTR equ 0FFCh ;# ">
+"5987
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5987: __asm("TOS equ 0FFDh");
+[; <" TOS equ 0FFDh ;# ">
+"5994
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5994: __asm("TOSL equ 0FFDh");
+[; <" TOSL equ 0FFDh ;# ">
+"6001
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 6001: __asm("TOSH equ 0FFEh");
+[; <" TOSH equ 0FFEh ;# ">
+"6008
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 6008: __asm("TOSU equ 0FFFh");
+[; <" TOSU equ 0FFFh ;# ">
+"58 src/driver/si5328.c
+[; ;src/driver/si5328.c: 58: u8 si5328locked = 0;
+[v _si5328locked `uc ~T0 @X0 1 e ]
+[i _si5328locked
+-> -> 0 `i `uc
+]
+"59
+[; ;src/driver/si5328.c: 59: u8 currentLO = 0;
+[v _currentLO `uc ~T0 @X0 1 e ]
+[i _currentLO
+-> -> 0 `i `uc
+]
+"60
+[; ;src/driver/si5328.c: 60: u8 ext10MHzReference = 0;
+[v _ext10MHzReference `uc ~T0 @X0 1 e ]
+[i _ext10MHzReference
+-> -> 0 `i `uc
+]
+"61
+[; ;src/driver/si5328.c: 61: u8 use_GPS = 1;
+[v _use_GPS `uc ~T0 @X0 1 e ]
+[i _use_GPS
+-> -> 1 `i `uc
+]
+"100
+[; ;src/driver/si5328.c: 100: static const reg_set reg_set_univ_CKIN1_GPS[] = {
+[v _reg_set_univ_CKIN1_GPS `CS262 ~T0 @X0 -> 13 `i s ]
+[i _reg_set_univ_CKIN1_GPS
+:U ..
+:U ..
+-> -> 0 `i `uc
+-> -> 20 `i `uc
+..
+:U ..
+-> -> 1 `i `uc
+-> | | -> 224 `i -> 4 `i -> 0 `i `uc
+..
+:U ..
+-> -> 2 `i `uc
+-> | -> 2 `i -> 240 `i `uc
+..
+:U ..
+-> -> 3 `i `uc
+-> -> 5 `i `uc
+..
+:U ..
+-> -> 4 `i `uc
+-> | -> 0 `i -> 23 `i `uc
+..
+:U ..
+-> -> 6 `i `uc
+-> | | -> 0 `i -> 16 `i -> 5 `i `uc
+..
+:U ..
+-> -> 9 `i `uc
+-> | -> 0 `i -> 200 `i `uc
+..
+:U ..
+-> -> 19 `i `uc
+-> | | | -> 0 `i -> 32 `i -> 8 `i -> 1 `i `uc
+..
+:U ..
+-> -> 20 `i `uc
+-> -> 62 `i `uc
+..
+:U ..
+-> -> 21 `i `uc
+-> -> 252 `i `uc
+..
+:U ..
+-> -> 55 `i `uc
+-> -> 8 `i `uc
+..
+:U ..
+-> -> 137 `i `uc
+-> -> 1 `i `uc
+..
+:U ..
+-> -> 139 `i `uc
+-> -> 252 `i `uc
+..
+..
+]
+"123
+[; ;src/driver/si5328.c: 123: static const reg_set reg_set_univ_CKIN2_XAXB[] =
+[v _reg_set_univ_CKIN2_XAXB `CS262 ~T0 @X0 -> 12 `i s ]
+[i _reg_set_univ_CKIN2_XAXB
+:U ..
+:U ..
+-> -> 0 `i `uc
+-> | -> 20 `i -> 64 `i `uc
+..
+:U ..
+-> -> 2 `i `uc
+-> | -> 2 `i -> 240 `i `uc
+..
+:U ..
+-> -> 3 `i `uc
+-> | -> 5 `i -> 64 `i `uc
+..
+:U ..
+-> -> 4 `i `uc
+-> | -> 0 `i -> 23 `i `uc
+..
+:U ..
+-> -> 6 `i `uc
+-> | | -> 0 `i -> 16 `i -> 5 `i `uc
+..
+:U ..
+-> -> 9 `i `uc
+-> | -> 0 `i -> 200 `i `uc
+..
+:U ..
+-> -> 19 `i `uc
+-> | | | -> 0 `i -> 32 `i -> 8 `i -> 1 `i `uc
+..
+:U ..
+-> -> 20 `i `uc
+-> -> 62 `i `uc
+..
+:U ..
+-> -> 21 `i `uc
+-> -> 252 `i `uc
+..
+:U ..
+-> -> 55 `i `uc
+-> -> 8 `i `uc
+..
+:U ..
+-> -> 137 `i `uc
+-> -> 1 `i `uc
+..
+:U ..
+-> -> 139 `i `uc
+-> -> 252 `i `uc
+..
+..
+]
+"148
+[; ;src/driver/si5328.c: 148: u16 N31_reg4445=1;
+[v _N31_reg4445 `us ~T0 @X0 1 e ]
+[i _N31_reg4445
+-> -> 1 `i `us
+]
+"149
+[; ;src/driver/si5328.c: 149: u16 N32_reg4748=1;
+[v _N32_reg4748 `us ~T0 @X0 1 e ]
+[i _N32_reg4748
+-> -> 1 `i `us
+]
+"150
+[; ;src/driver/si5328.c: 150: u16 N2HS_reg40=1;
+[v _N2HS_reg40 `us ~T0 @X0 1 e ]
+[i _N2HS_reg40
+-> -> 1 `i `us
+]
+"151
+[; ;src/driver/si5328.c: 151: u16 N2L_reg4142=1;
+[v _N2L_reg4142 `us ~T0 @X0 1 e ]
+[i _N2L_reg4142
+-> -> 1 `i `us
+]
+"152
+[; ;src/driver/si5328.c: 152: u16 N1HS_reg25=1;
+[v _N1HS_reg25 `us ~T0 @X0 1 e ]
+[i _N1HS_reg25
+-> -> 1 `i `us
+]
+"153
+[; ;src/driver/si5328.c: 153: u16 NC1_LS_reg3233=1;
+[v _NC1_LS_reg3233 `us ~T0 @X0 1 e ]
+[i _NC1_LS_reg3233
+-> -> 1 `i `us
+]
+"154
+[; ;src/driver/si5328.c: 154: u16 NC2_LS_reg3536=1;
+[v _NC2_LS_reg3536 `us ~T0 @X0 1 e ]
+[i _NC2_LS_reg3536
+-> -> 1 `i `us
+]
+"168
+[; ;src/driver/si5328.c: 168: s32 calc_mixer_corr_value()
+[v _calc_mixer_corr_value `(l ~T0 @X0 1 ef ]
+"169
+[; ;src/driver/si5328.c: 169: {
+{
+[e :U _calc_mixer_corr_value ]
+[f ]
+"170
+[; ;src/driver/si5328.c: 170:  s64 fgps = getGPSfrequency();
+[v _fgps `o ~T0 @X0 1 a ]
+[e = _fgps -> ( _getGPSfrequency ..  `o ]
+"171
+[; ;src/driver/si5328.c: 171:  fgps *= 1000;
+[e =* _fgps -> -> 1000 `i `o ]
+"172
+[; ;src/driver/si5328.c: 172:  fgps /= N31_reg4445;
+[e =/ _fgps -> _N31_reg4445 `o ]
+"173
+[; ;src/driver/si5328.c: 173:  fgps *= N2HS_reg40;
+[e =* _fgps -> _N2HS_reg40 `o ]
+"174
+[; ;src/driver/si5328.c: 174:  fgps *= N2L_reg4142;
+[e =* _fgps -> _N2L_reg4142 `o ]
+"175
+[; ;src/driver/si5328.c: 175:  fgps /= N1HS_reg25;
+[e =/ _fgps -> _N1HS_reg25 `o ]
+"176
+[; ;src/driver/si5328.c: 176:  fgps /= NC1_LS_reg3233;
+[e =/ _fgps -> _NC1_LS_reg3233 `o ]
+"177
+[; ;src/driver/si5328.c: 177:  s64 curLO = (s64)currentLO * 1000000000;
+[v _curLO `o ~T0 @X0 1 a ]
+[e = _curLO * -> _currentLO `o -> -> 1000000000 `l `o ]
+"178
+[; ;src/driver/si5328.c: 178:  fgps -= curLO;
+[e =- _fgps _curLO ]
+"179
+[; ;src/driver/si5328.c: 179:  fgps /= 1000;
+[e =/ _fgps -> -> 1000 `i `o ]
+"180
+[; ;src/driver/si5328.c: 180:  fgps *= 390;
+[e =* _fgps -> -> 390 `i `o ]
+"181
+[; ;src/driver/si5328.c: 181:  if(fgps > 0)
+[e $ ! > _fgps -> -> 0 `i `o 264  ]
+"182
+[; ;src/driver/si5328.c: 182:   fgps += 500;
+[e =+ _fgps -> -> 500 `i `o ]
+[e $U 265  ]
+"183
+[; ;src/driver/si5328.c: 183:  else
+[e :U 264 ]
+"184
+[; ;src/driver/si5328.c: 184:   fgps -= 500;
+[e =- _fgps -> -> 500 `i `o ]
+[e :U 265 ]
+"186
+[; ;src/driver/si5328.c: 186:  s32 v = (s32)(fgps / 1000)+1;
+[v _v `l ~T0 @X0 1 a ]
+[e = _v + -> / _fgps -> -> 1000 `i `o `l -> -> 1 `i `l ]
+"188
+[; ;src/driver/si5328.c: 188:  return v;
+[e ) _v ]
+[e $UE 263  ]
+"189
+[; ;src/driver/si5328.c: 189: }
+[e :UE 263 ]
+}
+"191
+[; ;src/driver/si5328.c: 191: static reg_set reg_set_LNB_LO[] =
+[v _reg_set_LNB_LO `S262 ~T0 @X0 -> 12 `i s ]
+[i _reg_set_LNB_LO
+:U ..
+:U ..
+-> -> 44 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 45 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 47 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 48 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 40 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 41 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 42 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 25 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 32 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 33 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 35 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 36 `i `uc
+-> -> 0 `i `uc
+..
+..
+]
+"211
+[; ;src/driver/si5328.c: 211: void set_reg()
+[v _set_reg `(v ~T0 @X0 1 ef ]
+"212
+[; ;src/driver/si5328.c: 212: {
+{
+[e :U _set_reg ]
+[f ]
+"213
+[; ;src/driver/si5328.c: 213:  u8 idx = 1;
+[v _idx `uc ~T0 @X0 1 a ]
+[e = _idx -> -> 1 `i `uc ]
+"214
+[; ;src/driver/si5328.c: 214:  u8 *p = (u8 *)reg_set_LNB_LO;
+[v _p `*uc ~T0 @X0 1 a ]
+[e = _p -> &U _reg_set_LNB_LO `*uc ]
+"216
+[; ;src/driver/si5328.c: 216:  p[idx] = ((((N31_reg4445 - 1) >> 8)));
+[e = *U + _p * -> _idx `ux -> -> # *U _p `ui `ux -> >> - -> _N31_reg4445 `ui -> -> 1 `i `ui -> 8 `i `uc ]
+"217
+[; ;src/driver/si5328.c: 217:  idx += 2;
+[e =+ _idx -> -> 2 `i `uc ]
+"218
+[; ;src/driver/si5328.c: 218:  p[idx] = (N31_reg4445 - 1 & 0xff);
+[e = *U + _p * -> _idx `ux -> -> # *U _p `ui `ux -> & - -> _N31_reg4445 `ui -> -> 1 `i `ui -> -> 255 `i `ui `uc ]
+"219
+[; ;src/driver/si5328.c: 219:  idx += 2;
+[e =+ _idx -> -> 2 `i `uc ]
+"220
+[; ;src/driver/si5328.c: 220:  p[idx] = ((((N32_reg4748 - 1) >> 8)));
+[e = *U + _p * -> _idx `ux -> -> # *U _p `ui `ux -> >> - -> _N32_reg4748 `ui -> -> 1 `i `ui -> 8 `i `uc ]
+"221
+[; ;src/driver/si5328.c: 221:  idx += 2;
+[e =+ _idx -> -> 2 `i `uc ]
+"222
+[; ;src/driver/si5328.c: 222:  p[idx] = (N32_reg4748 - 1 & 0xff);
+[e = *U + _p * -> _idx `ux -> -> # *U _p `ui `ux -> & - -> _N32_reg4748 `ui -> -> 1 `i `ui -> -> 255 `i `ui `uc ]
+"223
+[; ;src/driver/si5328.c: 223:  idx += 2;
+[e =+ _idx -> -> 2 `i `uc ]
+"224
+[; ;src/driver/si5328.c: 224:  p[idx] = ((N2HS_reg40-4)<<5);
+[e = *U + _p * -> _idx `ux -> -> # *U _p `ui `ux -> << - -> _N2HS_reg40 `ui -> -> 4 `i `ui -> 5 `i `uc ]
+"225
+[; ;src/driver/si5328.c: 225:  idx += 2;
+[e =+ _idx -> -> 2 `i `uc ]
+"226
+[; ;src/driver/si5328.c: 226:  p[idx] = ((((N2L_reg4142 - 1) >> 8)));
+[e = *U + _p * -> _idx `ux -> -> # *U _p `ui `ux -> >> - -> _N2L_reg4142 `ui -> -> 1 `i `ui -> 8 `i `uc ]
+"227
+[; ;src/driver/si5328.c: 227:  idx += 2;
+[e =+ _idx -> -> 2 `i `uc ]
+"228
+[; ;src/driver/si5328.c: 228:  p[idx] = (N2L_reg4142 - 1 & 0xff);
+[e = *U + _p * -> _idx `ux -> -> # *U _p `ui `ux -> & - -> _N2L_reg4142 `ui -> -> 1 `i `ui -> -> 255 `i `ui `uc ]
+"229
+[; ;src/driver/si5328.c: 229:  idx += 2;
+[e =+ _idx -> -> 2 `i `uc ]
+"230
+[; ;src/driver/si5328.c: 230:  p[idx] = ((N1HS_reg25-4)<<5);
+[e = *U + _p * -> _idx `ux -> -> # *U _p `ui `ux -> << - -> _N1HS_reg25 `ui -> -> 4 `i `ui -> 5 `i `uc ]
+"231
+[; ;src/driver/si5328.c: 231:  idx += 2;
+[e =+ _idx -> -> 2 `i `uc ]
+"232
+[; ;src/driver/si5328.c: 232:  p[idx] = ((((NC1_LS_reg3233 - 1) >> 8)));
+[e = *U + _p * -> _idx `ux -> -> # *U _p `ui `ux -> >> - -> _NC1_LS_reg3233 `ui -> -> 1 `i `ui -> 8 `i `uc ]
+"233
+[; ;src/driver/si5328.c: 233:  idx += 2;
+[e =+ _idx -> -> 2 `i `uc ]
+"234
+[; ;src/driver/si5328.c: 234:  p[idx] = (NC1_LS_reg3233 - 1 & 0xff);
+[e = *U + _p * -> _idx `ux -> -> # *U _p `ui `ux -> & - -> _NC1_LS_reg3233 `ui -> -> 1 `i `ui -> -> 255 `i `ui `uc ]
+"235
+[; ;src/driver/si5328.c: 235:  idx += 2;
+[e =+ _idx -> -> 2 `i `uc ]
+"236
+[; ;src/driver/si5328.c: 236:  p[idx] = ((((NC2_LS_reg3536 - 1) >> 8)));
+[e = *U + _p * -> _idx `ux -> -> # *U _p `ui `ux -> >> - -> _NC2_LS_reg3536 `ui -> -> 1 `i `ui -> 8 `i `uc ]
+"237
+[; ;src/driver/si5328.c: 237:  idx += 2;
+[e =+ _idx -> -> 2 `i `uc ]
+"238
+[; ;src/driver/si5328.c: 238:  p[idx] = (NC2_LS_reg3536 - 1 & 0xff);
+[e = *U + _p * -> _idx `ux -> -> # *U _p `ui `ux -> & - -> _NC2_LS_reg3536 `ui -> -> 1 `i `ui -> -> 255 `i `ui `uc ]
+"239
+[; ;src/driver/si5328.c: 239:  idx += 2;
+[e =+ _idx -> -> 2 `i `uc ]
+"240
+[; ;src/driver/si5328.c: 240: }
+[e :UE 266 ]
+}
+"242
+[; ;src/driver/si5328.c: 242: void set_reg24()
+[v _set_reg24 `(v ~T0 @X0 1 ef ]
+"243
+[; ;src/driver/si5328.c: 243: {
+{
+[e :U _set_reg24 ]
+[f ]
+"244
+[; ;src/driver/si5328.c: 244:  if(ext10MHzReference == 0)
+[e $ ! == -> _ext10MHzReference `i -> 0 `i 268  ]
+"245
+[; ;src/driver/si5328.c: 245:   N31_reg4445 = 19;
+[e = _N31_reg4445 -> -> 19 `i `us ]
+[e $U 269  ]
+"246
+[; ;src/driver/si5328.c: 246:  else
+[e :U 268 ]
+"247
+[; ;src/driver/si5328.c: 247:   N31_reg4445 =10;
+[e = _N31_reg4445 -> -> 10 `i `us ]
+[e :U 269 ]
+"249
+[; ;src/driver/si5328.c: 249:  if(ext10MHzReference == 1)
+[e $ ! == -> _ext10MHzReference `i -> 1 `i 270  ]
+"250
+[; ;src/driver/si5328.c: 250:  {
+{
+"252
+[; ;src/driver/si5328.c: 252:   printf("si:ext. 10 MHz ref\n");
+[e ( _printf :s 1C ]
+"253
+[; ;src/driver/si5328.c: 253:   N2HS_reg40 = 10;
+[e = _N2HS_reg40 -> -> 10 `i `us ]
+"254
+[; ;src/driver/si5328.c: 254:   N2L_reg4142 = 528;
+[e = _N2L_reg4142 -> -> 528 `i `us ]
+"255
+[; ;src/driver/si5328.c: 255:  }
+}
+[e $U 271  ]
+"256
+[; ;src/driver/si5328.c: 256:  else if(tcxo_no_GPS == 1 && ubx_ack == 0)
+[e :U 270 ]
+[e $ ! && == -> _tcxo_no_GPS `i -> 1 `i == -> _ubx_ack `i -> 0 `i 272  ]
+"257
+[; ;src/driver/si5328.c: 257:  {
+{
+"259
+[; ;src/driver/si5328.c: 259:   printf("si:TCXO 38,4 MHz\n");
+[e ( _printf :s 2C ]
+"260
+[; ;src/driver/si5328.c: 260:   N32_reg4748 = 20;
+[e = _N32_reg4748 -> -> 20 `i `us ]
+"261
+[; ;src/driver/si5328.c: 261:   N2HS_reg40 = 5;
+[e = _N2HS_reg40 -> -> 5 `i `us ]
+"262
+[; ;src/driver/si5328.c: 262:   N2L_reg4142 = 550;
+[e = _N2L_reg4142 -> -> 550 `i `us ]
+"263
+[; ;src/driver/si5328.c: 263:  }
+}
+[e $U 273  ]
+"264
+[; ;src/driver/si5328.c: 264:  else if(ubx_ack == 0 || use_GPS == 0)
+[e :U 272 ]
+[e $ ! || == -> _ubx_ack `i -> 0 `i == -> _use_GPS `i -> 0 `i 274  ]
+"265
+[; ;src/driver/si5328.c: 265:  {
+{
+"268
+[; ;src/driver/si5328.c: 268:   printf("si:40 MHz OCXO\n");
+[e ( _printf :s 3C ]
+"269
+[; ;src/driver/si5328.c: 269:   N32_reg4748 = 40;
+[e = _N32_reg4748 -> -> 40 `i `us ]
+"270
+[; ;src/driver/si5328.c: 270:   N2HS_reg40 = 10;
+[e = _N2HS_reg40 -> -> 10 `i `us ]
+"271
+[; ;src/driver/si5328.c: 271:   N2L_reg4142 = 528;
+[e = _N2L_reg4142 -> -> 528 `i `us ]
+"272
+[; ;src/driver/si5328.c: 272:  }
+}
+[e $U 275  ]
+"273
+[; ;src/driver/si5328.c: 273:  else if(GPS_lock == 0)
+[e :U 274 ]
+[e $ ! == -> _GPS_lock `i -> 0 `i 276  ]
+"274
+[; ;src/driver/si5328.c: 274:  {
+{
+"276
+[; ;src/driver/si5328.c: 276:   printf("si:GPS unlocked: TCXO 38,4 MHz\n");
+[e ( _printf :s 4C ]
+"277
+[; ;src/driver/si5328.c: 277:   N32_reg4748 = 20;
+[e = _N32_reg4748 -> -> 20 `i `us ]
+"278
+[; ;src/driver/si5328.c: 278:   N2HS_reg40 = 5;
+[e = _N2HS_reg40 -> -> 5 `i `us ]
+"279
+[; ;src/driver/si5328.c: 279:   N2L_reg4142 = 550;
+[e = _N2L_reg4142 -> -> 550 `i `us ]
+"280
+[; ;src/driver/si5328.c: 280:  }
+}
+[e $U 277  ]
+"281
+[; ;src/driver/si5328.c: 281:  else
+[e :U 276 ]
+"282
+[; ;src/driver/si5328.c: 282:  {
+{
+"284
+[; ;src/driver/si5328.c: 284:   printf("si:GPS locked\n");
+[e ( _printf :s 5C ]
+"285
+[; ;src/driver/si5328.c: 285:   N2HS_reg40 = 10;
+[e = _N2HS_reg40 -> -> 10 `i `us ]
+"286
+[; ;src/driver/si5328.c: 286:   N2L_reg4142 = 528;
+[e = _N2L_reg4142 -> -> 528 `i `us ]
+"287
+[; ;src/driver/si5328.c: 287:  }
+}
+[e :U 277 ]
+[e :U 275 ]
+[e :U 273 ]
+[e :U 271 ]
+"289
+[; ;src/driver/si5328.c: 289:  N1HS_reg25 = 11;
+[e = _N1HS_reg25 -> -> 11 `i `us ]
+"290
+[; ;src/driver/si5328.c: 290:  NC1_LS_reg3233 = 20;
+[e = _NC1_LS_reg3233 -> -> 20 `i `us ]
+"291
+[; ;src/driver/si5328.c: 291:  NC2_LS_reg3536 = 12;
+[e = _NC2_LS_reg3536 -> -> 12 `i `us ]
+"293
+[; ;src/driver/si5328.c: 293:  set_reg();
+[e ( _set_reg ..  ]
+"294
+[; ;src/driver/si5328.c: 294: }
+[e :UE 267 ]
+}
+"296
+[; ;src/driver/si5328.c: 296: void set_reg25()
+[v _set_reg25 `(v ~T0 @X0 1 ef ]
+"297
+[; ;src/driver/si5328.c: 297: {
+{
+[e :U _set_reg25 ]
+[f ]
+"298
+[; ;src/driver/si5328.c: 298:  if(ext10MHzReference == 0)
+[e $ ! == -> _ext10MHzReference `i -> 0 `i 279  ]
+"299
+[; ;src/driver/si5328.c: 299:   N31_reg4445 = 19;
+[e = _N31_reg4445 -> -> 19 `i `us ]
+[e $U 280  ]
+"300
+[; ;src/driver/si5328.c: 300:  else
+[e :U 279 ]
+"301
+[; ;src/driver/si5328.c: 301:   N31_reg4445 =10;
+[e = _N31_reg4445 -> -> 10 `i `us ]
+[e :U 280 ]
+"303
+[; ;src/driver/si5328.c: 303:  if(ext10MHzReference == 1)
+[e $ ! == -> _ext10MHzReference `i -> 1 `i 281  ]
+"304
+[; ;src/driver/si5328.c: 304:  {
+{
+"306
+[; ;src/driver/si5328.c: 306:   printf("si:ext. 10 MHz\n");
+[e ( _printf :s 6C ]
+"307
+[; ;src/driver/si5328.c: 307:   N2HS_reg40 = 5;
+[e = _N2HS_reg40 -> -> 5 `i `us ]
+"308
+[; ;src/driver/si5328.c: 308:   N2L_reg4142 = 1120;
+[e = _N2L_reg4142 -> -> 1120 `i `us ]
+"309
+[; ;src/driver/si5328.c: 309:  }
+}
+[e $U 282  ]
+"310
+[; ;src/driver/si5328.c: 310:  else if(tcxo_no_GPS == 1 && ubx_ack == 0)
+[e :U 281 ]
+[e $ ! && == -> _tcxo_no_GPS `i -> 1 `i == -> _ubx_ack `i -> 0 `i 283  ]
+"311
+[; ;src/driver/si5328.c: 311:  {
+{
+"313
+[; ;src/driver/si5328.c: 313:   printf("si:TCXO 38,4 MHz\n");
+[e ( _printf :s 7C ]
+"314
+[; ;src/driver/si5328.c: 314:   N32_reg4748 = 24;
+[e = _N32_reg4748 -> -> 24 `i `us ]
+"315
+[; ;src/driver/si5328.c: 315:   N2HS_reg40 = 5;
+[e = _N2HS_reg40 -> -> 5 `i `us ]
+"316
+[; ;src/driver/si5328.c: 316:   N2L_reg4142 = 700;
+[e = _N2L_reg4142 -> -> 700 `i `us ]
+"317
+[; ;src/driver/si5328.c: 317:  }
+}
+[e $U 284  ]
+"318
+[; ;src/driver/si5328.c: 318:  else if(ubx_ack == 0 || use_GPS == 0)
+[e :U 283 ]
+[e $ ! || == -> _ubx_ack `i -> 0 `i == -> _use_GPS `i -> 0 `i 285  ]
+"319
+[; ;src/driver/si5328.c: 319:  {
+{
+"322
+[; ;src/driver/si5328.c: 322:   printf("si:40 MHz OCXO\n");
+[e ( _printf :s 8C ]
+"323
+[; ;src/driver/si5328.c: 323:   N32_reg4748 = 40;
+[e = _N32_reg4748 -> -> 40 `i `us ]
+"324
+[; ;src/driver/si5328.c: 324:   N2HS_reg40 = 5;
+[e = _N2HS_reg40 -> -> 5 `i `us ]
+"325
+[; ;src/driver/si5328.c: 325:   N2L_reg4142 = 1120;
+[e = _N2L_reg4142 -> -> 1120 `i `us ]
+"326
+[; ;src/driver/si5328.c: 326:  }
+}
+[e $U 286  ]
+"327
+[; ;src/driver/si5328.c: 327:  else if(GPS_lock == 0)
+[e :U 285 ]
+[e $ ! == -> _GPS_lock `i -> 0 `i 287  ]
+"328
+[; ;src/driver/si5328.c: 328:  {
+{
+"330
+[; ;src/driver/si5328.c: 330:   printf("si:GPS unlocked, TCXO 38,4 MHz\n");
+[e ( _printf :s 9C ]
+"331
+[; ;src/driver/si5328.c: 331:   N32_reg4748 = 24;
+[e = _N32_reg4748 -> -> 24 `i `us ]
+"332
+[; ;src/driver/si5328.c: 332:   N2HS_reg40 = 5;
+[e = _N2HS_reg40 -> -> 5 `i `us ]
+"333
+[; ;src/driver/si5328.c: 333:   N2L_reg4142 = 700;
+[e = _N2L_reg4142 -> -> 700 `i `us ]
+"334
+[; ;src/driver/si5328.c: 334:  }
+}
+[e $U 288  ]
+"335
+[; ;src/driver/si5328.c: 335:  else
+[e :U 287 ]
+"336
+[; ;src/driver/si5328.c: 336:  {
+{
+"338
+[; ;src/driver/si5328.c: 338:   printf("si:GPS locked\n");
+[e ( _printf :s 10C ]
+"339
+[; ;src/driver/si5328.c: 339:   N2HS_reg40 = 5;
+[e = _N2HS_reg40 -> -> 5 `i `us ]
+"340
+[; ;src/driver/si5328.c: 340:   N2L_reg4142 = 1120;
+[e = _N2L_reg4142 -> -> 1120 `i `us ]
+"341
+[; ;src/driver/si5328.c: 341:  }
+}
+[e :U 288 ]
+[e :U 286 ]
+[e :U 284 ]
+[e :U 282 ]
+"343
+[; ;src/driver/si5328.c: 343:  N1HS_reg25 = 7;
+[e = _N1HS_reg25 -> -> 7 `i `us ]
+"344
+[; ;src/driver/si5328.c: 344:  NC1_LS_reg3233 = 32;
+[e = _NC1_LS_reg3233 -> -> 32 `i `us ]
+"345
+[; ;src/driver/si5328.c: 345:  NC2_LS_reg3536 = 20;
+[e = _NC2_LS_reg3536 -> -> 20 `i `us ]
+"347
+[; ;src/driver/si5328.c: 347:  set_reg();
+[e ( _set_reg ..  ]
+"348
+[; ;src/driver/si5328.c: 348: }
+[e :UE 278 ]
+}
+"350
+[; ;src/driver/si5328.c: 350: void set_reg26()
+[v _set_reg26 `(v ~T0 @X0 1 ef ]
+"351
+[; ;src/driver/si5328.c: 351: {
+{
+[e :U _set_reg26 ]
+[f ]
+"352
+[; ;src/driver/si5328.c: 352:  if(ext10MHzReference == 0)
+[e $ ! == -> _ext10MHzReference `i -> 0 `i 290  ]
+"353
+[; ;src/driver/si5328.c: 353:   N31_reg4445 = 19;
+[e = _N31_reg4445 -> -> 19 `i `us ]
+[e $U 291  ]
+"354
+[; ;src/driver/si5328.c: 354:  else
+[e :U 290 ]
+"355
+[; ;src/driver/si5328.c: 355:   N31_reg4445 =10;
+[e = _N31_reg4445 -> -> 10 `i `us ]
+[e :U 291 ]
+"357
+[; ;src/driver/si5328.c: 357:  if(ext10MHzReference == 1)
+[e $ ! == -> _ext10MHzReference `i -> 1 `i 292  ]
+"358
+[; ;src/driver/si5328.c: 358:  {
+{
+"360
+[; ;src/driver/si5328.c: 360:   printf("si:ext. 10 MHz\n");
+[e ( _printf :s 11C ]
+"361
+[; ;src/driver/si5328.c: 361:   N2HS_reg40 = 5;
+[e = _N2HS_reg40 -> -> 5 `i `us ]
+"362
+[; ;src/driver/si5328.c: 362:   N2L_reg4142 = 1040;
+[e = _N2L_reg4142 -> -> 1040 `i `us ]
+"363
+[; ;src/driver/si5328.c: 363:  }
+}
+[e $U 293  ]
+"364
+[; ;src/driver/si5328.c: 364:  else if(tcxo_no_GPS == 1 && ubx_ack == 0)
+[e :U 292 ]
+[e $ ! && == -> _tcxo_no_GPS `i -> 1 `i == -> _ubx_ack `i -> 0 `i 294  ]
+"365
+[; ;src/driver/si5328.c: 365:  {
+{
+"367
+[; ;src/driver/si5328.c: 367:   printf("si:TCXO 38,4 MHz\n");
+[e ( _printf :s 12C ]
+"368
+[; ;src/driver/si5328.c: 368:   N32_reg4748 = 24;
+[e = _N32_reg4748 -> -> 24 `i `us ]
+"369
+[; ;src/driver/si5328.c: 369:   N2HS_reg40 = 5;
+[e = _N2HS_reg40 -> -> 5 `i `us ]
+"370
+[; ;src/driver/si5328.c: 370:   N2L_reg4142 = 650;
+[e = _N2L_reg4142 -> -> 650 `i `us ]
+"371
+[; ;src/driver/si5328.c: 371:  }
+}
+[e $U 295  ]
+"372
+[; ;src/driver/si5328.c: 372:  else if(ubx_ack == 0 || use_GPS == 0)
+[e :U 294 ]
+[e $ ! || == -> _ubx_ack `i -> 0 `i == -> _use_GPS `i -> 0 `i 296  ]
+"373
+[; ;src/driver/si5328.c: 373:  {
+{
+"376
+[; ;src/driver/si5328.c: 376:   printf("si:40 MHz OCXO\n");
+[e ( _printf :s 13C ]
+"377
+[; ;src/driver/si5328.c: 377:   N32_reg4748 = 40;
+[e = _N32_reg4748 -> -> 40 `i `us ]
+"378
+[; ;src/driver/si5328.c: 378:   N2HS_reg40 = 5;
+[e = _N2HS_reg40 -> -> 5 `i `us ]
+"379
+[; ;src/driver/si5328.c: 379:   N2L_reg4142 = 1040;
+[e = _N2L_reg4142 -> -> 1040 `i `us ]
+"380
+[; ;src/driver/si5328.c: 380:  }
+}
+[e $U 297  ]
+"381
+[; ;src/driver/si5328.c: 381:  else if(GPS_lock == 0)
+[e :U 296 ]
+[e $ ! == -> _GPS_lock `i -> 0 `i 298  ]
+"382
+[; ;src/driver/si5328.c: 382:  {
+{
+"384
+[; ;src/driver/si5328.c: 384:   printf("si:GPS unlocked, TCXO 38,4 MHz\n");
+[e ( _printf :s 14C ]
+"385
+[; ;src/driver/si5328.c: 385:   N32_reg4748 = 24;
+[e = _N32_reg4748 -> -> 24 `i `us ]
+"386
+[; ;src/driver/si5328.c: 386:   N2HS_reg40 = 5;
+[e = _N2HS_reg40 -> -> 5 `i `us ]
+"387
+[; ;src/driver/si5328.c: 387:   N2L_reg4142 = 650;
+[e = _N2L_reg4142 -> -> 650 `i `us ]
+"388
+[; ;src/driver/si5328.c: 388:  }
+}
+[e $U 299  ]
+"389
+[; ;src/driver/si5328.c: 389:  else
+[e :U 298 ]
+"390
+[; ;src/driver/si5328.c: 390:  {
+{
+"392
+[; ;src/driver/si5328.c: 392:   printf("si:GPS locked\n");
+[e ( _printf :s 15C ]
+"393
+[; ;src/driver/si5328.c: 393:   N2HS_reg40 = 5;
+[e = _N2HS_reg40 -> -> 5 `i `us ]
+"394
+[; ;src/driver/si5328.c: 394:   N2L_reg4142 = 1040;
+[e = _N2L_reg4142 -> -> 1040 `i `us ]
+"395
+[; ;src/driver/si5328.c: 395:  }
+}
+[e :U 299 ]
+[e :U 297 ]
+[e :U 295 ]
+[e :U 293 ]
+"397
+[; ;src/driver/si5328.c: 397:  N1HS_reg25 = 5;
+[e = _N1HS_reg25 -> -> 5 `i `us ]
+"398
+[; ;src/driver/si5328.c: 398:  NC1_LS_reg3233 = 40;
+[e = _NC1_LS_reg3233 -> -> 40 `i `us ]
+"399
+[; ;src/driver/si5328.c: 399:  NC2_LS_reg3536 = 26;
+[e = _NC2_LS_reg3536 -> -> 26 `i `us ]
+"401
+[; ;src/driver/si5328.c: 401:  set_reg();
+[e ( _set_reg ..  ]
+"402
+[; ;src/driver/si5328.c: 402: }
+[e :UE 289 ]
+}
+"404
+[; ;src/driver/si5328.c: 404: void set_reg27()
+[v _set_reg27 `(v ~T0 @X0 1 ef ]
+"405
+[; ;src/driver/si5328.c: 405: {
+{
+[e :U _set_reg27 ]
+[f ]
+"406
+[; ;src/driver/si5328.c: 406:  N31_reg4445 = 133;
+[e = _N31_reg4445 -> -> 133 `i `us ]
+"407
+[; ;src/driver/si5328.c: 407:  N2HS_reg40 = 8;
+[e = _N2HS_reg40 -> -> 8 `i `us ]
+"408
+[; ;src/driver/si5328.c: 408:  N2L_reg4142 = 4760;
+[e = _N2L_reg4142 -> -> 4760 `i `us ]
+"409
+[; ;src/driver/si5328.c: 409:  N1HS_reg25 = 4;
+[e = _N1HS_reg25 -> -> 4 `i `us ]
+"410
+[; ;src/driver/si5328.c: 410:  NC1_LS_reg3233 = 50;
+[e = _NC1_LS_reg3233 -> -> 50 `i `us ]
+"411
+[; ;src/driver/si5328.c: 411:  NC2_LS_reg3536 = 34;
+[e = _NC2_LS_reg3536 -> -> 34 `i `us ]
+"413
+[; ;src/driver/si5328.c: 413:  set_reg();
+[e ( _set_reg ..  ]
+"414
+[; ;src/driver/si5328.c: 414: }
+[e :UE 300 ]
+}
+"422
+[; ;src/driver/si5328.c: 422: int si5328_init(i2c_dev i2c, u8 addr)
+[v _si5328_init `(i ~T0 @X0 1 ef2`*S259`uc ]
+"423
+[; ;src/driver/si5328.c: 423: {
+{
+[e :U _si5328_init ]
+"422
+[; ;src/driver/si5328.c: 422: int si5328_init(i2c_dev i2c, u8 addr)
+[v _i2c `*S259 ~T0 @X0 1 r1 ]
+[v _addr `uc ~T0 @X0 1 r2 ]
+"423
+[; ;src/driver/si5328.c: 423: {
+[f ]
+"424
+[; ;src/driver/si5328.c: 424:     int res = i2c_probe_addr(i2c, addr);
+[v _res `i ~T0 @X0 1 a ]
+[e = _res ( _i2c_probe_addr (2 , _i2c _addr ]
+"425
+[; ;src/driver/si5328.c: 425:     if(res == 0)
+[e $ ! == _res -> 0 `i 302  ]
+"426
+[; ;src/driver/si5328.c: 426:  {
+{
+"427
+[; ;src/driver/si5328.c: 427:         printf("si:found.\n");
+[e ( _printf :s 16C ]
+"428
+[; ;src/driver/si5328.c: 428:   smbus8_write_byte(i2c, addr, 136, 0x80);
+[e ( _smbus8_write_byte (4 , , , _i2c _addr -> -> 136 `i `uc -> -> 128 `i `uc ]
+"429
+[; ;src/driver/si5328.c: 429:   _delaywdt((unsigned long)((100)*(8000000/4000.0)));
+[e ( __delaywdt (1 -> * -> -> 100 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"431
+[; ;src/driver/si5328.c: 431:   printf("si:init\n");
+[e ( _printf :s 17C ]
+"432
+[; ;src/driver/si5328.c: 432:   if(ext10MHzReference == 0)
+[e $ ! == -> _ext10MHzReference `i -> 0 `i 303  ]
+"433
+[; ;src/driver/si5328.c: 433:   {
+{
+"435
+[; ;src/driver/si5328.c: 435:    write_regset(i2c, addr, reg_set_univ_CKIN2_XAXB, (sizeof(reg_set_univ_CKIN2_XAXB)/sizeof(reg_set_univ_CKIN2_XAXB[0])));
+[e ( _write_regset (4 , , , _i2c _addr &U _reg_set_univ_CKIN2_XAXB -> / -> # _reg_set_univ_CKIN2_XAXB `ui -> # *U + &U _reg_set_univ_CKIN2_XAXB * -> -> -> 0 `i `ui `ux -> -> # *U &U _reg_set_univ_CKIN2_XAXB `ui `ux `ui `us ]
+"436
+[; ;src/driver/si5328.c: 436:   }
+}
+[e $U 304  ]
+"437
+[; ;src/driver/si5328.c: 437:   else
+[e :U 303 ]
+"438
+[; ;src/driver/si5328.c: 438:   {
+{
+"440
+[; ;src/driver/si5328.c: 440:    write_regset(i2c, addr, reg_set_univ_CKIN1_GPS, (sizeof(reg_set_univ_CKIN1_GPS)/sizeof(reg_set_univ_CKIN1_GPS[0])));
+[e ( _write_regset (4 , , , _i2c _addr &U _reg_set_univ_CKIN1_GPS -> / -> # _reg_set_univ_CKIN1_GPS `ui -> # *U + &U _reg_set_univ_CKIN1_GPS * -> -> -> 0 `i `ui `ux -> -> # *U &U _reg_set_univ_CKIN1_GPS `ui `ux `ui `us ]
+"441
+[; ;src/driver/si5328.c: 441:   }
+}
+[e :U 304 ]
+"443
+[; ;src/driver/si5328.c: 443:   setQRG();
+[e ( _setQRG ..  ]
+"444
+[; ;src/driver/si5328.c: 444:     }
+}
+[e $U 305  ]
+"445
+[; ;src/driver/si5328.c: 445:  else
+[e :U 302 ]
+"446
+[; ;src/driver/si5328.c: 446:  {
+{
+"447
+[; ;src/driver/si5328.c: 447:         printf("si:not found!\n");
+[e ( _printf :s 18C ]
+"448
+[; ;src/driver/si5328.c: 448:     }
+}
+[e :U 305 ]
+"450
+[; ;src/driver/si5328.c: 450:     return res;
+[e ) _res ]
+[e $UE 301  ]
+"451
+[; ;src/driver/si5328.c: 451: }
+[e :UE 301 ]
+}
+"453
+[; ;src/driver/si5328.c: 453: void si5328_set_freq(i2c_dev i2c, u8 addr, u8 freq_MHz)
+[v _si5328_set_freq `(v ~T0 @X0 1 ef3`*S259`uc`uc ]
+"454
+[; ;src/driver/si5328.c: 454: {
+{
+[e :U _si5328_set_freq ]
+"453
+[; ;src/driver/si5328.c: 453: void si5328_set_freq(i2c_dev i2c, u8 addr, u8 freq_MHz)
+[v _i2c `*S259 ~T0 @X0 1 r1 ]
+[v _addr `uc ~T0 @X0 1 r2 ]
+[v _freq_MHz `uc ~T0 @X0 1 r3 ]
+"454
+[; ;src/driver/si5328.c: 454: {
+[f ]
+"455
+[; ;src/driver/si5328.c: 455:  if(freq_MHz == 24)
+[e $ ! == -> _freq_MHz `i -> 24 `i 307  ]
+"456
+[; ;src/driver/si5328.c: 456:   set_reg24();
+[e ( _set_reg24 ..  ]
+[e :U 307 ]
+"458
+[; ;src/driver/si5328.c: 458:  if(freq_MHz == 25)
+[e $ ! == -> _freq_MHz `i -> 25 `i 308  ]
+"459
+[; ;src/driver/si5328.c: 459:   set_reg25();
+[e ( _set_reg25 ..  ]
+[e :U 308 ]
+"461
+[; ;src/driver/si5328.c: 461:  if(freq_MHz == 26)
+[e $ ! == -> _freq_MHz `i -> 26 `i 309  ]
+"462
+[; ;src/driver/si5328.c: 462:   set_reg26();
+[e ( _set_reg26 ..  ]
+[e :U 309 ]
+"464
+[; ;src/driver/si5328.c: 464:  if(freq_MHz == 27)
+[e $ ! == -> _freq_MHz `i -> 27 `i 310  ]
+"465
+[; ;src/driver/si5328.c: 465:   set_reg27();
+[e ( _set_reg27 ..  ]
+[e :U 310 ]
+"467
+[; ;src/driver/si5328.c: 467:  write_regset(i2c, addr, reg_set_LNB_LO, (sizeof(reg_set_LNB_LO)/sizeof(reg_set_LNB_LO[0])));
+[e ( _write_regset (4 , , , _i2c _addr -> &U _reg_set_LNB_LO `*CS262 -> / -> # _reg_set_LNB_LO `ui -> # *U + &U _reg_set_LNB_LO * -> -> -> 0 `i `ui `ux -> -> # *U &U _reg_set_LNB_LO `ui `ux `ui `us ]
+"468
+[; ;src/driver/si5328.c: 468:  printf("si:LNB: %d\n",freq_MHz);
+[e ( _printf , (. :s 19C -> _freq_MHz `i ]
+"469
+[; ;src/driver/si5328.c: 469:  si5328_perform_ical(i2c, addr);
+[e ( _si5328_perform_ical (2 , _i2c _addr ]
+"470
+[; ;src/driver/si5328.c: 470: }
+[e :UE 306 ]
+}
+"472
+[; ;src/driver/si5328.c: 472: static void si5328_perform_ical(i2c_dev i2c, u8 addr)
+[v _si5328_perform_ical `(v ~T0 @X0 1 sf2`*S259`uc ]
+"473
+[; ;src/driver/si5328.c: 473: {
+{
+[e :U _si5328_perform_ical ]
+"472
+[; ;src/driver/si5328.c: 472: static void si5328_perform_ical(i2c_dev i2c, u8 addr)
+[v _i2c `*S259 ~T0 @X0 1 r1 ]
+[v _addr `uc ~T0 @X0 1 r2 ]
+"473
+[; ;src/driver/si5328.c: 473: {
+[f ]
+"474
+[; ;src/driver/si5328.c: 474:  printf("si:ical\n");
+[e ( _printf :s 20C ]
+"475
+[; ;src/driver/si5328.c: 475:  if (smbus8_write_byte(i2c, addr, 136, 0x40) != 0)
+[e $ ! != ( _smbus8_write_byte (4 , , , _i2c _addr -> -> 136 `i `uc -> -> 64 `i `uc -> 0 `i 312  ]
+"476
+[; ;src/driver/si5328.c: 476:  {
+{
+"477
+[; ;src/driver/si5328.c: 477:   printf("si:I2C fail\n");
+[e ( _printf :s 21C ]
+"478
+[; ;src/driver/si5328.c: 478:  }
+}
+[e :U 312 ]
+"479
+[; ;src/driver/si5328.c: 479: }
+[e :UE 311 ]
+}
+"482
+[; ;src/driver/si5328.c: 482: void si5328_checkGPS(i2c_dev i2c, u8 addr)
+[v _si5328_checkGPS `(v ~T0 @X0 1 ef2`*S259`uc ]
+"483
+[; ;src/driver/si5328.c: 483: {
+{
+[e :U _si5328_checkGPS ]
+"482
+[; ;src/driver/si5328.c: 482: void si5328_checkGPS(i2c_dev i2c, u8 addr)
+[v _i2c `*S259 ~T0 @X0 1 r1 ]
+[v _addr `uc ~T0 @X0 1 r2 ]
+"483
+[; ;src/driver/si5328.c: 483: {
+[f ]
+"484
+[; ;src/driver/si5328.c: 484: static u8 old_GPS_lock = 0;
+[v F2868 `uc ~T0 @X0 1 s old_GPS_lock ]
+[i F2868
+-> -> 0 `i `uc
+]
+"485
+[; ;src/driver/si5328.c: 485: static u8 old_ubx_ack = 0;
+[v F2869 `uc ~T0 @X0 1 s old_ubx_ack ]
+[i F2869
+-> -> 0 `i `uc
+]
+"487
+[; ;src/driver/si5328.c: 487:  if(old_ubx_ack == 0 && ubx_ack == 1 && GPS_lock == 0)
+[e $ ! && && == -> F2869 `i -> 0 `i == -> _ubx_ack `i -> 1 `i == -> _GPS_lock `i -> 0 `i 314  ]
+"488
+[; ;src/driver/si5328.c: 488:  {
+{
+"489
+[; ;src/driver/si5328.c: 489:   old_ubx_ack = ubx_ack;
+[e = F2869 _ubx_ack ]
+"493
+[; ;src/driver/si5328.c: 493:   printf("si:GPS ok, no lock\n");
+[e ( _printf :s 22C ]
+"494
+[; ;src/driver/si5328.c: 494:         write_regset(i2c, addr, reg_set_univ_CKIN2_XAXB, (sizeof(reg_set_univ_CKIN2_XAXB)/sizeof(reg_set_univ_CKIN2_XAXB[0])));
+[e ( _write_regset (4 , , , _i2c _addr &U _reg_set_univ_CKIN2_XAXB -> / -> # _reg_set_univ_CKIN2_XAXB `ui -> # *U + &U _reg_set_univ_CKIN2_XAXB * -> -> -> 0 `i `ui `ux -> -> # *U &U _reg_set_univ_CKIN2_XAXB `ui `ux `ui `us ]
+"496
+[; ;src/driver/si5328.c: 496:   currentLO = 0xff;
+[e = _currentLO -> -> 255 `i `uc ]
+"497
+[; ;src/driver/si5328.c: 497:   setQRG();
+[e ( _setQRG ..  ]
+"498
+[; ;src/driver/si5328.c: 498:  }
+}
+[e :U 314 ]
+"500
+[; ;src/driver/si5328.c: 500:  if(old_GPS_lock == 0 && GPS_lock == 1 && use_GPS == 1)
+[e $ ! && && == -> F2868 `i -> 0 `i == -> _GPS_lock `i -> 1 `i == -> _use_GPS `i -> 1 `i 315  ]
+"501
+[; ;src/driver/si5328.c: 501:  {
+{
+"502
+[; ;src/driver/si5328.c: 502:   old_GPS_lock = 1;
+[e = F2868 -> -> 1 `i `uc ]
+"505
+[; ;src/driver/si5328.c: 505:   printf("GPS:locked\nsi:syncing GPS\n");
+[e ( _printf :s 23C ]
+"506
+[; ;src/driver/si5328.c: 506:         write_regset(i2c, addr, reg_set_univ_CKIN1_GPS, (sizeof(reg_set_univ_CKIN1_GPS)/sizeof(reg_set_univ_CKIN1_GPS[0])));
+[e ( _write_regset (4 , , , _i2c _addr &U _reg_set_univ_CKIN1_GPS -> / -> # _reg_set_univ_CKIN1_GPS `ui -> # *U + &U _reg_set_univ_CKIN1_GPS * -> -> -> 0 `i `ui `ux -> -> # *U &U _reg_set_univ_CKIN1_GPS `ui `ux `ui `us ]
+"508
+[; ;src/driver/si5328.c: 508:   currentLO = 0xff;
+[e = _currentLO -> -> 255 `i `uc ]
+"509
+[; ;src/driver/si5328.c: 509:   setQRG();
+[e ( _setQRG ..  ]
+"510
+[; ;src/driver/si5328.c: 510:  }
+}
+[e :U 315 ]
+"511
+[; ;src/driver/si5328.c: 511: }
+[e :UE 313 ]
+}
+"514
+[; ;src/driver/si5328.c: 514: u8 check_si5328_status(i2c_dev i2c, u8 addr)
+[v _check_si5328_status `(uc ~T0 @X0 1 ef2`*S259`uc ]
+"515
+[; ;src/driver/si5328.c: 515: {
+{
+[e :U _check_si5328_status ]
+"514
+[; ;src/driver/si5328.c: 514: u8 check_si5328_status(i2c_dev i2c, u8 addr)
+[v _i2c `*S259 ~T0 @X0 1 r1 ]
+[v _addr `uc ~T0 @X0 1 r2 ]
+"515
+[; ;src/driver/si5328.c: 515: {
+[f ]
+"516
+[; ;src/driver/si5328.c: 516:  u8 res, ret = 0;
+[v _res `uc ~T0 @X0 1 a ]
+[v _ret `uc ~T0 @X0 1 a ]
+[e = _ret -> -> 0 `i `uc ]
+"517
+[; ;src/driver/si5328.c: 517:  static u8 lastlock = 0xff;
+[v F2875 `uc ~T0 @X0 1 s lastlock ]
+[i F2875
+-> -> 255 `i `uc
+]
+"519
+[; ;src/driver/si5328.c: 519:  u8 lock = ((*((PIN_SI5328_LOL)->pPORT) & (PIN_SI5328_LOL)->mask) != 0);
+[v _lock `uc ~T0 @X0 1 a ]
+[e = _lock -> -> != & -> *U . *U _PIN_SI5328_LOL 0 `i -> . *U _PIN_SI5328_LOL 2 `i -> 0 `i `i `uc ]
+"520
+[; ;src/driver/si5328.c: 520:  if(lock != lastlock)
+[e $ ! != -> _lock `i -> F2875 `i 317  ]
+"521
+[; ;src/driver/si5328.c: 521:  {
+{
+"522
+[; ;src/driver/si5328.c: 522:   lastlock = lock;
+[e = F2875 _lock ]
+"523
+[; ;src/driver/si5328.c: 523:   if(lock == 1)
+[e $ ! == -> _lock `i -> 1 `i 318  ]
+"524
+[; ;src/driver/si5328.c: 524:   {
+{
+"525
+[; ;src/driver/si5328.c: 525:    printf("si:unlocked\n");
+[e ( _printf :s 24C ]
+"526
+[; ;src/driver/si5328.c: 526:    si5328locked = 0;
+[e = _si5328locked -> -> 0 `i `uc ]
+"527
+[; ;src/driver/si5328.c: 527:    *((PIN_LED_SI_LOCK)->pPORT) |= (PIN_LED_SI_LOCK)->mask;
+[e =| *U . *U _PIN_LED_SI_LOCK 0 -> . *U _PIN_LED_SI_LOCK 2 `uc ]
+"528
+[; ;src/driver/si5328.c: 528:   }
+}
+[e $U 319  ]
+"529
+[; ;src/driver/si5328.c: 529:   else
+[e :U 318 ]
+"530
+[; ;src/driver/si5328.c: 530:   {
+{
+"531
+[; ;src/driver/si5328.c: 531:    printf("si:locked\n");
+[e ( _printf :s 25C ]
+"532
+[; ;src/driver/si5328.c: 532:    si5328locked = 1;
+[e = _si5328locked -> -> 1 `i `uc ]
+"533
+[; ;src/driver/si5328.c: 533:    *((PIN_LED_SI_LOCK)->pPORT) &= ~(PIN_LED_SI_LOCK)->mask;
+[e =& *U . *U _PIN_LED_SI_LOCK 0 -> ~ -> . *U _PIN_LED_SI_LOCK 2 `i `uc ]
+"534
+[; ;src/driver/si5328.c: 534:    ret = 1;
+[e = _ret -> -> 1 `i `uc ]
+"535
+[; ;src/driver/si5328.c: 535:   }
+}
+[e :U 319 ]
+"536
+[; ;src/driver/si5328.c: 536:  }
+}
+[e :U 317 ]
+"556
+[; ;src/driver/si5328.c: 556:  static u8 lastinput = 0xff;
+[v F2880 `uc ~T0 @X0 1 s lastinput ]
+[i F2880
+-> -> 255 `i `uc
+]
+"557
+[; ;src/driver/si5328.c: 557:  res = read_reg(i2c, addr, 128);
+[e = _res ( _read_reg (3 , , _i2c _addr -> -> 128 `i `uc ]
+"558
+[; ;src/driver/si5328.c: 558:  if(res != lastinput)
+[e $ ! != -> _res `i -> F2880 `i 320  ]
+"559
+[; ;src/driver/si5328.c: 559:  {
+{
+"561
+[; ;src/driver/si5328.c: 561:   if(res & 1)
+[e $ ! != & -> _res `i -> 1 `i -> 0 `i 321  ]
+"562
+[; ;src/driver/si5328.c: 562:   {
+{
+"564
+[; ;src/driver/si5328.c: 564:    GPS_fix = 1;
+[e = _GPS_fix -> -> 1 `i `uc ]
+"565
+[; ;src/driver/si5328.c: 565:   }
+}
+[e :U 321 ]
+"566
+[; ;src/driver/si5328.c: 566:   if(res & 2)
+[e $ ! != & -> _res `i -> 2 `i -> 0 `i 322  ]
+"567
+[; ;src/driver/si5328.c: 567:   {
+{
+"569
+[; ;src/driver/si5328.c: 569:    GPS_fix = 0;
+[e = _GPS_fix -> -> 0 `i `uc ]
+"570
+[; ;src/driver/si5328.c: 570:   }
+}
+[e :U 322 ]
+"571
+[; ;src/driver/si5328.c: 571:   lastinput = res;
+[e = F2880 _res ]
+"572
+[; ;src/driver/si5328.c: 572:  }
+}
+[e :U 320 ]
+"585
+[; ;src/driver/si5328.c: 585:  return ret;
+[e ) _ret ]
+[e $UE 316  ]
+"586
+[; ;src/driver/si5328.c: 586: }
+[e :UE 316 ]
+}
+"588
+[; ;src/driver/si5328.c: 588: static void write_regset(i2c_dev i2c, u8 addr, const reg_set *set, u16 len)
+[v _write_regset `(v ~T0 @X0 1 sf4`*S259`uc`*CS262`us ]
+"589
+[; ;src/driver/si5328.c: 589: {
+{
+[e :U _write_regset ]
+"588
+[; ;src/driver/si5328.c: 588: static void write_regset(i2c_dev i2c, u8 addr, const reg_set *set, u16 len)
+[v _i2c `*S259 ~T0 @X0 1 r1 ]
+[v _addr `uc ~T0 @X0 1 r2 ]
+[v _set `*CS262 ~T0 @X0 1 r3 ]
+[v _len `us ~T0 @X0 1 r4 ]
+"589
+[; ;src/driver/si5328.c: 589: {
+[f ]
+"590
+[; ;src/driver/si5328.c: 590:     int errors = 0;
+[v _errors `i ~T0 @X0 1 a ]
+[e = _errors -> 0 `i ]
+"592
+[; ;src/driver/si5328.c: 592:     while(len--) {
+[e $U 324  ]
+[e :U 325 ]
+{
+"593
+[; ;src/driver/si5328.c: 593:         if (0 != smbus8_write_byte(i2c, addr, set->addr, set->value)) errors++;
+[e $ ! != -> 0 `i ( _smbus8_write_byte (4 , , , _i2c _addr . *U _set 0 . *U _set 1 327  ]
+[e ++ _errors -> 1 `i ]
+[e :U 327 ]
+"594
+[; ;src/driver/si5328.c: 594:         set++;
+[e ++ _set * -> -> 1 `i `x -> -> # *U _set `i `x ]
+"595
+[; ;src/driver/si5328.c: 595:     }
+}
+[e :U 324 ]
+"592
+[; ;src/driver/si5328.c: 592:     while(len--) {
+[e $ != -> -- _len -> -> 1 `i `us `ui -> -> 0 `i `ui 325  ]
+[e :U 326 ]
+"597
+[; ;src/driver/si5328.c: 597:   if(errors > 0)
+[e $ ! > _errors -> 0 `i 328  ]
+"598
+[; ;src/driver/si5328.c: 598:  {
+{
+"599
+[; ;src/driver/si5328.c: 599:   printf("si:write_regset %i errors.\n", errors);
+[e ( _printf , (. :s 26C _errors ]
+"600
+[; ;src/driver/si5328.c: 600:  }
+}
+[e :U 328 ]
+"601
+[; ;src/driver/si5328.c: 601: }
+[e :UE 323 ]
+}
+"603
+[; ;src/driver/si5328.c: 603: static u8 read_reg(i2c_dev i2c, u8 addr, u8 reg)
+[v _read_reg `(uc ~T0 @X0 1 sf3`*S259`uc`uc ]
+"604
+[; ;src/driver/si5328.c: 604: {
+{
+[e :U _read_reg ]
+"603
+[; ;src/driver/si5328.c: 603: static u8 read_reg(i2c_dev i2c, u8 addr, u8 reg)
+[v _i2c `*S259 ~T0 @X0 1 r1 ]
+[v _addr `uc ~T0 @X0 1 r2 ]
+[v _reg `uc ~T0 @X0 1 r3 ]
+"604
+[; ;src/driver/si5328.c: 604: {
+[f ]
+"605
+[; ;src/driver/si5328.c: 605:  u8 val;
+[v _val `uc ~T0 @X0 1 a ]
+"607
+[; ;src/driver/si5328.c: 607:  int res = smbus8_read_byte(i2c, addr, reg, &val);
+[v _res `i ~T0 @X0 1 a ]
+[e = _res ( _smbus8_read_byte (4 , , , _i2c _addr _reg &U _val ]
+"608
+[; ;src/driver/si5328.c: 608:  return val;
+[e ) _val ]
+[e $UE 329  ]
+"609
+[; ;src/driver/si5328.c: 609: }
+[e :UE 329 ]
+}
+[p f _printf 8388736 ]
+[a 2C 115 105 58 84 67 88 79 32 51 56 44 52 32 77 72 122 10 0 ]
+[a 7C 115 105 58 84 67 88 79 32 51 56 44 52 32 77 72 122 10 0 ]
+[a 12C 115 105 58 84 67 88 79 32 51 56 44 52 32 77 72 122 10 0 ]
+[a 4C 115 105 58 71 80 83 32 117 110 108 111 99 107 101 100 58 32 84 67 88 79 32 51 56 44 52 32 77 72 122 10 0 ]
+[a 9C 115 105 58 71 80 83 32 117 110 108 111 99 107 101 100 44 32 84 67 88 79 32 51 56 44 52 32 77 72 122 10 0 ]
+[a 14C 115 105 58 71 80 83 32 117 110 108 111 99 107 101 100 44 32 84 67 88 79 32 51 56 44 52 32 77 72 122 10 0 ]
+[a 6C 115 105 58 101 120 116 46 32 49 48 32 77 72 122 10 0 ]
+[a 11C 115 105 58 101 120 116 46 32 49 48 32 77 72 122 10 0 ]
+[a 17C 115 105 58 105 110 105 116 10 0 ]
+[a 21C 115 105 58 73 50 67 32 102 97 105 108 10 0 ]
+[a 20C 115 105 58 105 99 97 108 10 0 ]
+[a 22C 115 105 58 71 80 83 32 111 107 44 32 110 111 32 108 111 99 107 10 0 ]
+[a 1C 115 105 58 101 120 116 46 32 49 48 32 77 72 122 32 114 101 102 10 0 ]
+[a 24C 115 105 58 117 110 108 111 99 107 101 100 10 0 ]
+[a 25C 115 105 58 108 111 99 107 101 100 10 0 ]
+[a 5C 115 105 58 71 80 83 32 108 111 99 107 101 100 10 0 ]
+[a 10C 115 105 58 71 80 83 32 108 111 99 107 101 100 10 0 ]
+[a 15C 115 105 58 71 80 83 32 108 111 99 107 101 100 10 0 ]
+[a 19C 115 105 58 76 78 66 58 32 37 100 10 0 ]
+[a 23C 71 80 83 58 108 111 99 107 101 100 10 115 105 58 115 121 110 99 105 110 103 32 71 80 83 10 0 ]
+[a 3C 115 105 58 52 48 32 77 72 122 32 79 67 88 79 10 0 ]
+[a 8C 115 105 58 52 48 32 77 72 122 32 79 67 88 79 10 0 ]
+[a 13C 115 105 58 52 48 32 77 72 122 32 79 67 88 79 10 0 ]
+[a 26C 115 105 58 119 114 105 116 101 95 114 101 103 115 101 116 32 37 105 32 101 114 114 111 114 115 46 10 0 ]
+[a 16C 115 105 58 102 111 117 110 100 46 10 0 ]
+[a 18C 115 105 58 110 111 116 32 102 111 117 110 100 33 10 0 ]

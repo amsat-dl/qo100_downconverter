@@ -1,0 +1,1243 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"54 /opt/microchip/xc8/v2.10/pic/include/c99/string.h
+[; ;/opt/microchip/xc8/v2.10/pic/include/c99/string.h: 54: size_t strlen (const char *);
+[v _strlen `(ui ~T0 @X0 0 ef1`*Cuc ]
+"34 /opt/microchip/xc8/v2.10/pic/include/c99/stdlib.h
+[; ;/opt/microchip/xc8/v2.10/pic/include/c99/stdlib.h: 34: long strtol (const char *restrict, char **restrict, int);
+[v _strtol `(l ~T0 @X0 0 ef3`*Cuc`**uc`i ]
+"45 /opt/microchip/xc8/v2.10/pic/include/c99/string.h
+[; ;/opt/microchip/xc8/v2.10/pic/include/c99/string.h: 45: char *strchr (const char *, int);
+[v _strchr `(*uc ~T0 @X0 0 ef2`*Cuc`i ]
+"29
+[; ;/opt/microchip/xc8/v2.10/pic/include/c99/string.h: 29: void *memset (void *, int, size_t);
+[v _memset `(*v ~T0 @X0 0 ef3`*v`i`ui ]
+"27
+[; ;/opt/microchip/xc8/v2.10/pic/include/c99/string.h: 27: void *memcpy (void *restrict, const void *restrict, size_t);
+[v _memcpy `(*v ~T0 @X0 0 ef3`*v`*Cv`ui ]
+"23 /opt/microchip/xc8/v2.10/pic/include/c99/stdlib.h
+[; ;/opt/microchip/xc8/v2.10/pic/include/c99/stdlib.h: 23: int atoi (const char *);
+[v _atoi `(i ~T0 @X0 0 ef1`*Cuc ]
+"10 src/gps.c
+[; ;src/gps.c: 10: void send_UBX_string(u8 class, u8 id, u16 len, u8 *payload);
+[v _send_UBX_string `(v ~T0 @X0 0 ef4`uc`uc`us`*uc ]
+"12 src/driver/usart.h
+[; ;src/driver/usart.h: 12: void putgps(u8 c);
+[v _putgps `(v ~T0 @X0 0 ef1`uc ]
+"54 /opt/microchip/xc8/v2.10/pic/include/pic18f2520.h
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 54: __asm("PORTA equ 0F80h");
+[; <" PORTA equ 0F80h ;# ">
+"273
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 273: __asm("PORTB equ 0F81h");
+[; <" PORTB equ 0F81h ;# ">
+"452
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 452: __asm("PORTC equ 0F82h");
+[; <" PORTC equ 0F82h ;# ">
+"627
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 627: __asm("PORTE equ 0F84h");
+[; <" PORTE equ 0F84h ;# ">
+"702
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 702: __asm("LATA equ 0F89h");
+[; <" LATA equ 0F89h ;# ">
+"814
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 814: __asm("LATB equ 0F8Ah");
+[; <" LATB equ 0F8Ah ;# ">
+"926
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 926: __asm("LATC equ 0F8Bh");
+[; <" LATC equ 0F8Bh ;# ">
+"1038
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1038: __asm("TRISA equ 0F92h");
+[; <" TRISA equ 0F92h ;# ">
+"1043
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1043: __asm("DDRA equ 0F92h");
+[; <" DDRA equ 0F92h ;# ">
+"1260
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1260: __asm("TRISB equ 0F93h");
+[; <" TRISB equ 0F93h ;# ">
+"1265
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1265: __asm("DDRB equ 0F93h");
+[; <" DDRB equ 0F93h ;# ">
+"1482
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1482: __asm("TRISC equ 0F94h");
+[; <" TRISC equ 0F94h ;# ">
+"1487
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1487: __asm("DDRC equ 0F94h");
+[; <" DDRC equ 0F94h ;# ">
+"1704
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1704: __asm("OSCTUNE equ 0F9Bh");
+[; <" OSCTUNE equ 0F9Bh ;# ">
+"1769
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1769: __asm("PIE1 equ 0F9Dh");
+[; <" PIE1 equ 0F9Dh ;# ">
+"1840
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1840: __asm("PIR1 equ 0F9Eh");
+[; <" PIR1 equ 0F9Eh ;# ">
+"1911
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1911: __asm("IPR1 equ 0F9Fh");
+[; <" IPR1 equ 0F9Fh ;# ">
+"1982
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1982: __asm("PIE2 equ 0FA0h");
+[; <" PIE2 equ 0FA0h ;# ">
+"2048
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2048: __asm("PIR2 equ 0FA1h");
+[; <" PIR2 equ 0FA1h ;# ">
+"2114
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2114: __asm("IPR2 equ 0FA2h");
+[; <" IPR2 equ 0FA2h ;# ">
+"2180
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2180: __asm("EECON1 equ 0FA6h");
+[; <" EECON1 equ 0FA6h ;# ">
+"2246
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2246: __asm("EECON2 equ 0FA7h");
+[; <" EECON2 equ 0FA7h ;# ">
+"2253
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2253: __asm("EEDATA equ 0FA8h");
+[; <" EEDATA equ 0FA8h ;# ">
+"2260
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2260: __asm("EEADR equ 0FA9h");
+[; <" EEADR equ 0FA9h ;# ">
+"2267
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2267: __asm("RCSTA equ 0FABh");
+[; <" RCSTA equ 0FABh ;# ">
+"2272
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2272: __asm("RCSTA1 equ 0FABh");
+[; <" RCSTA1 equ 0FABh ;# ">
+"2477
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2477: __asm("TXSTA equ 0FACh");
+[; <" TXSTA equ 0FACh ;# ">
+"2482
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2482: __asm("TXSTA1 equ 0FACh");
+[; <" TXSTA1 equ 0FACh ;# ">
+"2733
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2733: __asm("TXREG equ 0FADh");
+[; <" TXREG equ 0FADh ;# ">
+"2738
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2738: __asm("TXREG1 equ 0FADh");
+[; <" TXREG1 equ 0FADh ;# ">
+"2745
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2745: __asm("RCREG equ 0FAEh");
+[; <" RCREG equ 0FAEh ;# ">
+"2750
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2750: __asm("RCREG1 equ 0FAEh");
+[; <" RCREG1 equ 0FAEh ;# ">
+"2757
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2757: __asm("SPBRG equ 0FAFh");
+[; <" SPBRG equ 0FAFh ;# ">
+"2762
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2762: __asm("SPBRG1 equ 0FAFh");
+[; <" SPBRG1 equ 0FAFh ;# ">
+"2769
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2769: __asm("SPBRGH equ 0FB0h");
+[; <" SPBRGH equ 0FB0h ;# ">
+"2776
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2776: __asm("T3CON equ 0FB1h");
+[; <" T3CON equ 0FB1h ;# ">
+"2888
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2888: __asm("TMR3 equ 0FB2h");
+[; <" TMR3 equ 0FB2h ;# ">
+"2895
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2895: __asm("TMR3L equ 0FB2h");
+[; <" TMR3L equ 0FB2h ;# ">
+"2902
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2902: __asm("TMR3H equ 0FB3h");
+[; <" TMR3H equ 0FB3h ;# ">
+"2909
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2909: __asm("CMCON equ 0FB4h");
+[; <" CMCON equ 0FB4h ;# ">
+"2999
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2999: __asm("CVRCON equ 0FB5h");
+[; <" CVRCON equ 0FB5h ;# ">
+"3078
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3078: __asm("ECCP1AS equ 0FB6h");
+[; <" ECCP1AS equ 0FB6h ;# ">
+"3083
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3083: __asm("ECCPAS equ 0FB6h");
+[; <" ECCPAS equ 0FB6h ;# ">
+"3208
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3208: __asm("PWM1CON equ 0FB7h");
+[; <" PWM1CON equ 0FB7h ;# ">
+"3213
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3213: __asm("ECCP1DEL equ 0FB7h");
+[; <" ECCP1DEL equ 0FB7h ;# ">
+"3248
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3248: __asm("BAUDCON equ 0FB8h");
+[; <" BAUDCON equ 0FB8h ;# ">
+"3253
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3253: __asm("BAUDCTL equ 0FB8h");
+[; <" BAUDCTL equ 0FB8h ;# ">
+"3428
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3428: __asm("CCP2CON equ 0FBAh");
+[; <" CCP2CON equ 0FBAh ;# ">
+"3507
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3507: __asm("CCPR2 equ 0FBBh");
+[; <" CCPR2 equ 0FBBh ;# ">
+"3514
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3514: __asm("CCPR2L equ 0FBBh");
+[; <" CCPR2L equ 0FBBh ;# ">
+"3521
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3521: __asm("CCPR2H equ 0FBCh");
+[; <" CCPR2H equ 0FBCh ;# ">
+"3528
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3528: __asm("CCP1CON equ 0FBDh");
+[; <" CCP1CON equ 0FBDh ;# ">
+"3607
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3607: __asm("CCPR1 equ 0FBEh");
+[; <" CCPR1 equ 0FBEh ;# ">
+"3614
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3614: __asm("CCPR1L equ 0FBEh");
+[; <" CCPR1L equ 0FBEh ;# ">
+"3621
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3621: __asm("CCPR1H equ 0FBFh");
+[; <" CCPR1H equ 0FBFh ;# ">
+"3628
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3628: __asm("ADCON2 equ 0FC0h");
+[; <" ADCON2 equ 0FC0h ;# ">
+"3699
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3699: __asm("ADCON1 equ 0FC1h");
+[; <" ADCON1 equ 0FC1h ;# ">
+"3784
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3784: __asm("ADCON0 equ 0FC2h");
+[; <" ADCON0 equ 0FC2h ;# ">
+"3903
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3903: __asm("ADRES equ 0FC3h");
+[; <" ADRES equ 0FC3h ;# ">
+"3910
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3910: __asm("ADRESL equ 0FC3h");
+[; <" ADRESL equ 0FC3h ;# ">
+"3917
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3917: __asm("ADRESH equ 0FC4h");
+[; <" ADRESH equ 0FC4h ;# ">
+"3924
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3924: __asm("SSPCON2 equ 0FC5h");
+[; <" SSPCON2 equ 0FC5h ;# ">
+"4019
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4019: __asm("SSPCON1 equ 0FC6h");
+[; <" SSPCON1 equ 0FC6h ;# ">
+"4089
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4089: __asm("SSPSTAT equ 0FC7h");
+[; <" SSPSTAT equ 0FC7h ;# ">
+"4310
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4310: __asm("SSPADD equ 0FC8h");
+[; <" SSPADD equ 0FC8h ;# ">
+"4317
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4317: __asm("SSPBUF equ 0FC9h");
+[; <" SSPBUF equ 0FC9h ;# ">
+"4324
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4324: __asm("T2CON equ 0FCAh");
+[; <" T2CON equ 0FCAh ;# ">
+"4422
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4422: __asm("PR2 equ 0FCBh");
+[; <" PR2 equ 0FCBh ;# ">
+"4427
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4427: __asm("MEMCON equ 0FCBh");
+[; <" MEMCON equ 0FCBh ;# ">
+"4532
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4532: __asm("TMR2 equ 0FCCh");
+[; <" TMR2 equ 0FCCh ;# ">
+"4539
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4539: __asm("T1CON equ 0FCDh");
+[; <" T1CON equ 0FCDh ;# ">
+"4642
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4642: __asm("TMR1 equ 0FCEh");
+[; <" TMR1 equ 0FCEh ;# ">
+"4649
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4649: __asm("TMR1L equ 0FCEh");
+[; <" TMR1L equ 0FCEh ;# ">
+"4656
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4656: __asm("TMR1H equ 0FCFh");
+[; <" TMR1H equ 0FCFh ;# ">
+"4663
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4663: __asm("RCON equ 0FD0h");
+[; <" RCON equ 0FD0h ;# ">
+"4796
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4796: __asm("WDTCON equ 0FD1h");
+[; <" WDTCON equ 0FD1h ;# ">
+"4824
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4824: __asm("HLVDCON equ 0FD2h");
+[; <" HLVDCON equ 0FD2h ;# ">
+"4829
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4829: __asm("LVDCON equ 0FD2h");
+[; <" LVDCON equ 0FD2h ;# ">
+"5094
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5094: __asm("OSCCON equ 0FD3h");
+[; <" OSCCON equ 0FD3h ;# ">
+"5177
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5177: __asm("T0CON equ 0FD5h");
+[; <" T0CON equ 0FD5h ;# ">
+"5260
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5260: __asm("TMR0 equ 0FD6h");
+[; <" TMR0 equ 0FD6h ;# ">
+"5267
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5267: __asm("TMR0L equ 0FD6h");
+[; <" TMR0L equ 0FD6h ;# ">
+"5274
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5274: __asm("TMR0H equ 0FD7h");
+[; <" TMR0H equ 0FD7h ;# ">
+"5281
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5281: __asm("STATUS equ 0FD8h");
+[; <" STATUS equ 0FD8h ;# ">
+"5352
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5352: __asm("FSR2 equ 0FD9h");
+[; <" FSR2 equ 0FD9h ;# ">
+"5359
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5359: __asm("FSR2L equ 0FD9h");
+[; <" FSR2L equ 0FD9h ;# ">
+"5366
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5366: __asm("FSR2H equ 0FDAh");
+[; <" FSR2H equ 0FDAh ;# ">
+"5373
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5373: __asm("PLUSW2 equ 0FDBh");
+[; <" PLUSW2 equ 0FDBh ;# ">
+"5380
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5380: __asm("PREINC2 equ 0FDCh");
+[; <" PREINC2 equ 0FDCh ;# ">
+"5387
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5387: __asm("POSTDEC2 equ 0FDDh");
+[; <" POSTDEC2 equ 0FDDh ;# ">
+"5394
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5394: __asm("POSTINC2 equ 0FDEh");
+[; <" POSTINC2 equ 0FDEh ;# ">
+"5401
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5401: __asm("INDF2 equ 0FDFh");
+[; <" INDF2 equ 0FDFh ;# ">
+"5408
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5408: __asm("BSR equ 0FE0h");
+[; <" BSR equ 0FE0h ;# ">
+"5415
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5415: __asm("FSR1 equ 0FE1h");
+[; <" FSR1 equ 0FE1h ;# ">
+"5422
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5422: __asm("FSR1L equ 0FE1h");
+[; <" FSR1L equ 0FE1h ;# ">
+"5429
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5429: __asm("FSR1H equ 0FE2h");
+[; <" FSR1H equ 0FE2h ;# ">
+"5436
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5436: __asm("PLUSW1 equ 0FE3h");
+[; <" PLUSW1 equ 0FE3h ;# ">
+"5443
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5443: __asm("PREINC1 equ 0FE4h");
+[; <" PREINC1 equ 0FE4h ;# ">
+"5450
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5450: __asm("POSTDEC1 equ 0FE5h");
+[; <" POSTDEC1 equ 0FE5h ;# ">
+"5457
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5457: __asm("POSTINC1 equ 0FE6h");
+[; <" POSTINC1 equ 0FE6h ;# ">
+"5464
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5464: __asm("INDF1 equ 0FE7h");
+[; <" INDF1 equ 0FE7h ;# ">
+"5471
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5471: __asm("WREG equ 0FE8h");
+[; <" WREG equ 0FE8h ;# ">
+"5483
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5483: __asm("FSR0 equ 0FE9h");
+[; <" FSR0 equ 0FE9h ;# ">
+"5490
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5490: __asm("FSR0L equ 0FE9h");
+[; <" FSR0L equ 0FE9h ;# ">
+"5497
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5497: __asm("FSR0H equ 0FEAh");
+[; <" FSR0H equ 0FEAh ;# ">
+"5504
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5504: __asm("PLUSW0 equ 0FEBh");
+[; <" PLUSW0 equ 0FEBh ;# ">
+"5511
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5511: __asm("PREINC0 equ 0FECh");
+[; <" PREINC0 equ 0FECh ;# ">
+"5518
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5518: __asm("POSTDEC0 equ 0FEDh");
+[; <" POSTDEC0 equ 0FEDh ;# ">
+"5525
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5525: __asm("POSTINC0 equ 0FEEh");
+[; <" POSTINC0 equ 0FEEh ;# ">
+"5532
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5532: __asm("INDF0 equ 0FEFh");
+[; <" INDF0 equ 0FEFh ;# ">
+"5539
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5539: __asm("INTCON3 equ 0FF0h");
+[; <" INTCON3 equ 0FF0h ;# ">
+"5631
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5631: __asm("INTCON2 equ 0FF1h");
+[; <" INTCON2 equ 0FF1h ;# ">
+"5701
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5701: __asm("INTCON equ 0FF2h");
+[; <" INTCON equ 0FF2h ;# ">
+"5818
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5818: __asm("PROD equ 0FF3h");
+[; <" PROD equ 0FF3h ;# ">
+"5825
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5825: __asm("PRODL equ 0FF3h");
+[; <" PRODL equ 0FF3h ;# ">
+"5832
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5832: __asm("PRODH equ 0FF4h");
+[; <" PRODH equ 0FF4h ;# ">
+"5839
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5839: __asm("TABLAT equ 0FF5h");
+[; <" TABLAT equ 0FF5h ;# ">
+"5848
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5848: __asm("TBLPTR equ 0FF6h");
+[; <" TBLPTR equ 0FF6h ;# ">
+"5855
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5855: __asm("TBLPTRL equ 0FF6h");
+[; <" TBLPTRL equ 0FF6h ;# ">
+"5862
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5862: __asm("TBLPTRH equ 0FF7h");
+[; <" TBLPTRH equ 0FF7h ;# ">
+"5869
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5869: __asm("TBLPTRU equ 0FF8h");
+[; <" TBLPTRU equ 0FF8h ;# ">
+"5878
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5878: __asm("PCLAT equ 0FF9h");
+[; <" PCLAT equ 0FF9h ;# ">
+"5885
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5885: __asm("PC equ 0FF9h");
+[; <" PC equ 0FF9h ;# ">
+"5892
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5892: __asm("PCL equ 0FF9h");
+[; <" PCL equ 0FF9h ;# ">
+"5899
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5899: __asm("PCLATH equ 0FFAh");
+[; <" PCLATH equ 0FFAh ;# ">
+"5906
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5906: __asm("PCLATU equ 0FFBh");
+[; <" PCLATU equ 0FFBh ;# ">
+"5913
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5913: __asm("STKPTR equ 0FFCh");
+[; <" STKPTR equ 0FFCh ;# ">
+"5987
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5987: __asm("TOS equ 0FFDh");
+[; <" TOS equ 0FFDh ;# ">
+"5994
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5994: __asm("TOSL equ 0FFDh");
+[; <" TOSL equ 0FFDh ;# ">
+"6001
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 6001: __asm("TOSH equ 0FFEh");
+[; <" TOSH equ 0FFEh ;# ">
+"6008
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 6008: __asm("TOSU equ 0FFFh");
+[; <" TOSU equ 0FFFh ;# ">
+"12 src/gps.c
+[; ;src/gps.c: 12: u8 GPS_lock = 0;
+[v _GPS_lock `uc ~T0 @X0 1 e ]
+[i _GPS_lock
+-> -> 0 `i `uc
+]
+"13
+[; ;src/gps.c: 13: u8 GPS_sat = 0;
+[v _GPS_sat `uc ~T0 @X0 1 e ]
+[i _GPS_sat
+-> -> 0 `i `uc
+]
+"14
+[; ;src/gps.c: 14: char GPS_lat[15] = {"        "};
+[v _GPS_lat `uc ~T0 @X0 -> 15 `i e ]
+[i _GPS_lat
+:U ..
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 0 `c
+..
+]
+"15
+[; ;src/gps.c: 15: char GPS_lon[15] = {"        "};
+[v _GPS_lon `uc ~T0 @X0 -> 15 `i e ]
+[i _GPS_lon
+:U ..
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 0 `c
+..
+]
+"16
+[; ;src/gps.c: 16: u8 ubx_ack = 0;
+[v _ubx_ack `uc ~T0 @X0 1 e ]
+[i _ubx_ack
+-> -> 0 `i `uc
+]
+"18
+[; ;src/gps.c: 18: void eval_gps(char *gpsbuf)
+[v _eval_gps `(v ~T0 @X0 1 ef1`*uc ]
+"19
+[; ;src/gps.c: 19: {
+{
+[e :U _eval_gps ]
+"18
+[; ;src/gps.c: 18: void eval_gps(char *gpsbuf)
+[v _gpsbuf `*uc ~T0 @X0 1 r1 ]
+"19
+[; ;src/gps.c: 19: {
+[f ]
+[v F2825 `uc ~T0 @X0 -> 16 `i t ]
+"20
+[; ;src/gps.c: 20: char elem[15][16];
+[v _elem `F2825 ~T0 @X0 -> 15 `i a ]
+"21
+[; ;src/gps.c: 21: u8 eidx=0;
+[v _eidx `uc ~T0 @X0 1 a ]
+[e = _eidx -> -> 0 `i `uc ]
+"24
+[; ;src/gps.c: 24:  u8 chksum = gpsbuf[0];
+[v _chksum `uc ~T0 @X0 1 a ]
+[e = _chksum -> *U + _gpsbuf * -> -> 0 `i `x -> -> # *U _gpsbuf `i `x `uc ]
+"25
+[; ;src/gps.c: 25:  for(u8 i=1; i<strlen(gpsbuf)-3; i++)
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 1 `i `uc ]
+[e $U 261  ]
+[e :U 258 ]
+"26
+[; ;src/gps.c: 26:   chksum ^= gpsbuf[i];
+[e =^ _chksum -> *U + _gpsbuf * -> _i `ux -> -> # *U _gpsbuf `ui `ux `uc ]
+[e ++ _i -> -> 1 `i `uc ]
+[e :U 261 ]
+[e $ < -> _i `ui - ( _strlen (1 -> _gpsbuf `*Cuc -> -> 3 `i `ui 258  ]
+[e :U 259 ]
+}
+"27
+[; ;src/gps.c: 27:  u8 chksumgps = strtol(gpsbuf + (strlen(gpsbuf)-2),((void*)0),16);
+[v _chksumgps `uc ~T0 @X0 1 a ]
+[e = _chksumgps -> ( _strtol (3 , , -> + _gpsbuf * -> - ( _strlen (1 -> _gpsbuf `*Cuc -> -> 2 `i `ui `ux -> -> # *U _gpsbuf `ui `ux `*Cuc -> -> -> 0 `i `*v `**uc -> 16 `i `uc ]
+"28
+[; ;src/gps.c: 28:  if(chksumgps != chksum) return;
+[e $ ! != -> _chksumgps `i -> _chksum `i 262  ]
+[e $UE 257  ]
+[e :U 262 ]
+"31
+[; ;src/gps.c: 31:  if(gpsbuf[2] == 'G' && gpsbuf[3] == 'G' && gpsbuf[4] == 'A')
+[e $ ! && && == -> *U + _gpsbuf * -> -> 2 `i `x -> -> # *U _gpsbuf `i `x `ui -> 71 `ui == -> *U + _gpsbuf * -> -> 3 `i `x -> -> # *U _gpsbuf `i `x `ui -> 71 `ui == -> *U + _gpsbuf * -> -> 4 `i `x -> -> # *U _gpsbuf `i `x `ui -> 65 `ui 263  ]
+"32
+[; ;src/gps.c: 32:  {
+{
+"37
+[; ;src/gps.c: 37:   char *ps = gpsbuf;
+[v _ps `*uc ~T0 @X0 1 a ]
+[e = _ps _gpsbuf ]
+"38
+[; ;src/gps.c: 38:   while(1)
+[e :U 265 ]
+"39
+[; ;src/gps.c: 39:   {
+{
+"40
+[; ;src/gps.c: 40:    char *pe = strchr(ps,',');
+[v _pe `*uc ~T0 @X0 1 a ]
+[e = _pe ( _strchr (2 , -> _ps `*Cuc -> -> 44 `ui `i ]
+"41
+[; ;src/gps.c: 41:    if(pe == ((void*)0)) break;
+[e $ ! == _pe -> -> -> 0 `i `*v `*uc 267  ]
+[e $U 266  ]
+[e :U 267 ]
+"42
+[; ;src/gps.c: 42:    memset(elem[eidx],0,16);
+[e ( _memset (3 , , -> &U *U + &U _elem * -> _eidx `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux `*v -> 0 `i -> -> 16 `i `ui ]
+"43
+[; ;src/gps.c: 43:    memcpy(elem[eidx++],ps,pe-ps);
+[e ( _memcpy (3 , , -> &U *U + &U _elem * -> ++ _eidx -> -> 1 `i `uc `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux `*v -> _ps `*Cv -> / - -> _pe `x -> _ps `x -> -> # *U _pe `i `x `ui ]
+"44
+[; ;src/gps.c: 44:    ps = pe+1;
+[e = _ps + _pe * -> -> 1 `i `x -> -> # *U _pe `i `x ]
+"45
+[; ;src/gps.c: 45:    if(ps >= (gpsbuf + strlen(gpsbuf))) break;
+[e $ ! >= _ps + _gpsbuf * -> ( _strlen (1 -> _gpsbuf `*Cuc `ux -> -> # *U _gpsbuf `ui `ux 268  ]
+[e $U 266  ]
+[e :U 268 ]
+"46
+[; ;src/gps.c: 46:    if(eidx >= 15) break;
+[e $ ! >= -> _eidx `i -> 15 `i 269  ]
+[e $U 266  ]
+[e :U 269 ]
+"47
+[; ;src/gps.c: 47:    __asm(" clrwdt");
+[; <"  clrwdt ;# ">
+"48
+[; ;src/gps.c: 48:   }
+}
+[e :U 264 ]
+[e $U 265  ]
+[e :U 266 ]
+"59
+[; ;src/gps.c: 59:   if(elem[6][0] != '1' && elem[6][0] != '2')
+[e $ ! && != -> *U + &U *U + &U _elem * -> -> -> 6 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _elem * -> -> -> 6 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux `ui `ux `ui -> 49 `ui != -> *U + &U *U + &U _elem * -> -> -> 6 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _elem * -> -> -> 6 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux `ui `ux `ui -> 50 `ui 270  ]
+"60
+[; ;src/gps.c: 60:   {
+{
+"62
+[; ;src/gps.c: 62:    GPS_lock = 0;
+[e = _GPS_lock -> -> 0 `i `uc ]
+"63
+[; ;src/gps.c: 63:    GPS_sat = 0;
+[e = _GPS_sat -> -> 0 `i `uc ]
+"64
+[; ;src/gps.c: 64:    *GPS_lat = 0;
+[e = *U &U _GPS_lat -> -> 0 `i `uc ]
+"65
+[; ;src/gps.c: 65:    *GPS_lon = 0;
+[e = *U &U _GPS_lon -> -> 0 `i `uc ]
+"66
+[; ;src/gps.c: 66:    return;
+[e $UE 257  ]
+"67
+[; ;src/gps.c: 67:   }
+}
+[e :U 270 ]
+"68
+[; ;src/gps.c: 68:   GPS_lock = 1;
+[e = _GPS_lock -> -> 1 `i `uc ]
+"70
+[; ;src/gps.c: 70:   GPS_sat = atoi(elem[7]);
+[e = _GPS_sat -> ( _atoi (1 -> &U *U + &U _elem * -> -> -> 7 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux `*Cuc `uc ]
+"73
+[; ;src/gps.c: 73:   memcpy(GPS_lat,elem[2],2);
+[e ( _memcpy (3 , , -> &U _GPS_lat `*v -> &U *U + &U _elem * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux `*Cv -> -> 2 `i `ui ]
+"74
+[; ;src/gps.c: 74:   GPS_lat[2] = 'd';
+[e = *U + &U _GPS_lat * -> -> -> 2 `i `ui `ux -> -> # *U &U _GPS_lat `ui `ux -> -> 100 `ui `uc ]
+"75
+[; ;src/gps.c: 75:   memcpy(GPS_lat+3,elem[2]+2,5);
+[e ( _memcpy (3 , , -> + &U _GPS_lat * -> -> 3 `i `x -> -> # *U &U _GPS_lat `i `x `*v -> + &U *U + &U _elem * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux * -> -> 2 `i `x -> -> # *U &U *U + &U _elem * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux `i `x `*Cv -> -> 5 `i `ui ]
+"76
+[; ;src/gps.c: 76:   GPS_lat[8] = elem[3][0];
+[e = *U + &U _GPS_lat * -> -> -> 8 `i `ui `ux -> -> # *U &U _GPS_lat `ui `ux *U + &U *U + &U _elem * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _elem * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux `ui `ux ]
+"77
+[; ;src/gps.c: 77:   GPS_lat[9] = 0;
+[e = *U + &U _GPS_lat * -> -> -> 9 `i `ui `ux -> -> # *U &U _GPS_lat `ui `ux -> -> 0 `i `uc ]
+"80
+[; ;src/gps.c: 80:   memcpy(GPS_lon,elem[4],3);
+[e ( _memcpy (3 , , -> &U _GPS_lon `*v -> &U *U + &U _elem * -> -> -> 4 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux `*Cv -> -> 3 `i `ui ]
+"81
+[; ;src/gps.c: 81:   GPS_lon[3] = 'd';
+[e = *U + &U _GPS_lon * -> -> -> 3 `i `ui `ux -> -> # *U &U _GPS_lon `ui `ux -> -> 100 `ui `uc ]
+"82
+[; ;src/gps.c: 82:   memcpy(GPS_lon+4,elem[4]+3,5);
+[e ( _memcpy (3 , , -> + &U _GPS_lon * -> -> 4 `i `x -> -> # *U &U _GPS_lon `i `x `*v -> + &U *U + &U _elem * -> -> -> 4 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux * -> -> 3 `i `x -> -> # *U &U *U + &U _elem * -> -> -> 4 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux `i `x `*Cv -> -> 5 `i `ui ]
+"83
+[; ;src/gps.c: 83:   GPS_lon[9] = elem[5][0];
+[e = *U + &U _GPS_lon * -> -> -> 9 `i `ui `ux -> -> # *U &U _GPS_lon `ui `ux *U + &U *U + &U _elem * -> -> -> 5 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _elem * -> -> -> 5 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux `ui `ux ]
+"84
+[; ;src/gps.c: 84:   GPS_lon[10] = 0;
+[e = *U + &U _GPS_lon * -> -> -> 10 `i `ui `ux -> -> # *U &U _GPS_lon `ui `ux -> -> 0 `i `uc ]
+"86
+[; ;src/gps.c: 86:  }
+}
+[e :U 263 ]
+"87
+[; ;src/gps.c: 87: }
+[e :UE 257 ]
+}
+"89
+[; ;src/gps.c: 89: u8 ubx_class = 0;
+[v _ubx_class `uc ~T0 @X0 1 e ]
+[i _ubx_class
+-> -> 0 `i `uc
+]
+"90
+[; ;src/gps.c: 90: u8 ubx_id = 0;
+[v _ubx_id `uc ~T0 @X0 1 e ]
+[i _ubx_id
+-> -> 0 `i `uc
+]
+"91
+[; ;src/gps.c: 91: u16 ubx_len = 0;
+[v _ubx_len `us ~T0 @X0 1 e ]
+[i _ubx_len
+-> -> 0 `i `us
+]
+"92
+[; ;src/gps.c: 92: u16 p_len = 0;
+[v _p_len `us ~T0 @X0 1 e ]
+[i _p_len
+-> -> 0 `i `us
+]
+"93
+[; ;src/gps.c: 93: u8 payload[50];
+[v _payload `uc ~T0 @X0 -> 50 `i e ]
+"94
+[; ;src/gps.c: 94: u8 datamode = 0;
+[v _datamode `uc ~T0 @X0 1 e ]
+[i _datamode
+-> -> 0 `i `uc
+]
+"95
+[; ;src/gps.c: 95: char gpsbuf[85];
+[v _gpsbuf `uc ~T0 @X0 -> 85 `i e ]
+"96
+[; ;src/gps.c: 96: u8 gpsbufidx = 0xff;
+[v _gpsbufidx `uc ~T0 @X0 1 e ]
+[i _gpsbufidx
+-> -> 255 `i `uc
+]
+"98
+[; ;src/gps.c: 98: void rx_gps(int c)
+[v _rx_gps `(v ~T0 @X0 1 ef1`i ]
+"99
+[; ;src/gps.c: 99: {
+{
+[e :U _rx_gps ]
+"98
+[; ;src/gps.c: 98: void rx_gps(int c)
+[v _c `i ~T0 @X0 1 r1 ]
+"99
+[; ;src/gps.c: 99: {
+[f ]
+"100
+[; ;src/gps.c: 100: static u8 stat = 0;
+[v F2853 `uc ~T0 @X0 1 s stat ]
+[i F2853
+-> -> 0 `i `uc
+]
+"101
+[; ;src/gps.c: 101: static u16 len_lsb;
+[v F2854 `us ~T0 @X0 1 s len_lsb ]
+"103
+[; ;src/gps.c: 103:  switch(stat)
+[e $U 273  ]
+"104
+[; ;src/gps.c: 104:  {
+{
+"105
+[; ;src/gps.c: 105:  case 0:
+[e :U 274 ]
+"106
+[; ;src/gps.c: 106:   if(c == 0xb5)
+[e $ ! == _c -> 181 `i 275  ]
+"107
+[; ;src/gps.c: 107:    stat++;
+[e ++ F2853 -> -> 1 `i `uc ]
+[e :U 275 ]
+"108
+[; ;src/gps.c: 108:   break;
+[e $U 272  ]
+"110
+[; ;src/gps.c: 110:  case 1:
+[e :U 276 ]
+"111
+[; ;src/gps.c: 111:   if(c == 0x62)
+[e $ ! == _c -> 98 `i 277  ]
+"112
+[; ;src/gps.c: 112:    stat++;
+[e ++ F2853 -> -> 1 `i `uc ]
+[e $U 278  ]
+"113
+[; ;src/gps.c: 113:   else
+[e :U 277 ]
+"114
+[; ;src/gps.c: 114:    stat = 0;
+[e = F2853 -> -> 0 `i `uc ]
+[e :U 278 ]
+"115
+[; ;src/gps.c: 115:   break;
+[e $U 272  ]
+"117
+[; ;src/gps.c: 117:  case 2:
+[e :U 279 ]
+"118
+[; ;src/gps.c: 118:   ubx_class = c;
+[e = _ubx_class -> _c `uc ]
+"119
+[; ;src/gps.c: 119:   if(c==1 || c==2 || c==4 || c==5 || c==6 || c==9 || c==0x0a || c==0x0b || c==0x0d || c==0x10 || c==0x13 || c==0x21 || c==0x27 || c==0x28)
+[e $ ! || || || || || || || || || || || || || == _c -> 1 `i == _c -> 2 `i == _c -> 4 `i == _c -> 5 `i == _c -> 6 `i == _c -> 9 `i == _c -> 10 `i == _c -> 11 `i == _c -> 13 `i == _c -> 16 `i == _c -> 19 `i == _c -> 33 `i == _c -> 39 `i == _c -> 40 `i 280  ]
+"120
+[; ;src/gps.c: 120:    stat++;
+[e ++ F2853 -> -> 1 `i `uc ]
+[e $U 281  ]
+"121
+[; ;src/gps.c: 121:   else
+[e :U 280 ]
+"122
+[; ;src/gps.c: 122:    stat = 0;
+[e = F2853 -> -> 0 `i `uc ]
+[e :U 281 ]
+"123
+[; ;src/gps.c: 123:   break;
+[e $U 272  ]
+"125
+[; ;src/gps.c: 125:  case 3:
+[e :U 282 ]
+"126
+[; ;src/gps.c: 126:   ubx_id = c;
+[e = _ubx_id -> _c `uc ]
+"127
+[; ;src/gps.c: 127:   stat ++;
+[e ++ F2853 -> -> 1 `i `uc ]
+"128
+[; ;src/gps.c: 128:   break;
+[e $U 272  ]
+"130
+[; ;src/gps.c: 130:  case 4:
+[e :U 283 ]
+"131
+[; ;src/gps.c: 131:   len_lsb = c;
+[e = F2854 -> _c `us ]
+"132
+[; ;src/gps.c: 132:   stat++;
+[e ++ F2853 -> -> 1 `i `uc ]
+"133
+[; ;src/gps.c: 133:   break;
+[e $U 272  ]
+"135
+[; ;src/gps.c: 135:  case 5:
+[e :U 284 ]
+"136
+[; ;src/gps.c: 136:   ubx_len = c;
+[e = _ubx_len -> _c `us ]
+"137
+[; ;src/gps.c: 137:   ubx_len <<= 8;
+[e =<< _ubx_len -> -> 8 `i `us ]
+"138
+[; ;src/gps.c: 138:   ubx_len |= len_lsb;
+[e =| _ubx_len -> F2854 `us ]
+"139
+[; ;src/gps.c: 139:   stat++;
+[e ++ F2853 -> -> 1 `i `uc ]
+"140
+[; ;src/gps.c: 140:   break;
+[e $U 272  ]
+"142
+[; ;src/gps.c: 142:  case 6:
+[e :U 285 ]
+"143
+[; ;src/gps.c: 143:   stat = 0;
+[e = F2853 -> -> 0 `i `uc ]
+"144
+[; ;src/gps.c: 144:   break;
+[e $U 272  ]
+"146
+[; ;src/gps.c: 146:  }
+}
+[e $U 272  ]
+[e :U 273 ]
+[e [\ -> F2853 `i , $ -> 0 `i 274
+ , $ -> 1 `i 276
+ , $ -> 2 `i 279
+ , $ -> 3 `i 282
+ , $ -> 4 `i 283
+ , $ -> 5 `i 284
+ , $ -> 6 `i 285
+ 272 ]
+[e :U 272 ]
+"147
+[; ;src/gps.c: 147: }
+[e :UE 271 ]
+}
+"149
+[; ;src/gps.c: 149: void _rx_gps(int c)
+[v __rx_gps `(v ~T0 @X0 1 ef1`i ]
+"150
+[; ;src/gps.c: 150: {
+{
+[e :U __rx_gps ]
+"149
+[; ;src/gps.c: 149: void _rx_gps(int c)
+[v _c `i ~T0 @X0 1 r1 ]
+"150
+[; ;src/gps.c: 150: {
+[f ]
+"151
+[; ;src/gps.c: 151:  if(datamode == 0)
+[e $ ! == -> _datamode `i -> 0 `i 287  ]
+"152
+[; ;src/gps.c: 152:  {
+{
+"154
+[; ;src/gps.c: 154:   gpsbufidx = 0;
+[e = _gpsbufidx -> -> 0 `i `uc ]
+"156
+[; ;src/gps.c: 156:   if(c == 0xb5)
+[e $ ! == _c -> 181 `i 288  ]
+"157
+[; ;src/gps.c: 157:   {
+{
+"158
+[; ;src/gps.c: 158:    datamode = 2;
+[e = _datamode -> -> 2 `i `uc ]
+"159
+[; ;src/gps.c: 159:   }
+}
+[e :U 288 ]
+"163
+[; ;src/gps.c: 163:  }
+}
+[e :U 287 ]
+"199
+[; ;src/gps.c: 199:  u16 tmp;
+[v _tmp `us ~T0 @X0 1 a ]
+"201
+[; ;src/gps.c: 201:  if(datamode == 2)
+[e $ ! == -> _datamode `i -> 2 `i 289  ]
+"202
+[; ;src/gps.c: 202:  {
+{
+"205
+[; ;src/gps.c: 205:   switch (gpsbufidx)
+[e $U 291  ]
+"206
+[; ;src/gps.c: 206:   {
+{
+"207
+[; ;src/gps.c: 207:   case 0: if(c == 0xb5)
+[e :U 292 ]
+[e $ ! == _c -> 181 `i 293  ]
+"208
+[; ;src/gps.c: 208:      gpsbufidx++;
+[e ++ _gpsbufidx -> -> 1 `i `uc ]
+[e $U 294  ]
+"209
+[; ;src/gps.c: 209:     else
+[e :U 293 ]
+"210
+[; ;src/gps.c: 210:      datamode = 0;
+[e = _datamode -> -> 0 `i `uc ]
+[e :U 294 ]
+"211
+[; ;src/gps.c: 211:     break;
+[e $U 290  ]
+"213
+[; ;src/gps.c: 213:   case 1: if(c == 0x62)
+[e :U 295 ]
+[e $ ! == _c -> 98 `i 296  ]
+"214
+[; ;src/gps.c: 214:      gpsbufidx++;
+[e ++ _gpsbufidx -> -> 1 `i `uc ]
+[e $U 297  ]
+"215
+[; ;src/gps.c: 215:     else
+[e :U 296 ]
+"216
+[; ;src/gps.c: 216:      datamode = 0;
+[e = _datamode -> -> 0 `i `uc ]
+[e :U 297 ]
+"217
+[; ;src/gps.c: 217:     break;
+[e $U 290  ]
+"219
+[; ;src/gps.c: 219:   case 2: ubx_class = c;
+[e :U 298 ]
+[e = _ubx_class -> _c `uc ]
+"220
+[; ;src/gps.c: 220:     gpsbufidx++;
+[e ++ _gpsbufidx -> -> 1 `i `uc ]
+"221
+[; ;src/gps.c: 221:     break;
+[e $U 290  ]
+"223
+[; ;src/gps.c: 223:   case 3: ubx_id = c;
+[e :U 299 ]
+[e = _ubx_id -> _c `uc ]
+"224
+[; ;src/gps.c: 224:     gpsbufidx++;
+[e ++ _gpsbufidx -> -> 1 `i `uc ]
+"225
+[; ;src/gps.c: 225:     break;
+[e $U 290  ]
+"227
+[; ;src/gps.c: 227:   case 4: ubx_len = c;
+[e :U 300 ]
+[e = _ubx_len -> _c `us ]
+"228
+[; ;src/gps.c: 228:     gpsbufidx++;
+[e ++ _gpsbufidx -> -> 1 `i `uc ]
+"229
+[; ;src/gps.c: 229:     break;
+[e $U 290  ]
+"231
+[; ;src/gps.c: 231:   case 5: tmp = c;
+[e :U 301 ]
+[e = _tmp -> _c `us ]
+"232
+[; ;src/gps.c: 232:     tmp <<= 8;
+[e =<< _tmp -> -> 8 `i `us ]
+"233
+[; ;src/gps.c: 233:     ubx_len |= tmp;
+[e =| _ubx_len -> _tmp `us ]
+"234
+[; ;src/gps.c: 234:     if(ubx_len == 0)
+[e $ ! == -> _ubx_len `ui -> -> 0 `i `ui 302  ]
+"235
+[; ;src/gps.c: 235:     {
+{
+"237
+[; ;src/gps.c: 237:      datamode = 0;
+[e = _datamode -> -> 0 `i `uc ]
+"238
+[; ;src/gps.c: 238:     }
+}
+[e :U 302 ]
+"239
+[; ;src/gps.c: 239:     gpsbufidx++;
+[e ++ _gpsbufidx -> -> 1 `i `uc ]
+"240
+[; ;src/gps.c: 240:     p_len = 0;
+[e = _p_len -> -> 0 `i `us ]
+"241
+[; ;src/gps.c: 241:     break;
+[e $U 290  ]
+"243
+[; ;src/gps.c: 243:   case 6:
+[e :U 303 ]
+"244
+[; ;src/gps.c: 244:     payload[p_len++] = c;
+[e = *U + &U _payload * -> ++ _p_len -> -> 1 `i `us `ux -> -> # *U &U _payload `ui `ux -> _c `uc ]
+"245
+[; ;src/gps.c: 245:     if(p_len >= ubx_len)
+[e $ ! >= -> _p_len `ui -> _ubx_len `ui 304  ]
+"246
+[; ;src/gps.c: 246:     {
+{
+"248
+[; ;src/gps.c: 248:      datamode = 0;
+[e = _datamode -> -> 0 `i `uc ]
+"249
+[; ;src/gps.c: 249:     }
+}
+[e :U 304 ]
+"250
+[; ;src/gps.c: 250:     break;
+[e $U 290  ]
+"251
+[; ;src/gps.c: 251:   }
+}
+[e $U 290  ]
+[e :U 291 ]
+[e [\ -> _gpsbufidx `i , $ -> 0 `i 292
+ , $ -> 1 `i 295
+ , $ -> 2 `i 298
+ , $ -> 3 `i 299
+ , $ -> 4 `i 300
+ , $ -> 5 `i 301
+ , $ -> 6 `i 303
+ 290 ]
+[e :U 290 ]
+"252
+[; ;src/gps.c: 252:  }
+}
+[e :U 289 ]
+"253
+[; ;src/gps.c: 253: }
+[e :UE 286 ]
+}
+"256
+[; ;src/gps.c: 256: static const u8 gps_activate10MHz_payload[] =
+[v _gps_activate10MHz_payload `Cuc ~T0 @X0 -> 36 `i s ]
+[i _gps_activate10MHz_payload
+:U ..
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 50 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 128 `i `uc
+-> -> 150 `i `uc
+-> -> 152 `i `uc
+-> -> 0 `i `uc
+-> -> 50 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 50 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 239 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+..
+]
+"313
+[; ;src/gps.c: 313: void init_gps()
+[v _init_gps `(v ~T0 @X0 1 ef ]
+"314
+[; ;src/gps.c: 314: {
+{
+[e :U _init_gps ]
+[f ]
+"315
+[; ;src/gps.c: 315:  if(ubx_ack == 0)
+[e $ ! == -> _ubx_ack `i -> 0 `i 306  ]
+"316
+[; ;src/gps.c: 316:  {
+{
+"319
+[; ;src/gps.c: 319:   send_UBX_string(6,0x31,0,((void*)0));
+[e ( _send_UBX_string (4 , , , -> -> 6 `i `uc -> -> 49 `i `uc -> -> 0 `i `us -> -> -> 0 `i `*v `*uc ]
+"320
+[; ;src/gps.c: 320:  }
+}
+[e :U 306 ]
+"321
+[; ;src/gps.c: 321: }
+[e :UE 305 ]
+}
+"323
+[; ;src/gps.c: 323: void send_UBX_string(u8 class, u8 id, u16 len, u8 *payload)
+[v _send_UBX_string `(v ~T0 @X0 1 ef4`uc`uc`us`*uc ]
+"324
+[; ;src/gps.c: 324: {
+{
+[e :U _send_UBX_string ]
+"323
+[; ;src/gps.c: 323: void send_UBX_string(u8 class, u8 id, u16 len, u8 *payload)
+[v _class `uc ~T0 @X0 1 r1 ]
+[v _id `uc ~T0 @X0 1 r2 ]
+[v _len `us ~T0 @X0 1 r3 ]
+[v _payload `*uc ~T0 @X0 1 r4 ]
+"324
+[; ;src/gps.c: 324: {
+[f ]
+"325
+[; ;src/gps.c: 325:  static u16 ubxdel = 0;
+[v F2865 `us ~T0 @X0 1 s ubxdel ]
+[i F2865
+-> -> 0 `i `us
+]
+"326
+[; ;src/gps.c: 326:  u8 txbuf[50];
+[v _txbuf `uc ~T0 @X0 -> 50 `i a ]
+"327
+[; ;src/gps.c: 327:  int idx = 0;
+[v _idx `i ~T0 @X0 1 a ]
+[e = _idx -> 0 `i ]
+"329
+[; ;src/gps.c: 329:  if(++ubxdel < 2)
+[e $ ! < -> =+ F2865 -> -> 1 `i `us `ui -> -> 2 `i `ui 308  ]
+"330
+[; ;src/gps.c: 330:  {
+{
+"331
+[; ;src/gps.c: 331:   return;
+[e $UE 307  ]
+"332
+[; ;src/gps.c: 332:  }
+}
+[e :U 308 ]
+"333
+[; ;src/gps.c: 333:     ubxdel = 0;
+[e = F2865 -> -> 0 `i `us ]
+"335
+[; ;src/gps.c: 335:  txbuf[idx++] = 0xb5;
+[e = *U + &U _txbuf * -> -> ++ _idx -> 1 `i `ui `ux -> -> # *U &U _txbuf `ui `ux -> -> 181 `i `uc ]
+"336
+[; ;src/gps.c: 336:  txbuf[idx++] = 0x62;
+[e = *U + &U _txbuf * -> -> ++ _idx -> 1 `i `ui `ux -> -> # *U &U _txbuf `ui `ux -> -> 98 `i `uc ]
+"337
+[; ;src/gps.c: 337:  txbuf[idx++] = class;
+[e = *U + &U _txbuf * -> -> ++ _idx -> 1 `i `ui `ux -> -> # *U &U _txbuf `ui `ux _class ]
+"338
+[; ;src/gps.c: 338:  txbuf[idx++] = id;
+[e = *U + &U _txbuf * -> -> ++ _idx -> 1 `i `ui `ux -> -> # *U &U _txbuf `ui `ux _id ]
+"339
+[; ;src/gps.c: 339:  txbuf[idx++] = (u8)(len & 0xff);
+[e = *U + &U _txbuf * -> -> ++ _idx -> 1 `i `ui `ux -> -> # *U &U _txbuf `ui `ux -> & -> _len `ui -> -> 255 `i `ui `uc ]
+"340
+[; ;src/gps.c: 340:  txbuf[idx++] = (u8)(len >> 8);
+[e = *U + &U _txbuf * -> -> ++ _idx -> 1 `i `ui `ux -> -> # *U &U _txbuf `ui `ux -> >> -> _len `ui -> 8 `i `uc ]
+"341
+[; ;src/gps.c: 341:  for(int i=0; i<len; i++)
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $U 312  ]
+[e :U 309 ]
+"342
+[; ;src/gps.c: 342:  {
+{
+"343
+[; ;src/gps.c: 343:   txbuf[idx++] = payload[i];
+[e = *U + &U _txbuf * -> -> ++ _idx -> 1 `i `ui `ux -> -> # *U &U _txbuf `ui `ux *U + _payload * -> _i `x -> -> # *U _payload `i `x ]
+"344
+[; ;src/gps.c: 344:  }
+}
+[e ++ _i -> 1 `i ]
+[e :U 312 ]
+[e $ < -> _i `ui -> _len `ui 309  ]
+[e :U 310 ]
+}
+"347
+[; ;src/gps.c: 347:  u8 CK_A = 0, CK_B = 0;
+[v _CK_A `uc ~T0 @X0 1 a ]
+[e = _CK_A -> -> 0 `i `uc ]
+[v _CK_B `uc ~T0 @X0 1 a ]
+[e = _CK_B -> -> 0 `i `uc ]
+"348
+[; ;src/gps.c: 348:  for(int i=2; i<idx; i++)
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 2 `i ]
+[e $U 316  ]
+[e :U 313 ]
+"349
+[; ;src/gps.c: 349:  {
+{
+"350
+[; ;src/gps.c: 350:   CK_A = CK_A + txbuf[i];
+[e = _CK_A -> + -> _CK_A `i -> *U + &U _txbuf * -> -> _i `ui `ux -> -> # *U &U _txbuf `ui `ux `i `uc ]
+"351
+[; ;src/gps.c: 351:   CK_B = CK_B + CK_A;
+[e = _CK_B -> + -> _CK_B `i -> _CK_A `i `uc ]
+"352
+[; ;src/gps.c: 352:  }
+}
+[e ++ _i -> 1 `i ]
+[e :U 316 ]
+[e $ < _i _idx 313  ]
+[e :U 314 ]
+}
+"353
+[; ;src/gps.c: 353:  txbuf[idx++] = CK_A;
+[e = *U + &U _txbuf * -> -> ++ _idx -> 1 `i `ui `ux -> -> # *U &U _txbuf `ui `ux _CK_A ]
+"354
+[; ;src/gps.c: 354:  txbuf[idx++] = CK_B;
+[e = *U + &U _txbuf * -> -> ++ _idx -> 1 `i `ui `ux -> -> # *U &U _txbuf `ui `ux _CK_B ]
+"356
+[; ;src/gps.c: 356:  for(int i=0; i<idx; i++)
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $U 320  ]
+[e :U 317 ]
+"357
+[; ;src/gps.c: 357:  {
+{
+"358
+[; ;src/gps.c: 358:   putgps(txbuf[i]);
+[e ( _putgps (1 *U + &U _txbuf * -> -> _i `ui `ux -> -> # *U &U _txbuf `ui `ux ]
+"359
+[; ;src/gps.c: 359:  }
+}
+[e ++ _i -> 1 `i ]
+[e :U 320 ]
+[e $ < _i _idx 317  ]
+[e :U 318 ]
+}
+"360
+[; ;src/gps.c: 360: }
+[e :UE 307 ]
+}

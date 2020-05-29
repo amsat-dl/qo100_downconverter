@@ -1,0 +1,2160 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F2520 ]
+[d frameptr 4065 ]
+"17 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/usart.c
+[e E2595 . `uc
+IRQ_HANDLER_ID_USART 0
+IRQ_HANDLER_ID_TIMER0 1
+IRQ_HANDLER_ID_CNT 2
+]
+"9 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/irq.c
+[e E2251 . `uc
+IRQ_HANDLER_ID_USART 0
+IRQ_HANDLER_ID_TIMER0 1
+IRQ_HANDLER_ID_CNT 2
+]
+"37 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/main.c
+[e E2795 ADF4351_ICP `uc
+ADF4351_ICP_031 0
+ADF4351_ICP_063 1
+ADF4351_ICP_094 2
+ADF4351_ICP_125 3
+ADF4351_ICP_156 4
+ADF4351_ICP_188 5
+ADF4351_ICP_219 6
+ADF4351_ICP_250 7
+ADF4351_ICP_281 8
+ADF4351_ICP_313 9
+ADF4351_ICP_344 10
+ADF4351_ICP_375 11
+ADF4351_ICP_406 12
+ADF4351_ICP_438 13
+ADF4351_ICP_469 14
+ADF4351_ICP_500 15
+]
+"38
+[e E2813 ADF4351_POUT `uc
+ADF4351_POUT_0 0
+ADF4351_POUT_1 1
+ADF4351_POUT_2 2
+ADF4351_POUT_3 3
+]
+"7 /opt/microchip/xc8/v2.10/pic/sources/c99/common/__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"7 /opt/microchip/xc8/v2.10/pic/sources/c99/common/__strtoxl.c
+[v ___strtoxl __strtoxl `(ul  1 e 4 0 ]
+"1 /opt/microchip/xc8/v2.10/pic/sources/c99/common/abs.c
+[v _abs abs `(i  1 e 2 0 ]
+"7 /opt/microchip/xc8/v2.10/pic/sources/c99/common/aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"9 /opt/microchip/xc8/v2.10/pic/sources/c99/common/aodiv.c
+[v ___aodiv __aodiv `(o  1 e 8 0 ]
+"9 /opt/microchip/xc8/v2.10/pic/sources/c99/common/aomod.c
+[v ___aomod __aomod `(o  1 e 8 0 ]
+"4 /opt/microchip/xc8/v2.10/pic/sources/c99/common/atoi.c
+[v _atoi atoi `(i  1 e 2 0 ]
+"7 /opt/microchip/xc8/v2.10/pic/sources/c99/common/awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"7 /opt/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"72 /opt/microchip/xc8/v2.10/pic/sources/c99/common/doprnt.c
+[v _pad pad `(i  1 s 2 pad ]
+"274
+[v _dtoa dtoa `(i  1 s 2 dtoa ]
+"546
+[v _stoa stoa `(i  1 s 2 stoa ]
+"623
+[v _xtoa xtoa `(i  1 s 2 xtoa ]
+"670
+[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
+"1368
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+"4 /opt/microchip/xc8/v2.10/pic/sources/c99/common/fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 /opt/microchip/xc8/v2.10/pic/sources/c99/common/float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 /opt/microchip/xc8/v2.10/pic/sources/c99/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 /opt/microchip/xc8/v2.10/pic/sources/c99/common/ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 /opt/microchip/xc8/v2.10/pic/sources/c99/common/ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 /opt/microchip/xc8/v2.10/pic/sources/c99/common/ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"5 /opt/microchip/xc8/v2.10/pic/sources/c99/common/isalpha.c
+[v _isalpha isalpha `(i  1 e 2 0 ]
+"5 /opt/microchip/xc8/v2.10/pic/sources/c99/common/isdigit.c
+[v _isdigit isdigit `(i  1 e 2 0 ]
+"5 /opt/microchip/xc8/v2.10/pic/sources/c99/common/islower.c
+[v _islower islower `(i  1 e 2 0 ]
+"5 /opt/microchip/xc8/v2.10/pic/sources/c99/common/isspace.c
+[v _isspace isspace `(i  1 e 2 0 ]
+"5 /opt/microchip/xc8/v2.10/pic/sources/c99/common/isupper.c
+[v _isupper isupper `(i  1 e 2 0 ]
+"9 /opt/microchip/xc8/v2.10/pic/sources/c99/common/lodiv.c
+[v ___lodiv __lodiv `(uo  1 e 8 0 ]
+"7 /opt/microchip/xc8/v2.10/pic/sources/c99/common/lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"3 /opt/microchip/xc8/v2.10/pic/sources/c99/common/memcmp.c
+[v _memcmp memcmp `(i  1 e 2 0 ]
+"4 /opt/microchip/xc8/v2.10/pic/sources/c99/common/memcpy.c
+[v _memcpy memcpy `(*.39v  1 e 2 0 ]
+"4 /opt/microchip/xc8/v2.10/pic/sources/c99/common/memset.c
+[v _memset memset `(*.39v  1 e 2 0 ]
+"8 /opt/microchip/xc8/v2.10/pic/sources/c99/common/nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+"5 /opt/microchip/xc8/v2.10/pic/sources/c99/common/printf.c
+[v _printf printf `(i  1 e 2 0 ]
+"10 /opt/microchip/xc8/v2.10/pic/sources/c99/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 /opt/microchip/xc8/v2.10/pic/sources/c99/common/sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 /opt/microchip/xc8/v2.10/pic/sources/c99/common/sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"3 /opt/microchip/xc8/v2.10/pic/sources/c99/common/strchr.c
+[v _strchr strchr `(*.39uc  1 e 2 0 ]
+"5 /opt/microchip/xc8/v2.10/pic/sources/c99/common/strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"3 /opt/microchip/xc8/v2.10/pic/sources/c99/common/strncmp.c
+[v _strncmp strncmp `(i  1 e 2 0 ]
+"4 /opt/microchip/xc8/v2.10/pic/sources/c99/common/strtol.c
+[v _strtol strtol `(l  1 e 4 0 ]
+"4 /opt/microchip/xc8/v2.10/pic/sources/c99/common/toupper.c
+[v _toupper toupper `(i  1 e 2 0 ]
+"15 /opt/microchip/xc8/v2.10/pic/sources/c99/common/Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 /opt/microchip/xc8/v2.10/pic/sources/c99/common/Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 /opt/microchip/xc8/v2.10/pic/sources/c99/common/Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"33 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/adf4351.c
+[v _adf4351_init adf4351_init `(v  1 e 1 0 ]
+"72
+[v _adf4351_set_freq adf4351_set_freq `(i  1 e 2 0 ]
+"120
+[v _adf4351_calc_counters adf4351_calc_counters `(i  1 s 2 adf4351_calc_counters ]
+"148
+[v _adf4351_get_lock adf4351_get_lock `(i  1 e 2 0 ]
+"155
+[v _check_ADF5341_status check_ADF5341_status `(v  1 e 1 0 ]
+"178
+[v _adf4351_set_mode adf4351_set_mode `(v  1 e 1 0 ]
+"203
+[v _adf4351_set_tune adf4351_set_tune `(v  1 e 1 0 ]
+"216
+[v _adf4351_default adf4351_default `(v  1 s 1 adf4351_default ]
+"230
+[v _adf4351_setup adf4351_setup `(v  1 s 1 adf4351_setup ]
+"240
+[v _adf4351_write_reg0 adf4351_write_reg0 `(v  1 s 1 adf4351_write_reg0 ]
+"252
+[v _adf4351_write_reg1 adf4351_write_reg1 `(v  1 s 1 adf4351_write_reg1 ]
+"265
+[v _adf4351_write_reg2 adf4351_write_reg2 `(v  1 s 1 adf4351_write_reg2 ]
+"288
+[v _adf4351_write_reg3 adf4351_write_reg3 `(v  1 s 1 adf4351_write_reg3 ]
+"304
+[v _adf4351_write_reg4 adf4351_write_reg4 `(v  1 s 1 adf4351_write_reg4 ]
+"324
+[v _adf4351_write_reg5 adf4351_write_reg5 `(v  1 s 1 adf4351_write_reg5 ]
+"353
+[v _adf4351_write_latch adf4351_write_latch `(v  1 s 1 adf4351_write_latch ]
+"15 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/base/i2c.c
+[v _i2c_transfer i2c_transfer `(i  1 e 2 0 ]
+"21
+[v _i2c_probe_addr i2c_probe_addr `(i  1 e 2 0 ]
+"65
+[v _smbus8_write_byte smbus8_write_byte `(i  1 e 2 0 ]
+"81
+[v _smbus8_write_data smbus8_write_data `(i  1 e 2 0 ]
+"116
+[v _smbus8_read_byte smbus8_read_byte `(i  1 e 2 0 ]
+"27 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/i2c_native.c
+[v _i2c_native_init i2c_native_init `(v  1 e 1 0 ]
+"42
+[v _i2c_reset i2c_reset `(v  1 s 1 i2c_reset ]
+"81
+[v _i2c_wait_int i2c_wait_int `(i  1 s 2 i2c_wait_int ]
+"104
+[v _i2c_start i2c_start `(i  1 s 2 i2c_start ]
+"136
+[v _i2c_stop i2c_stop `(v  1 s 1 i2c_stop ]
+"150
+[v _i2c_read i2c_read `(i  1 s 2 i2c_read ]
+"180
+[v _i2c_write i2c_write `(i  1 s 2 i2c_write ]
+"203
+[v _i2c_transfer_native i2c_transfer_native `(i  1 s 2 i2c_transfer_native ]
+"9 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/irq.c
+[v _irq_set_handler irq_set_handler `(v  1 e 1 0 ]
+"17
+[v _global_irq_handler global_irq_handler `IIH(v  1 s 1 global_irq_handler ]
+"68 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/lcd.c
+[v _lcd_init lcd_init `(v  1 e 1 0 ]
+"106
+[v _ssd1306_command ssd1306_command `(v  1 e 1 0 ]
+"113
+[v _ssd1306_commandbyte ssd1306_commandbyte `(v  1 e 1 0 ]
+"119
+[v _ssd1306_data ssd1306_data `(v  1 e 1 0 ]
+"132
+[v _ssd1306_setpos ssd1306_setpos `(v  1 e 1 0 ]
+"144
+[v _lcd_clear_screen lcd_clear_screen `(v  1 e 1 0 ]
+"159
+[v _lcd_draw8x8 lcd_draw8x8 `(v  1 e 1 0 ]
+"168
+[v _print_char print_char `(v  1 e 1 0 ]
+"190
+[v _print_string print_string `(v  1 e 1 0 ]
+"223
+[v _show_display show_display `(v  1 e 1 0 ]
+"492
+[v _itoa itoa `(*.39uc  1 e 2 0 ]
+"14 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/lnb.c
+[v _lnb_configure lnb_configure `(v  1 e 1 0 ]
+"36
+[v _lnb_do_configure lnb_do_configure `(i  1 s 2 lnb_do_configure ]
+"74
+[v _check_LNB_status check_LNB_status `(uc  1 e 1 0 ]
+"154 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/si5328.c
+[v _calc_mixer_corr_value calc_mixer_corr_value `(l  1 e 4 0 ]
+"197
+[v _set_reg set_reg `(v  1 e 1 0 ]
+"228
+[v _set_reg24 set_reg24 `(v  1 e 1 0 ]
+"282
+[v _set_reg25 set_reg25 `(v  1 e 1 0 ]
+"336
+[v _set_reg26 set_reg26 `(v  1 e 1 0 ]
+"390
+[v _set_reg27 set_reg27 `(v  1 e 1 0 ]
+"408
+[v _si5328_init si5328_init `(i  1 e 2 0 ]
+"439
+[v _si5328_set_freq si5328_set_freq `(v  1 e 1 0 ]
+"458
+[v _si5328_perform_ical si5328_perform_ical `(v  1 s 1 si5328_perform_ical ]
+"468
+[v _si5328_checkGPS si5328_checkGPS `(v  1 e 1 0 ]
+"500
+[v _check_si5328_status check_si5328_status `(uc  1 e 1 0 ]
+"574
+[v _write_regset write_regset `(v  1 s 1 write_regset ]
+"589
+[v _read_reg read_reg `(uc  1 s 1 read_reg ]
+"15 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/usart.c
+[v _usart_init usart_init `(v  1 e 1 0 ]
+"42
+[v _usart_putc usart_putc `(uc  1 e 1 0 ]
+"54
+[v _usart_getc usart_getc `(i  1 e 2 0 ]
+"76
+[v _usart_rx_irq_handler usart_rx_irq_handler `(v  1 s 1 usart_rx_irq_handler ]
+"107
+[v _rx_usart rx_usart `(v  1 e 1 0 ]
+"120
+[v _fputc fputc `(i  1 e 2 0 ]
+"134
+[v _putgps putgps `(v  1 e 1 0 ]
+"9 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/gpio.c
+[v _init_gpios init_gpios `(v  1 e 1 0 ]
+"78
+[v _check_RXTX check_RXTX `(v  1 e 1 0 ]
+"23 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/gps.c
+[v _eval_gps eval_gps `(v  1 e 1 0 ]
+"116
+[v _rx_gps rx_gps `(v  1 e 1 0 ]
+"294
+[v _getGPSfrequency getGPSfrequency `(ul  1 e 4 0 ]
+"312
+[v _init_gps init_gps `(v  1 e 1 0 ]
+"323
+[v _send_UBX_string send_UBX_string `(v  1 e 1 0 ]
+"382
+[v _CalculateGridSquare CalculateGridSquare `(*.39uc  1 e 2 0 ]
+"51 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/main.c
+[v _main main `(v  1 e 1 0 ]
+"178
+[v _read_switch read_switch `(uc  1 s 1 read_switch ]
+"191
+[v _setADF4351frequency setADF4351frequency `(v  1 s 1 setADF4351frequency ]
+"238
+[v _setQRG setQRG `(v  1 e 1 0 ]
+"52 /opt/microchip/xc8/v2.10/pic/include/pic18f2520.h
+[v _PORTA PORTA `VEuc  1 e 1 @3968 ]
+"271
+[v _PORTB PORTB `VEuc  1 e 1 @3969 ]
+"450
+[v _PORTC PORTC `VEuc  1 e 1 @3970 ]
+"1036
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"1258
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"1480
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+"1702
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @3995 ]
+"1767
+[v _PIE1 PIE1 `VEuc  1 e 1 @3997 ]
+[s S1428 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+]
+"1788
+[s S1436 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IE 1 0 :1:4 
+`uc 1 RC1IE 1 0 :1:5 
+]
+[u S1440 . 1 `S1428 1 . 1 0 `S1436 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES1440  1 e 1 @3997 ]
+[s S1049 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+]
+"1859
+[s S1057 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+]
+[u S1061 . 1 `S1049 1 . 1 0 `S1057 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES1061  1 e 1 @3998 ]
+"1980
+[v _PIE2 PIE2 `VEuc  1 e 1 @4000 ]
+[s S1326 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"2306
+[s S1335 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 ADEN 1 0 :1:3 
+]
+[s S1338 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 SRENA 1 0 :1:5 
+]
+[s S1341 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_9 1 0 :1:6 
+]
+[s S1344 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC9 1 0 :1:6 
+]
+[s S1347 . 1 `uc 1 RCD8 1 0 :1:0 
+]
+[u S1349 . 1 `S1326 1 . 1 0 `S1335 1 . 1 0 `S1338 1 . 1 0 `S1341 1 . 1 0 `S1344 1 . 1 0 `S1347 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES1349  1 e 1 @4011 ]
+[s S1274 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"2514
+[s S1283 . 1 `uc 1 TX9D1 1 0 :1:0 
+`uc 1 TRMT1 1 0 :1:1 
+`uc 1 BRGH1 1 0 :1:2 
+`uc 1 SENDB1 1 0 :1:3 
+`uc 1 SYNC1 1 0 :1:4 
+`uc 1 TXEN1 1 0 :1:5 
+`uc 1 TX91 1 0 :1:6 
+`uc 1 CSRC1 1 0 :1:7 
+]
+[s S1292 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX8_9 1 0 :1:6 
+]
+[s S1295 . 1 `uc 1 TXD8 1 0 :1:0 
+]
+[u S1297 . 1 `S1274 1 . 1 0 `S1283 1 . 1 0 `S1292 1 . 1 0 `S1295 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES1297  1 e 1 @4012 ]
+"2731
+[v _TXREG TXREG `VEuc  1 e 1 @4013 ]
+"2743
+[v _RCREG RCREG `VEuc  1 e 1 @4014 ]
+"2755
+[v _SPBRG SPBRG `VEuc  1 e 1 @4015 ]
+"2767
+[v _SPBRGH SPBRGH `VEuc  1 e 1 @4016 ]
+[s S1380 . 1 `uc 1 ABDEN 1 0 :1:0 
+`uc 1 WUE 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 BRG16 1 0 :1:3 
+`uc 1 TXCKP 1 0 :1:4 
+`uc 1 RXDTP 1 0 :1:5 
+`uc 1 RCIDL 1 0 :1:6 
+`uc 1 ABDOVF 1 0 :1:7 
+]
+"3282
+[s S1389 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 SCKP 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 RCMT 1 0 :1:6 
+]
+[s S1394 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 RXCKP 1 0 :1:5 
+]
+[s S1397 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 W4E 1 0 :1:1 
+]
+[u S1400 . 1 `S1380 1 . 1 0 `S1389 1 . 1 0 `S1394 1 . 1 0 `S1397 1 . 1 0 ]
+[v _BAUDCONbits BAUDCONbits `VES1400  1 e 1 @4024 ]
+[s S2092 . 1 `uc 1 PCFG 1 0 :4:0 
+`uc 1 VCFG 1 0 :2:4 
+]
+"3722
+[s S2095 . 1 `uc 1 PCFG0 1 0 :1:0 
+`uc 1 PCFG1 1 0 :1:1 
+`uc 1 PCFG2 1 0 :1:2 
+`uc 1 PCFG3 1 0 :1:3 
+`uc 1 VCFG0 1 0 :1:4 
+`uc 1 VCFG1 1 0 :1:5 
+]
+[s S2102 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CHSN3 1 0 :1:3 
+`uc 1 VCFG01 1 0 :1:4 
+`uc 1 VCFG11 1 0 :1:5 
+]
+[u S2107 . 1 `S2092 1 . 1 0 `S2095 1 . 1 0 `S2102 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES2107  1 e 1 @4033 ]
+[s S1077 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 RSEN 1 0 :1:1 
+`uc 1 PEN 1 0 :1:2 
+`uc 1 RCEN 1 0 :1:3 
+`uc 1 ACKEN 1 0 :1:4 
+`uc 1 ACKDT 1 0 :1:5 
+`uc 1 ACKSTAT 1 0 :1:6 
+`uc 1 GCEN 1 0 :1:7 
+]
+"3947
+[s S1086 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADMSK1 1 0 :1:1 
+`uc 1 ADMSK2 1 0 :1:2 
+`uc 1 ADMSK3 1 0 :1:3 
+`uc 1 ADMSK4 1 0 :1:4 
+`uc 1 ADMSK5 1 0 :1:5 
+]
+[u S1093 . 1 `S1077 1 . 1 0 `S1086 1 . 1 0 ]
+[v _SSPCON2bits SSPCON2bits `VES1093  1 e 1 @4037 ]
+[s S891 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"4037
+[s S897 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[u S902 . 1 `S891 1 . 1 0 `S897 1 . 1 0 ]
+[v _SSPCON1bits SSPCON1bits `VES902  1 e 1 @4038 ]
+[s S917 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_NOT_W 1 0 :1:2 
+]
+"4163
+[s S920 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 D_NOT_A 1 0 :1:5 
+]
+[s S923 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+[s S932 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S937 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 A 1 0 :1:5 
+]
+[s S942 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S947 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S952 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_WRITE 1 0 :1:2 
+]
+[s S955 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_ADDRESS 1 0 :1:5 
+]
+[s S958 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S963 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW 1 0 :1:2 
+`uc 1 START 1 0 :1:3 
+`uc 1 STOP 1 0 :1:4 
+`uc 1 DA 1 0 :1:5 
+]
+[s S969 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 NOT_A 1 0 :1:5 
+]
+[u S974 . 1 `S917 1 . 1 0 `S920 1 . 1 0 `S923 1 . 1 0 `S932 1 . 1 0 `S937 1 . 1 0 `S942 1 . 1 0 `S947 1 . 1 0 `S952 1 . 1 0 `S955 1 . 1 0 `S958 1 . 1 0 `S963 1 . 1 0 `S969 1 . 1 0 ]
+[v _SSPSTATbits SSPSTATbits `VES974  1 e 1 @4039 ]
+"4308
+[v _SSPADD SSPADD `VEuc  1 e 1 @4040 ]
+"4315
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @4041 ]
+[s S2419 . 1 `uc 1 NOT_BOR 1 0 :1:0 
+]
+"4704
+[s S2421 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_POR 1 0 :1:1 
+]
+[s S2424 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_PD 1 0 :1:2 
+]
+[s S2427 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_TO 1 0 :1:3 
+]
+[s S2430 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 NOT_RI 1 0 :1:4 
+]
+[s S2433 . 1 `uc 1 nBOR 1 0 :1:0 
+`uc 1 nPOR 1 0 :1:1 
+`uc 1 nPD 1 0 :1:2 
+`uc 1 nTO 1 0 :1:3 
+`uc 1 nRI 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 SBOREN 1 0 :1:6 
+`uc 1 IPEN 1 0 :1:7 
+]
+[s S2442 . 1 `uc 1 BOR 1 0 :1:0 
+`uc 1 POR 1 0 :1:1 
+`uc 1 PD 1 0 :1:2 
+`uc 1 TO 1 0 :1:3 
+`uc 1 RI 1 0 :1:4 
+]
+[u S2448 . 1 `S2419 1 . 1 0 `S2421 1 . 1 0 `S2424 1 . 1 0 `S2427 1 . 1 0 `S2430 1 . 1 0 `S2433 1 . 1 0 `S2442 1 . 1 0 ]
+[v _RCONbits RCONbits `VES2448  1 e 1 @4048 ]
+"4794
+[v _WDTCON WDTCON `VEuc  1 e 1 @4049 ]
+"5092
+[v _OSCCON OSCCON `VEuc  1 e 1 @4051 ]
+[s S2368 . 1 `uc 1 SCS 1 0 :2:0 
+`uc 1 IOFS 1 0 :1:2 
+`uc 1 OSTS 1 0 :1:3 
+`uc 1 IRCF 1 0 :3:4 
+`uc 1 IDLEN 1 0 :1:7 
+]
+"5115
+[s S2374 . 1 `uc 1 SCS0 1 0 :1:0 
+`uc 1 SCS1 1 0 :1:1 
+`uc 1 FLTS 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 IRCF0 1 0 :1:4 
+`uc 1 IRCF1 1 0 :1:5 
+`uc 1 IRCF2 1 0 :1:6 
+]
+[u S2382 . 1 `S2368 1 . 1 0 `S2374 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES2382  1 e 1 @4051 ]
+[s S2127 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 NOT_RBPU 1 0 :1:7 
+]
+"5654
+[s S2130 . 1 `uc 1 RBIP 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 TMR0IP 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INTEDG2 1 0 :1:4 
+`uc 1 INTEDG1 1 0 :1:5 
+`uc 1 INTEDG0 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+[s S2139 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 RBPU 1 0 :1:7 
+]
+[u S2142 . 1 `S2127 1 . 1 0 `S2130 1 . 1 0 `S2139 1 . 1 0 ]
+[v _INTCON2bits INTCON2bits `VES2142  1 e 1 @4081 ]
+[s S1549 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"5731
+[s S1558 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S1567 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S1571 . 1 `S1549 1 . 1 0 `S1558 1 . 1 0 `S1567 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES1571  1 e 1 @4082 ]
+"55 /opt/microchip/xc8/v2.10/pic/sources/c99/common/doprnt.c
+[v _flags flags `i  1 s 2 flags ]
+[v _prec prec `i  1 s 2 prec ]
+[v _width width `i  1 s 2 width ]
+"66
+[v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
+"69
+[v _nout nout `i  1 s 2 nout ]
+"3 /opt/microchip/xc8/v2.10/pic/sources/c99/common/errno.c
+[v _errno errno `i  1 e 2 0 ]
+"50 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/adf4351.c
+[v _g_freq g_freq `ul  1 s 4 g_freq ]
+"153
+[v _adf4351_lockstat adf4351_lockstat `uc  1 e 1 0 ]
+[s S1519 . 4 `*.37(v 1 handler 2 0 `*.2v 1 udata 2 2 ]
+"7 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/irq.c
+[v _g_irq_handler_info g_irq_handler_info `[2]S1519  1 s 8 g_irq_handler_info ]
+"25 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/lcd.c
+[v _font8x8_basic font8x8_basic `C[0][8]uc  1 e 0 0 ]
+"30
+[v _ssd1306_init_commands ssd1306_init_commands `[27]uc  1 e 27 0 ]
+[s S24 i2c_dev__ 2 `i 1 unused 2 0 ]
+"64
+[v _lcd_i2c lcd_i2c `*.39S24  1 e 2 0 ]
+"65
+[v _lcd_addr lcd_addr `uc  1 e 1 0 ]
+"66
+[v _lcd_available lcd_available `uc  1 e 1 0 ]
+"207
+[v _out_freq_table out_freq_table `C[10]us  1 s 20 out_freq_table ]
+"222
+[v _booting booting `uc  1 e 1 0 ]
+"71 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/lnb.c
+[v _LNB_laststat LNB_laststat `uc  1 e 1 0 ]
+"72
+[v _LNB_error LNB_error `uc  1 e 1 0 ]
+"44 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/si5328.c
+[v _si5328locked si5328locked `uc  1 e 1 0 ]
+"45
+[v _currentLO currentLO `uc  1 e 1 0 ]
+"46
+[v _ext10MHzReference ext10MHzReference `uc  1 e 1 0 ]
+[s S1627 . 2 `uc 1 addr 1 0 `uc 1 value 1 1 ]
+"86
+[v _reg_set_univ_CKIN1_GPS reg_set_univ_CKIN1_GPS `C[13]S1627  1 s 26 reg_set_univ_CKIN1_GPS ]
+"109
+[v _reg_set_univ_CKIN2_XAXB reg_set_univ_CKIN2_XAXB `C[12]S1627  1 s 24 reg_set_univ_CKIN2_XAXB ]
+"134
+[v _N31_reg4445 N31_reg4445 `us  1 e 2 0 ]
+"135
+[v _N32_reg4748 N32_reg4748 `us  1 e 2 0 ]
+"136
+[v _N2HS_reg40 N2HS_reg40 `us  1 e 2 0 ]
+"137
+[v _N2L_reg4142 N2L_reg4142 `us  1 e 2 0 ]
+"138
+[v _N1HS_reg25 N1HS_reg25 `us  1 e 2 0 ]
+"139
+[v _NC1_LS_reg3233 NC1_LS_reg3233 `us  1 e 2 0 ]
+"140
+[v _NC2_LS_reg3536 NC2_LS_reg3536 `us  1 e 2 0 ]
+"177
+[v _reg_set_LNB_LO reg_set_LNB_LO `[12]S1627  1 s 24 reg_set_LNB_LO ]
+"9 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/usart.c
+[v _g_usart_buf g_usart_buf `VE[128]uc  1 s 128 g_usart_buf ]
+"10
+[v _g_usart_rpos g_usart_rpos `VEi  1 s 2 g_usart_rpos ]
+"11
+[v _g_usart_wpos g_usart_wpos `VEi  1 s 2 g_usart_wpos ]
+"8 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/freq_tables.c
+[v _freq_table_25_24 freq_table_25_24 `C[10]ul  1 e 40 0 ]
+"22
+[v _freq_table_25_25 freq_table_25_25 `C[10]ul  1 e 40 0 ]
+"36
+[v _freq_table_27_26 freq_table_27_26 `C[10]ul  1 e 40 0 ]
+"50
+[v _freq_table_27_OPT freq_table_27_OPT `C[10]ul  1 e 40 0 ]
+"15 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/gps.c
+[v _GPS_lock GPS_lock `uc  1 e 1 0 ]
+"16
+[v _GPS_fix GPS_fix `uc  1 e 1 0 ]
+"17
+[v _GPS_sat GPS_sat `uc  1 e 1 0 ]
+"18
+[v _GPS_lat GPS_lat `[15]uc  1 e 15 0 ]
+"19
+[v _GPS_lon GPS_lon `[15]uc  1 e 15 0 ]
+"20
+[v _GPS_time GPS_time `[9]uc  1 e 9 0 ]
+"21
+[v _ubx_ack ubx_ack `uc  1 e 1 0 ]
+"108
+[v _ubx_class ubx_class `uc  1 e 1 0 ]
+"109
+[v _ubx_id ubx_id `uc  1 e 1 0 ]
+"110
+[v _ubx_len ubx_len `us  1 e 2 0 ]
+"111
+[v _p_len p_len `us  1 e 2 0 ]
+"113
+[v _gpsbuf gpsbuf `[85]uc  1 e 85 0 ]
+"114
+[v _gpsbufidx gpsbufidx `uc  1 e 1 0 ]
+"228
+[v _gps_config_data gps_config_data `[32]uc  1 e 32 0 ]
+"34 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/main.c
+[v _actualADFswitch actualADFswitch `uc  1 e 1 0 ]
+[s S95 . 4 `us 1 integer 2 0 `us 1 frac 2 2 ]
+"35
+[s S98 . 5 `uc 1 prescaler 1 0 `us 1 phase 2 1 `us 1 mod 2 3 ]
+[s S102 . 14 `uc 1 lownoise 1 0 `uc 1 muxout 1 1 `uc 1 refdbl 1 2 `uc 1 refdiv 1 3 `us 1 rcnt 2 4 `uc 1 dblbuff 1 6 `uc 1 cpc 1 7 `uc 1 ldf 1 8 `uc 1 ldp 1 9 `uc 1 pdpol 1 10 `uc 1 pd 1 11 `uc 1 cpts 1 12 `uc 1 cntreset 1 13 ]
+[s S116 . 7 `uc 1 bscm 1 0 `uc 1 abp 1 1 `uc 1 chcancel 1 2 `uc 1 csr 1 3 `uc 1 clkdivmode 1 4 `us 1 clkdiv 2 5 ]
+[s S123 . 10 `uc 1 fbsel 1 0 `uc 1 divsel 1 1 `uc 1 bsclkdiv 1 2 `uc 1 vcopd 1 3 `uc 1 mtld 1 4 `uc 1 auxoutsel 1 5 `uc 1 auxoutena 1 6 `uc 1 auxpwrout 1 7 `uc 1 rfoutena 1 8 `uc 1 rfoutpwr 1 9 ]
+[s S134 . 1 `uc 1 ldpinmod 1 0 ]
+[s S136 adf4351_ctx 55 `i 1 init 2 0 `S95 1 reg0 4 2 `S98 1 reg1 5 6 `S102 1 reg2 14 11 `S116 1 reg3 7 25 `S123 1 reg4 10 32 `S134 1 reg5 1 42 `ul 1 ref 4 43 `ul 1 pfd 4 47 `ul 1 vco_freq 4 51 ]
+[v _g_adf4351 g_adf4351 `S136  1 s 55 g_adf4351 ]
+[s S33 i2c_driver_ops 4 `*.37(i 1 transfer 2 0 `*.37(i 1 setbaud 2 2 ]
+"36
+[s S875 i2c_data_native 8 `S33 1 ops 4 0 `ul 1 baud 4 4 ]
+[v _g_i2c_bus g_i2c_bus `S875  1 s 8 g_i2c_bus ]
+[s S154 gpio_pin_def 5 `*.39VEuc 1 pPORT 2 0 `*.39VEuc 1 pTRIS 2 2 `uc 1 mask 1 4 ]
+"5 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/pinmap.c
+[v _PIN_ADF_LOCK_DEF PIN_ADF_LOCK_DEF `CS154  1 e 5 0 ]
+"6
+[v _PIN_ADF_CE_DEF PIN_ADF_CE_DEF `CS154  1 e 5 0 ]
+"7
+[v _PIN_ADF_LE_DEF PIN_ADF_LE_DEF `CS154  1 e 5 0 ]
+"8
+[v _PIN_SIO_DATA_DEF PIN_SIO_DATA_DEF `CS154  1 e 5 0 ]
+"9
+[v _PIN_SIO_CLK_DEF PIN_SIO_CLK_DEF `CS154  1 e 5 0 ]
+"13
+[v _PIN_SI5328_LOL_DEF PIN_SI5328_LOL_DEF `CS154  1 e 5 0 ]
+"14
+[v _PIN_SI5328_CS_CA_DEF PIN_SI5328_CS_CA_DEF `CS154  1 e 5 0 ]
+"17
+[v _PIN_LED_SI_LOCK_DEF PIN_LED_SI_LOCK_DEF `CS154  1 e 5 0 ]
+"19
+[v _PIN_LED_CPU_OK_DEF PIN_LED_CPU_OK_DEF `CS154  1 e 5 0 ]
+"21
+[v _PIN_LED_ADF_LOCK_DEF PIN_LED_ADF_LOCK_DEF `CS154  1 e 5 0 ]
+"23
+[v _PIN_LED_LNB_GOOD_DEF PIN_LED_LNB_GOOD_DEF `CS154  1 e 5 0 ]
+"27
+[v _PIN_I2C_SCL_DEF PIN_I2C_SCL_DEF `CS154  1 e 5 0 ]
+"28
+[v _PIN_I2C_SDA_DEF PIN_I2C_SDA_DEF `CS154  1 e 5 0 ]
+"31
+[v _PIN_USART_TX_DEF PIN_USART_TX_DEF `CS154  1 e 5 0 ]
+"32
+[v _PIN_USART_RX_DEF PIN_USART_RX_DEF `CS154  1 e 5 0 ]
+"35
+[v _PIN_SJ3_DEF PIN_SJ3_DEF `CS154  1 e 5 0 ]
+"36
+[v _PIN_SJ4_DEF PIN_SJ4_DEF `CS154  1 e 5 0 ]
+"37
+[v _PIN_SJ5_DEF PIN_SJ5_DEF `CS154  1 e 5 0 ]
+"38
+[v _PIN_SJ6_DEF PIN_SJ6_DEF `CS154  1 e 5 0 ]
+"41
+[v _PIN_LNB_QRG2_DEF PIN_LNB_QRG2_DEF `CS154  1 e 5 0 ]
+"42
+[v _PIN_LNB_QRG1_DEF PIN_LNB_QRG1_DEF `CS154  1 e 5 0 ]
+"46
+[v _PIN_LNB_FAULT_DEF PIN_LNB_FAULT_DEF `CS154  1 e 5 0 ]
+"17 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/secretsettings.h
+[v _special_cfg special_cfg `uc  1 e 1 0 ]
+"18
+[v _tcxo_no_GPS tcxo_no_GPS `uc  1 e 1 0 ]
+"17 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/timer.h
+[v _gps_init_timer gps_init_timer `uc  1 e 1 0 ]
+"18
+[v _cpu_blink_timer cpu_blink_timer `uc  1 e 1 0 ]
+"19
+[v _adf4351_set_qrg adf4351_set_qrg `uc  1 e 1 0 ]
+"51 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"129
+[v main@lock lock `uc  1 a 1 71 ]
+"53
+[v main@old_GPS_lock old_GPS_lock `uc  1 s 1 old_GPS_lock ]
+"167
+} 0
+"15 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/usart.c
+[v _usart_init usart_init `(v  1 e 1 0 ]
+{
+"31
+[v usart_init@spbrg_value spbrg_value `us  1 a 2 42 ]
+"15
+[v usart_init@baud baud `ul  1 p 4 38 ]
+"40
+} 0
+"9 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/irq.c
+[v _irq_set_handler irq_set_handler `(v  1 e 1 0 ]
+{
+[v irq_set_handler@id id `E2251  1 a 1 wreg ]
+[v irq_set_handler@id id `E2251  1 a 1 wreg ]
+[v irq_set_handler@handler handler `*.37(v  1 p 2 13 ]
+[v irq_set_handler@udata udata `*.2v  1 p 2 15 ]
+"11
+[v irq_set_handler@id id `E2251  1 a 1 17 ]
+"15
+} 0
+"408 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/si5328.c
+[v _si5328_init si5328_init `(i  1 e 2 0 ]
+{
+"410
+[v si5328_init@res res `i  1 a 2 66 ]
+[s S24 i2c_dev__ 2 `i 1 unused 2 0 ]
+"408
+[v si5328_init@i2c i2c `*.39S24  1 p 2 61 ]
+[v si5328_init@addr addr `uc  1 p 1 63 ]
+"437
+} 0
+"468
+[v _si5328_checkGPS si5328_checkGPS `(v  1 e 1 0 ]
+{
+[s S24 i2c_dev__ 2 `i 1 unused 2 0 ]
+[v si5328_checkGPS@i2c i2c `*.39S24  1 p 2 61 ]
+[v si5328_checkGPS@addr addr `uc  1 p 1 63 ]
+"470
+[v si5328_checkGPS@old_GPS_lock old_GPS_lock `uc  1 s 1 old_GPS_lock ]
+"471
+[v si5328_checkGPS@old_ubx_ack old_ubx_ack `uc  1 s 1 old_ubx_ack ]
+"497
+} 0
+"238 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/main.c
+[v _setQRG setQRG `(v  1 e 1 0 ]
+{
+"241
+[v setQRG@newLO newLO `uc  1 a 1 60 ]
+"240
+[v setQRG@sw sw `uc  1 a 1 59 ]
+"263
+} 0
+"439 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/si5328.c
+[v _si5328_set_freq si5328_set_freq `(v  1 e 1 0 ]
+{
+[s S24 i2c_dev__ 2 `i 1 unused 2 0 ]
+[v si5328_set_freq@i2c i2c `*.39S24  1 p 2 52 ]
+[v si5328_set_freq@addr addr `uc  1 p 1 54 ]
+[v si5328_set_freq@freq_MHz freq_MHz `uc  1 p 1 55 ]
+"456
+} 0
+"574
+[v _write_regset write_regset `(v  1 s 1 write_regset ]
+{
+"576
+[v write_regset@errors errors `i  1 a 2 50 ]
+[s S24 i2c_dev__ 2 `i 1 unused 2 0 ]
+"574
+[v write_regset@i2c i2c `*.39S24  1 p 2 43 ]
+[v write_regset@addr addr `uc  1 p 1 45 ]
+[s S1627 . 2 `uc 1 addr 1 0 `uc 1 value 1 1 ]
+[v write_regset@set set `*.35CS1627  1 p 2 46 ]
+[v write_regset@len len `us  1 p 2 48 ]
+"587
+} 0
+"458
+[v _si5328_perform_ical si5328_perform_ical `(v  1 s 1 si5328_perform_ical ]
+{
+[s S24 i2c_dev__ 2 `i 1 unused 2 0 ]
+[v si5328_perform_ical@i2c i2c `*.39S24  1 p 2 43 ]
+[v si5328_perform_ical@addr addr `uc  1 p 1 45 ]
+"465
+} 0
+"390
+[v _set_reg27 set_reg27 `(v  1 e 1 0 ]
+{
+"400
+} 0
+"336
+[v _set_reg26 set_reg26 `(v  1 e 1 0 ]
+{
+"388
+} 0
+"282
+[v _set_reg25 set_reg25 `(v  1 e 1 0 ]
+{
+"334
+} 0
+"228
+[v _set_reg24 set_reg24 `(v  1 e 1 0 ]
+{
+"280
+} 0
+"197
+[v _set_reg set_reg `(v  1 e 1 0 ]
+{
+"200
+[v set_reg@p p `*.39uc  1 a 2 17 ]
+"199
+[v set_reg@idx idx `uc  1 a 1 19 ]
+"226
+} 0
+"223 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/lcd.c
+[v _show_display show_display `(v  1 e 1 0 ]
+{
+"324
+[v show_display@p p `*.39uc  1 a 2 66 ]
+"327
+[v show_display@outqrg outqrg `us  1 a 2 64 ]
+"325
+[v show_display@xpos xpos `uc  1 a 1 63 ]
+"227
+[v show_display@old_GPS_lock old_GPS_lock `uc  1 s 1 old_GPS_lock ]
+"228
+[v show_display@old_GPS_fix old_GPS_fix `uc  1 s 1 old_GPS_fix ]
+"229
+[v show_display@old_ubx_ack old_ubx_ack `uc  1 s 1 old_ubx_ack ]
+"230
+[v show_display@old_outqrg old_outqrg `us  1 s 2 old_outqrg ]
+"231
+[v show_display@old_lnbqrg old_lnbqrg `uc  1 s 1 old_lnbqrg ]
+"232
+[v show_display@old_GPS_sat old_GPS_sat `uc  1 s 1 old_GPS_sat ]
+"233
+[v show_display@old_GPS_lat old_GPS_lat `[15]uc  1 s 15 old_GPS_lat ]
+"234
+[v show_display@old_GPS_lon old_GPS_lon `[15]uc  1 s 15 old_GPS_lon ]
+"235
+[v show_display@old_GPS_time old_GPS_time `[9]uc  1 s 9 old_GPS_time ]
+"236
+[v show_display@old_LNB_laststat old_LNB_laststat `uc  1 s 1 old_LNB_laststat ]
+"237
+[v show_display@old_si5328locked old_si5328locked `uc  1 s 1 old_si5328locked ]
+"238
+[v show_display@old_adf4351_lockstat old_adf4351_lockstat `uc  1 s 1 old_adf4351_lockstat ]
+"489
+} 0
+"3 /opt/microchip/xc8/v2.10/pic/sources/c99/common/memcmp.c
+[v _memcmp memcmp `(i  1 e 2 0 ]
+{
+"5
+[v memcmp@r r `*.39Cuc  1 a 2 23 ]
+[v memcmp@l l `*.39Cuc  1 a 2 21 ]
+"3
+[v memcmp@vl vl `*.39Cv  1 p 2 13 ]
+[v memcmp@vr vr `*.39Cv  1 p 2 15 ]
+[v memcmp@n n `ui  1 p 2 17 ]
+"8
+} 0
+"492 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/lcd.c
+[v _itoa itoa `(*.39uc  1 e 2 0 ]
+{
+"495
+[v itoa@c c `uc  1 a 1 27 ]
+"492
+[v itoa@value value `i  1 p 2 25 ]
+"494
+[v itoa@buffer buffer `[12]uc  1 s 12 buffer ]
+"506
+} 0
+"7 /opt/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 18 ]
+[v ___awmod@counter counter `uc  1 a 1 17 ]
+"7
+[v ___awmod@dividend dividend `i  1 p 2 13 ]
+[v ___awmod@divisor divisor `i  1 p 2 15 ]
+"34
+} 0
+"7 /opt/microchip/xc8/v2.10/pic/sources/c99/common/awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 19 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 18 ]
+[v ___awdiv@counter counter `uc  1 a 1 17 ]
+"7
+[v ___awdiv@dividend dividend `i  1 p 2 13 ]
+[v ___awdiv@divisor divisor `i  1 p 2 15 ]
+"41
+} 0
+"382 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/gps.c
+[v _CalculateGridSquare CalculateGridSquare `(*.39uc  1 e 2 0 ]
+{
+"401
+[v CalculateGridSquare@lat_min lat_min `ul  1 a 4 88 ]
+"400
+[v CalculateGridSquare@lat lat `ul  1 a 4 84 ]
+"388
+[v CalculateGridSquare@lon_min lon_min `ul  1 a 4 80 ]
+"387
+[v CalculateGridSquare@lon lon `ul  1 a 4 76 ]
+"421
+[v CalculateGridSquare@latmid latmid `ul  1 a 4 72 ]
+"420
+[v CalculateGridSquare@latrest1 latrest1 `ul  1 a 4 68 ]
+"419
+[v CalculateGridSquare@latgf latgf `ul  1 a 4 64 ]
+"418
+[v CalculateGridSquare@latm latm `ul  1 a 4 60 ]
+"416
+[v CalculateGridSquare@lonmid lonmid `ul  1 a 4 56 ]
+"415
+[v CalculateGridSquare@lonrest1 lonrest1 `ul  1 a 4 52 ]
+"414
+[v CalculateGridSquare@longf longf `ul  1 a 4 48 ]
+"413
+[v CalculateGridSquare@lonm lonm `ul  1 a 4 44 ]
+"384
+[v CalculateGridSquare@grid grid `[7]uc  1 s 7 grid ]
+"434
+} 0
+"191 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/main.c
+[v _setADF4351frequency setADF4351frequency `(v  1 s 1 setADF4351frequency ]
+{
+[v setADF4351frequency@force force `uc  1 a 1 wreg ]
+"217
+[v setADF4351frequency@timeout timeout `i  1 a 2 62 ]
+"193
+[v setADF4351frequency@p p `*.25Cul  1 a 2 64 ]
+"206
+[v setADF4351frequency@sw sw `uc  1 a 1 66 ]
+"191
+[v setADF4351frequency@force force `uc  1 a 1 wreg ]
+"193
+[v setADF4351frequency@force force `uc  1 a 1 61 ]
+"235
+} 0
+"178
+[v _read_switch read_switch `(uc  1 s 1 read_switch ]
+{
+"180
+[v read_switch@rb4 rb4 `uc  1 a 1 19 ]
+[v read_switch@rb3 rb3 `uc  1 a 1 18 ]
+[v read_switch@rb2 rb2 `uc  1 a 1 17 ]
+[v read_switch@rb1 rb1 `uc  1 a 1 16 ]
+"189
+} 0
+"72 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/adf4351.c
+[v _adf4351_set_freq adf4351_set_freq `(i  1 e 2 0 ]
+{
+"78
+[v adf4351_set_freq@fcorr fcorr `l  1 a 4 57 ]
+[s S95 . 4 `us 1 integer 2 0 `us 1 frac 2 2 ]
+"72
+[s S98 . 5 `uc 1 prescaler 1 0 `us 1 phase 2 1 `us 1 mod 2 3 ]
+[s S102 . 14 `uc 1 lownoise 1 0 `uc 1 muxout 1 1 `uc 1 refdbl 1 2 `uc 1 refdiv 1 3 `us 1 rcnt 2 4 `uc 1 dblbuff 1 6 `uc 1 cpc 1 7 `uc 1 ldf 1 8 `uc 1 ldp 1 9 `uc 1 pdpol 1 10 `uc 1 pd 1 11 `uc 1 cpts 1 12 `uc 1 cntreset 1 13 ]
+[s S116 . 7 `uc 1 bscm 1 0 `uc 1 abp 1 1 `uc 1 chcancel 1 2 `uc 1 csr 1 3 `uc 1 clkdivmode 1 4 `us 1 clkdiv 2 5 ]
+[s S123 . 10 `uc 1 fbsel 1 0 `uc 1 divsel 1 1 `uc 1 bsclkdiv 1 2 `uc 1 vcopd 1 3 `uc 1 mtld 1 4 `uc 1 auxoutsel 1 5 `uc 1 auxoutena 1 6 `uc 1 auxpwrout 1 7 `uc 1 rfoutena 1 8 `uc 1 rfoutpwr 1 9 ]
+[s S134 . 1 `uc 1 ldpinmod 1 0 ]
+[s S136 adf4351_ctx 55 `i 1 init 2 0 `S95 1 reg0 4 2 `S98 1 reg1 5 6 `S102 1 reg2 14 11 `S116 1 reg3 7 25 `S123 1 reg4 10 32 `S134 1 reg5 1 42 `ul 1 ref 4 43 `ul 1 pfd 4 47 `ul 1 vco_freq 4 51 ]
+[v adf4351_set_freq@ctx ctx `*.39S136  1 p 2 43 ]
+[v adf4351_set_freq@freq freq `ul  1 p 4 45 ]
+"117
+} 0
+"154 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/si5328.c
+[v _calc_mixer_corr_value calc_mixer_corr_value `(l  1 e 4 0 ]
+{
+"156
+[v calc_mixer_corr_value@fgps fgps `o  1 a 8 63 ]
+"163
+[v calc_mixer_corr_value@curLO curLO `o  1 a 8 51 ]
+"172
+[v calc_mixer_corr_value@v v `l  1 a 4 59 ]
+"175
+} 0
+"294 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/gps.c
+[v _getGPSfrequency getGPSfrequency `(ul  1 e 4 0 ]
+{
+"296
+[v getGPSfrequency@gf gf `ul  1 a 4 17 ]
+"307
+} 0
+"120 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/adf4351.c
+[v _adf4351_calc_counters adf4351_calc_counters `(i  1 s 2 adf4351_calc_counters ]
+{
+"138
+[v adf4351_calc_counters@Nmal10000 Nmal10000 `uo  1 a 8 90 ]
+"127
+[v adf4351_calc_counters@vfoout vfoout `uo  1 a 8 82 ]
+"141
+[v adf4351_calc_counters@rest rest `ul  1 a 4 76 ]
+"139
+[v adf4351_calc_counters@INT INT `ul  1 a 4 72 ]
+[s S95 . 4 `us 1 integer 2 0 `us 1 frac 2 2 ]
+"120
+[s S98 . 5 `uc 1 prescaler 1 0 `us 1 phase 2 1 `us 1 mod 2 3 ]
+[s S102 . 14 `uc 1 lownoise 1 0 `uc 1 muxout 1 1 `uc 1 refdbl 1 2 `uc 1 refdiv 1 3 `us 1 rcnt 2 4 `uc 1 dblbuff 1 6 `uc 1 cpc 1 7 `uc 1 ldf 1 8 `uc 1 ldp 1 9 `uc 1 pdpol 1 10 `uc 1 pd 1 11 `uc 1 cpts 1 12 `uc 1 cntreset 1 13 ]
+[s S116 . 7 `uc 1 bscm 1 0 `uc 1 abp 1 1 `uc 1 chcancel 1 2 `uc 1 csr 1 3 `uc 1 clkdivmode 1 4 `us 1 clkdiv 2 5 ]
+[s S123 . 10 `uc 1 fbsel 1 0 `uc 1 divsel 1 1 `uc 1 bsclkdiv 1 2 `uc 1 vcopd 1 3 `uc 1 mtld 1 4 `uc 1 auxoutsel 1 5 `uc 1 auxoutena 1 6 `uc 1 auxpwrout 1 7 `uc 1 rfoutena 1 8 `uc 1 rfoutpwr 1 9 ]
+[s S134 . 1 `uc 1 ldpinmod 1 0 ]
+[s S136 adf4351_ctx 55 `i 1 init 2 0 `S95 1 reg0 4 2 `S98 1 reg1 5 6 `S102 1 reg2 14 11 `S116 1 reg3 7 25 `S123 1 reg4 10 32 `S134 1 reg5 1 42 `ul 1 ref 4 43 `ul 1 pfd 4 47 `ul 1 vco_freq 4 51 ]
+[v adf4351_calc_counters@ctx ctx `*.39S136  1 p 2 62 ]
+"145
+} 0
+"91 /opt/microchip/xc8/v2.10/pic/sources/c99/common/Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+{
+"93
+[v ___omul@product product `uo  1 a 8 29 ]
+"91
+[v ___omul@multiplier multiplier `uo  1 p 8 13 ]
+[v ___omul@multiplicand multiplicand `uo  1 p 8 21 ]
+"354
+} 0
+"7 /opt/microchip/xc8/v2.10/pic/sources/c99/common/lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 17 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 19 ]
+"7
+[v ___lwdiv@dividend dividend `ui  1 p 2 13 ]
+[v ___lwdiv@divisor divisor `ui  1 p 2 15 ]
+"30
+} 0
+"9 /opt/microchip/xc8/v2.10/pic/sources/c99/common/lodiv.c
+[v ___lodiv __lodiv `(uo  1 e 8 0 ]
+{
+"12
+[v ___lodiv@quotient quotient `uo  1 a 8 53 ]
+"13
+[v ___lodiv@counter counter `uc  1 a 1 61 ]
+"9
+[v ___lodiv@dividend dividend `uo  1 p 8 37 ]
+[v ___lodiv@divisor divisor `uo  1 p 8 45 ]
+"32
+} 0
+"7 /opt/microchip/xc8/v2.10/pic/sources/c99/common/aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"10
+[v ___aldiv@quotient quotient `l  1 a 4 23 ]
+"11
+[v ___aldiv@sign sign `uc  1 a 1 22 ]
+[v ___aldiv@counter counter `uc  1 a 1 21 ]
+"7
+[v ___aldiv@dividend dividend `l  1 p 4 13 ]
+[v ___aldiv@divisor divisor `l  1 p 4 17 ]
+"41
+} 0
+"148 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/adf4351.c
+[v _adf4351_get_lock adf4351_get_lock `(i  1 e 2 0 ]
+{
+[s S95 . 4 `us 1 integer 2 0 `us 1 frac 2 2 ]
+[s S98 . 5 `uc 1 prescaler 1 0 `us 1 phase 2 1 `us 1 mod 2 3 ]
+[s S102 . 14 `uc 1 lownoise 1 0 `uc 1 muxout 1 1 `uc 1 refdbl 1 2 `uc 1 refdiv 1 3 `us 1 rcnt 2 4 `uc 1 dblbuff 1 6 `uc 1 cpc 1 7 `uc 1 ldf 1 8 `uc 1 ldp 1 9 `uc 1 pdpol 1 10 `uc 1 pd 1 11 `uc 1 cpts 1 12 `uc 1 cntreset 1 13 ]
+[s S116 . 7 `uc 1 bscm 1 0 `uc 1 abp 1 1 `uc 1 chcancel 1 2 `uc 1 csr 1 3 `uc 1 clkdivmode 1 4 `us 1 clkdiv 2 5 ]
+[s S123 . 10 `uc 1 fbsel 1 0 `uc 1 divsel 1 1 `uc 1 bsclkdiv 1 2 `uc 1 vcopd 1 3 `uc 1 mtld 1 4 `uc 1 auxoutsel 1 5 `uc 1 auxoutena 1 6 `uc 1 auxpwrout 1 7 `uc 1 rfoutena 1 8 `uc 1 rfoutpwr 1 9 ]
+[s S134 . 1 `uc 1 ldpinmod 1 0 ]
+[s S136 adf4351_ctx 55 `i 1 init 2 0 `S95 1 reg0 4 2 `S98 1 reg1 5 6 `S102 1 reg2 14 11 `S116 1 reg3 7 25 `S123 1 reg4 10 32 `S134 1 reg5 1 42 `ul 1 ref 4 43 `ul 1 pfd 4 47 `ul 1 vco_freq 4 51 ]
+[v adf4351_get_lock@ctx ctx `*.39S136  1 p 2 13 ]
+"151
+} 0
+"107 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/usart.c
+[v _rx_usart rx_usart `(v  1 e 1 0 ]
+{
+"109
+[v rx_usart@c c `i  1 a 2 79 ]
+"117
+} 0
+"54
+[v _usart_getc usart_getc `(i  1 e 2 0 ]
+{
+"56
+[v usart_getc@res res `i  1 a 2 17 ]
+"74
+} 0
+"116 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/gps.c
+[v _rx_gps rx_gps `(v  1 e 1 0 ]
+{
+[v rx_gps@c c `i  1 p 2 75 ]
+"118
+[v rx_gps@stat stat `uc  1 s 1 stat ]
+"119
+[v rx_gps@len_lsb len_lsb `us  1 s 2 len_lsb ]
+"222
+} 0
+"23
+[v _eval_gps eval_gps `(v  1 e 1 0 ]
+{
+"51
+[v eval_gps@pe pe `*.39uc  1 a 2 243 ]
+"48
+[v eval_gps@ps ps `*.39uc  1 a 2 246 ]
+"35
+[v eval_gps@i i `uc  1 a 1 242 ]
+"25
+[v eval_gps@elem elem `[15][16]uc  1 a 240 0 ]
+"26
+[v eval_gps@eidx eidx `uc  1 a 1 245 ]
+"34
+[v eval_gps@chksum chksum `uc  1 a 1 241 ]
+"38
+[v eval_gps@chksumgps chksumgps `uc  1 a 1 240 ]
+"23
+[v eval_gps@gpsbuf gpsbuf `*.39uc  1 p 2 69 ]
+"106
+} 0
+"4 /opt/microchip/xc8/v2.10/pic/sources/c99/common/strtol.c
+[v _strtol strtol `(l  1 e 4 0 ]
+{
+[v strtol@s s `*.39Cuc  1 p 2 63 ]
+[v strtol@endptr endptr `*.2*.2uc  1 p 2 65 ]
+[v strtol@base base `i  1 p 2 67 ]
+"7
+} 0
+"7 /opt/microchip/xc8/v2.10/pic/sources/c99/common/__strtoxl.c
+[v ___strtoxl __strtoxl `(ul  1 e 4 0 ]
+{
+"9
+[v ___strtoxl@a a `ul  1 a 4 56 ]
+[v ___strtoxl@limit limit `ul  1 a 4 50 ]
+[v ___strtoxl@prev_a prev_a `ul  1 a 4 38 ]
+"11
+[v ___strtoxl@cp cp `*.39Cuc  1 a 2 60 ]
+"10
+[v ___strtoxl@c c `uc  1 a 1 62 ]
+[v ___strtoxl@skip skip `uc  1 a 1 55 ]
+[v ___strtoxl@sign sign `uc  1 a 1 54 ]
+[v ___strtoxl@conv_done conv_done `uc  1 a 1 49 ]
+"7
+[v ___strtoxl@s s `*.39Cuc  1 p 2 27 ]
+[v ___strtoxl@endptr endptr `*.2*.39uc  1 p 2 29 ]
+[v ___strtoxl@base base `i  1 p 2 31 ]
+[v ___strtoxl@is_signed is_signed `uc  1 p 1 33 ]
+"84
+} 0
+"15 /opt/microchip/xc8/v2.10/pic/sources/c99/common/Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+{
+"17
+[v ___lmul@product product `ul  1 a 4 21 ]
+"15
+[v ___lmul@multiplier multiplier `ul  1 p 4 13 ]
+[v ___lmul@multiplicand multiplicand `ul  1 p 4 17 ]
+"129
+} 0
+"3 /opt/microchip/xc8/v2.10/pic/sources/c99/common/strchr.c
+[v _strchr strchr `(*.39uc  1 e 2 0 ]
+{
+[v strchr@s s `*.39Cuc  1 p 2 13 ]
+[v strchr@c c `i  1 p 2 15 ]
+"11
+} 0
+"4 /opt/microchip/xc8/v2.10/pic/sources/c99/common/memcpy.c
+[v _memcpy memcpy `(*.39v  1 e 2 0 ]
+{
+"8
+[v memcpy@s s `*.39Cuc  1 a 2 21 ]
+"7
+[v memcpy@d d `*.39uc  1 a 2 19 ]
+"9
+[v memcpy@tmp tmp `uc  1 a 1 23 ]
+"4
+[v memcpy@d1 d1 `*.39v  1 p 2 13 ]
+[v memcpy@s1 s1 `*.39Cv  1 p 2 15 ]
+[v memcpy@n n `ui  1 p 2 17 ]
+"18
+} 0
+"14 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/lnb.c
+[v _lnb_configure lnb_configure `(v  1 e 1 0 ]
+{
+"16
+[v lnb_configure@res res `i  1 a 2 52 ]
+[s S24 i2c_dev__ 2 `i 1 unused 2 0 ]
+"14
+[v lnb_configure@i2c i2c `*.39S24  1 p 2 47 ]
+[v lnb_configure@addr addr `uc  1 p 1 49 ]
+"34
+} 0
+"36
+[v _lnb_do_configure lnb_do_configure `(i  1 s 2 lnb_do_configure ]
+{
+"39
+[v lnb_do_configure@res res `i  1 a 2 98 ]
+"38
+[v lnb_do_configure@value value `uc  1 a 1 97 ]
+[s S24 i2c_dev__ 2 `i 1 unused 2 0 ]
+"36
+[v lnb_do_configure@i2c i2c `*.39S24  1 p 2 43 ]
+[v lnb_do_configure@addr addr `uc  1 p 1 45 ]
+"69
+} 0
+"74
+[v _check_LNB_status check_LNB_status `(uc  1 e 1 0 ]
+{
+"76
+[v check_LNB_status@stat stat `uc  1 a 1 46 ]
+[s S24 i2c_dev__ 2 `i 1 unused 2 0 ]
+"74
+[v check_LNB_status@i2c i2c `*.39S24  1 p 2 43 ]
+[v check_LNB_status@addr addr `uc  1 p 1 45 ]
+"97
+} 0
+"68 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/lcd.c
+[v _lcd_init lcd_init `(v  1 e 1 0 ]
+{
+"70
+[v lcd_init@res res `i  1 a 2 65 ]
+[s S24 i2c_dev__ 2 `i 1 unused 2 0 ]
+"68
+[v lcd_init@i2c i2c `*.39S24  1 p 2 62 ]
+[v lcd_init@addr addr `uc  1 p 1 64 ]
+"104
+} 0
+"113
+[v _ssd1306_commandbyte ssd1306_commandbyte `(v  1 e 1 0 ]
+{
+[v ssd1306_commandbyte@cmd cmd `uc  1 a 1 wreg ]
+[v ssd1306_commandbyte@cmd cmd `uc  1 a 1 wreg ]
+"115
+[v ssd1306_commandbyte@cmd cmd `uc  1 a 1 92 ]
+"117
+} 0
+"65 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/base/i2c.c
+[v _smbus8_write_byte smbus8_write_byte `(i  1 e 2 0 ]
+{
+[s S26 i2c_msg 7 `us 1 addr 2 0 `uc 1 flags 1 2 `us 1 len 2 3 `*.39v 1 data 2 5 ]
+"67
+[v smbus8_write_byte@msg msg `S26  1 a 7 2 ]
+"68
+[v smbus8_write_byte@tmp tmp `[2]uc  1 a 2 0 ]
+[s S24 i2c_dev__ 2 `i 1 unused 2 0 ]
+"65
+[v smbus8_write_byte@dev dev `*.39S24  1 p 2 87 ]
+[v smbus8_write_byte@addr addr `uc  1 p 1 89 ]
+[v smbus8_write_byte@reg reg `uc  1 p 1 90 ]
+[v smbus8_write_byte@data data `uc  1 p 1 91 ]
+"79
+} 0
+"190 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/lcd.c
+[v _print_string print_string `(v  1 e 1 0 ]
+{
+"193
+[v print_string@i i `uc  1 a 1 99 ]
+"190
+[v print_string@s s `*.35uc  1 p 2 55 ]
+[v print_string@x x `uc  1 p 1 57 ]
+[v print_string@y y `uc  1 p 1 58 ]
+[v print_string@underline underline `uc  1 p 1 59 ]
+"197
+} 0
+"168
+[v _print_char print_char `(v  1 e 1 0 ]
+{
+[v print_char@c c `uc  1 a 1 wreg ]
+"181
+[v print_char@b b `uc  1 a 1 51 ]
+"179
+[v print_char@x x `uc  1 a 1 53 ]
+"177
+[v print_char@y y `uc  1 a 1 54 ]
+"174
+[v print_char@map map `[8]uc  1 a 8 42 ]
+"170
+[v print_char@idx idx `uc  1 a 1 52 ]
+"168
+[v print_char@c c `uc  1 a 1 wreg ]
+[v print_char@xpos xpos `uc  1 p 1 23 ]
+[v print_char@ypos ypos `uc  1 p 1 24 ]
+[v print_char@underline underline `uc  1 p 1 25 ]
+"170
+[v print_char@c c `uc  1 a 1 50 ]
+"188
+} 0
+"159
+[v _lcd_draw8x8 lcd_draw8x8 `(v  1 e 1 0 ]
+{
+[v lcd_draw8x8@buffer buffer `*.39uc  1 p 2 19 ]
+[v lcd_draw8x8@x x `uc  1 p 1 21 ]
+[v lcd_draw8x8@y y `uc  1 p 1 22 ]
+"165
+} 0
+"144
+[v _lcd_clear_screen lcd_clear_screen `(v  1 e 1 0 ]
+{
+[v lcd_clear_screen@ystart ystart `uc  1 a 1 wreg ]
+"149
+[v lcd_clear_screen@row row `uc  1 a 1 129 ]
+"146
+[v lcd_clear_screen@buf buf `[128]uc  1 a 128 0 ]
+"144
+[v lcd_clear_screen@ystart ystart `uc  1 a 1 wreg ]
+"147
+[v lcd_clear_screen@ystart ystart `uc  1 a 1 128 ]
+"155
+} 0
+"132
+[v _ssd1306_setpos ssd1306_setpos `(v  1 e 1 0 ]
+{
+[v ssd1306_setpos@x x `uc  1 a 1 wreg ]
+"134
+[v ssd1306_setpos@data data `[3]uc  1 a 3 15 ]
+"132
+[v ssd1306_setpos@x x `uc  1 a 1 wreg ]
+[v ssd1306_setpos@y y `uc  1 p 1 14 ]
+"133
+[v ssd1306_setpos@F3137 F3137 `[3]uc  1 s 3 F3137 ]
+[v ssd1306_setpos@x x `uc  1 a 1 18 ]
+"142
+} 0
+"106
+[v _ssd1306_command ssd1306_command `(v  1 e 1 0 ]
+{
+[v ssd1306_command@cmd cmd `*.39uc  1 p 2 95 ]
+[v ssd1306_command@len len `i  1 p 2 97 ]
+"111
+} 0
+"119
+[v _ssd1306_data ssd1306_data `(v  1 e 1 0 ]
+{
+[v ssd1306_data@data data `*.39uc  1 p 2 95 ]
+[v ssd1306_data@len len `i  1 p 2 97 ]
+"124
+} 0
+"81 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/base/i2c.c
+[v _smbus8_write_data smbus8_write_data `(i  1 e 2 0 ]
+{
+[s S26 i2c_msg 7 `us 1 addr 2 0 `uc 1 flags 1 2 `us 1 len 2 3 `*.39v 1 data 2 5 ]
+"83
+[v smbus8_write_data@msg msg `[2]S26  1 a 14 0 ]
+[s S24 i2c_dev__ 2 `i 1 unused 2 0 ]
+"81
+[v smbus8_write_data@dev dev `*.39S24  1 p 2 87 ]
+[v smbus8_write_data@addr addr `uc  1 p 1 89 ]
+[v smbus8_write_data@reg reg `uc  1 p 1 90 ]
+[v smbus8_write_data@data data `*.39Cuc  1 p 2 91 ]
+[v smbus8_write_data@len len `i  1 p 2 93 ]
+"96
+} 0
+"21
+[v _i2c_probe_addr i2c_probe_addr `(i  1 e 2 0 ]
+{
+[s S26 i2c_msg 7 `us 1 addr 2 0 `uc 1 flags 1 2 `us 1 len 2 3 `*.39v 1 data 2 5 ]
+"23
+[v i2c_probe_addr@msg msg `S26  1 a 7 90 ]
+[s S24 i2c_dev__ 2 `i 1 unused 2 0 ]
+"21
+[v i2c_probe_addr@dev dev `*.39S24  1 p 2 87 ]
+[v i2c_probe_addr@addr addr `uc  1 p 1 89 ]
+"29
+} 0
+"312 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/gps.c
+[v _init_gps init_gps `(v  1 e 1 0 ]
+{
+"321
+} 0
+"323
+[v _send_UBX_string send_UBX_string `(v  1 e 1 0 ]
+{
+[v send_UBX_string@class class `uc  1 a 1 wreg ]
+"358
+[v send_UBX_string@i_2075 i `i  1 a 2 55 ]
+"347
+[v send_UBX_string@i_2074 i `i  1 a 2 53 ]
+"340
+[v send_UBX_string@i i `i  1 a 2 51 ]
+"325
+[v send_UBX_string@txbuf txbuf `[50]uc  1 a 50 0 ]
+"326
+[v send_UBX_string@idx idx `i  1 a 2 59 ]
+"346
+[v send_UBX_string@CK_A CK_A `uc  1 a 1 58 ]
+[v send_UBX_string@CK_B CK_B `uc  1 a 1 57 ]
+"323
+[v send_UBX_string@class class `uc  1 a 1 wreg ]
+[v send_UBX_string@id id `uc  1 p 1 43 ]
+[v send_UBX_string@len len `us  1 p 2 44 ]
+[v send_UBX_string@payload payload `*.39uc  1 p 2 46 ]
+"327
+[v send_UBX_string@giveup giveup `uc  1 s 1 giveup ]
+"326
+[v send_UBX_string@class class `uc  1 a 1 50 ]
+"362
+} 0
+"134 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/usart.c
+[v _putgps putgps `(v  1 e 1 0 ]
+{
+[v putgps@c c `uc  1 a 1 wreg ]
+[v putgps@c c `uc  1 a 1 wreg ]
+"136
+[v putgps@c c `uc  1 a 1 14 ]
+"137
+} 0
+"9 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/gpio.c
+[v _init_gpios init_gpios `(v  1 e 1 0 ]
+{
+"75
+} 0
+"78
+[v _check_RXTX check_RXTX `(v  1 e 1 0 ]
+{
+"84
+[v check_RXTX@i i `i  1 a 2 16 ]
+"104
+} 0
+"27 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/i2c_native.c
+[v _i2c_native_init i2c_native_init `(v  1 e 1 0 ]
+{
+[s S33 i2c_driver_ops 4 `*.37(i 1 transfer 2 0 `*.37(i 1 setbaud 2 2 ]
+[s S875 i2c_data_native 8 `S33 1 ops 4 0 `ul 1 baud 4 4 ]
+[v i2c_native_init@ctx ctx `*.39S875  1 p 2 52 ]
+[v i2c_native_init@baud baud `ul  1 p 4 54 ]
+"37
+} 0
+"500 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/si5328.c
+[v _check_si5328_status check_si5328_status `(uc  1 e 1 0 ]
+{
+"502
+[v check_si5328_status@res res `uc  1 a 1 51 ]
+"505
+[v check_si5328_status@lock lock `uc  1 a 1 50 ]
+"502
+[v check_si5328_status@ret ret `uc  1 a 1 49 ]
+[s S24 i2c_dev__ 2 `i 1 unused 2 0 ]
+"500
+[v check_si5328_status@i2c i2c `*.39S24  1 p 2 43 ]
+[v check_si5328_status@addr addr `uc  1 p 1 45 ]
+"503
+[v check_si5328_status@lastlock lastlock `uc  1 s 1 lastlock ]
+"542
+[v check_si5328_status@lastinput lastinput `uc  1 s 1 lastinput ]
+"572
+} 0
+"589
+[v _read_reg read_reg `(uc  1 s 1 read_reg ]
+{
+"591
+[v read_reg@val val `uc  1 a 1 99 ]
+[s S24 i2c_dev__ 2 `i 1 unused 2 0 ]
+"589
+[v read_reg@i2c i2c `*.39S24  1 p 2 93 ]
+[v read_reg@addr addr `uc  1 p 1 95 ]
+[v read_reg@reg reg `uc  1 p 1 96 ]
+"595
+} 0
+"116 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/base/i2c.c
+[v _smbus8_read_byte smbus8_read_byte `(i  1 e 2 0 ]
+{
+[s S26 i2c_msg 7 `us 1 addr 2 0 `uc 1 flags 1 2 `us 1 len 2 3 `*.39v 1 data 2 5 ]
+"118
+[v smbus8_read_byte@msg msg `[2]S26  1 a 14 0 ]
+[s S24 i2c_dev__ 2 `i 1 unused 2 0 ]
+"116
+[v smbus8_read_byte@dev dev `*.39S24  1 p 2 87 ]
+[v smbus8_read_byte@addr addr `uc  1 p 1 89 ]
+[v smbus8_read_byte@reg reg `uc  1 p 1 90 ]
+[v smbus8_read_byte@data data `*.39uc  1 p 2 91 ]
+"131
+} 0
+"15
+[v _i2c_transfer i2c_transfer `(i  1 e 2 0 ]
+{
+[s S24 i2c_dev__ 2 `i 1 unused 2 0 ]
+[v i2c_transfer@dev dev `*.39S24  1 p 2 81 ]
+[s S26 i2c_msg 7 `us 1 addr 2 0 `uc 1 flags 1 2 `us 1 len 2 3 `*.39v 1 data 2 5 ]
+[v i2c_transfer@msg msg `*.39S26  1 p 2 83 ]
+[v i2c_transfer@num num `i  1 p 2 85 ]
+"19
+} 0
+"203 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/i2c_native.c
+[v _i2c_transfer_native i2c_transfer_native `(i  1 s 2 i2c_transfer_native ]
+{
+[s S26 i2c_msg 7 `us 1 addr 2 0 `uc 1 flags 1 2 `us 1 len 2 3 `*.39v 1 data 2 5 ]
+"206
+[v i2c_transfer_native@pmsg pmsg `*.39S26  1 a 2 79 ]
+"208
+[v i2c_transfer_native@res res `i  1 a 2 77 ]
+"209
+[v i2c_transfer_native@left left `us  1 a 2 75 ]
+[s S33 i2c_driver_ops 4 `*.37(i 1 transfer 2 0 `*.37(i 1 setbaud 2 2 ]
+"205
+[s S875 i2c_data_native 8 `S33 1 ops 4 0 `ul 1 baud 4 4 ]
+[v i2c_transfer_native@ctx ctx `*.39S875  1 a 2 73 ]
+"210
+[v i2c_transfer_native@bdata bdata `*.39uc  1 a 2 71 ]
+"208
+[v i2c_transfer_native@i i `i  1 a 2 69 ]
+"207
+[v i2c_transfer_native@wantack wantack `i  1 a 2 67 ]
+[v i2c_transfer_native@read read `i  1 a 2 65 ]
+[v i2c_transfer_native@inmsg inmsg `i  1 a 2 63 ]
+[v i2c_transfer_native@ack ack `i  1 a 2 61 ]
+[s S24 i2c_dev__ 2 `i 1 unused 2 0 ]
+"203
+[v i2c_transfer_native@dev dev `*.39S24  1 p 2 54 ]
+[v i2c_transfer_native@msg msg `*.39S26  1 p 2 56 ]
+[v i2c_transfer_native@num num `i  1 p 2 58 ]
+"256
+} 0
+"180
+[v _i2c_write i2c_write `(i  1 s 2 i2c_write ]
+{
+[v i2c_write@data data `uc  1 a 1 wreg ]
+"182
+[v i2c_write@res res `i  1 a 2 20 ]
+"180
+[v i2c_write@data data `uc  1 a 1 wreg ]
+[v i2c_write@wantack wantack `i  1 p 2 17 ]
+"184
+[v i2c_write@data data `uc  1 a 1 19 ]
+"200
+} 0
+"136
+[v _i2c_stop i2c_stop `(v  1 s 1 i2c_stop ]
+{
+[s S33 i2c_driver_ops 4 `*.37(i 1 transfer 2 0 `*.37(i 1 setbaud 2 2 ]
+[s S875 i2c_data_native 8 `S33 1 ops 4 0 `ul 1 baud 4 4 ]
+[v i2c_stop@ctx ctx `*.39S875  1 p 2 52 ]
+"147
+} 0
+"42
+[v _i2c_reset i2c_reset `(v  1 s 1 i2c_reset ]
+{
+"44
+[v i2c_reset@reg reg `ul  1 a 4 48 ]
+[s S33 i2c_driver_ops 4 `*.37(i 1 transfer 2 0 `*.37(i 1 setbaud 2 2 ]
+"42
+[s S875 i2c_data_native 8 `S33 1 ops 4 0 `ul 1 baud 4 4 ]
+[v i2c_reset@ctx ctx `*.39S875  1 p 2 38 ]
+"59
+} 0
+"7 /opt/microchip/xc8/v2.10/pic/sources/c99/common/__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"10
+[v ___lldiv@quotient quotient `ul  1 a 4 33 ]
+"11
+[v ___lldiv@counter counter `uc  1 a 1 37 ]
+"7
+[v ___lldiv@dividend dividend `ul  1 p 4 25 ]
+[v ___lldiv@divisor divisor `ul  1 p 4 29 ]
+"30
+} 0
+"104 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/i2c_native.c
+[v _i2c_start i2c_start `(i  1 s 2 i2c_start ]
+{
+[v i2c_start@addr addr `uc  1 a 1 wreg ]
+"106
+[v i2c_start@res res `i  1 a 2 24 ]
+"104
+[v i2c_start@addr addr `uc  1 a 1 wreg ]
+[v i2c_start@read read `i  1 p 2 17 ]
+[v i2c_start@rep rep `i  1 p 2 19 ]
+[v i2c_start@wantack wantack `i  1 p 2 21 ]
+"108
+[v i2c_start@addr addr `uc  1 a 1 23 ]
+"133
+} 0
+"150
+[v _i2c_read i2c_read `(i  1 s 2 i2c_read ]
+{
+"152
+[v i2c_read@res res `i  1 a 2 22 ]
+"150
+[v i2c_read@data data `*.39uc  1 p 2 17 ]
+[v i2c_read@ack ack `i  1 p 2 19 ]
+"177
+} 0
+"81
+[v _i2c_wait_int i2c_wait_int `(i  1 s 2 i2c_wait_int ]
+{
+[v i2c_wait_int@timeout timeout `ul  1 p 4 13 ]
+"101
+} 0
+"155 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/adf4351.c
+[v _check_ADF5341_status check_ADF5341_status `(v  1 e 1 0 ]
+{
+"159
+[v check_ADF5341_status@stat stat `uc  1 a 1 45 ]
+[s S95 . 4 `us 1 integer 2 0 `us 1 frac 2 2 ]
+"155
+[s S98 . 5 `uc 1 prescaler 1 0 `us 1 phase 2 1 `us 1 mod 2 3 ]
+[s S102 . 14 `uc 1 lownoise 1 0 `uc 1 muxout 1 1 `uc 1 refdbl 1 2 `uc 1 refdiv 1 3 `us 1 rcnt 2 4 `uc 1 dblbuff 1 6 `uc 1 cpc 1 7 `uc 1 ldf 1 8 `uc 1 ldp 1 9 `uc 1 pdpol 1 10 `uc 1 pd 1 11 `uc 1 cpts 1 12 `uc 1 cntreset 1 13 ]
+[s S116 . 7 `uc 1 bscm 1 0 `uc 1 abp 1 1 `uc 1 chcancel 1 2 `uc 1 csr 1 3 `uc 1 clkdivmode 1 4 `us 1 clkdiv 2 5 ]
+[s S123 . 10 `uc 1 fbsel 1 0 `uc 1 divsel 1 1 `uc 1 bsclkdiv 1 2 `uc 1 vcopd 1 3 `uc 1 mtld 1 4 `uc 1 auxoutsel 1 5 `uc 1 auxoutena 1 6 `uc 1 auxpwrout 1 7 `uc 1 rfoutena 1 8 `uc 1 rfoutpwr 1 9 ]
+[s S134 . 1 `uc 1 ldpinmod 1 0 ]
+[s S136 adf4351_ctx 55 `i 1 init 2 0 `S95 1 reg0 4 2 `S98 1 reg1 5 6 `S102 1 reg2 14 11 `S116 1 reg3 7 25 `S123 1 reg4 10 32 `S134 1 reg5 1 42 `ul 1 ref 4 43 `ul 1 pfd 4 47 `ul 1 vco_freq 4 51 ]
+[v check_ADF5341_status@ctx ctx `*.39S136  1 p 2 43 ]
+"175
+} 0
+"5 /opt/microchip/xc8/v2.10/pic/sources/c99/common/printf.c
+[v _printf printf `(i  1 e 2 0 ]
+{
+"8
+[v printf@ap ap `[1]*.39v  1 a 2 41 ]
+"5
+[v printf@fmt fmt `*.25Cuc  1 p 2 29 ]
+"13
+} 0
+"1368 /opt/microchip/xc8/v2.10/pic/sources/c99/common/doprnt.c
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+{
+"1371
+[v vfprintf@cfmt cfmt `*.25uc  1 a 2 95 ]
+[s S1463 _IO_FILE 0 ]
+"1368
+[v vfprintf@fp fp `*.2S1463  1 p 2 23 ]
+[v vfprintf@fmt fmt `*.25Cuc  1 p 2 25 ]
+[v vfprintf@ap ap `*.39*.39v  1 p 2 27 ]
+"1382
+} 0
+"670
+[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
+{
+"675
+[v vfpfcnvrt@llu llu `uo  1 a 8 14 ]
+"674
+[v vfpfcnvrt@ll ll `o  1 a 8 6 ]
+"673
+[v vfpfcnvrt@done done `i  1 a 2 2 ]
+"672
+[v vfpfcnvrt@cp cp `*.35uc  1 a 2 0 ]
+[v vfpfcnvrt@c c `uc  1 a 1 22 ]
+[s S1463 _IO_FILE 0 ]
+"670
+[v vfpfcnvrt@fp fp `*.2S1463  1 p 2 75 ]
+[v vfpfcnvrt@fmt fmt `*.39*.25uc  1 p 2 77 ]
+[v vfpfcnvrt@ap ap `*.39*.39v  1 p 2 79 ]
+"1365
+} 0
+"623
+[v _xtoa xtoa `(i  1 s 2 xtoa ]
+{
+"626
+[v xtoa@n n `uo  1 a 8 63 ]
+"625
+[v xtoa@c c `i  1 a 2 73 ]
+[v xtoa@i i `i  1 a 2 71 ]
+[v xtoa@w w `i  1 a 2 61 ]
+[v xtoa@p p `i  1 a 2 59 ]
+[s S1463 _IO_FILE 0 ]
+"623
+[v xtoa@fp fp `*.2S1463  1 p 2 36 ]
+[v xtoa@d d `uo  1 p 8 38 ]
+[v xtoa@x x `uc  1 p 1 46 ]
+"665
+} 0
+"4 /opt/microchip/xc8/v2.10/pic/sources/c99/common/toupper.c
+[v _toupper toupper `(i  1 e 2 0 ]
+{
+[v toupper@c c `i  1 p 2 19 ]
+"8
+} 0
+"5 /opt/microchip/xc8/v2.10/pic/sources/c99/common/islower.c
+[v _islower islower `(i  1 e 2 0 ]
+{
+[v islower@c c `i  1 p 2 13 ]
+"8
+} 0
+"5 /opt/microchip/xc8/v2.10/pic/sources/c99/common/isupper.c
+[v _isupper isupper `(i  1 e 2 0 ]
+{
+[v isupper@c c `i  1 p 2 13 ]
+"8
+} 0
+"5 /opt/microchip/xc8/v2.10/pic/sources/c99/common/isalpha.c
+[v _isalpha isalpha `(i  1 e 2 0 ]
+{
+[v isalpha@c c `i  1 p 2 13 ]
+"8
+} 0
+"3 /opt/microchip/xc8/v2.10/pic/sources/c99/common/strncmp.c
+[v _strncmp strncmp `(i  1 e 2 0 ]
+{
+"5
+[v strncmp@r r `*.25Cuc  1 a 2 22 ]
+[v strncmp@l l `*.25Cuc  1 a 2 20 ]
+"3
+[v strncmp@_l _l `*.25Cuc  1 p 2 13 ]
+[v strncmp@_r _r `*.25Cuc  1 p 2 15 ]
+[v strncmp@n n `ui  1 p 2 17 ]
+"9
+} 0
+"546 /opt/microchip/xc8/v2.10/pic/sources/c99/common/doprnt.c
+[v _stoa stoa `(i  1 s 2 stoa ]
+{
+"548
+[v stoa@nuls nuls `[7]uc  1 a 7 23 ]
+"549
+[v stoa@l l `i  1 a 2 38 ]
+[v stoa@p p `i  1 a 2 36 ]
+"548
+[v stoa@cp cp `*.35uc  1 a 2 34 ]
+"549
+[v stoa@w w `i  1 a 2 32 ]
+[v stoa@i i `i  1 a 2 30 ]
+[s S1463 _IO_FILE 0 ]
+"546
+[v stoa@fp fp `*.2S1463  1 p 2 18 ]
+[v stoa@s s `*.35uc  1 p 2 20 ]
+"548
+[v stoa@F1139 F1139 `[7]uc  1 s 7 F1139 ]
+"589
+} 0
+"274
+[v _dtoa dtoa `(i  1 s 2 dtoa ]
+{
+"277
+[v dtoa@n n `o  1 a 8 65 ]
+"276
+[v dtoa@i i `i  1 a 2 73 ]
+[v dtoa@s s `i  1 a 2 63 ]
+[v dtoa@w w `i  1 a 2 61 ]
+[v dtoa@p p `i  1 a 2 59 ]
+[s S1463 _IO_FILE 0 ]
+"274
+[v dtoa@fp fp `*.2S1463  1 p 2 39 ]
+[v dtoa@d d `o  1 p 8 41 ]
+"315
+} 0
+"72
+[v _pad pad `(i  1 s 2 pad ]
+{
+"74
+[v pad@w w `i  1 a 2 34 ]
+[v pad@i i `i  1 a 2 32 ]
+[s S1463 _IO_FILE 0 ]
+"72
+[v pad@fp fp `*.2S1463  1 p 2 25 ]
+[v pad@buf buf `*.39uc  1 p 2 27 ]
+[v pad@p p `i  1 p 2 29 ]
+"95
+} 0
+"5 /opt/microchip/xc8/v2.10/pic/sources/c99/common/strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+{
+"7
+[v strlen@a a `*.35Cuc  1 a 2 15 ]
+"5
+[v strlen@s s `*.35Cuc  1 p 2 13 ]
+"12
+} 0
+"8 /opt/microchip/xc8/v2.10/pic/sources/c99/common/nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+{
+"11
+[v fputs@i i `i  1 a 2 23 ]
+"10
+[v fputs@c c `uc  1 a 1 22 ]
+"8
+[v fputs@s s `*.39Cuc  1 p 2 18 ]
+[s S3486 _IO_FILE 7 `*.2uc 1 buffer 3 0 `i 1 count 2 3 `i 1 limit 2 5 ]
+[v fputs@fp fp `*.2S3486  1 p 2 20 ]
+"19
+} 0
+"120 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/usart.c
+[v _fputc fputc `(i  1 e 2 0 ]
+{
+[v fputc@c c `i  1 p 2 14 ]
+[s S1463 _IO_FILE 0 ]
+[v fputc@fp fp `*.2S1463  1 p 2 16 ]
+"132
+} 0
+"42
+[v _usart_putc usart_putc `(uc  1 e 1 0 ]
+{
+[v usart_putc@c c `uc  1 a 1 wreg ]
+[v usart_putc@c c `uc  1 a 1 wreg ]
+"45
+[v usart_putc@c c `uc  1 a 1 13 ]
+"51
+} 0
+"1 /opt/microchip/xc8/v2.10/pic/sources/c99/common/abs.c
+[v _abs abs `(i  1 e 2 0 ]
+{
+[v abs@a a `i  1 p 2 31 ]
+"4
+} 0
+"9 /opt/microchip/xc8/v2.10/pic/sources/c99/common/aomod.c
+[v ___aomod __aomod `(o  1 e 8 0 ]
+{
+"12
+[v ___aomod@sign sign `uc  1 a 1 30 ]
+[v ___aomod@counter counter `uc  1 a 1 29 ]
+"9
+[v ___aomod@dividend dividend `o  1 p 8 13 ]
+[v ___aomod@divisor divisor `o  1 p 8 21 ]
+"36
+} 0
+"9 /opt/microchip/xc8/v2.10/pic/sources/c99/common/aodiv.c
+[v ___aodiv __aodiv `(o  1 e 8 0 ]
+{
+"12
+[v ___aodiv@quotient quotient `o  1 a 8 31 ]
+"13
+[v ___aodiv@sign sign `uc  1 a 1 30 ]
+[v ___aodiv@counter counter `uc  1 a 1 29 ]
+"9
+[v ___aodiv@dividend dividend `o  1 p 8 13 ]
+[v ___aodiv@divisor divisor `o  1 p 8 21 ]
+"43
+} 0
+"4 /opt/microchip/xc8/v2.10/pic/sources/c99/common/atoi.c
+[v _atoi atoi `(i  1 e 2 0 ]
+{
+"6
+[v atoi@n n `i  1 a 2 39 ]
+[v atoi@neg neg `i  1 a 2 32 ]
+"4
+[v atoi@s s `*.35Cuc  1 p 2 26 ]
+"16
+} 0
+"5 /opt/microchip/xc8/v2.10/pic/sources/c99/common/isspace.c
+[v _isspace isspace `(i  1 e 2 0 ]
+{
+[v isspace@c c `i  1 p 2 13 ]
+"8
+} 0
+"5 /opt/microchip/xc8/v2.10/pic/sources/c99/common/isdigit.c
+[v _isdigit isdigit `(i  1 e 2 0 ]
+{
+[v isdigit@c c `i  1 p 2 13 ]
+"8
+} 0
+"15 /opt/microchip/xc8/v2.10/pic/sources/c99/common/Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 24 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 20 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 22 ]
+"53
+} 0
+"203 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/adf4351.c
+[v _adf4351_set_tune adf4351_set_tune `(v  1 e 1 0 ]
+{
+[s S95 . 4 `us 1 integer 2 0 `us 1 frac 2 2 ]
+[s S98 . 5 `uc 1 prescaler 1 0 `us 1 phase 2 1 `us 1 mod 2 3 ]
+[s S102 . 14 `uc 1 lownoise 1 0 `uc 1 muxout 1 1 `uc 1 refdbl 1 2 `uc 1 refdiv 1 3 `us 1 rcnt 2 4 `uc 1 dblbuff 1 6 `uc 1 cpc 1 7 `uc 1 ldf 1 8 `uc 1 ldp 1 9 `uc 1 pdpol 1 10 `uc 1 pd 1 11 `uc 1 cpts 1 12 `uc 1 cntreset 1 13 ]
+[s S116 . 7 `uc 1 bscm 1 0 `uc 1 abp 1 1 `uc 1 chcancel 1 2 `uc 1 csr 1 3 `uc 1 clkdivmode 1 4 `us 1 clkdiv 2 5 ]
+[s S123 . 10 `uc 1 fbsel 1 0 `uc 1 divsel 1 1 `uc 1 bsclkdiv 1 2 `uc 1 vcopd 1 3 `uc 1 mtld 1 4 `uc 1 auxoutsel 1 5 `uc 1 auxoutena 1 6 `uc 1 auxpwrout 1 7 `uc 1 rfoutena 1 8 `uc 1 rfoutpwr 1 9 ]
+[s S134 . 1 `uc 1 ldpinmod 1 0 ]
+[s S136 adf4351_ctx 55 `i 1 init 2 0 `S95 1 reg0 4 2 `S98 1 reg1 5 6 `S102 1 reg2 14 11 `S116 1 reg3 7 25 `S123 1 reg4 10 32 `S134 1 reg5 1 42 `ul 1 ref 4 43 `ul 1 pfd 4 47 `ul 1 vco_freq 4 51 ]
+[v adf4351_set_tune@ctx ctx `*.39S136  1 p 2 13 ]
+[v adf4351_set_tune@icp icp `uc  1 p 1 15 ]
+[v adf4351_set_tune@pout pout `uc  1 p 1 16 ]
+[v adf4351_set_tune@lownoise lownoise `i  1 p 2 17 ]
+"213
+} 0
+"178
+[v _adf4351_set_mode adf4351_set_mode `(v  1 e 1 0 ]
+{
+[s S95 . 4 `us 1 integer 2 0 `us 1 frac 2 2 ]
+[s S98 . 5 `uc 1 prescaler 1 0 `us 1 phase 2 1 `us 1 mod 2 3 ]
+[s S102 . 14 `uc 1 lownoise 1 0 `uc 1 muxout 1 1 `uc 1 refdbl 1 2 `uc 1 refdiv 1 3 `us 1 rcnt 2 4 `uc 1 dblbuff 1 6 `uc 1 cpc 1 7 `uc 1 ldf 1 8 `uc 1 ldp 1 9 `uc 1 pdpol 1 10 `uc 1 pd 1 11 `uc 1 cpts 1 12 `uc 1 cntreset 1 13 ]
+[s S116 . 7 `uc 1 bscm 1 0 `uc 1 abp 1 1 `uc 1 chcancel 1 2 `uc 1 csr 1 3 `uc 1 clkdivmode 1 4 `us 1 clkdiv 2 5 ]
+[s S123 . 10 `uc 1 fbsel 1 0 `uc 1 divsel 1 1 `uc 1 bsclkdiv 1 2 `uc 1 vcopd 1 3 `uc 1 mtld 1 4 `uc 1 auxoutsel 1 5 `uc 1 auxoutena 1 6 `uc 1 auxpwrout 1 7 `uc 1 rfoutena 1 8 `uc 1 rfoutpwr 1 9 ]
+[s S134 . 1 `uc 1 ldpinmod 1 0 ]
+[s S136 adf4351_ctx 55 `i 1 init 2 0 `S95 1 reg0 4 2 `S98 1 reg1 5 6 `S102 1 reg2 14 11 `S116 1 reg3 7 25 `S123 1 reg4 10 32 `S134 1 reg5 1 42 `ul 1 ref 4 43 `ul 1 pfd 4 47 `ul 1 vco_freq 4 51 ]
+[v adf4351_set_mode@ctx ctx `*.39S136  1 p 2 39 ]
+[v adf4351_set_mode@enable enable `i  1 p 2 41 ]
+"200
+} 0
+"230
+[v _adf4351_setup adf4351_setup `(v  1 s 1 adf4351_setup ]
+{
+[s S95 . 4 `us 1 integer 2 0 `us 1 frac 2 2 ]
+[s S98 . 5 `uc 1 prescaler 1 0 `us 1 phase 2 1 `us 1 mod 2 3 ]
+[s S102 . 14 `uc 1 lownoise 1 0 `uc 1 muxout 1 1 `uc 1 refdbl 1 2 `uc 1 refdiv 1 3 `us 1 rcnt 2 4 `uc 1 dblbuff 1 6 `uc 1 cpc 1 7 `uc 1 ldf 1 8 `uc 1 ldp 1 9 `uc 1 pdpol 1 10 `uc 1 pd 1 11 `uc 1 cpts 1 12 `uc 1 cntreset 1 13 ]
+[s S116 . 7 `uc 1 bscm 1 0 `uc 1 abp 1 1 `uc 1 chcancel 1 2 `uc 1 csr 1 3 `uc 1 clkdivmode 1 4 `us 1 clkdiv 2 5 ]
+[s S123 . 10 `uc 1 fbsel 1 0 `uc 1 divsel 1 1 `uc 1 bsclkdiv 1 2 `uc 1 vcopd 1 3 `uc 1 mtld 1 4 `uc 1 auxoutsel 1 5 `uc 1 auxoutena 1 6 `uc 1 auxpwrout 1 7 `uc 1 rfoutena 1 8 `uc 1 rfoutpwr 1 9 ]
+[s S134 . 1 `uc 1 ldpinmod 1 0 ]
+[s S136 adf4351_ctx 55 `i 1 init 2 0 `S95 1 reg0 4 2 `S98 1 reg1 5 6 `S102 1 reg2 14 11 `S116 1 reg3 7 25 `S123 1 reg4 10 32 `S134 1 reg5 1 42 `ul 1 ref 4 43 `ul 1 pfd 4 47 `ul 1 vco_freq 4 51 ]
+[v adf4351_setup@ctx ctx `*.39S136  1 p 2 37 ]
+"238
+} 0
+"324
+[v _adf4351_write_reg5 adf4351_write_reg5 `(v  1 s 1 adf4351_write_reg5 ]
+{
+"327
+[v adf4351_write_reg5@data data `ul  1 a 4 32 ]
+[s S95 . 4 `us 1 integer 2 0 `us 1 frac 2 2 ]
+"324
+[s S98 . 5 `uc 1 prescaler 1 0 `us 1 phase 2 1 `us 1 mod 2 3 ]
+[s S102 . 14 `uc 1 lownoise 1 0 `uc 1 muxout 1 1 `uc 1 refdbl 1 2 `uc 1 refdiv 1 3 `us 1 rcnt 2 4 `uc 1 dblbuff 1 6 `uc 1 cpc 1 7 `uc 1 ldf 1 8 `uc 1 ldp 1 9 `uc 1 pdpol 1 10 `uc 1 pd 1 11 `uc 1 cpts 1 12 `uc 1 cntreset 1 13 ]
+[s S116 . 7 `uc 1 bscm 1 0 `uc 1 abp 1 1 `uc 1 chcancel 1 2 `uc 1 csr 1 3 `uc 1 clkdivmode 1 4 `us 1 clkdiv 2 5 ]
+[s S123 . 10 `uc 1 fbsel 1 0 `uc 1 divsel 1 1 `uc 1 bsclkdiv 1 2 `uc 1 vcopd 1 3 `uc 1 mtld 1 4 `uc 1 auxoutsel 1 5 `uc 1 auxoutena 1 6 `uc 1 auxpwrout 1 7 `uc 1 rfoutena 1 8 `uc 1 rfoutpwr 1 9 ]
+[s S134 . 1 `uc 1 ldpinmod 1 0 ]
+[s S136 adf4351_ctx 55 `i 1 init 2 0 `S95 1 reg0 4 2 `S98 1 reg1 5 6 `S102 1 reg2 14 11 `S116 1 reg3 7 25 `S123 1 reg4 10 32 `S134 1 reg5 1 42 `ul 1 ref 4 43 `ul 1 pfd 4 47 `ul 1 vco_freq 4 51 ]
+[v adf4351_write_reg5@ctx ctx `*.39S136  1 p 2 25 ]
+"333
+} 0
+"304
+[v _adf4351_write_reg4 adf4351_write_reg4 `(v  1 s 1 adf4351_write_reg4 ]
+{
+"307
+[v adf4351_write_reg4@data data `ul  1 a 4 32 ]
+[s S95 . 4 `us 1 integer 2 0 `us 1 frac 2 2 ]
+"304
+[s S98 . 5 `uc 1 prescaler 1 0 `us 1 phase 2 1 `us 1 mod 2 3 ]
+[s S102 . 14 `uc 1 lownoise 1 0 `uc 1 muxout 1 1 `uc 1 refdbl 1 2 `uc 1 refdiv 1 3 `us 1 rcnt 2 4 `uc 1 dblbuff 1 6 `uc 1 cpc 1 7 `uc 1 ldf 1 8 `uc 1 ldp 1 9 `uc 1 pdpol 1 10 `uc 1 pd 1 11 `uc 1 cpts 1 12 `uc 1 cntreset 1 13 ]
+[s S116 . 7 `uc 1 bscm 1 0 `uc 1 abp 1 1 `uc 1 chcancel 1 2 `uc 1 csr 1 3 `uc 1 clkdivmode 1 4 `us 1 clkdiv 2 5 ]
+[s S123 . 10 `uc 1 fbsel 1 0 `uc 1 divsel 1 1 `uc 1 bsclkdiv 1 2 `uc 1 vcopd 1 3 `uc 1 mtld 1 4 `uc 1 auxoutsel 1 5 `uc 1 auxoutena 1 6 `uc 1 auxpwrout 1 7 `uc 1 rfoutena 1 8 `uc 1 rfoutpwr 1 9 ]
+[s S134 . 1 `uc 1 ldpinmod 1 0 ]
+[s S136 adf4351_ctx 55 `i 1 init 2 0 `S95 1 reg0 4 2 `S98 1 reg1 5 6 `S102 1 reg2 14 11 `S116 1 reg3 7 25 `S123 1 reg4 10 32 `S134 1 reg5 1 42 `ul 1 ref 4 43 `ul 1 pfd 4 47 `ul 1 vco_freq 4 51 ]
+[v adf4351_write_reg4@ctx ctx `*.39S136  1 p 2 25 ]
+"322
+} 0
+"288
+[v _adf4351_write_reg3 adf4351_write_reg3 `(v  1 s 1 adf4351_write_reg3 ]
+{
+"291
+[v adf4351_write_reg3@data data `ul  1 a 4 33 ]
+[s S95 . 4 `us 1 integer 2 0 `us 1 frac 2 2 ]
+"288
+[s S98 . 5 `uc 1 prescaler 1 0 `us 1 phase 2 1 `us 1 mod 2 3 ]
+[s S102 . 14 `uc 1 lownoise 1 0 `uc 1 muxout 1 1 `uc 1 refdbl 1 2 `uc 1 refdiv 1 3 `us 1 rcnt 2 4 `uc 1 dblbuff 1 6 `uc 1 cpc 1 7 `uc 1 ldf 1 8 `uc 1 ldp 1 9 `uc 1 pdpol 1 10 `uc 1 pd 1 11 `uc 1 cpts 1 12 `uc 1 cntreset 1 13 ]
+[s S116 . 7 `uc 1 bscm 1 0 `uc 1 abp 1 1 `uc 1 chcancel 1 2 `uc 1 csr 1 3 `uc 1 clkdivmode 1 4 `us 1 clkdiv 2 5 ]
+[s S123 . 10 `uc 1 fbsel 1 0 `uc 1 divsel 1 1 `uc 1 bsclkdiv 1 2 `uc 1 vcopd 1 3 `uc 1 mtld 1 4 `uc 1 auxoutsel 1 5 `uc 1 auxoutena 1 6 `uc 1 auxpwrout 1 7 `uc 1 rfoutena 1 8 `uc 1 rfoutpwr 1 9 ]
+[s S134 . 1 `uc 1 ldpinmod 1 0 ]
+[s S136 adf4351_ctx 55 `i 1 init 2 0 `S95 1 reg0 4 2 `S98 1 reg1 5 6 `S102 1 reg2 14 11 `S116 1 reg3 7 25 `S123 1 reg4 10 32 `S134 1 reg5 1 42 `ul 1 ref 4 43 `ul 1 pfd 4 47 `ul 1 vco_freq 4 51 ]
+[v adf4351_write_reg3@ctx ctx `*.39S136  1 p 2 25 ]
+"302
+} 0
+"265
+[v _adf4351_write_reg2 adf4351_write_reg2 `(v  1 s 1 adf4351_write_reg2 ]
+{
+"268
+[v adf4351_write_reg2@data data `ul  1 a 4 33 ]
+[s S95 . 4 `us 1 integer 2 0 `us 1 frac 2 2 ]
+"265
+[s S98 . 5 `uc 1 prescaler 1 0 `us 1 phase 2 1 `us 1 mod 2 3 ]
+[s S102 . 14 `uc 1 lownoise 1 0 `uc 1 muxout 1 1 `uc 1 refdbl 1 2 `uc 1 refdiv 1 3 `us 1 rcnt 2 4 `uc 1 dblbuff 1 6 `uc 1 cpc 1 7 `uc 1 ldf 1 8 `uc 1 ldp 1 9 `uc 1 pdpol 1 10 `uc 1 pd 1 11 `uc 1 cpts 1 12 `uc 1 cntreset 1 13 ]
+[s S116 . 7 `uc 1 bscm 1 0 `uc 1 abp 1 1 `uc 1 chcancel 1 2 `uc 1 csr 1 3 `uc 1 clkdivmode 1 4 `us 1 clkdiv 2 5 ]
+[s S123 . 10 `uc 1 fbsel 1 0 `uc 1 divsel 1 1 `uc 1 bsclkdiv 1 2 `uc 1 vcopd 1 3 `uc 1 mtld 1 4 `uc 1 auxoutsel 1 5 `uc 1 auxoutena 1 6 `uc 1 auxpwrout 1 7 `uc 1 rfoutena 1 8 `uc 1 rfoutpwr 1 9 ]
+[s S134 . 1 `uc 1 ldpinmod 1 0 ]
+[s S136 adf4351_ctx 55 `i 1 init 2 0 `S95 1 reg0 4 2 `S98 1 reg1 5 6 `S102 1 reg2 14 11 `S116 1 reg3 7 25 `S123 1 reg4 10 32 `S134 1 reg5 1 42 `ul 1 ref 4 43 `ul 1 pfd 4 47 `ul 1 vco_freq 4 51 ]
+[v adf4351_write_reg2@ctx ctx `*.39S136  1 p 2 25 ]
+"286
+} 0
+"252
+[v _adf4351_write_reg1 adf4351_write_reg1 `(v  1 s 1 adf4351_write_reg1 ]
+{
+"255
+[v adf4351_write_reg1@data data `ul  1 a 4 33 ]
+[s S95 . 4 `us 1 integer 2 0 `us 1 frac 2 2 ]
+"252
+[s S98 . 5 `uc 1 prescaler 1 0 `us 1 phase 2 1 `us 1 mod 2 3 ]
+[s S102 . 14 `uc 1 lownoise 1 0 `uc 1 muxout 1 1 `uc 1 refdbl 1 2 `uc 1 refdiv 1 3 `us 1 rcnt 2 4 `uc 1 dblbuff 1 6 `uc 1 cpc 1 7 `uc 1 ldf 1 8 `uc 1 ldp 1 9 `uc 1 pdpol 1 10 `uc 1 pd 1 11 `uc 1 cpts 1 12 `uc 1 cntreset 1 13 ]
+[s S116 . 7 `uc 1 bscm 1 0 `uc 1 abp 1 1 `uc 1 chcancel 1 2 `uc 1 csr 1 3 `uc 1 clkdivmode 1 4 `us 1 clkdiv 2 5 ]
+[s S123 . 10 `uc 1 fbsel 1 0 `uc 1 divsel 1 1 `uc 1 bsclkdiv 1 2 `uc 1 vcopd 1 3 `uc 1 mtld 1 4 `uc 1 auxoutsel 1 5 `uc 1 auxoutena 1 6 `uc 1 auxpwrout 1 7 `uc 1 rfoutena 1 8 `uc 1 rfoutpwr 1 9 ]
+[s S134 . 1 `uc 1 ldpinmod 1 0 ]
+[s S136 adf4351_ctx 55 `i 1 init 2 0 `S95 1 reg0 4 2 `S98 1 reg1 5 6 `S102 1 reg2 14 11 `S116 1 reg3 7 25 `S123 1 reg4 10 32 `S134 1 reg5 1 42 `ul 1 ref 4 43 `ul 1 pfd 4 47 `ul 1 vco_freq 4 51 ]
+[v adf4351_write_reg1@ctx ctx `*.39S136  1 p 2 25 ]
+"263
+} 0
+"240
+[v _adf4351_write_reg0 adf4351_write_reg0 `(v  1 s 1 adf4351_write_reg0 ]
+{
+"243
+[v adf4351_write_reg0@data data `ul  1 a 4 33 ]
+[s S95 . 4 `us 1 integer 2 0 `us 1 frac 2 2 ]
+"240
+[s S98 . 5 `uc 1 prescaler 1 0 `us 1 phase 2 1 `us 1 mod 2 3 ]
+[s S102 . 14 `uc 1 lownoise 1 0 `uc 1 muxout 1 1 `uc 1 refdbl 1 2 `uc 1 refdiv 1 3 `us 1 rcnt 2 4 `uc 1 dblbuff 1 6 `uc 1 cpc 1 7 `uc 1 ldf 1 8 `uc 1 ldp 1 9 `uc 1 pdpol 1 10 `uc 1 pd 1 11 `uc 1 cpts 1 12 `uc 1 cntreset 1 13 ]
+[s S116 . 7 `uc 1 bscm 1 0 `uc 1 abp 1 1 `uc 1 chcancel 1 2 `uc 1 csr 1 3 `uc 1 clkdivmode 1 4 `us 1 clkdiv 2 5 ]
+[s S123 . 10 `uc 1 fbsel 1 0 `uc 1 divsel 1 1 `uc 1 bsclkdiv 1 2 `uc 1 vcopd 1 3 `uc 1 mtld 1 4 `uc 1 auxoutsel 1 5 `uc 1 auxoutena 1 6 `uc 1 auxpwrout 1 7 `uc 1 rfoutena 1 8 `uc 1 rfoutpwr 1 9 ]
+[s S134 . 1 `uc 1 ldpinmod 1 0 ]
+[s S136 adf4351_ctx 55 `i 1 init 2 0 `S95 1 reg0 4 2 `S98 1 reg1 5 6 `S102 1 reg2 14 11 `S116 1 reg3 7 25 `S123 1 reg4 10 32 `S134 1 reg5 1 42 `ul 1 ref 4 43 `ul 1 pfd 4 47 `ul 1 vco_freq 4 51 ]
+[v adf4351_write_reg0@ctx ctx `*.39S136  1 p 2 25 ]
+"250
+} 0
+"353
+[v _adf4351_write_latch adf4351_write_latch `(v  1 s 1 adf4351_write_latch ]
+{
+"355
+[v adf4351_write_latch@mask mask `ul  1 a 4 21 ]
+"353
+[v adf4351_write_latch@value value `ul  1 p 4 13 ]
+"380
+} 0
+"33
+[v _adf4351_init adf4351_init `(v  1 e 1 0 ]
+{
+[s S95 . 4 `us 1 integer 2 0 `us 1 frac 2 2 ]
+[s S98 . 5 `uc 1 prescaler 1 0 `us 1 phase 2 1 `us 1 mod 2 3 ]
+[s S102 . 14 `uc 1 lownoise 1 0 `uc 1 muxout 1 1 `uc 1 refdbl 1 2 `uc 1 refdiv 1 3 `us 1 rcnt 2 4 `uc 1 dblbuff 1 6 `uc 1 cpc 1 7 `uc 1 ldf 1 8 `uc 1 ldp 1 9 `uc 1 pdpol 1 10 `uc 1 pd 1 11 `uc 1 cpts 1 12 `uc 1 cntreset 1 13 ]
+[s S116 . 7 `uc 1 bscm 1 0 `uc 1 abp 1 1 `uc 1 chcancel 1 2 `uc 1 csr 1 3 `uc 1 clkdivmode 1 4 `us 1 clkdiv 2 5 ]
+[s S123 . 10 `uc 1 fbsel 1 0 `uc 1 divsel 1 1 `uc 1 bsclkdiv 1 2 `uc 1 vcopd 1 3 `uc 1 mtld 1 4 `uc 1 auxoutsel 1 5 `uc 1 auxoutena 1 6 `uc 1 auxpwrout 1 7 `uc 1 rfoutena 1 8 `uc 1 rfoutpwr 1 9 ]
+[s S134 . 1 `uc 1 ldpinmod 1 0 ]
+[s S136 adf4351_ctx 55 `i 1 init 2 0 `S95 1 reg0 4 2 `S98 1 reg1 5 6 `S102 1 reg2 14 11 `S116 1 reg3 7 25 `S123 1 reg4 10 32 `S134 1 reg5 1 42 `ul 1 ref 4 43 `ul 1 pfd 4 47 `ul 1 vco_freq 4 51 ]
+[v adf4351_init@ctx ctx `*.39S136  1 p 2 25 ]
+"48
+} 0
+"4 /opt/microchip/xc8/v2.10/pic/sources/c99/common/memset.c
+[v _memset memset `(*.39v  1 e 2 0 ]
+{
+"6
+[v memset@s s `*.39uc  1 a 2 23 ]
+"7
+[v memset@k k `ui  1 a 2 21 ]
+"4
+[v memset@dest dest `*.39v  1 p 2 13 ]
+[v memset@c c `i  1 p 2 15 ]
+[v memset@n n `ui  1 p 2 17 ]
+"90
+} 0
+"216 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/adf4351.c
+[v _adf4351_default adf4351_default `(v  1 s 1 adf4351_default ]
+{
+[s S95 . 4 `us 1 integer 2 0 `us 1 frac 2 2 ]
+[s S98 . 5 `uc 1 prescaler 1 0 `us 1 phase 2 1 `us 1 mod 2 3 ]
+[s S102 . 14 `uc 1 lownoise 1 0 `uc 1 muxout 1 1 `uc 1 refdbl 1 2 `uc 1 refdiv 1 3 `us 1 rcnt 2 4 `uc 1 dblbuff 1 6 `uc 1 cpc 1 7 `uc 1 ldf 1 8 `uc 1 ldp 1 9 `uc 1 pdpol 1 10 `uc 1 pd 1 11 `uc 1 cpts 1 12 `uc 1 cntreset 1 13 ]
+[s S116 . 7 `uc 1 bscm 1 0 `uc 1 abp 1 1 `uc 1 chcancel 1 2 `uc 1 csr 1 3 `uc 1 clkdivmode 1 4 `us 1 clkdiv 2 5 ]
+[s S123 . 10 `uc 1 fbsel 1 0 `uc 1 divsel 1 1 `uc 1 bsclkdiv 1 2 `uc 1 vcopd 1 3 `uc 1 mtld 1 4 `uc 1 auxoutsel 1 5 `uc 1 auxoutena 1 6 `uc 1 auxpwrout 1 7 `uc 1 rfoutena 1 8 `uc 1 rfoutpwr 1 9 ]
+[s S134 . 1 `uc 1 ldpinmod 1 0 ]
+[s S136 adf4351_ctx 55 `i 1 init 2 0 `S95 1 reg0 4 2 `S98 1 reg1 5 6 `S102 1 reg2 14 11 `S116 1 reg3 7 25 `S123 1 reg4 10 32 `S134 1 reg5 1 42 `ul 1 ref 4 43 `ul 1 pfd 4 47 `ul 1 vco_freq 4 51 ]
+[v adf4351_default@ctx ctx `*.39S136  1 p 2 13 ]
+"228
+} 0
+"17 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/irq.c
+[v _global_irq_handler global_irq_handler `IIH(v  1 s 1 global_irq_handler ]
+{
+"36
+[v global_irq_handler@dummy_1626 dummy `VEuc  1 a 1 12 ]
+"25
+[v global_irq_handler@dummy dummy `VEuc  1 a 1 11 ]
+"40
+} 0
+"76 /Daten1/Daten/funk/sat/Amsat-Boards/V3_4/amsat-dl-sdc/src/driver/usart.c
+[v _usart_rx_irq_handler usart_rx_irq_handler `(v  1 s 1 usart_rx_irq_handler ]
+{
+"79
+[v usart_rx_irq_handler@wposn wposn `VEi  1 a 2 5 ]
+"78
+[v usart_rx_irq_handler@c c `VEuc  1 a 1 4 ]
+"76
+[v usart_rx_irq_handler@udata udata `*.2v  1 p 2 0 ]
+"104
+} 0

@@ -1,0 +1,33 @@
+Microchip MPLAB XC8 Compiler V2.10 ()
+
+Linker command line:
+
+-W-3 --edf=/opt/microchip/xc8/v2.10/pic/dat/en_msgs.txt -cs \
+  -h+dist/debug/production/amsat-dl-sdc.production.sym \
+  --cmf=dist/debug/production/amsat-dl-sdc.production.cmf -z -w9 \
+  --disl=596:off --norlf -Q18F2520 -o/tmp/xcX1Syr14 \
+  --defsym=__MPLAB_BUILD=1 \
+  -Mdist/debug/production/amsat-dl-sdc.production.map -E1 -ver=XC8 \
+  --acfsm=1493 -ACODE=00h-07FFFh -ACONST=00h-07FFFh \
+  -ASMALLCONST=0600h-06FFhx122 -AMEDIUMCONST=0600h-07FFFh -ACOMRAM=01h-07Fh \
+  -AABS1=00h-05FFh -ABIGRAM=01h-05FFh -ARAM=080h-0FFh,0100h-01FFhx5 \
+  -ABANK0=080h-0FFh -ABANK1=0100h-01FFh -ABANK2=0200h-02FFh \
+  -ABANK3=0300h-03FFh -ABANK4=0400h-04FFh -ABANK5=0500h-05FFh \
+  -ASFR=0F80h-0FFFh -preset_vec=00h,intcode,intcodelo,powerup,init \
+  -pramtop=0600h -psmallconst=SMALLCONST -pmediumconst=MEDIUMCONST \
+  -pconst=CONST -AFARRAM=00h-00h -ACONFIG=0300000h-030000Dh -pconfig=CONFIG \
+  -AIDLOC=0200000h-0200007h -pidloc=IDLOC -AEEDATA=0F00000h-0F000FFh \
+  -peeprom_data=EEDATA \
+  -prdata=COMRAM,nvrram=COMRAM,nvbit=COMRAM,rbss=COMRAM,rbit=COMRAM \
+  -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
+  -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
+  -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE /tmp/xcXeoz7ee.o \
+  dist/debug/production/amsat-dl-sdc.production.o 
+
+Object code version is 3.11
+
+Machine type is 18F2520
+
+Call graph: (short form)
+
+

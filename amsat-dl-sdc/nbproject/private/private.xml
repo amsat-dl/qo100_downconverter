@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/Daten1/Daten/funk/sat/Amsat-Boards/firmware/qo100_downconverter/amsat-dl-sdc/src/chipconfig.h</file>
+            <file>file:/Daten1/Daten/funk/sat/Amsat-Boards/firmware/qo100_downconverter/amsat-dl-sdc/src/secretsettings.c</file>
+            <file>file:/Daten1/Daten/funk/sat/Amsat-Boards/firmware/qo100_downconverter/amsat-dl-sdc/src/driver/lnb.c</file>
+            <file>file:/Daten1/Daten/funk/sat/Amsat-Boards/firmware/qo100_downconverter/amsat-dl-sdc/src/driver/i2c_native.c</file>
+            <file>file:/Daten1/Daten/funk/sat/Amsat-Boards/firmware/qo100_downconverter/amsat-dl-sdc/src/gpio.c</file>
+            <file>file:/Daten1/Daten/funk/sat/Amsat-Boards/firmware/qo100_downconverter/amsat-dl-sdc/src/driver/si5328.c</file>
+            <file>file:/Daten1/Daten/funk/sat/Amsat-Boards/firmware/qo100_downconverter/amsat-dl-sdc/src/config.h</file>
+            <file>file:/Daten1/Daten/funk/sat/Amsat-Boards/firmware/qo100_downconverter/amsat-dl-sdc/src/driver/adf4351.c</file>
+            <file>file:/Daten1/Daten/funk/sat/Amsat-Boards/firmware/qo100_downconverter/amsat-dl-sdc/src/font8x8.c</file>
+            <file>file:/Daten1/Daten/funk/sat/Amsat-Boards/firmware/qo100_downconverter/amsat-dl-sdc/src/gps.c</file>
+            <file>file:/Daten1/Daten/funk/sat/Amsat-Boards/firmware/qo100_downconverter/amsat-dl-sdc/src/driver/base/i2c.c</file>
+            <file>file:/Daten1/Daten/funk/sat/Amsat-Boards/firmware/qo100_downconverter/amsat-dl-sdc/src/driver/lcd.c</file>
+            <file>file:/Daten1/Daten/funk/sat/Amsat-Boards/firmware/qo100_downconverter/amsat-dl-sdc/src/driver/irq.c</file>
+            <file>file:/Daten1/Daten/funk/sat/Amsat-Boards/firmware/qo100_downconverter/amsat-dl-sdc/src/driver/timer.c</file>
+            <file>file:/Daten1/Daten/funk/sat/Amsat-Boards/firmware/qo100_downconverter/amsat-dl-sdc/src/eeprom.c</file>
+            <file>file:/Daten1/Daten/funk/sat/Amsat-Boards/firmware/qo100_downconverter/amsat-dl-sdc/src/main.c</file>
+            <file>file:/Daten1/Daten/funk/sat/Amsat-Boards/firmware/qo100_downconverter/amsat-dl-sdc/src/driver/usart.c</file>
+            <file>file:/Daten1/Daten/funk/sat/Amsat-Boards/firmware/qo100_downconverter/amsat-dl-sdc/src/freq_tables.c</file>
+            <file>file:/Daten1/Daten/funk/sat/Amsat-Boards/firmware/qo100_downconverter/amsat-dl-sdc/src/pinmap.c</file>
+        </group>
+    </open-files>
+</project-private>

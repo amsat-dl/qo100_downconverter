@@ -1,0 +1,858 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"7 src/driver/gpio.h
+[; ;src/driver/gpio.h: 7: typedef struct gpio_pin_def {
+[s S253 `*Vuc 1 `*Vuc 1 `uc 1 ]
+[n S253 gpio_pin_def pPORT pTRIS mask ]
+"52 /opt/microchip/xc8/v2.10/pic/include/pic18f2520.h
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 52: extern volatile unsigned char PORTA __attribute__((address(0xF80)));
+[v _PORTA `Vuc ~T0 @X0 0 e@3968 ]
+"1036
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1036: extern volatile unsigned char TRISA __attribute__((address(0xF92)));
+[v _TRISA `Vuc ~T0 @X0 0 e@3986 ]
+"450
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 450: extern volatile unsigned char PORTC __attribute__((address(0xF82)));
+[v _PORTC `Vuc ~T0 @X0 0 e@3970 ]
+"1480
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1480: extern volatile unsigned char TRISC __attribute__((address(0xF94)));
+[v _TRISC `Vuc ~T0 @X0 0 e@3988 ]
+"271
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 271: extern volatile unsigned char PORTB __attribute__((address(0xF81)));
+[v _PORTB `Vuc ~T0 @X0 0 e@3969 ]
+"1258
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1258: extern volatile unsigned char TRISB __attribute__((address(0xF93)));
+[v _TRISB `Vuc ~T0 @X0 0 e@3987 ]
+"54 /opt/microchip/xc8/v2.10/pic/include/pic18f2520.h
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 54: __asm("PORTA equ 0F80h");
+[; <" PORTA equ 0F80h ;# ">
+"273
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 273: __asm("PORTB equ 0F81h");
+[; <" PORTB equ 0F81h ;# ">
+"452
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 452: __asm("PORTC equ 0F82h");
+[; <" PORTC equ 0F82h ;# ">
+"627
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 627: __asm("PORTE equ 0F84h");
+[; <" PORTE equ 0F84h ;# ">
+"702
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 702: __asm("LATA equ 0F89h");
+[; <" LATA equ 0F89h ;# ">
+"814
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 814: __asm("LATB equ 0F8Ah");
+[; <" LATB equ 0F8Ah ;# ">
+"926
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 926: __asm("LATC equ 0F8Bh");
+[; <" LATC equ 0F8Bh ;# ">
+"1038
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1038: __asm("TRISA equ 0F92h");
+[; <" TRISA equ 0F92h ;# ">
+"1043
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1043: __asm("DDRA equ 0F92h");
+[; <" DDRA equ 0F92h ;# ">
+"1260
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1260: __asm("TRISB equ 0F93h");
+[; <" TRISB equ 0F93h ;# ">
+"1265
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1265: __asm("DDRB equ 0F93h");
+[; <" DDRB equ 0F93h ;# ">
+"1482
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1482: __asm("TRISC equ 0F94h");
+[; <" TRISC equ 0F94h ;# ">
+"1487
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1487: __asm("DDRC equ 0F94h");
+[; <" DDRC equ 0F94h ;# ">
+"1704
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1704: __asm("OSCTUNE equ 0F9Bh");
+[; <" OSCTUNE equ 0F9Bh ;# ">
+"1769
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1769: __asm("PIE1 equ 0F9Dh");
+[; <" PIE1 equ 0F9Dh ;# ">
+"1840
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1840: __asm("PIR1 equ 0F9Eh");
+[; <" PIR1 equ 0F9Eh ;# ">
+"1911
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1911: __asm("IPR1 equ 0F9Fh");
+[; <" IPR1 equ 0F9Fh ;# ">
+"1982
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1982: __asm("PIE2 equ 0FA0h");
+[; <" PIE2 equ 0FA0h ;# ">
+"2048
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2048: __asm("PIR2 equ 0FA1h");
+[; <" PIR2 equ 0FA1h ;# ">
+"2114
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2114: __asm("IPR2 equ 0FA2h");
+[; <" IPR2 equ 0FA2h ;# ">
+"2180
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2180: __asm("EECON1 equ 0FA6h");
+[; <" EECON1 equ 0FA6h ;# ">
+"2246
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2246: __asm("EECON2 equ 0FA7h");
+[; <" EECON2 equ 0FA7h ;# ">
+"2253
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2253: __asm("EEDATA equ 0FA8h");
+[; <" EEDATA equ 0FA8h ;# ">
+"2260
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2260: __asm("EEADR equ 0FA9h");
+[; <" EEADR equ 0FA9h ;# ">
+"2267
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2267: __asm("RCSTA equ 0FABh");
+[; <" RCSTA equ 0FABh ;# ">
+"2272
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2272: __asm("RCSTA1 equ 0FABh");
+[; <" RCSTA1 equ 0FABh ;# ">
+"2477
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2477: __asm("TXSTA equ 0FACh");
+[; <" TXSTA equ 0FACh ;# ">
+"2482
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2482: __asm("TXSTA1 equ 0FACh");
+[; <" TXSTA1 equ 0FACh ;# ">
+"2733
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2733: __asm("TXREG equ 0FADh");
+[; <" TXREG equ 0FADh ;# ">
+"2738
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2738: __asm("TXREG1 equ 0FADh");
+[; <" TXREG1 equ 0FADh ;# ">
+"2745
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2745: __asm("RCREG equ 0FAEh");
+[; <" RCREG equ 0FAEh ;# ">
+"2750
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2750: __asm("RCREG1 equ 0FAEh");
+[; <" RCREG1 equ 0FAEh ;# ">
+"2757
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2757: __asm("SPBRG equ 0FAFh");
+[; <" SPBRG equ 0FAFh ;# ">
+"2762
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2762: __asm("SPBRG1 equ 0FAFh");
+[; <" SPBRG1 equ 0FAFh ;# ">
+"2769
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2769: __asm("SPBRGH equ 0FB0h");
+[; <" SPBRGH equ 0FB0h ;# ">
+"2776
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2776: __asm("T3CON equ 0FB1h");
+[; <" T3CON equ 0FB1h ;# ">
+"2888
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2888: __asm("TMR3 equ 0FB2h");
+[; <" TMR3 equ 0FB2h ;# ">
+"2895
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2895: __asm("TMR3L equ 0FB2h");
+[; <" TMR3L equ 0FB2h ;# ">
+"2902
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2902: __asm("TMR3H equ 0FB3h");
+[; <" TMR3H equ 0FB3h ;# ">
+"2909
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2909: __asm("CMCON equ 0FB4h");
+[; <" CMCON equ 0FB4h ;# ">
+"2999
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2999: __asm("CVRCON equ 0FB5h");
+[; <" CVRCON equ 0FB5h ;# ">
+"3078
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3078: __asm("ECCP1AS equ 0FB6h");
+[; <" ECCP1AS equ 0FB6h ;# ">
+"3083
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3083: __asm("ECCPAS equ 0FB6h");
+[; <" ECCPAS equ 0FB6h ;# ">
+"3208
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3208: __asm("PWM1CON equ 0FB7h");
+[; <" PWM1CON equ 0FB7h ;# ">
+"3213
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3213: __asm("ECCP1DEL equ 0FB7h");
+[; <" ECCP1DEL equ 0FB7h ;# ">
+"3248
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3248: __asm("BAUDCON equ 0FB8h");
+[; <" BAUDCON equ 0FB8h ;# ">
+"3253
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3253: __asm("BAUDCTL equ 0FB8h");
+[; <" BAUDCTL equ 0FB8h ;# ">
+"3428
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3428: __asm("CCP2CON equ 0FBAh");
+[; <" CCP2CON equ 0FBAh ;# ">
+"3507
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3507: __asm("CCPR2 equ 0FBBh");
+[; <" CCPR2 equ 0FBBh ;# ">
+"3514
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3514: __asm("CCPR2L equ 0FBBh");
+[; <" CCPR2L equ 0FBBh ;# ">
+"3521
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3521: __asm("CCPR2H equ 0FBCh");
+[; <" CCPR2H equ 0FBCh ;# ">
+"3528
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3528: __asm("CCP1CON equ 0FBDh");
+[; <" CCP1CON equ 0FBDh ;# ">
+"3607
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3607: __asm("CCPR1 equ 0FBEh");
+[; <" CCPR1 equ 0FBEh ;# ">
+"3614
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3614: __asm("CCPR1L equ 0FBEh");
+[; <" CCPR1L equ 0FBEh ;# ">
+"3621
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3621: __asm("CCPR1H equ 0FBFh");
+[; <" CCPR1H equ 0FBFh ;# ">
+"3628
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3628: __asm("ADCON2 equ 0FC0h");
+[; <" ADCON2 equ 0FC0h ;# ">
+"3699
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3699: __asm("ADCON1 equ 0FC1h");
+[; <" ADCON1 equ 0FC1h ;# ">
+"3784
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3784: __asm("ADCON0 equ 0FC2h");
+[; <" ADCON0 equ 0FC2h ;# ">
+"3903
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3903: __asm("ADRES equ 0FC3h");
+[; <" ADRES equ 0FC3h ;# ">
+"3910
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3910: __asm("ADRESL equ 0FC3h");
+[; <" ADRESL equ 0FC3h ;# ">
+"3917
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3917: __asm("ADRESH equ 0FC4h");
+[; <" ADRESH equ 0FC4h ;# ">
+"3924
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3924: __asm("SSPCON2 equ 0FC5h");
+[; <" SSPCON2 equ 0FC5h ;# ">
+"4019
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4019: __asm("SSPCON1 equ 0FC6h");
+[; <" SSPCON1 equ 0FC6h ;# ">
+"4089
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4089: __asm("SSPSTAT equ 0FC7h");
+[; <" SSPSTAT equ 0FC7h ;# ">
+"4310
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4310: __asm("SSPADD equ 0FC8h");
+[; <" SSPADD equ 0FC8h ;# ">
+"4317
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4317: __asm("SSPBUF equ 0FC9h");
+[; <" SSPBUF equ 0FC9h ;# ">
+"4324
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4324: __asm("T2CON equ 0FCAh");
+[; <" T2CON equ 0FCAh ;# ">
+"4422
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4422: __asm("PR2 equ 0FCBh");
+[; <" PR2 equ 0FCBh ;# ">
+"4427
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4427: __asm("MEMCON equ 0FCBh");
+[; <" MEMCON equ 0FCBh ;# ">
+"4532
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4532: __asm("TMR2 equ 0FCCh");
+[; <" TMR2 equ 0FCCh ;# ">
+"4539
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4539: __asm("T1CON equ 0FCDh");
+[; <" T1CON equ 0FCDh ;# ">
+"4642
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4642: __asm("TMR1 equ 0FCEh");
+[; <" TMR1 equ 0FCEh ;# ">
+"4649
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4649: __asm("TMR1L equ 0FCEh");
+[; <" TMR1L equ 0FCEh ;# ">
+"4656
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4656: __asm("TMR1H equ 0FCFh");
+[; <" TMR1H equ 0FCFh ;# ">
+"4663
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4663: __asm("RCON equ 0FD0h");
+[; <" RCON equ 0FD0h ;# ">
+"4796
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4796: __asm("WDTCON equ 0FD1h");
+[; <" WDTCON equ 0FD1h ;# ">
+"4824
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4824: __asm("HLVDCON equ 0FD2h");
+[; <" HLVDCON equ 0FD2h ;# ">
+"4829
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4829: __asm("LVDCON equ 0FD2h");
+[; <" LVDCON equ 0FD2h ;# ">
+"5094
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5094: __asm("OSCCON equ 0FD3h");
+[; <" OSCCON equ 0FD3h ;# ">
+"5177
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5177: __asm("T0CON equ 0FD5h");
+[; <" T0CON equ 0FD5h ;# ">
+"5260
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5260: __asm("TMR0 equ 0FD6h");
+[; <" TMR0 equ 0FD6h ;# ">
+"5267
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5267: __asm("TMR0L equ 0FD6h");
+[; <" TMR0L equ 0FD6h ;# ">
+"5274
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5274: __asm("TMR0H equ 0FD7h");
+[; <" TMR0H equ 0FD7h ;# ">
+"5281
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5281: __asm("STATUS equ 0FD8h");
+[; <" STATUS equ 0FD8h ;# ">
+"5352
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5352: __asm("FSR2 equ 0FD9h");
+[; <" FSR2 equ 0FD9h ;# ">
+"5359
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5359: __asm("FSR2L equ 0FD9h");
+[; <" FSR2L equ 0FD9h ;# ">
+"5366
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5366: __asm("FSR2H equ 0FDAh");
+[; <" FSR2H equ 0FDAh ;# ">
+"5373
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5373: __asm("PLUSW2 equ 0FDBh");
+[; <" PLUSW2 equ 0FDBh ;# ">
+"5380
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5380: __asm("PREINC2 equ 0FDCh");
+[; <" PREINC2 equ 0FDCh ;# ">
+"5387
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5387: __asm("POSTDEC2 equ 0FDDh");
+[; <" POSTDEC2 equ 0FDDh ;# ">
+"5394
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5394: __asm("POSTINC2 equ 0FDEh");
+[; <" POSTINC2 equ 0FDEh ;# ">
+"5401
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5401: __asm("INDF2 equ 0FDFh");
+[; <" INDF2 equ 0FDFh ;# ">
+"5408
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5408: __asm("BSR equ 0FE0h");
+[; <" BSR equ 0FE0h ;# ">
+"5415
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5415: __asm("FSR1 equ 0FE1h");
+[; <" FSR1 equ 0FE1h ;# ">
+"5422
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5422: __asm("FSR1L equ 0FE1h");
+[; <" FSR1L equ 0FE1h ;# ">
+"5429
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5429: __asm("FSR1H equ 0FE2h");
+[; <" FSR1H equ 0FE2h ;# ">
+"5436
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5436: __asm("PLUSW1 equ 0FE3h");
+[; <" PLUSW1 equ 0FE3h ;# ">
+"5443
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5443: __asm("PREINC1 equ 0FE4h");
+[; <" PREINC1 equ 0FE4h ;# ">
+"5450
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5450: __asm("POSTDEC1 equ 0FE5h");
+[; <" POSTDEC1 equ 0FE5h ;# ">
+"5457
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5457: __asm("POSTINC1 equ 0FE6h");
+[; <" POSTINC1 equ 0FE6h ;# ">
+"5464
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5464: __asm("INDF1 equ 0FE7h");
+[; <" INDF1 equ 0FE7h ;# ">
+"5471
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5471: __asm("WREG equ 0FE8h");
+[; <" WREG equ 0FE8h ;# ">
+"5483
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5483: __asm("FSR0 equ 0FE9h");
+[; <" FSR0 equ 0FE9h ;# ">
+"5490
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5490: __asm("FSR0L equ 0FE9h");
+[; <" FSR0L equ 0FE9h ;# ">
+"5497
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5497: __asm("FSR0H equ 0FEAh");
+[; <" FSR0H equ 0FEAh ;# ">
+"5504
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5504: __asm("PLUSW0 equ 0FEBh");
+[; <" PLUSW0 equ 0FEBh ;# ">
+"5511
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5511: __asm("PREINC0 equ 0FECh");
+[; <" PREINC0 equ 0FECh ;# ">
+"5518
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5518: __asm("POSTDEC0 equ 0FEDh");
+[; <" POSTDEC0 equ 0FEDh ;# ">
+"5525
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5525: __asm("POSTINC0 equ 0FEEh");
+[; <" POSTINC0 equ 0FEEh ;# ">
+"5532
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5532: __asm("INDF0 equ 0FEFh");
+[; <" INDF0 equ 0FEFh ;# ">
+"5539
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5539: __asm("INTCON3 equ 0FF0h");
+[; <" INTCON3 equ 0FF0h ;# ">
+"5631
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5631: __asm("INTCON2 equ 0FF1h");
+[; <" INTCON2 equ 0FF1h ;# ">
+"5701
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5701: __asm("INTCON equ 0FF2h");
+[; <" INTCON equ 0FF2h ;# ">
+"5818
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5818: __asm("PROD equ 0FF3h");
+[; <" PROD equ 0FF3h ;# ">
+"5825
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5825: __asm("PRODL equ 0FF3h");
+[; <" PRODL equ 0FF3h ;# ">
+"5832
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5832: __asm("PRODH equ 0FF4h");
+[; <" PRODH equ 0FF4h ;# ">
+"5839
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5839: __asm("TABLAT equ 0FF5h");
+[; <" TABLAT equ 0FF5h ;# ">
+"5848
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5848: __asm("TBLPTR equ 0FF6h");
+[; <" TBLPTR equ 0FF6h ;# ">
+"5855
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5855: __asm("TBLPTRL equ 0FF6h");
+[; <" TBLPTRL equ 0FF6h ;# ">
+"5862
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5862: __asm("TBLPTRH equ 0FF7h");
+[; <" TBLPTRH equ 0FF7h ;# ">
+"5869
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5869: __asm("TBLPTRU equ 0FF8h");
+[; <" TBLPTRU equ 0FF8h ;# ">
+"5878
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5878: __asm("PCLAT equ 0FF9h");
+[; <" PCLAT equ 0FF9h ;# ">
+"5885
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5885: __asm("PC equ 0FF9h");
+[; <" PC equ 0FF9h ;# ">
+"5892
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5892: __asm("PCL equ 0FF9h");
+[; <" PCL equ 0FF9h ;# ">
+"5899
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5899: __asm("PCLATH equ 0FFAh");
+[; <" PCLATH equ 0FFAh ;# ">
+"5906
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5906: __asm("PCLATU equ 0FFBh");
+[; <" PCLATU equ 0FFBh ;# ">
+"5913
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5913: __asm("STKPTR equ 0FFCh");
+[; <" STKPTR equ 0FFCh ;# ">
+"5987
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5987: __asm("TOS equ 0FFDh");
+[; <" TOS equ 0FFDh ;# ">
+"5994
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5994: __asm("TOSL equ 0FFDh");
+[; <" TOSL equ 0FFDh ;# ">
+"6001
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 6001: __asm("TOSH equ 0FFEh");
+[; <" TOSH equ 0FFEh ;# ">
+"6008
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 6008: __asm("TOSU equ 0FFFh");
+[; <" TOSU equ 0FFFh ;# ">
+"19 src/pinmap.c
+[; ;src/pinmap.c: 19: const gpio_pin_def PIN_ADF_LOCK_DEF = {&PORTA, &TRISA, (1<<0)}; const gpio_pin PIN_ADF_LOCK = &PIN_ADF_LOCK_DEF;
+[v _PIN_ADF_LOCK_DEF `CS253 ~T0 @X0 1 e ]
+[i _PIN_ADF_LOCK_DEF
+:U ..
+:U ..
+&U _PORTA
+&U _TRISA
+-> << -> 1 `i -> 0 `i `uc
+..
+..
+]
+[v F2312 `*CS253 ~T0 @X0 1 t ]
+[v _PIN_ADF_LOCK `C*CS253 ~T0 @X0 1 e ]
+[i _PIN_ADF_LOCK
+&U _PIN_ADF_LOCK_DEF
+]
+"20
+[; ;src/pinmap.c: 20: const gpio_pin_def PIN_ADF_CE_DEF = {&PORTA, &TRISA, (1<<1)}; const gpio_pin PIN_ADF_CE = &PIN_ADF_CE_DEF;
+[v _PIN_ADF_CE_DEF `CS253 ~T0 @X0 1 e ]
+[i _PIN_ADF_CE_DEF
+:U ..
+:U ..
+&U _PORTA
+&U _TRISA
+-> << -> 1 `i -> 1 `i `uc
+..
+..
+]
+[v F2315 `*CS253 ~T0 @X0 1 t ]
+[v _PIN_ADF_CE `C*CS253 ~T0 @X0 1 e ]
+[i _PIN_ADF_CE
+&U _PIN_ADF_CE_DEF
+]
+"21
+[; ;src/pinmap.c: 21: const gpio_pin_def PIN_ADF_LE_DEF = {&PORTA, &TRISA, (1<<2)}; const gpio_pin PIN_ADF_LE = &PIN_ADF_LE_DEF;
+[v _PIN_ADF_LE_DEF `CS253 ~T0 @X0 1 e ]
+[i _PIN_ADF_LE_DEF
+:U ..
+:U ..
+&U _PORTA
+&U _TRISA
+-> << -> 1 `i -> 2 `i `uc
+..
+..
+]
+[v F2318 `*CS253 ~T0 @X0 1 t ]
+[v _PIN_ADF_LE `C*CS253 ~T0 @X0 1 e ]
+[i _PIN_ADF_LE
+&U _PIN_ADF_LE_DEF
+]
+"22
+[; ;src/pinmap.c: 22: const gpio_pin_def PIN_SIO_DATA_DEF = {&PORTA, &TRISA, (1<<3)}; const gpio_pin PIN_SIO_DATA = &PIN_SIO_DATA_DEF;
+[v _PIN_SIO_DATA_DEF `CS253 ~T0 @X0 1 e ]
+[i _PIN_SIO_DATA_DEF
+:U ..
+:U ..
+&U _PORTA
+&U _TRISA
+-> << -> 1 `i -> 3 `i `uc
+..
+..
+]
+[v F2321 `*CS253 ~T0 @X0 1 t ]
+[v _PIN_SIO_DATA `C*CS253 ~T0 @X0 1 e ]
+[i _PIN_SIO_DATA
+&U _PIN_SIO_DATA_DEF
+]
+"23
+[; ;src/pinmap.c: 23: const gpio_pin_def PIN_SIO_CLK_DEF = {&PORTA, &TRISA, (1<<4)}; const gpio_pin PIN_SIO_CLK = &PIN_SIO_CLK_DEF;
+[v _PIN_SIO_CLK_DEF `CS253 ~T0 @X0 1 e ]
+[i _PIN_SIO_CLK_DEF
+:U ..
+:U ..
+&U _PORTA
+&U _TRISA
+-> << -> 1 `i -> 4 `i `uc
+..
+..
+]
+[v F2324 `*CS253 ~T0 @X0 1 t ]
+[v _PIN_SIO_CLK `C*CS253 ~T0 @X0 1 e ]
+[i _PIN_SIO_CLK
+&U _PIN_SIO_CLK_DEF
+]
+"27
+[; ;src/pinmap.c: 27: const gpio_pin_def PIN_SI5328_LOL_DEF = {&PORTA, &TRISA, (1<<5)}; const gpio_pin PIN_SI5328_LOL = &PIN_SI5328_LOL_DEF;;
+[v _PIN_SI5328_LOL_DEF `CS253 ~T0 @X0 1 e ]
+[i _PIN_SI5328_LOL_DEF
+:U ..
+:U ..
+&U _PORTA
+&U _TRISA
+-> << -> 1 `i -> 5 `i `uc
+..
+..
+]
+[v F2327 `*CS253 ~T0 @X0 1 t ]
+[v _PIN_SI5328_LOL `C*CS253 ~T0 @X0 1 e ]
+[i _PIN_SI5328_LOL
+&U _PIN_SI5328_LOL_DEF
+]
+"28
+[; ;src/pinmap.c: 28: const gpio_pin_def PIN_SI5328_CS_CA_DEF = {&PORTA, &TRISA, (1<<7)}; const gpio_pin PIN_SI5328_CS_CA = &PIN_SI5328_CS_CA_DEF;
+[v _PIN_SI5328_CS_CA_DEF `CS253 ~T0 @X0 1 e ]
+[i _PIN_SI5328_CS_CA_DEF
+:U ..
+:U ..
+&U _PORTA
+&U _TRISA
+-> << -> 1 `i -> 7 `i `uc
+..
+..
+]
+[v F2330 `*CS253 ~T0 @X0 1 t ]
+[v _PIN_SI5328_CS_CA `C*CS253 ~T0 @X0 1 e ]
+[i _PIN_SI5328_CS_CA
+&U _PIN_SI5328_CS_CA_DEF
+]
+"31
+[; ;src/pinmap.c: 31: const gpio_pin_def PIN_LED_SI_LOCK_DEF = {&PORTA, &TRISA, (1<<6)}; const gpio_pin PIN_LED_SI_LOCK = &PIN_LED_SI_LOCK_DEF;
+[v _PIN_LED_SI_LOCK_DEF `CS253 ~T0 @X0 1 e ]
+[i _PIN_LED_SI_LOCK_DEF
+:U ..
+:U ..
+&U _PORTA
+&U _TRISA
+-> << -> 1 `i -> 6 `i `uc
+..
+..
+]
+[v F2333 `*CS253 ~T0 @X0 1 t ]
+[v _PIN_LED_SI_LOCK `C*CS253 ~T0 @X0 1 e ]
+[i _PIN_LED_SI_LOCK
+&U _PIN_LED_SI_LOCK_DEF
+]
+"32
+[; ;src/pinmap.c: 32: const gpio_pin_def PIN_LED3_DEF = {&PORTA, &TRISA, (1<<6)}; const gpio_pin PIN_LED3 = &PIN_LED3_DEF;
+[v _PIN_LED3_DEF `CS253 ~T0 @X0 1 e ]
+[i _PIN_LED3_DEF
+:U ..
+:U ..
+&U _PORTA
+&U _TRISA
+-> << -> 1 `i -> 6 `i `uc
+..
+..
+]
+[v F2336 `*CS253 ~T0 @X0 1 t ]
+[v _PIN_LED3 `C*CS253 ~T0 @X0 1 e ]
+[i _PIN_LED3
+&U _PIN_LED3_DEF
+]
+"33
+[; ;src/pinmap.c: 33: const gpio_pin_def PIN_LED_CPU_OK_DEF = {&PORTC, &TRISC, (1<<0)}; const gpio_pin PIN_LED_CPU_OK = &PIN_LED_CPU_OK_DEF;
+[v _PIN_LED_CPU_OK_DEF `CS253 ~T0 @X0 1 e ]
+[i _PIN_LED_CPU_OK_DEF
+:U ..
+:U ..
+&U _PORTC
+&U _TRISC
+-> << -> 1 `i -> 0 `i `uc
+..
+..
+]
+[v F2339 `*CS253 ~T0 @X0 1 t ]
+[v _PIN_LED_CPU_OK `C*CS253 ~T0 @X0 1 e ]
+[i _PIN_LED_CPU_OK
+&U _PIN_LED_CPU_OK_DEF
+]
+"34
+[; ;src/pinmap.c: 34: const gpio_pin_def PIN_LED0_DEF = {&PORTC, &TRISC, (1<<0)}; const gpio_pin PIN_LED0 = &PIN_LED0_DEF;
+[v _PIN_LED0_DEF `CS253 ~T0 @X0 1 e ]
+[i _PIN_LED0_DEF
+:U ..
+:U ..
+&U _PORTC
+&U _TRISC
+-> << -> 1 `i -> 0 `i `uc
+..
+..
+]
+[v F2342 `*CS253 ~T0 @X0 1 t ]
+[v _PIN_LED0 `C*CS253 ~T0 @X0 1 e ]
+[i _PIN_LED0
+&U _PIN_LED0_DEF
+]
+"35
+[; ;src/pinmap.c: 35: const gpio_pin_def PIN_LED_ADF_LOCK_DEF = {&PORTC, &TRISC, (1<<1)}; const gpio_pin PIN_LED_ADF_LOCK = &PIN_LED_ADF_LOCK_DEF;
+[v _PIN_LED_ADF_LOCK_DEF `CS253 ~T0 @X0 1 e ]
+[i _PIN_LED_ADF_LOCK_DEF
+:U ..
+:U ..
+&U _PORTC
+&U _TRISC
+-> << -> 1 `i -> 1 `i `uc
+..
+..
+]
+[v F2345 `*CS253 ~T0 @X0 1 t ]
+[v _PIN_LED_ADF_LOCK `C*CS253 ~T0 @X0 1 e ]
+[i _PIN_LED_ADF_LOCK
+&U _PIN_LED_ADF_LOCK_DEF
+]
+"36
+[; ;src/pinmap.c: 36: const gpio_pin_def PIN_LED1_DEF = {&PORTC, &TRISC, (1<<1)}; const gpio_pin PIN_LED1 = &PIN_LED1_DEF;
+[v _PIN_LED1_DEF `CS253 ~T0 @X0 1 e ]
+[i _PIN_LED1_DEF
+:U ..
+:U ..
+&U _PORTC
+&U _TRISC
+-> << -> 1 `i -> 1 `i `uc
+..
+..
+]
+[v F2348 `*CS253 ~T0 @X0 1 t ]
+[v _PIN_LED1 `C*CS253 ~T0 @X0 1 e ]
+[i _PIN_LED1
+&U _PIN_LED1_DEF
+]
+"37
+[; ;src/pinmap.c: 37: const gpio_pin_def PIN_LED_LNB_GOOD_DEF = {&PORTC, &TRISC, (1<<2)}; const gpio_pin PIN_LED_LNB_GOOD = &PIN_LED_LNB_GOOD_DEF;
+[v _PIN_LED_LNB_GOOD_DEF `CS253 ~T0 @X0 1 e ]
+[i _PIN_LED_LNB_GOOD_DEF
+:U ..
+:U ..
+&U _PORTC
+&U _TRISC
+-> << -> 1 `i -> 2 `i `uc
+..
+..
+]
+[v F2351 `*CS253 ~T0 @X0 1 t ]
+[v _PIN_LED_LNB_GOOD `C*CS253 ~T0 @X0 1 e ]
+[i _PIN_LED_LNB_GOOD
+&U _PIN_LED_LNB_GOOD_DEF
+]
+"38
+[; ;src/pinmap.c: 38: const gpio_pin_def PIN_LED2_DEF = {&PORTC, &TRISC, (1<<2)}; const gpio_pin PIN_LED2 = &PIN_LED2_DEF;
+[v _PIN_LED2_DEF `CS253 ~T0 @X0 1 e ]
+[i _PIN_LED2_DEF
+:U ..
+:U ..
+&U _PORTC
+&U _TRISC
+-> << -> 1 `i -> 2 `i `uc
+..
+..
+]
+[v F2354 `*CS253 ~T0 @X0 1 t ]
+[v _PIN_LED2 `C*CS253 ~T0 @X0 1 e ]
+[i _PIN_LED2
+&U _PIN_LED2_DEF
+]
+"41
+[; ;src/pinmap.c: 41: const gpio_pin_def PIN_I2C_SCL_DEF = {&PORTC, &TRISC, (1<<3)}; const gpio_pin PIN_I2C_SCL = &PIN_I2C_SCL_DEF;
+[v _PIN_I2C_SCL_DEF `CS253 ~T0 @X0 1 e ]
+[i _PIN_I2C_SCL_DEF
+:U ..
+:U ..
+&U _PORTC
+&U _TRISC
+-> << -> 1 `i -> 3 `i `uc
+..
+..
+]
+[v F2357 `*CS253 ~T0 @X0 1 t ]
+[v _PIN_I2C_SCL `C*CS253 ~T0 @X0 1 e ]
+[i _PIN_I2C_SCL
+&U _PIN_I2C_SCL_DEF
+]
+"42
+[; ;src/pinmap.c: 42: const gpio_pin_def PIN_I2C_SDA_DEF = {&PORTC, &TRISC, (1<<4)}; const gpio_pin PIN_I2C_SDA = &PIN_I2C_SDA_DEF;
+[v _PIN_I2C_SDA_DEF `CS253 ~T0 @X0 1 e ]
+[i _PIN_I2C_SDA_DEF
+:U ..
+:U ..
+&U _PORTC
+&U _TRISC
+-> << -> 1 `i -> 4 `i `uc
+..
+..
+]
+[v F2360 `*CS253 ~T0 @X0 1 t ]
+[v _PIN_I2C_SDA `C*CS253 ~T0 @X0 1 e ]
+[i _PIN_I2C_SDA
+&U _PIN_I2C_SDA_DEF
+]
+"45
+[; ;src/pinmap.c: 45: const gpio_pin_def PIN_USART_TX_DEF = {&PORTC, &TRISC, (1<<6)}; const gpio_pin PIN_USART_TX = &PIN_USART_TX_DEF;
+[v _PIN_USART_TX_DEF `CS253 ~T0 @X0 1 e ]
+[i _PIN_USART_TX_DEF
+:U ..
+:U ..
+&U _PORTC
+&U _TRISC
+-> << -> 1 `i -> 6 `i `uc
+..
+..
+]
+[v F2363 `*CS253 ~T0 @X0 1 t ]
+[v _PIN_USART_TX `C*CS253 ~T0 @X0 1 e ]
+[i _PIN_USART_TX
+&U _PIN_USART_TX_DEF
+]
+"46
+[; ;src/pinmap.c: 46: const gpio_pin_def PIN_USART_RX_DEF = {&PORTC, &TRISC, (1<<7)}; const gpio_pin PIN_USART_RX = &PIN_USART_RX_DEF;
+[v _PIN_USART_RX_DEF `CS253 ~T0 @X0 1 e ]
+[i _PIN_USART_RX_DEF
+:U ..
+:U ..
+&U _PORTC
+&U _TRISC
+-> << -> 1 `i -> 7 `i `uc
+..
+..
+]
+[v F2366 `*CS253 ~T0 @X0 1 t ]
+[v _PIN_USART_RX `C*CS253 ~T0 @X0 1 e ]
+[i _PIN_USART_RX
+&U _PIN_USART_RX_DEF
+]
+"49
+[; ;src/pinmap.c: 49: const gpio_pin_def PIN_SJ3_DEF = {&PORTB, &TRISB, (1<<1)}; const gpio_pin PIN_SJ3 = &PIN_SJ3_DEF;
+[v _PIN_SJ3_DEF `CS253 ~T0 @X0 1 e ]
+[i _PIN_SJ3_DEF
+:U ..
+:U ..
+&U _PORTB
+&U _TRISB
+-> << -> 1 `i -> 1 `i `uc
+..
+..
+]
+[v F2369 `*CS253 ~T0 @X0 1 t ]
+[v _PIN_SJ3 `C*CS253 ~T0 @X0 1 e ]
+[i _PIN_SJ3
+&U _PIN_SJ3_DEF
+]
+"50
+[; ;src/pinmap.c: 50: const gpio_pin_def PIN_SJ4_DEF = {&PORTB, &TRISB, (1<<2)}; const gpio_pin PIN_SJ4 = &PIN_SJ4_DEF;
+[v _PIN_SJ4_DEF `CS253 ~T0 @X0 1 e ]
+[i _PIN_SJ4_DEF
+:U ..
+:U ..
+&U _PORTB
+&U _TRISB
+-> << -> 1 `i -> 2 `i `uc
+..
+..
+]
+[v F2372 `*CS253 ~T0 @X0 1 t ]
+[v _PIN_SJ4 `C*CS253 ~T0 @X0 1 e ]
+[i _PIN_SJ4
+&U _PIN_SJ4_DEF
+]
+"51
+[; ;src/pinmap.c: 51: const gpio_pin_def PIN_SJ5_DEF = {&PORTB, &TRISB, (1<<3)}; const gpio_pin PIN_SJ5 = &PIN_SJ5_DEF;
+[v _PIN_SJ5_DEF `CS253 ~T0 @X0 1 e ]
+[i _PIN_SJ5_DEF
+:U ..
+:U ..
+&U _PORTB
+&U _TRISB
+-> << -> 1 `i -> 3 `i `uc
+..
+..
+]
+[v F2375 `*CS253 ~T0 @X0 1 t ]
+[v _PIN_SJ5 `C*CS253 ~T0 @X0 1 e ]
+[i _PIN_SJ5
+&U _PIN_SJ5_DEF
+]
+"52
+[; ;src/pinmap.c: 52: const gpio_pin_def PIN_SJ6_DEF = {&PORTB, &TRISB, (1<<4)}; const gpio_pin PIN_SJ6 = &PIN_SJ6_DEF;
+[v _PIN_SJ6_DEF `CS253 ~T0 @X0 1 e ]
+[i _PIN_SJ6_DEF
+:U ..
+:U ..
+&U _PORTB
+&U _TRISB
+-> << -> 1 `i -> 4 `i `uc
+..
+..
+]
+[v F2378 `*CS253 ~T0 @X0 1 t ]
+[v _PIN_SJ6 `C*CS253 ~T0 @X0 1 e ]
+[i _PIN_SJ6
+&U _PIN_SJ6_DEF
+]
+"55
+[; ;src/pinmap.c: 55: const gpio_pin_def PIN_LNB_QRG2_DEF = {&PORTB, &TRISB, (1<<0)}; const gpio_pin PIN_LNB_QRG2 = &PIN_LNB_QRG2_DEF;
+[v _PIN_LNB_QRG2_DEF `CS253 ~T0 @X0 1 e ]
+[i _PIN_LNB_QRG2_DEF
+:U ..
+:U ..
+&U _PORTB
+&U _TRISB
+-> << -> 1 `i -> 0 `i `uc
+..
+..
+]
+[v F2381 `*CS253 ~T0 @X0 1 t ]
+[v _PIN_LNB_QRG2 `C*CS253 ~T0 @X0 1 e ]
+[i _PIN_LNB_QRG2
+&U _PIN_LNB_QRG2_DEF
+]
+"56
+[; ;src/pinmap.c: 56: const gpio_pin_def PIN_LNB_QRG1_DEF = {&PORTB, &TRISB, (1<<5)}; const gpio_pin PIN_LNB_QRG1 = &PIN_LNB_QRG1_DEF;
+[v _PIN_LNB_QRG1_DEF `CS253 ~T0 @X0 1 e ]
+[i _PIN_LNB_QRG1_DEF
+:U ..
+:U ..
+&U _PORTB
+&U _TRISB
+-> << -> 1 `i -> 5 `i `uc
+..
+..
+]
+[v F2384 `*CS253 ~T0 @X0 1 t ]
+[v _PIN_LNB_QRG1 `C*CS253 ~T0 @X0 1 e ]
+[i _PIN_LNB_QRG1
+&U _PIN_LNB_QRG1_DEF
+]
+"60
+[; ;src/pinmap.c: 60: const gpio_pin_def PIN_LNB_FAULT_DEF = {&PORTC, &TRISC, (1<<5)}; const gpio_pin PIN_LNB_FAULT = &PIN_LNB_FAULT_DEF;
+[v _PIN_LNB_FAULT_DEF `CS253 ~T0 @X0 1 e ]
+[i _PIN_LNB_FAULT_DEF
+:U ..
+:U ..
+&U _PORTC
+&U _TRISC
+-> << -> 1 `i -> 5 `i `uc
+..
+..
+]
+[v F2387 `*CS253 ~T0 @X0 1 t ]
+[v _PIN_LNB_FAULT `C*CS253 ~T0 @X0 1 e ]
+[i _PIN_LNB_FAULT
+&U _PIN_LNB_FAULT_DEF
+]

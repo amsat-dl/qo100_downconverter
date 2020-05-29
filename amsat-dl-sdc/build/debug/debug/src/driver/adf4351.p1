@@ -1,0 +1,1672 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"33 src/driver/adf4351.h
+[; ;src/driver/adf4351.h: 33: typedef struct {
+[s S256 `us 1 `us 1 ]
+[n S256 . integer frac ]
+"39
+[; ;src/driver/adf4351.h: 39: typedef struct {
+[s S257 `uc 1 `us 1 `us 1 ]
+[n S257 . prescaler phase mod ]
+"46
+[; ;src/driver/adf4351.h: 46: typedef struct {
+[s S258 `uc 1 `uc 1 `uc 1 `uc 1 `us 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 ]
+[n S258 . lownoise muxout refdbl refdiv rcnt dblbuff cpc ldf ldp pdpol pd cpts cntreset ]
+"63
+[; ;src/driver/adf4351.h: 63: typedef struct {
+[s S259 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `us 1 ]
+[n S259 . bscm abp chcancel csr clkdivmode clkdiv ]
+"73
+[; ;src/driver/adf4351.h: 73: typedef struct {
+[s S260 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 ]
+[n S260 . fbsel divsel bsclkdiv vcopd mtld auxoutsel auxoutena auxpwrout rfoutena rfoutpwr ]
+"88
+[; ;src/driver/adf4351.h: 88: typedef struct {
+[s S261 `uc 1 ]
+[n S261 . ldpinmod ]
+"97
+[; ;src/driver/adf4351.h: 97: typedef struct adf4351_ctx {
+[s S262 `i 1 `S256 1 `S257 1 `S258 1 `S259 1 `S260 1 `S261 1 `ul 1 `ul 1 `ul 1 ]
+[n S262 adf4351_ctx init reg0 reg1 reg2 reg3 reg4 reg5 ref pfd vco_freq ]
+"29 /opt/microchip/xc8/v2.10/pic/include/c99/string.h
+[; ;/opt/microchip/xc8/v2.10/pic/include/c99/string.h: 29: void *memset (void *, int, size_t);
+[v _memset `(*v ~T0 @X0 0 ef3`*v`i`ui ]
+"7 src/driver/gpio.h
+[; ;src/driver/gpio.h: 7: typedef struct gpio_pin_def {
+[s S263 `*Vuc 1 `*Vuc 1 `uc 1 ]
+[n S263 gpio_pin_def pPORT pTRIS mask ]
+[v F2851 `*CS263 ~T0 @X0 1 t ]
+"9 src/pinmap.h
+[; ;src/pinmap.h: 9: extern const gpio_pin PIN_ADF_LE;
+[v _PIN_ADF_LE `C*CS263 ~T0 @X0 0 e ]
+[v F2849 `*CS263 ~T0 @X0 1 t ]
+"8
+[; ;src/pinmap.h: 8: extern const gpio_pin PIN_ADF_CE;
+[v _PIN_ADF_CE `C*CS263 ~T0 @X0 0 e ]
+"12 src/driver/adf4351.c
+[; ;src/driver/adf4351.c: 12: static void adf4351_default(adf4351_ctx* ctx);
+[v _adf4351_default `(v ~T0 @X0 0 sf1`*S262 ]
+[v F2246 `(v ~T0 @X0 1 tf1`ul ]
+"189 /opt/microchip/xc8/v2.10/pic/include/pic18.h
+[v __delaywdt `JF2246 ~T0 @X0 0 e ]
+[p i __delaywdt ]
+"16 src/driver/adf4351.c
+[; ;src/driver/adf4351.c: 16: static int adf4351_calc_vco_core_freq(adf4351_ctx* ctx, u32 rf_out_freq);
+[v _adf4351_calc_vco_core_freq `(i ~T0 @X0 0 sf2`*S262`ul ]
+"17
+[; ;src/driver/adf4351.c: 17: static int adf4351_calc_rcnt_block(adf4351_ctx* ctx);
+[v _adf4351_calc_rcnt_block `(i ~T0 @X0 0 sf1`*S262 ]
+"15
+[; ;src/driver/adf4351.c: 15: static int adf4351_calc_counters(adf4351_ctx* ctx);
+[v _adf4351_calc_counters `(i ~T0 @X0 0 sf1`*S262 ]
+"13
+[; ;src/driver/adf4351.c: 13: static void adf4351_setup(adf4351_ctx* ctx);
+[v _adf4351_setup `(v ~T0 @X0 0 sf1`*S262 ]
+[v F2847 `*CS263 ~T0 @X0 1 t ]
+"7 src/pinmap.h
+[; ;src/pinmap.h: 7: extern const gpio_pin PIN_ADF_LOCK;
+[v _PIN_ADF_LOCK `C*CS263 ~T0 @X0 0 e ]
+"111 /opt/microchip/xc8/v2.10/pic/include/c99/stdio.h
+[v _printf `(i ~T0 @X0 0 ev`*Cuc ]
+[v F2881 `*CS263 ~T0 @X0 1 t ]
+"28 src/pinmap.h
+[; ;src/pinmap.h: 28: extern const gpio_pin PIN_LED_ADF_LOCK;
+[v _PIN_LED_ADF_LOCK `C*CS263 ~T0 @X0 0 e ]
+"26 src/driver/adf4351.c
+[; ;src/driver/adf4351.c: 26: static void adf4351_write_reg4(adf4351_ctx* ctx);
+[v _adf4351_write_reg4 `(v ~T0 @X0 0 sf1`*S262 ]
+"24
+[; ;src/driver/adf4351.c: 24: static void adf4351_write_reg2(adf4351_ctx* ctx);
+[v _adf4351_write_reg2 `(v ~T0 @X0 0 sf1`*S262 ]
+"27
+[; ;src/driver/adf4351.c: 27: static void adf4351_write_reg5(adf4351_ctx* ctx);
+[v _adf4351_write_reg5 `(v ~T0 @X0 0 sf1`*S262 ]
+"25
+[; ;src/driver/adf4351.c: 25: static void adf4351_write_reg3(adf4351_ctx* ctx);
+[v _adf4351_write_reg3 `(v ~T0 @X0 0 sf1`*S262 ]
+"23
+[; ;src/driver/adf4351.c: 23: static void adf4351_write_reg1(adf4351_ctx* ctx);
+[v _adf4351_write_reg1 `(v ~T0 @X0 0 sf1`*S262 ]
+"22
+[; ;src/driver/adf4351.c: 22: static void adf4351_write_reg0(adf4351_ctx* ctx);
+[v _adf4351_write_reg0 `(v ~T0 @X0 0 sf1`*S262 ]
+[v F2926 `(ul ~T0 @X0 1 tf2`ul`ul ]
+"28
+[; ;src/driver/adf4351.c: 28: static __attribute__((inline)) u32 gcd(u32 a, u32 b);
+[v _gcd `TF2926 ~T0 @X0 0 s ]
+"14
+[; ;src/driver/adf4351.c: 14: static void adf4351_write_latch(u32 value);
+[v _adf4351_write_latch `(v ~T0 @X0 0 sf1`ul ]
+[v F2855 `*CS263 ~T0 @X0 1 t ]
+"11 src/pinmap.h
+[; ;src/pinmap.h: 11: extern const gpio_pin PIN_SIO_CLK;
+[v _PIN_SIO_CLK `C*CS263 ~T0 @X0 0 e ]
+[v F2853 `*CS263 ~T0 @X0 1 t ]
+"10
+[; ;src/pinmap.h: 10: extern const gpio_pin PIN_SIO_DATA;
+[v _PIN_SIO_DATA `C*CS263 ~T0 @X0 0 e ]
+"54 /opt/microchip/xc8/v2.10/pic/include/pic18f2520.h
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 54: __asm("PORTA equ 0F80h");
+[; <" PORTA equ 0F80h ;# ">
+"273
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 273: __asm("PORTB equ 0F81h");
+[; <" PORTB equ 0F81h ;# ">
+"452
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 452: __asm("PORTC equ 0F82h");
+[; <" PORTC equ 0F82h ;# ">
+"627
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 627: __asm("PORTE equ 0F84h");
+[; <" PORTE equ 0F84h ;# ">
+"702
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 702: __asm("LATA equ 0F89h");
+[; <" LATA equ 0F89h ;# ">
+"814
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 814: __asm("LATB equ 0F8Ah");
+[; <" LATB equ 0F8Ah ;# ">
+"926
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 926: __asm("LATC equ 0F8Bh");
+[; <" LATC equ 0F8Bh ;# ">
+"1038
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1038: __asm("TRISA equ 0F92h");
+[; <" TRISA equ 0F92h ;# ">
+"1043
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1043: __asm("DDRA equ 0F92h");
+[; <" DDRA equ 0F92h ;# ">
+"1260
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1260: __asm("TRISB equ 0F93h");
+[; <" TRISB equ 0F93h ;# ">
+"1265
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1265: __asm("DDRB equ 0F93h");
+[; <" DDRB equ 0F93h ;# ">
+"1482
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1482: __asm("TRISC equ 0F94h");
+[; <" TRISC equ 0F94h ;# ">
+"1487
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1487: __asm("DDRC equ 0F94h");
+[; <" DDRC equ 0F94h ;# ">
+"1704
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1704: __asm("OSCTUNE equ 0F9Bh");
+[; <" OSCTUNE equ 0F9Bh ;# ">
+"1769
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1769: __asm("PIE1 equ 0F9Dh");
+[; <" PIE1 equ 0F9Dh ;# ">
+"1840
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1840: __asm("PIR1 equ 0F9Eh");
+[; <" PIR1 equ 0F9Eh ;# ">
+"1911
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1911: __asm("IPR1 equ 0F9Fh");
+[; <" IPR1 equ 0F9Fh ;# ">
+"1982
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1982: __asm("PIE2 equ 0FA0h");
+[; <" PIE2 equ 0FA0h ;# ">
+"2048
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2048: __asm("PIR2 equ 0FA1h");
+[; <" PIR2 equ 0FA1h ;# ">
+"2114
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2114: __asm("IPR2 equ 0FA2h");
+[; <" IPR2 equ 0FA2h ;# ">
+"2180
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2180: __asm("EECON1 equ 0FA6h");
+[; <" EECON1 equ 0FA6h ;# ">
+"2246
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2246: __asm("EECON2 equ 0FA7h");
+[; <" EECON2 equ 0FA7h ;# ">
+"2253
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2253: __asm("EEDATA equ 0FA8h");
+[; <" EEDATA equ 0FA8h ;# ">
+"2260
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2260: __asm("EEADR equ 0FA9h");
+[; <" EEADR equ 0FA9h ;# ">
+"2267
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2267: __asm("RCSTA equ 0FABh");
+[; <" RCSTA equ 0FABh ;# ">
+"2272
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2272: __asm("RCSTA1 equ 0FABh");
+[; <" RCSTA1 equ 0FABh ;# ">
+"2477
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2477: __asm("TXSTA equ 0FACh");
+[; <" TXSTA equ 0FACh ;# ">
+"2482
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2482: __asm("TXSTA1 equ 0FACh");
+[; <" TXSTA1 equ 0FACh ;# ">
+"2733
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2733: __asm("TXREG equ 0FADh");
+[; <" TXREG equ 0FADh ;# ">
+"2738
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2738: __asm("TXREG1 equ 0FADh");
+[; <" TXREG1 equ 0FADh ;# ">
+"2745
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2745: __asm("RCREG equ 0FAEh");
+[; <" RCREG equ 0FAEh ;# ">
+"2750
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2750: __asm("RCREG1 equ 0FAEh");
+[; <" RCREG1 equ 0FAEh ;# ">
+"2757
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2757: __asm("SPBRG equ 0FAFh");
+[; <" SPBRG equ 0FAFh ;# ">
+"2762
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2762: __asm("SPBRG1 equ 0FAFh");
+[; <" SPBRG1 equ 0FAFh ;# ">
+"2769
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2769: __asm("SPBRGH equ 0FB0h");
+[; <" SPBRGH equ 0FB0h ;# ">
+"2776
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2776: __asm("T3CON equ 0FB1h");
+[; <" T3CON equ 0FB1h ;# ">
+"2888
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2888: __asm("TMR3 equ 0FB2h");
+[; <" TMR3 equ 0FB2h ;# ">
+"2895
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2895: __asm("TMR3L equ 0FB2h");
+[; <" TMR3L equ 0FB2h ;# ">
+"2902
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2902: __asm("TMR3H equ 0FB3h");
+[; <" TMR3H equ 0FB3h ;# ">
+"2909
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2909: __asm("CMCON equ 0FB4h");
+[; <" CMCON equ 0FB4h ;# ">
+"2999
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2999: __asm("CVRCON equ 0FB5h");
+[; <" CVRCON equ 0FB5h ;# ">
+"3078
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3078: __asm("ECCP1AS equ 0FB6h");
+[; <" ECCP1AS equ 0FB6h ;# ">
+"3083
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3083: __asm("ECCPAS equ 0FB6h");
+[; <" ECCPAS equ 0FB6h ;# ">
+"3208
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3208: __asm("PWM1CON equ 0FB7h");
+[; <" PWM1CON equ 0FB7h ;# ">
+"3213
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3213: __asm("ECCP1DEL equ 0FB7h");
+[; <" ECCP1DEL equ 0FB7h ;# ">
+"3248
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3248: __asm("BAUDCON equ 0FB8h");
+[; <" BAUDCON equ 0FB8h ;# ">
+"3253
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3253: __asm("BAUDCTL equ 0FB8h");
+[; <" BAUDCTL equ 0FB8h ;# ">
+"3428
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3428: __asm("CCP2CON equ 0FBAh");
+[; <" CCP2CON equ 0FBAh ;# ">
+"3507
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3507: __asm("CCPR2 equ 0FBBh");
+[; <" CCPR2 equ 0FBBh ;# ">
+"3514
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3514: __asm("CCPR2L equ 0FBBh");
+[; <" CCPR2L equ 0FBBh ;# ">
+"3521
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3521: __asm("CCPR2H equ 0FBCh");
+[; <" CCPR2H equ 0FBCh ;# ">
+"3528
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3528: __asm("CCP1CON equ 0FBDh");
+[; <" CCP1CON equ 0FBDh ;# ">
+"3607
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3607: __asm("CCPR1 equ 0FBEh");
+[; <" CCPR1 equ 0FBEh ;# ">
+"3614
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3614: __asm("CCPR1L equ 0FBEh");
+[; <" CCPR1L equ 0FBEh ;# ">
+"3621
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3621: __asm("CCPR1H equ 0FBFh");
+[; <" CCPR1H equ 0FBFh ;# ">
+"3628
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3628: __asm("ADCON2 equ 0FC0h");
+[; <" ADCON2 equ 0FC0h ;# ">
+"3699
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3699: __asm("ADCON1 equ 0FC1h");
+[; <" ADCON1 equ 0FC1h ;# ">
+"3784
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3784: __asm("ADCON0 equ 0FC2h");
+[; <" ADCON0 equ 0FC2h ;# ">
+"3903
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3903: __asm("ADRES equ 0FC3h");
+[; <" ADRES equ 0FC3h ;# ">
+"3910
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3910: __asm("ADRESL equ 0FC3h");
+[; <" ADRESL equ 0FC3h ;# ">
+"3917
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3917: __asm("ADRESH equ 0FC4h");
+[; <" ADRESH equ 0FC4h ;# ">
+"3924
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3924: __asm("SSPCON2 equ 0FC5h");
+[; <" SSPCON2 equ 0FC5h ;# ">
+"4019
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4019: __asm("SSPCON1 equ 0FC6h");
+[; <" SSPCON1 equ 0FC6h ;# ">
+"4089
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4089: __asm("SSPSTAT equ 0FC7h");
+[; <" SSPSTAT equ 0FC7h ;# ">
+"4310
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4310: __asm("SSPADD equ 0FC8h");
+[; <" SSPADD equ 0FC8h ;# ">
+"4317
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4317: __asm("SSPBUF equ 0FC9h");
+[; <" SSPBUF equ 0FC9h ;# ">
+"4324
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4324: __asm("T2CON equ 0FCAh");
+[; <" T2CON equ 0FCAh ;# ">
+"4422
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4422: __asm("PR2 equ 0FCBh");
+[; <" PR2 equ 0FCBh ;# ">
+"4427
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4427: __asm("MEMCON equ 0FCBh");
+[; <" MEMCON equ 0FCBh ;# ">
+"4532
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4532: __asm("TMR2 equ 0FCCh");
+[; <" TMR2 equ 0FCCh ;# ">
+"4539
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4539: __asm("T1CON equ 0FCDh");
+[; <" T1CON equ 0FCDh ;# ">
+"4642
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4642: __asm("TMR1 equ 0FCEh");
+[; <" TMR1 equ 0FCEh ;# ">
+"4649
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4649: __asm("TMR1L equ 0FCEh");
+[; <" TMR1L equ 0FCEh ;# ">
+"4656
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4656: __asm("TMR1H equ 0FCFh");
+[; <" TMR1H equ 0FCFh ;# ">
+"4663
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4663: __asm("RCON equ 0FD0h");
+[; <" RCON equ 0FD0h ;# ">
+"4796
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4796: __asm("WDTCON equ 0FD1h");
+[; <" WDTCON equ 0FD1h ;# ">
+"4824
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4824: __asm("HLVDCON equ 0FD2h");
+[; <" HLVDCON equ 0FD2h ;# ">
+"4829
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4829: __asm("LVDCON equ 0FD2h");
+[; <" LVDCON equ 0FD2h ;# ">
+"5094
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5094: __asm("OSCCON equ 0FD3h");
+[; <" OSCCON equ 0FD3h ;# ">
+"5177
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5177: __asm("T0CON equ 0FD5h");
+[; <" T0CON equ 0FD5h ;# ">
+"5260
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5260: __asm("TMR0 equ 0FD6h");
+[; <" TMR0 equ 0FD6h ;# ">
+"5267
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5267: __asm("TMR0L equ 0FD6h");
+[; <" TMR0L equ 0FD6h ;# ">
+"5274
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5274: __asm("TMR0H equ 0FD7h");
+[; <" TMR0H equ 0FD7h ;# ">
+"5281
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5281: __asm("STATUS equ 0FD8h");
+[; <" STATUS equ 0FD8h ;# ">
+"5352
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5352: __asm("FSR2 equ 0FD9h");
+[; <" FSR2 equ 0FD9h ;# ">
+"5359
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5359: __asm("FSR2L equ 0FD9h");
+[; <" FSR2L equ 0FD9h ;# ">
+"5366
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5366: __asm("FSR2H equ 0FDAh");
+[; <" FSR2H equ 0FDAh ;# ">
+"5373
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5373: __asm("PLUSW2 equ 0FDBh");
+[; <" PLUSW2 equ 0FDBh ;# ">
+"5380
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5380: __asm("PREINC2 equ 0FDCh");
+[; <" PREINC2 equ 0FDCh ;# ">
+"5387
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5387: __asm("POSTDEC2 equ 0FDDh");
+[; <" POSTDEC2 equ 0FDDh ;# ">
+"5394
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5394: __asm("POSTINC2 equ 0FDEh");
+[; <" POSTINC2 equ 0FDEh ;# ">
+"5401
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5401: __asm("INDF2 equ 0FDFh");
+[; <" INDF2 equ 0FDFh ;# ">
+"5408
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5408: __asm("BSR equ 0FE0h");
+[; <" BSR equ 0FE0h ;# ">
+"5415
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5415: __asm("FSR1 equ 0FE1h");
+[; <" FSR1 equ 0FE1h ;# ">
+"5422
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5422: __asm("FSR1L equ 0FE1h");
+[; <" FSR1L equ 0FE1h ;# ">
+"5429
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5429: __asm("FSR1H equ 0FE2h");
+[; <" FSR1H equ 0FE2h ;# ">
+"5436
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5436: __asm("PLUSW1 equ 0FE3h");
+[; <" PLUSW1 equ 0FE3h ;# ">
+"5443
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5443: __asm("PREINC1 equ 0FE4h");
+[; <" PREINC1 equ 0FE4h ;# ">
+"5450
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5450: __asm("POSTDEC1 equ 0FE5h");
+[; <" POSTDEC1 equ 0FE5h ;# ">
+"5457
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5457: __asm("POSTINC1 equ 0FE6h");
+[; <" POSTINC1 equ 0FE6h ;# ">
+"5464
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5464: __asm("INDF1 equ 0FE7h");
+[; <" INDF1 equ 0FE7h ;# ">
+"5471
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5471: __asm("WREG equ 0FE8h");
+[; <" WREG equ 0FE8h ;# ">
+"5483
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5483: __asm("FSR0 equ 0FE9h");
+[; <" FSR0 equ 0FE9h ;# ">
+"5490
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5490: __asm("FSR0L equ 0FE9h");
+[; <" FSR0L equ 0FE9h ;# ">
+"5497
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5497: __asm("FSR0H equ 0FEAh");
+[; <" FSR0H equ 0FEAh ;# ">
+"5504
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5504: __asm("PLUSW0 equ 0FEBh");
+[; <" PLUSW0 equ 0FEBh ;# ">
+"5511
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5511: __asm("PREINC0 equ 0FECh");
+[; <" PREINC0 equ 0FECh ;# ">
+"5518
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5518: __asm("POSTDEC0 equ 0FEDh");
+[; <" POSTDEC0 equ 0FEDh ;# ">
+"5525
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5525: __asm("POSTINC0 equ 0FEEh");
+[; <" POSTINC0 equ 0FEEh ;# ">
+"5532
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5532: __asm("INDF0 equ 0FEFh");
+[; <" INDF0 equ 0FEFh ;# ">
+"5539
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5539: __asm("INTCON3 equ 0FF0h");
+[; <" INTCON3 equ 0FF0h ;# ">
+"5631
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5631: __asm("INTCON2 equ 0FF1h");
+[; <" INTCON2 equ 0FF1h ;# ">
+"5701
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5701: __asm("INTCON equ 0FF2h");
+[; <" INTCON equ 0FF2h ;# ">
+"5818
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5818: __asm("PROD equ 0FF3h");
+[; <" PROD equ 0FF3h ;# ">
+"5825
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5825: __asm("PRODL equ 0FF3h");
+[; <" PRODL equ 0FF3h ;# ">
+"5832
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5832: __asm("PRODH equ 0FF4h");
+[; <" PRODH equ 0FF4h ;# ">
+"5839
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5839: __asm("TABLAT equ 0FF5h");
+[; <" TABLAT equ 0FF5h ;# ">
+"5848
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5848: __asm("TBLPTR equ 0FF6h");
+[; <" TBLPTR equ 0FF6h ;# ">
+"5855
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5855: __asm("TBLPTRL equ 0FF6h");
+[; <" TBLPTRL equ 0FF6h ;# ">
+"5862
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5862: __asm("TBLPTRH equ 0FF7h");
+[; <" TBLPTRH equ 0FF7h ;# ">
+"5869
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5869: __asm("TBLPTRU equ 0FF8h");
+[; <" TBLPTRU equ 0FF8h ;# ">
+"5878
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5878: __asm("PCLAT equ 0FF9h");
+[; <" PCLAT equ 0FF9h ;# ">
+"5885
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5885: __asm("PC equ 0FF9h");
+[; <" PC equ 0FF9h ;# ">
+"5892
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5892: __asm("PCL equ 0FF9h");
+[; <" PCL equ 0FF9h ;# ">
+"5899
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5899: __asm("PCLATH equ 0FFAh");
+[; <" PCLATH equ 0FFAh ;# ">
+"5906
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5906: __asm("PCLATU equ 0FFBh");
+[; <" PCLATU equ 0FFBh ;# ">
+"5913
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5913: __asm("STKPTR equ 0FFCh");
+[; <" STKPTR equ 0FFCh ;# ">
+"5987
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5987: __asm("TOS equ 0FFDh");
+[; <" TOS equ 0FFDh ;# ">
+"5994
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5994: __asm("TOSL equ 0FFDh");
+[; <" TOSL equ 0FFDh ;# ">
+"6001
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 6001: __asm("TOSH equ 0FFEh");
+[; <" TOSH equ 0FFEh ;# ">
+"6008
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 6008: __asm("TOSU equ 0FFFh");
+[; <" TOSU equ 0FFFh ;# ">
+"33 src/driver/adf4351.c
+[; ;src/driver/adf4351.c: 33: void adf4351_init(adf4351_ctx* ctx, u32 ref, u32 pfd)
+[v _adf4351_init `(v ~T0 @X0 1 ef3`*S262`ul`ul ]
+"34
+[; ;src/driver/adf4351.c: 34: {
+{
+[e :U _adf4351_init ]
+"33
+[; ;src/driver/adf4351.c: 33: void adf4351_init(adf4351_ctx* ctx, u32 ref, u32 pfd)
+[v _ctx `*S262 ~T0 @X0 1 r1 ]
+[v _ref `ul ~T0 @X0 1 r2 ]
+[v _pfd `ul ~T0 @X0 1 r3 ]
+"34
+[; ;src/driver/adf4351.c: 34: {
+[f ]
+"35
+[; ;src/driver/adf4351.c: 35:  memset(ctx, 0, sizeof(*ctx));
+[e ( _memset (3 , , -> _ctx `*v -> 0 `i -> # *U _ctx `ui ]
+"38
+[; ;src/driver/adf4351.c: 38:  ctx->init = 1;
+[e = . *U _ctx 0 -> 1 `i ]
+"39
+[; ;src/driver/adf4351.c: 39:  ctx->ref = ref;
+[e = . *U _ctx 7 _ref ]
+"40
+[; ;src/driver/adf4351.c: 40:  ctx->pfd = pfd;
+[e = . *U _ctx 8 _pfd ]
+"43
+[; ;src/driver/adf4351.c: 43:     *((PIN_ADF_LE)->pPORT) &= ~(PIN_ADF_LE)->mask;
+[e =& *U . *U _PIN_ADF_LE 0 -> ~ -> . *U _PIN_ADF_LE 2 `i `uc ]
+"44
+[; ;src/driver/adf4351.c: 44:     *((PIN_ADF_CE)->pPORT) |= (PIN_ADF_CE)->mask;
+[e =| *U . *U _PIN_ADF_CE 0 -> . *U _PIN_ADF_CE 2 `uc ]
+"47
+[; ;src/driver/adf4351.c: 47:  adf4351_default(ctx);
+[e ( _adf4351_default (1 _ctx ]
+"49
+[; ;src/driver/adf4351.c: 49:     _delaywdt((unsigned long)((100)*(8000000/4000000.0)));
+[e ( __delaywdt (1 -> * -> -> 100 `i `d / -> -> 8000000 `l `d .4000000.0 `ul ]
+"50
+[; ;src/driver/adf4351.c: 50: }
+[e :UE 264 ]
+}
+"52
+[; ;src/driver/adf4351.c: 52: static u32 g_freq = 0;
+[v _g_freq `ul ~T0 @X0 1 s ]
+[i _g_freq
+-> -> -> 0 `i `l `ul
+]
+"54
+[; ;src/driver/adf4351.c: 54: int adf4351_set_freq(adf4351_ctx* ctx, u32 freq)
+[v _adf4351_set_freq `(i ~T0 @X0 1 ef2`*S262`ul ]
+"55
+[; ;src/driver/adf4351.c: 55: {
+{
+[e :U _adf4351_set_freq ]
+"54
+[; ;src/driver/adf4351.c: 54: int adf4351_set_freq(adf4351_ctx* ctx, u32 freq)
+[v _ctx `*S262 ~T0 @X0 1 r1 ]
+[v _freq `ul ~T0 @X0 1 r2 ]
+"55
+[; ;src/driver/adf4351.c: 55: {
+[f ]
+"57
+[; ;src/driver/adf4351.c: 57:  if(!ctx->init) return -3;
+[e $ ! ! != . *U _ctx 0 -> 0 `i 266  ]
+[e ) -U -> 3 `i ]
+[e $UE 265  ]
+[e :U 266 ]
+"58
+[; ;src/driver/adf4351.c: 58:     g_freq = freq;
+[e = _g_freq _freq ]
+"60
+[; ;src/driver/adf4351.c: 60:  adf4351_calc_vco_core_freq(ctx, freq);
+[e ( _adf4351_calc_vco_core_freq (2 , _ctx _freq ]
+"61
+[; ;src/driver/adf4351.c: 61:  adf4351_calc_rcnt_block(ctx);
+[e ( _adf4351_calc_rcnt_block (1 _ctx ]
+"62
+[; ;src/driver/adf4351.c: 62:  adf4351_calc_counters(ctx);
+[e ( _adf4351_calc_counters (1 _ctx ]
+"64
+[; ;src/driver/adf4351.c: 64:  if(ctx->reg4.vcopd == 0) {
+[e $ ! == -> . . *U _ctx 5 3 `i -> 0 `i 267  ]
+{
+"65
+[; ;src/driver/adf4351.c: 65:   adf4351_setup(ctx);
+[e ( _adf4351_setup (1 _ctx ]
+"66
+[; ;src/driver/adf4351.c: 66:     }
+}
+[e :U 267 ]
+"68
+[; ;src/driver/adf4351.c: 68:  return 0;
+[e ) -> 0 `i ]
+[e $UE 265  ]
+"69
+[; ;src/driver/adf4351.c: 69: }
+[e :UE 265 ]
+}
+"72
+[; ;src/driver/adf4351.c: 72: BOOL adf4351_get_lock(adf4351_ctx* ctx)
+[v _adf4351_get_lock `(i ~T0 @X0 1 ef1`*S262 ]
+"73
+[; ;src/driver/adf4351.c: 73: {
+{
+[e :U _adf4351_get_lock ]
+"72
+[; ;src/driver/adf4351.c: 72: BOOL adf4351_get_lock(adf4351_ctx* ctx)
+[v _ctx `*S262 ~T0 @X0 1 r1 ]
+"73
+[; ;src/driver/adf4351.c: 73: {
+[f ]
+"74
+[; ;src/driver/adf4351.c: 74:  return (((*((PIN_ADF_LOCK)->pPORT) & (PIN_ADF_LOCK)->mask) != 0)==0)?0:1;
+[e ) ? == -> != & -> *U . *U _PIN_ADF_LOCK 0 `i -> . *U _PIN_ADF_LOCK 2 `i -> 0 `i `i -> 0 `i : -> 0 `i -> 1 `i ]
+[e $UE 268  ]
+"75
+[; ;src/driver/adf4351.c: 75: }
+[e :UE 268 ]
+}
+"77
+[; ;src/driver/adf4351.c: 77: u8 adf4351_lockstat = 0;
+[v _adf4351_lockstat `uc ~T0 @X0 1 e ]
+[i _adf4351_lockstat
+-> -> 0 `i `uc
+]
+"79
+[; ;src/driver/adf4351.c: 79: void check_ADF5341_status(adf4351_ctx* ctx)
+[v _check_ADF5341_status `(v ~T0 @X0 1 ef1`*S262 ]
+"80
+[; ;src/driver/adf4351.c: 80: {
+{
+[e :U _check_ADF5341_status ]
+"79
+[; ;src/driver/adf4351.c: 79: void check_ADF5341_status(adf4351_ctx* ctx)
+[v _ctx `*S262 ~T0 @X0 1 r1 ]
+"80
+[; ;src/driver/adf4351.c: 80: {
+[f ]
+"83
+[; ;src/driver/adf4351.c: 83:  u8 stat = ((*((PIN_ADF_LOCK)->pPORT) & (PIN_ADF_LOCK)->mask) != 0);
+[v _stat `uc ~T0 @X0 1 a ]
+[e = _stat -> -> != & -> *U . *U _PIN_ADF_LOCK 0 `i -> . *U _PIN_ADF_LOCK 2 `i -> 0 `i `i `uc ]
+"85
+[; ;src/driver/adf4351.c: 85:  if(stat != adf4351_lockstat)
+[e $ ! != -> _stat `i -> _adf4351_lockstat `i 270  ]
+"86
+[; ;src/driver/adf4351.c: 86:  {
+{
+"87
+[; ;src/driver/adf4351.c: 87:   if(stat == 0)
+[e $ ! == -> _stat `i -> 0 `i 271  ]
+"88
+[; ;src/driver/adf4351.c: 88:   {
+{
+"89
+[; ;src/driver/adf4351.c: 89:    printf("ADF4351 unlocked\n");
+[e ( _printf :s 1C ]
+"90
+[; ;src/driver/adf4351.c: 90:    *((PIN_LED_ADF_LOCK)->pPORT) |= (PIN_LED_ADF_LOCK)->mask;
+[e =| *U . *U _PIN_LED_ADF_LOCK 0 -> . *U _PIN_LED_ADF_LOCK 2 `uc ]
+"91
+[; ;src/driver/adf4351.c: 91:   }
+}
+[e $U 272  ]
+"92
+[; ;src/driver/adf4351.c: 92:   else
+[e :U 271 ]
+"93
+[; ;src/driver/adf4351.c: 93:   {
+{
+"94
+[; ;src/driver/adf4351.c: 94:    printf("ADF4351 locked\n");
+[e ( _printf :s 2C ]
+"95
+[; ;src/driver/adf4351.c: 95:    *((PIN_LED_ADF_LOCK)->pPORT) &= ~(PIN_LED_ADF_LOCK)->mask;
+[e =& *U . *U _PIN_LED_ADF_LOCK 0 -> ~ -> . *U _PIN_LED_ADF_LOCK 2 `i `uc ]
+"96
+[; ;src/driver/adf4351.c: 96:   }
+}
+[e :U 272 ]
+"97
+[; ;src/driver/adf4351.c: 97:   adf4351_lockstat = stat;
+[e = _adf4351_lockstat _stat ]
+"98
+[; ;src/driver/adf4351.c: 98:  }
+}
+[e :U 270 ]
+"99
+[; ;src/driver/adf4351.c: 99: }
+[e :UE 269 ]
+}
+"102
+[; ;src/driver/adf4351.c: 102: void adf4351_set_mode(adf4351_ctx* ctx, BOOL enable)
+[v _adf4351_set_mode `(v ~T0 @X0 1 ef2`*S262`i ]
+"103
+[; ;src/driver/adf4351.c: 103: {
+{
+[e :U _adf4351_set_mode ]
+"102
+[; ;src/driver/adf4351.c: 102: void adf4351_set_mode(adf4351_ctx* ctx, BOOL enable)
+[v _ctx `*S262 ~T0 @X0 1 r1 ]
+[v _enable `i ~T0 @X0 1 r2 ]
+"103
+[; ;src/driver/adf4351.c: 103: {
+[f ]
+"105
+[; ;src/driver/adf4351.c: 105:  if(!ctx->init) return;
+[e $ ! ! != . *U _ctx 0 -> 0 `i 274  ]
+[e $UE 273  ]
+[e :U 274 ]
+"108
+[; ;src/driver/adf4351.c: 108:  if(enable) {
+[e $ ! != _enable -> 0 `i 275  ]
+{
+"109
+[; ;src/driver/adf4351.c: 109:   ctx->reg4.vcopd = 0;
+[e = . . *U _ctx 5 3 -> -> 0 `i `uc ]
+"110
+[; ;src/driver/adf4351.c: 110:   ctx->reg4.rfoutena = 1;
+[e = . . *U _ctx 5 8 -> -> 1 `i `uc ]
+"111
+[; ;src/driver/adf4351.c: 111:   ctx->reg2.pd = 0;
+[e = . . *U _ctx 3 10 -> -> 0 `i `uc ]
+"114
+[; ;src/driver/adf4351.c: 114:   adf4351_setup(ctx);
+[e ( _adf4351_setup (1 _ctx ]
+"115
+[; ;src/driver/adf4351.c: 115:  } else {
+}
+[e $U 276  ]
+[e :U 275 ]
+{
+"116
+[; ;src/driver/adf4351.c: 116:   ctx->reg4.vcopd = 1;
+[e = . . *U _ctx 5 3 -> -> 1 `i `uc ]
+"117
+[; ;src/driver/adf4351.c: 117:   ctx->reg4.rfoutena = 0;
+[e = . . *U _ctx 5 8 -> -> 0 `i `uc ]
+"118
+[; ;src/driver/adf4351.c: 118:   ctx->reg2.pd = 1;
+[e = . . *U _ctx 3 10 -> -> 1 `i `uc ]
+"121
+[; ;src/driver/adf4351.c: 121:   adf4351_write_reg4(ctx);
+[e ( _adf4351_write_reg4 (1 _ctx ]
+"122
+[; ;src/driver/adf4351.c: 122:   adf4351_write_reg2(ctx);
+[e ( _adf4351_write_reg2 (1 _ctx ]
+"123
+[; ;src/driver/adf4351.c: 123:  }
+}
+[e :U 276 ]
+"124
+[; ;src/driver/adf4351.c: 124: }
+[e :UE 273 ]
+}
+"127
+[; ;src/driver/adf4351.c: 127: void adf4351_set_tune(adf4351_ctx* ctx, u8 icp, u8 pout, BOOL lownoise)
+[v _adf4351_set_tune `(v ~T0 @X0 1 ef4`*S262`uc`uc`i ]
+"128
+[; ;src/driver/adf4351.c: 128: {
+{
+[e :U _adf4351_set_tune ]
+"127
+[; ;src/driver/adf4351.c: 127: void adf4351_set_tune(adf4351_ctx* ctx, u8 icp, u8 pout, BOOL lownoise)
+[v _ctx `*S262 ~T0 @X0 1 r1 ]
+[v _icp `uc ~T0 @X0 1 r2 ]
+[v _pout `uc ~T0 @X0 1 r3 ]
+[v _lownoise `i ~T0 @X0 1 r4 ]
+"128
+[; ;src/driver/adf4351.c: 128: {
+[f ]
+"132
+[; ;src/driver/adf4351.c: 132:     ctx->reg2.lownoise = lownoise?0:3;
+[e = . . *U _ctx 3 0 -> ? != _lownoise -> 0 `i : -> 0 `i -> 3 `i `uc ]
+"133
+[; ;src/driver/adf4351.c: 133:     ctx->reg2.cpc = icp;
+[e = . . *U _ctx 3 6 _icp ]
+"134
+[; ;src/driver/adf4351.c: 134:     ctx->reg4.rfoutpwr = pout;
+[e = . . *U _ctx 5 9 _pout ]
+"139
+[; ;src/driver/adf4351.c: 139: }
+[e :UE 277 ]
+}
+"142
+[; ;src/driver/adf4351.c: 142: static void adf4351_default(adf4351_ctx* ctx)
+[v _adf4351_default `(v ~T0 @X0 1 sf1`*S262 ]
+"143
+[; ;src/driver/adf4351.c: 143: {
+{
+[e :U _adf4351_default ]
+"142
+[; ;src/driver/adf4351.c: 142: static void adf4351_default(adf4351_ctx* ctx)
+[v _ctx `*S262 ~T0 @X0 1 r1 ]
+"143
+[; ;src/driver/adf4351.c: 143: {
+[f ]
+"144
+[; ;src/driver/adf4351.c: 144:  ctx->reg1.phase = 1;
+[e = . . *U _ctx 2 1 -> -> 1 `i `us ]
+"145
+[; ;src/driver/adf4351.c: 145:  ctx->reg2.muxout = 6;
+[e = . . *U _ctx 3 1 -> -> 6 `i `uc ]
+"146
+[; ;src/driver/adf4351.c: 146:  ctx->reg2.cpc = 7;
+[e = . . *U _ctx 3 6 -> -> 7 `i `uc ]
+"147
+[; ;src/driver/adf4351.c: 147:  ctx->reg2.lownoise = 3;
+[e = . . *U _ctx 3 0 -> -> 3 `i `uc ]
+"148
+[; ;src/driver/adf4351.c: 148:  ctx->reg2.pdpol = 1;
+[e = . . *U _ctx 3 9 -> -> 1 `i `uc ]
+"149
+[; ;src/driver/adf4351.c: 149:  ctx->reg4.fbsel = 1;
+[e = . . *U _ctx 5 0 -> -> 1 `i `uc ]
+"150
+[; ;src/driver/adf4351.c: 150:  ctx->reg4.rfoutena = 1;
+[e = . . *U _ctx 5 8 -> -> 1 `i `uc ]
+"151
+[; ;src/driver/adf4351.c: 151:  ctx->reg4.rfoutpwr = 3;
+[e = . . *U _ctx 5 9 -> -> 3 `i `uc ]
+"152
+[; ;src/driver/adf4351.c: 152:     ctx->reg4.vcopd = 1;
+[e = . . *U _ctx 5 3 -> -> 1 `i `uc ]
+"153
+[; ;src/driver/adf4351.c: 153:     ctx->reg5.ldpinmod = 1;
+[e = . . *U _ctx 6 0 -> -> 1 `i `uc ]
+"154
+[; ;src/driver/adf4351.c: 154: }
+[e :UE 278 ]
+}
+"156
+[; ;src/driver/adf4351.c: 156: static void adf4351_setup(adf4351_ctx* ctx)
+[v _adf4351_setup `(v ~T0 @X0 1 sf1`*S262 ]
+"157
+[; ;src/driver/adf4351.c: 157: {
+{
+[e :U _adf4351_setup ]
+"156
+[; ;src/driver/adf4351.c: 156: static void adf4351_setup(adf4351_ctx* ctx)
+[v _ctx `*S262 ~T0 @X0 1 r1 ]
+"157
+[; ;src/driver/adf4351.c: 157: {
+[f ]
+"159
+[; ;src/driver/adf4351.c: 159:     adf4351_write_reg5(ctx);
+[e ( _adf4351_write_reg5 (1 _ctx ]
+"160
+[; ;src/driver/adf4351.c: 160:     adf4351_write_reg4(ctx);
+[e ( _adf4351_write_reg4 (1 _ctx ]
+"161
+[; ;src/driver/adf4351.c: 161:     adf4351_write_reg3(ctx);
+[e ( _adf4351_write_reg3 (1 _ctx ]
+"162
+[; ;src/driver/adf4351.c: 162:     adf4351_write_reg2(ctx);
+[e ( _adf4351_write_reg2 (1 _ctx ]
+"163
+[; ;src/driver/adf4351.c: 163:     adf4351_write_reg1(ctx);
+[e ( _adf4351_write_reg1 (1 _ctx ]
+"164
+[; ;src/driver/adf4351.c: 164:     adf4351_write_reg0(ctx);
+[e ( _adf4351_write_reg0 (1 _ctx ]
+"165
+[; ;src/driver/adf4351.c: 165: }
+[e :UE 279 ]
+}
+"168
+[; ;src/driver/adf4351.c: 168: static int adf4351_calc_counters(adf4351_ctx* ctx)
+[v _adf4351_calc_counters `(i ~T0 @X0 1 sf1`*S262 ]
+"169
+[; ;src/driver/adf4351.c: 169: {
+{
+[e :U _adf4351_calc_counters ]
+"168
+[; ;src/driver/adf4351.c: 168: static int adf4351_calc_counters(adf4351_ctx* ctx)
+[v _ctx `*S262 ~T0 @X0 1 r1 ]
+"169
+[; ;src/driver/adf4351.c: 169: {
+[f ]
+"170
+[; ;src/driver/adf4351.c: 170:  u32 integer, frac, mod, remainder;
+[v _integer `ul ~T0 @X0 1 a ]
+[v _frac `ul ~T0 @X0 1 a ]
+[v _mod `ul ~T0 @X0 1 a ]
+[v _remainder `ul ~T0 @X0 1 a ]
+"173
+[; ;src/driver/adf4351.c: 173:  integer = ctx->vco_freq / ctx->pfd;
+[e = _integer / . *U _ctx 9 . *U _ctx 8 ]
+"174
+[; ;src/driver/adf4351.c: 174:  remainder = ctx->vco_freq % ctx->pfd;
+[e = _remainder % . *U _ctx 9 . *U _ctx 8 ]
+"177
+[; ;src/driver/adf4351.c: 177:  if ((integer < 23) || (integer > 65535))
+[e $ ! || < _integer -> -> -> 23 `i `l `ul > _integer -> -> 65535 `l `ul 281  ]
+"178
+[; ;src/driver/adf4351.c: 178:   return -11;
+[e ) -U -> 11 `i ]
+[e $UE 280  ]
+[e :U 281 ]
+"180
+[; ;src/driver/adf4351.c: 180:  frac = remainder;
+[e = _frac _remainder ]
+"181
+[; ;src/driver/adf4351.c: 181:  mod = ctx->pfd;
+[e = _mod . *U _ctx 8 ]
+"183
+[; ;src/driver/adf4351.c: 183:  while (mod >= 4096) {
+[e $U 282  ]
+[e :U 283 ]
+{
+"184
+[; ;src/driver/adf4351.c: 184:   frac /= 2;
+[e =/ _frac -> -> -> 2 `i `l `ul ]
+"185
+[; ;src/driver/adf4351.c: 185:   mod /= 2;
+[e =/ _mod -> -> -> 2 `i `l `ul ]
+"186
+[; ;src/driver/adf4351.c: 186:  }
+}
+[e :U 282 ]
+"183
+[; ;src/driver/adf4351.c: 183:  while (mod >= 4096) {
+[e $ >= _mod -> -> -> 4096 `i `l `ul 283  ]
+[e :U 284 ]
+"188
+[; ;src/driver/adf4351.c: 188:  if(frac) {
+[e $ ! != _frac -> -> -> 0 `i `l `ul 285  ]
+{
+"190
+[; ;src/driver/adf4351.c: 190:   u32 div = gcd(mod, frac);
+[v _div `ul ~T0 @X0 1 a ]
+[e = _div ( _gcd (2 , _mod _frac ]
+"191
+[; ;src/driver/adf4351.c: 191:   frac /= div;
+[e =/ _frac _div ]
+"192
+[; ;src/driver/adf4351.c: 192:   mod /= div;
+[e =/ _mod _div ]
+"193
+[; ;src/driver/adf4351.c: 193:  } else {
+}
+[e $U 286  ]
+[e :U 285 ]
+{
+"195
+[; ;src/driver/adf4351.c: 195:   frac = 0;
+[e = _frac -> -> -> 0 `i `l `ul ]
+"196
+[; ;src/driver/adf4351.c: 196:   mod = 2;
+[e = _mod -> -> -> 2 `i `l `ul ]
+"197
+[; ;src/driver/adf4351.c: 197:  }
+}
+[e :U 286 ]
+"199
+[; ;src/driver/adf4351.c: 199:  ctx->reg0.integer = integer;
+[e = . . *U _ctx 1 0 -> _integer `us ]
+"200
+[; ;src/driver/adf4351.c: 200:  ctx->reg0.frac = frac;
+[e = . . *U _ctx 1 1 -> _frac `us ]
+"201
+[; ;src/driver/adf4351.c: 201:     ctx->reg1.mod = mod;
+[e = . . *U _ctx 2 2 -> _mod `us ]
+"202
+[; ;src/driver/adf4351.c: 202:     ctx->reg2.ldf = frac?0:1;
+[e = . . *U _ctx 3 7 -> ? != _frac -> -> -> 0 `i `l `ul : -> 0 `i -> 1 `i `uc ]
+"204
+[; ;src/driver/adf4351.c: 204:  return 0;
+[e ) -> 0 `i ]
+[e $UE 280  ]
+"205
+[; ;src/driver/adf4351.c: 205: }
+[e :UE 280 ]
+}
+"207
+[; ;src/driver/adf4351.c: 207: static int adf4351_calc_rcnt_block(adf4351_ctx* ctx)
+[v _adf4351_calc_rcnt_block `(i ~T0 @X0 1 sf1`*S262 ]
+"208
+[; ;src/driver/adf4351.c: 208: {
+{
+[e :U _adf4351_calc_rcnt_block ]
+"207
+[; ;src/driver/adf4351.c: 207: static int adf4351_calc_rcnt_block(adf4351_ctx* ctx)
+[v _ctx `*S262 ~T0 @X0 1 r1 ]
+"208
+[; ;src/driver/adf4351.c: 208: {
+[f ]
+"209
+[; ;src/driver/adf4351.c: 209:  int div;
+[v _div `i ~T0 @X0 1 a ]
+"210
+[; ;src/driver/adf4351.c: 210:     u32 bscdiv;
+[v _bscdiv `ul ~T0 @X0 1 a ]
+"214
+[; ;src/driver/adf4351.c: 214:  div = ctx->ref / ctx->pfd;
+[e = _div -> / . *U _ctx 7 . *U _ctx 8 `i ]
+"216
+[; ;src/driver/adf4351.c: 216:  if (ctx->ref % ctx->pfd) {
+[e $ ! != % . *U _ctx 7 . *U _ctx 8 -> -> -> 0 `i `l `ul 288  ]
+{
+"217
+[; ;src/driver/adf4351.c: 217:   printf("ADF4351: Cannot reach PFD of %i kHz with REF of %i kHz (not divideable).\n", ctx->pfd, ctx->ref);
+[e ( _printf , , (. :s 3C . *U _ctx 8 . *U _ctx 7 ]
+"218
+[; ;src/driver/adf4351.c: 218:   return -9;
+[e ) -U -> 9 `i ]
+[e $UE 287  ]
+"219
+[; ;src/driver/adf4351.c: 219:  }
+}
+[e :U 288 ]
+"221
+[; ;src/driver/adf4351.c: 221:  if (div >= 1024) {
+[e $ ! >= _div -> 1024 `i 289  ]
+{
+"222
+[; ;src/driver/adf4351.c: 222:   printf("ADF4351: Cannot reach PFD of %i kHz with REF of %i kHz (div too high).\n", ctx->pfd, ctx->ref);
+[e ( _printf , , (. :s 4C . *U _ctx 8 . *U _ctx 7 ]
+"223
+[; ;src/driver/adf4351.c: 223:   return -11;
+[e ) -U -> 11 `i ]
+[e $UE 287  ]
+"224
+[; ;src/driver/adf4351.c: 224:  }
+}
+[e :U 289 ]
+"227
+[; ;src/driver/adf4351.c: 227:  if((div%2)==0) {
+[e $ ! == % _div -> 2 `i -> 0 `i 290  ]
+{
+"228
+[; ;src/driver/adf4351.c: 228:   ctx->reg2.rcnt = div/2;
+[e = . . *U _ctx 3 4 -> / _div -> 2 `i `us ]
+"229
+[; ;src/driver/adf4351.c: 229:   ctx->reg2.refdiv = 1;
+[e = . . *U _ctx 3 3 -> -> 1 `i `uc ]
+"230
+[; ;src/driver/adf4351.c: 230:  } else {
+}
+[e $U 291  ]
+[e :U 290 ]
+{
+"231
+[; ;src/driver/adf4351.c: 231:   ctx->reg2.rcnt = div;
+[e = . . *U _ctx 3 4 -> _div `us ]
+"232
+[; ;src/driver/adf4351.c: 232:   ctx->reg2.refdiv = 0;
+[e = . . *U _ctx 3 3 -> -> 0 `i `uc ]
+"233
+[; ;src/driver/adf4351.c: 233:  }
+}
+[e :U 291 ]
+"234
+[; ;src/driver/adf4351.c: 234:  ctx->reg3.bscm = 0;
+[e = . . *U _ctx 4 0 -> -> 0 `i `uc ]
+"235
+[; ;src/driver/adf4351.c: 235:  bscdiv = ((ctx->pfd-1) / 125) + 1;
+[e = _bscdiv + / - . *U _ctx 8 -> -> -> 1 `i `l `ul -> -> -> 125 `i `l `ul -> -> -> 1 `i `l `ul ]
+"237
+[; ;src/driver/adf4351.c: 237:  if (bscdiv > 255) {
+[e $ ! > _bscdiv -> -> -> 255 `i `l `ul 292  ]
+{
+"238
+[; ;src/driver/adf4351.c: 238:   ctx->reg3.bscm = 1;
+[e = . . *U _ctx 4 0 -> -> 1 `i `uc ]
+"239
+[; ;src/driver/adf4351.c: 239:   bscdiv = ((ctx->pfd-1) / 250) + 1;
+[e = _bscdiv + / - . *U _ctx 8 -> -> -> 1 `i `l `ul -> -> -> 250 `i `l `ul -> -> -> 1 `i `l `ul ]
+"240
+[; ;src/driver/adf4351.c: 240:  }
+}
+[e :U 292 ]
+"242
+[; ;src/driver/adf4351.c: 242:  if (bscdiv > 255) {
+[e $ ! > _bscdiv -> -> -> 255 `i `l `ul 293  ]
+{
+"243
+[; ;src/driver/adf4351.c: 243:   printf("ADF4351: Cannot use pfd of %lu kHz (bscdiv too high).\n", ctx->pfd);
+[e ( _printf , (. :s 5C . *U _ctx 8 ]
+"244
+[; ;src/driver/adf4351.c: 244:   return -9;
+[e ) -U -> 9 `i ]
+[e $UE 287  ]
+"245
+[; ;src/driver/adf4351.c: 245:  }
+}
+[e :U 293 ]
+"247
+[; ;src/driver/adf4351.c: 247:     ctx->reg4.bsclkdiv = bscdiv;
+[e = . . *U _ctx 5 2 -> _bscdiv `uc ]
+"249
+[; ;src/driver/adf4351.c: 249:  return 0;
+[e ) -> 0 `i ]
+[e $UE 287  ]
+"250
+[; ;src/driver/adf4351.c: 250: }
+[e :UE 287 ]
+}
+"252
+[; ;src/driver/adf4351.c: 252: static int adf4351_calc_vco_core_freq(adf4351_ctx* ctx, u32 rf_out_freq)
+[v _adf4351_calc_vco_core_freq `(i ~T0 @X0 1 sf2`*S262`ul ]
+"253
+[; ;src/driver/adf4351.c: 253: {
+{
+[e :U _adf4351_calc_vco_core_freq ]
+"252
+[; ;src/driver/adf4351.c: 252: static int adf4351_calc_vco_core_freq(adf4351_ctx* ctx, u32 rf_out_freq)
+[v _ctx `*S262 ~T0 @X0 1 r1 ]
+[v _rf_out_freq `ul ~T0 @X0 1 r2 ]
+"253
+[; ;src/driver/adf4351.c: 253: {
+[f ]
+"254
+[; ;src/driver/adf4351.c: 254:  int div = 0;
+[v _div `i ~T0 @X0 1 a ]
+[e = _div -> 0 `i ]
+"256
+[; ;src/driver/adf4351.c: 256:  if (rf_out_freq > 4400000)
+[e $ ! > _rf_out_freq -> -> 4400000 `l `ul 295  ]
+"257
+[; ;src/driver/adf4351.c: 257:   return -11;
+[e ) -U -> 11 `i ]
+[e $UE 294  ]
+[e :U 295 ]
+"259
+[; ;src/driver/adf4351.c: 259:  while ((rf_out_freq <= 2200000) && (div <= 4)) {
+[e $U 296  ]
+[e :U 297 ]
+{
+"260
+[; ;src/driver/adf4351.c: 260:   rf_out_freq *= 2;
+[e =* _rf_out_freq -> -> -> 2 `i `l `ul ]
+"261
+[; ;src/driver/adf4351.c: 261:   div += 1;
+[e =+ _div -> 1 `i ]
+"262
+[; ;src/driver/adf4351.c: 262:  }
+}
+[e :U 296 ]
+"259
+[; ;src/driver/adf4351.c: 259:  while ((rf_out_freq <= 2200000) && (div <= 4)) {
+[e $ && <= _rf_out_freq -> -> 2200000 `l `ul <= _div -> 4 `i 297  ]
+[e :U 298 ]
+"264
+[; ;src/driver/adf4351.c: 264:  if ((rf_out_freq <= 2200000) || (div > 4)) {
+[e $ ! || <= _rf_out_freq -> -> 2200000 `l `ul > _div -> 4 `i 299  ]
+{
+"265
+[; ;src/driver/adf4351.c: 265:   return -11;
+[e ) -U -> 11 `i ]
+[e $UE 294  ]
+"266
+[; ;src/driver/adf4351.c: 266:     }
+}
+[e :U 299 ]
+"268
+[; ;src/driver/adf4351.c: 268:  ctx->vco_freq = rf_out_freq;
+[e = . *U _ctx 9 _rf_out_freq ]
+"269
+[; ;src/driver/adf4351.c: 269:     ctx->reg1.prescaler = (ctx->vco_freq>3600000)?1:0;
+[e = . . *U _ctx 2 0 -> ? > . *U _ctx 9 -> -> 3600000 `l `ul : -> 1 `i -> 0 `i `uc ]
+"270
+[; ;src/driver/adf4351.c: 270:  ctx->reg4.divsel = div;
+[e = . . *U _ctx 5 1 -> _div `uc ]
+"272
+[; ;src/driver/adf4351.c: 272:  return 0;
+[e ) -> 0 `i ]
+[e $UE 294  ]
+"273
+[; ;src/driver/adf4351.c: 273: }
+[e :UE 294 ]
+}
+"276
+[; ;src/driver/adf4351.c: 276: void adf4351_regdump(adf4351_ctx* ctx)
+[v _adf4351_regdump `(v ~T0 @X0 1 ef1`*S262 ]
+"277
+[; ;src/driver/adf4351.c: 277: {
+{
+[e :U _adf4351_regdump ]
+"276
+[; ;src/driver/adf4351.c: 276: void adf4351_regdump(adf4351_ctx* ctx)
+[v _ctx `*S262 ~T0 @X0 1 r1 ]
+"277
+[; ;src/driver/adf4351.c: 277: {
+[f ]
+"278
+[; ;src/driver/adf4351.c: 278:  if (!ctx->init) {
+[e $ ! ! != . *U _ctx 0 -> 0 `i 301  ]
+{
+"279
+[; ;src/driver/adf4351.c: 279:   printf("ADF4351 not initialized\n");
+[e ( _printf :s 6C ]
+"280
+[; ;src/driver/adf4351.c: 280:   return;
+[e $UE 300  ]
+"281
+[; ;src/driver/adf4351.c: 281:  }
+}
+[e :U 301 ]
+"284
+[; ;src/driver/adf4351.c: 284:  printf("\n=== ADF4351 registers ===\n");
+[e ( _printf :s 7C ]
+"285
+[; ;src/driver/adf4351.c: 285:     printf("not implemented yet!\n");
+[e ( _printf :s 8C ]
+"286
+[; ;src/driver/adf4351.c: 286: }
+[e :UE 300 ]
+}
+"288
+[; ;src/driver/adf4351.c: 288: static void adf4351_write_reg0(adf4351_ctx* ctx)
+[v _adf4351_write_reg0 `(v ~T0 @X0 1 sf1`*S262 ]
+"289
+[; ;src/driver/adf4351.c: 289: {
+{
+[e :U _adf4351_write_reg0 ]
+"288
+[; ;src/driver/adf4351.c: 288: static void adf4351_write_reg0(adf4351_ctx* ctx)
+[v _ctx `*S262 ~T0 @X0 1 r1 ]
+"289
+[; ;src/driver/adf4351.c: 289: {
+[f ]
+"290
+[; ;src/driver/adf4351.c: 290:  if(ctx->init) {
+[e $ ! != . *U _ctx 0 -> 0 `i 303  ]
+{
+"291
+[; ;src/driver/adf4351.c: 291:         u32 data = 0;
+[v _data `ul ~T0 @X0 1 a ]
+[e = _data -> -> -> 0 `i `l `ul ]
+"293
+[; ;src/driver/adf4351.c: 293:         data |= (((u32)ctx->reg0.frac&0x0FFF)<<3);
+[e =| _data << & -> . . *U _ctx 1 1 `ul -> -> -> 4095 `i `l `ul -> 3 `i ]
+"294
+[; ;src/driver/adf4351.c: 294:         data |= (((u32)ctx->reg0.integer&0xFFFF)<<15);
+[e =| _data << & -> . . *U _ctx 1 0 `ul -> -> 65535 `ui `ul -> 15 `i ]
+"296
+[; ;src/driver/adf4351.c: 296:         adf4351_write_latch(data);
+[e ( _adf4351_write_latch (1 _data ]
+"297
+[; ;src/driver/adf4351.c: 297:     }
+}
+[e :U 303 ]
+"298
+[; ;src/driver/adf4351.c: 298: }
+[e :UE 302 ]
+}
+"300
+[; ;src/driver/adf4351.c: 300: static void adf4351_write_reg1(adf4351_ctx* ctx)
+[v _adf4351_write_reg1 `(v ~T0 @X0 1 sf1`*S262 ]
+"301
+[; ;src/driver/adf4351.c: 301: {
+{
+[e :U _adf4351_write_reg1 ]
+"300
+[; ;src/driver/adf4351.c: 300: static void adf4351_write_reg1(adf4351_ctx* ctx)
+[v _ctx `*S262 ~T0 @X0 1 r1 ]
+"301
+[; ;src/driver/adf4351.c: 301: {
+[f ]
+"302
+[; ;src/driver/adf4351.c: 302:     if(ctx->init) {
+[e $ ! != . *U _ctx 0 -> 0 `i 305  ]
+{
+"303
+[; ;src/driver/adf4351.c: 303:         u32 data = 1;
+[v _data `ul ~T0 @X0 1 a ]
+[e = _data -> -> -> 1 `i `l `ul ]
+"305
+[; ;src/driver/adf4351.c: 305:         data |= (((u32)ctx->reg1.mod&0x0FFF)<<3);
+[e =| _data << & -> . . *U _ctx 2 2 `ul -> -> -> 4095 `i `l `ul -> 3 `i ]
+"306
+[; ;src/driver/adf4351.c: 306:         data |= (((u32)ctx->reg1.phase&0x0FFF)<<15);
+[e =| _data << & -> . . *U _ctx 2 1 `ul -> -> -> 4095 `i `l `ul -> 15 `i ]
+"307
+[; ;src/driver/adf4351.c: 307:         data |= (((u32)ctx->reg1.prescaler&0x0001)<<27);
+[e =| _data << & -> . . *U _ctx 2 0 `ul -> -> -> 1 `i `l `ul -> 27 `i ]
+"309
+[; ;src/driver/adf4351.c: 309:         adf4351_write_latch(data);
+[e ( _adf4351_write_latch (1 _data ]
+"310
+[; ;src/driver/adf4351.c: 310:     }
+}
+[e :U 305 ]
+"311
+[; ;src/driver/adf4351.c: 311: }
+[e :UE 304 ]
+}
+"313
+[; ;src/driver/adf4351.c: 313: static void adf4351_write_reg2(adf4351_ctx* ctx)
+[v _adf4351_write_reg2 `(v ~T0 @X0 1 sf1`*S262 ]
+"314
+[; ;src/driver/adf4351.c: 314: {
+{
+[e :U _adf4351_write_reg2 ]
+"313
+[; ;src/driver/adf4351.c: 313: static void adf4351_write_reg2(adf4351_ctx* ctx)
+[v _ctx `*S262 ~T0 @X0 1 r1 ]
+"314
+[; ;src/driver/adf4351.c: 314: {
+[f ]
+"315
+[; ;src/driver/adf4351.c: 315:     if(ctx->init) {
+[e $ ! != . *U _ctx 0 -> 0 `i 307  ]
+{
+"316
+[; ;src/driver/adf4351.c: 316:         u32 data = 2;
+[v _data `ul ~T0 @X0 1 a ]
+[e = _data -> -> -> 2 `i `l `ul ]
+"318
+[; ;src/driver/adf4351.c: 318:         data |= (((u32)ctx->reg2.cntreset&0x0001)<<3);
+[e =| _data << & -> . . *U _ctx 3 12 `ul -> -> -> 1 `i `l `ul -> 3 `i ]
+"319
+[; ;src/driver/adf4351.c: 319:         data |= (((u32)ctx->reg2.cpts&0x0001)<<4);
+[e =| _data << & -> . . *U _ctx 3 11 `ul -> -> -> 1 `i `l `ul -> 4 `i ]
+"320
+[; ;src/driver/adf4351.c: 320:         data |= (((u32)ctx->reg2.pd&0x0001)<<5);
+[e =| _data << & -> . . *U _ctx 3 10 `ul -> -> -> 1 `i `l `ul -> 5 `i ]
+"321
+[; ;src/driver/adf4351.c: 321:         data |= (((u32)ctx->reg2.pdpol&0x0001)<<6);
+[e =| _data << & -> . . *U _ctx 3 9 `ul -> -> -> 1 `i `l `ul -> 6 `i ]
+"322
+[; ;src/driver/adf4351.c: 322:         data |= (((u32)ctx->reg2.ldp&0x0001)<<7);
+[e =| _data << & -> . . *U _ctx 3 8 `ul -> -> -> 1 `i `l `ul -> 7 `i ]
+"323
+[; ;src/driver/adf4351.c: 323:         data |= (((u32)ctx->reg2.ldf&0x0001)<<8);
+[e =| _data << & -> . . *U _ctx 3 7 `ul -> -> -> 1 `i `l `ul -> 8 `i ]
+"324
+[; ;src/driver/adf4351.c: 324:         data |= (((u32)ctx->reg2.cpc&0x000F)<<9);
+[e =| _data << & -> . . *U _ctx 3 6 `ul -> -> -> 15 `i `l `ul -> 9 `i ]
+"325
+[; ;src/driver/adf4351.c: 325:         data |= (((u32)ctx->reg2.dblbuff&0x0001)<<13);
+[e =| _data << & -> . . *U _ctx 3 5 `ul -> -> -> 1 `i `l `ul -> 13 `i ]
+"326
+[; ;src/driver/adf4351.c: 326:         data |= (((u32)ctx->reg2.rcnt&0x03FF)<<14);
+[e =| _data << & -> . . *U _ctx 3 4 `ul -> -> -> 1023 `i `l `ul -> 14 `i ]
+"327
+[; ;src/driver/adf4351.c: 327:         data |= (((u32)ctx->reg2.refdiv&0x0001)<<24);
+[e =| _data << & -> . . *U _ctx 3 3 `ul -> -> -> 1 `i `l `ul -> 24 `i ]
+"328
+[; ;src/driver/adf4351.c: 328:         data |= (((u32)ctx->reg2.refdbl&0x0001)<<25);
+[e =| _data << & -> . . *U _ctx 3 2 `ul -> -> -> 1 `i `l `ul -> 25 `i ]
+"329
+[; ;src/driver/adf4351.c: 329:         data |= (((u32)ctx->reg2.muxout&0x0007)<<26);
+[e =| _data << & -> . . *U _ctx 3 1 `ul -> -> -> 7 `i `l `ul -> 26 `i ]
+"330
+[; ;src/driver/adf4351.c: 330:         data |= (((u32)ctx->reg2.lownoise&0x0003)<<29);
+[e =| _data << & -> . . *U _ctx 3 0 `ul -> -> -> 3 `i `l `ul -> 29 `i ]
+"332
+[; ;src/driver/adf4351.c: 332:         adf4351_write_latch(data);
+[e ( _adf4351_write_latch (1 _data ]
+"333
+[; ;src/driver/adf4351.c: 333:     }
+}
+[e :U 307 ]
+"334
+[; ;src/driver/adf4351.c: 334: }
+[e :UE 306 ]
+}
+"336
+[; ;src/driver/adf4351.c: 336: static void adf4351_write_reg3(adf4351_ctx* ctx)
+[v _adf4351_write_reg3 `(v ~T0 @X0 1 sf1`*S262 ]
+"337
+[; ;src/driver/adf4351.c: 337: {
+{
+[e :U _adf4351_write_reg3 ]
+"336
+[; ;src/driver/adf4351.c: 336: static void adf4351_write_reg3(adf4351_ctx* ctx)
+[v _ctx `*S262 ~T0 @X0 1 r1 ]
+"337
+[; ;src/driver/adf4351.c: 337: {
+[f ]
+"338
+[; ;src/driver/adf4351.c: 338:     if(ctx->init) {
+[e $ ! != . *U _ctx 0 -> 0 `i 309  ]
+{
+"339
+[; ;src/driver/adf4351.c: 339:         u32 data = 3;
+[v _data `ul ~T0 @X0 1 a ]
+[e = _data -> -> -> 3 `i `l `ul ]
+"341
+[; ;src/driver/adf4351.c: 341:         data |= (((u32)ctx->reg3.clkdiv&0x0FFF)<<3);
+[e =| _data << & -> . . *U _ctx 4 5 `ul -> -> -> 4095 `i `l `ul -> 3 `i ]
+"342
+[; ;src/driver/adf4351.c: 342:         data |= (((u32)ctx->reg3.clkdivmode&0x0003)<<15);
+[e =| _data << & -> . . *U _ctx 4 4 `ul -> -> -> 3 `i `l `ul -> 15 `i ]
+"343
+[; ;src/driver/adf4351.c: 343:         data |= (((u32)ctx->reg3.csr&0x0001)<<18);
+[e =| _data << & -> . . *U _ctx 4 3 `ul -> -> -> 1 `i `l `ul -> 18 `i ]
+"344
+[; ;src/driver/adf4351.c: 344:         data |= (((u32)ctx->reg3.chcancel&0x0001)<<21);
+[e =| _data << & -> . . *U _ctx 4 2 `ul -> -> -> 1 `i `l `ul -> 21 `i ]
+"345
+[; ;src/driver/adf4351.c: 345:         data |= (((u32)ctx->reg3.abp&0x0001)<<22);
+[e =| _data << & -> . . *U _ctx 4 1 `ul -> -> -> 1 `i `l `ul -> 22 `i ]
+"346
+[; ;src/driver/adf4351.c: 346:         data |= (((u32)ctx->reg3.bscm&0x0001)<<23);
+[e =| _data << & -> . . *U _ctx 4 0 `ul -> -> -> 1 `i `l `ul -> 23 `i ]
+"348
+[; ;src/driver/adf4351.c: 348:         adf4351_write_latch(data);
+[e ( _adf4351_write_latch (1 _data ]
+"349
+[; ;src/driver/adf4351.c: 349:     }
+}
+[e :U 309 ]
+"350
+[; ;src/driver/adf4351.c: 350: }
+[e :UE 308 ]
+}
+"352
+[; ;src/driver/adf4351.c: 352: static void adf4351_write_reg4(adf4351_ctx* ctx)
+[v _adf4351_write_reg4 `(v ~T0 @X0 1 sf1`*S262 ]
+"353
+[; ;src/driver/adf4351.c: 353: {
+{
+[e :U _adf4351_write_reg4 ]
+"352
+[; ;src/driver/adf4351.c: 352: static void adf4351_write_reg4(adf4351_ctx* ctx)
+[v _ctx `*S262 ~T0 @X0 1 r1 ]
+"353
+[; ;src/driver/adf4351.c: 353: {
+[f ]
+"354
+[; ;src/driver/adf4351.c: 354:     if(ctx->init) {
+[e $ ! != . *U _ctx 0 -> 0 `i 311  ]
+{
+"355
+[; ;src/driver/adf4351.c: 355:         u32 data = 4;
+[v _data `ul ~T0 @X0 1 a ]
+[e = _data -> -> -> 4 `i `l `ul ]
+"357
+[; ;src/driver/adf4351.c: 357:         data |= (((u32)ctx->reg4.rfoutpwr&0x0003)<<3);
+[e =| _data << & -> . . *U _ctx 5 9 `ul -> -> -> 3 `i `l `ul -> 3 `i ]
+"358
+[; ;src/driver/adf4351.c: 358:         data |= (((u32)ctx->reg4.rfoutena&0x0001)<<5);
+[e =| _data << & -> . . *U _ctx 5 8 `ul -> -> -> 1 `i `l `ul -> 5 `i ]
+"359
+[; ;src/driver/adf4351.c: 359:         data |= (((u32)ctx->reg4.auxpwrout&0x0003)<<6);
+[e =| _data << & -> . . *U _ctx 5 7 `ul -> -> -> 3 `i `l `ul -> 6 `i ]
+"360
+[; ;src/driver/adf4351.c: 360:         data |= (((u32)ctx->reg4.auxoutena&0x0001)<<8);
+[e =| _data << & -> . . *U _ctx 5 6 `ul -> -> -> 1 `i `l `ul -> 8 `i ]
+"361
+[; ;src/driver/adf4351.c: 361:         data |= (((u32)ctx->reg4.auxoutsel&0x0001)<<9);
+[e =| _data << & -> . . *U _ctx 5 5 `ul -> -> -> 1 `i `l `ul -> 9 `i ]
+"362
+[; ;src/driver/adf4351.c: 362:         data |= (((u32)ctx->reg4.mtld&0x0001)<<10);
+[e =| _data << & -> . . *U _ctx 5 4 `ul -> -> -> 1 `i `l `ul -> 10 `i ]
+"363
+[; ;src/driver/adf4351.c: 363:         data |= (((u32)ctx->reg4.vcopd&0x0001)<<11);
+[e =| _data << & -> . . *U _ctx 5 3 `ul -> -> -> 1 `i `l `ul -> 11 `i ]
+"364
+[; ;src/driver/adf4351.c: 364:         data |= (((u32)ctx->reg4.bsclkdiv&0x00FF)<<12);
+[e =| _data << & -> . . *U _ctx 5 2 `ul -> -> -> 255 `i `l `ul -> 12 `i ]
+"365
+[; ;src/driver/adf4351.c: 365:         data |= (((u32)ctx->reg4.divsel&0x0007)<<20);
+[e =| _data << & -> . . *U _ctx 5 1 `ul -> -> -> 7 `i `l `ul -> 20 `i ]
+"366
+[; ;src/driver/adf4351.c: 366:         data |= (((u32)ctx->reg4.fbsel&0x0001)<<23);
+[e =| _data << & -> . . *U _ctx 5 0 `ul -> -> -> 1 `i `l `ul -> 23 `i ]
+"368
+[; ;src/driver/adf4351.c: 368:         adf4351_write_latch(data);
+[e ( _adf4351_write_latch (1 _data ]
+"369
+[; ;src/driver/adf4351.c: 369:     }
+}
+[e :U 311 ]
+"370
+[; ;src/driver/adf4351.c: 370: }
+[e :UE 310 ]
+}
+"372
+[; ;src/driver/adf4351.c: 372: static void adf4351_write_reg5(adf4351_ctx* ctx)
+[v _adf4351_write_reg5 `(v ~T0 @X0 1 sf1`*S262 ]
+"373
+[; ;src/driver/adf4351.c: 373: {
+{
+[e :U _adf4351_write_reg5 ]
+"372
+[; ;src/driver/adf4351.c: 372: static void adf4351_write_reg5(adf4351_ctx* ctx)
+[v _ctx `*S262 ~T0 @X0 1 r1 ]
+"373
+[; ;src/driver/adf4351.c: 373: {
+[f ]
+"374
+[; ;src/driver/adf4351.c: 374:     if(ctx->init) {
+[e $ ! != . *U _ctx 0 -> 0 `i 313  ]
+{
+"375
+[; ;src/driver/adf4351.c: 375:         u32 data = 5;
+[v _data `ul ~T0 @X0 1 a ]
+[e = _data -> -> -> 5 `i `l `ul ]
+"377
+[; ;src/driver/adf4351.c: 377:         data |= (((u32)ctx->reg5.ldpinmod&0x0003)<<22);
+[e =| _data << & -> . . *U _ctx 6 0 `ul -> -> -> 3 `i `l `ul -> 22 `i ]
+"379
+[; ;src/driver/adf4351.c: 379:         adf4351_write_latch(data);
+[e ( _adf4351_write_latch (1 _data ]
+"380
+[; ;src/driver/adf4351.c: 380:     }
+}
+[e :U 313 ]
+"381
+[; ;src/driver/adf4351.c: 381: }
+[e :UE 312 ]
+}
+[v F2997 `(ul ~T0 @X0 1 tf2`ul`ul ]
+"383
+[; ;src/driver/adf4351.c: 383: static __attribute__((inline)) u32 gcd(u32 a, u32 b)
+[v _gcd `TF2997 ~T0 @X0 1 s ]
+"384
+[; ;src/driver/adf4351.c: 384: {
+{
+[e :U _gcd ]
+"383
+[; ;src/driver/adf4351.c: 383: static __attribute__((inline)) u32 gcd(u32 a, u32 b)
+[v _a `ul ~T0 @X0 1 r1 ]
+[v _b `ul ~T0 @X0 1 r2 ]
+"384
+[; ;src/driver/adf4351.c: 384: {
+[f ]
+"385
+[; ;src/driver/adf4351.c: 385:     while((a%b) != 0) {
+[e $U 315  ]
+[e :U 316 ]
+{
+"386
+[; ;src/driver/adf4351.c: 386:         u32 c = a;
+[v _c `ul ~T0 @X0 1 a ]
+[e = _c _a ]
+"388
+[; ;src/driver/adf4351.c: 388:         if(a < b) {
+[e $ ! < _a _b 318  ]
+{
+"389
+[; ;src/driver/adf4351.c: 389:             a = b;
+[e = _a _b ]
+"390
+[; ;src/driver/adf4351.c: 390:             b = c;
+[e = _b _c ]
+"391
+[; ;src/driver/adf4351.c: 391:         } else {
+}
+[e $U 319  ]
+[e :U 318 ]
+{
+"392
+[; ;src/driver/adf4351.c: 392:             a = b;
+[e = _a _b ]
+"393
+[; ;src/driver/adf4351.c: 393:             b = c%b;
+[e = _b % _c _b ]
+"394
+[; ;src/driver/adf4351.c: 394:         }
+}
+[e :U 319 ]
+"395
+[; ;src/driver/adf4351.c: 395:     }
+}
+[e :U 315 ]
+"385
+[; ;src/driver/adf4351.c: 385:     while((a%b) != 0) {
+[e $ != % _a _b -> -> -> 0 `i `l `ul 316  ]
+[e :U 317 ]
+"397
+[; ;src/driver/adf4351.c: 397:     return b;
+[e ) _b ]
+[e $UE 314  ]
+"398
+[; ;src/driver/adf4351.c: 398: }
+[e :UE 314 ]
+}
+"401
+[; ;src/driver/adf4351.c: 401: static void adf4351_write_latch(u32 value)
+[v _adf4351_write_latch `(v ~T0 @X0 1 sf1`ul ]
+"402
+[; ;src/driver/adf4351.c: 402: {
+{
+[e :U _adf4351_write_latch ]
+"401
+[; ;src/driver/adf4351.c: 401: static void adf4351_write_latch(u32 value)
+[v _value `ul ~T0 @X0 1 r1 ]
+"402
+[; ;src/driver/adf4351.c: 402: {
+[f ]
+"404
+[; ;src/driver/adf4351.c: 404:     u32 mask = 0x80000000ULL;
+[v _mask `ul ~T0 @X0 1 a ]
+[e = _mask -> -> 2147483648 `uo `ul ]
+"406
+[; ;src/driver/adf4351.c: 406:     *((PIN_SIO_CLK)->pPORT) &= ~(PIN_SIO_CLK)->mask;
+[e =& *U . *U _PIN_SIO_CLK 0 -> ~ -> . *U _PIN_SIO_CLK 2 `i `uc ]
+"407
+[; ;src/driver/adf4351.c: 407:     _delaywdt((unsigned long)((1)*(8000000/4000000.0)));
+[e ( __delaywdt (1 -> * -> -> 1 `i `d / -> -> 8000000 `l `d .4000000.0 `ul ]
+"409
+[; ;src/driver/adf4351.c: 409:     while(mask) {
+[e $U 321  ]
+[e :U 322 ]
+{
+"410
+[; ;src/driver/adf4351.c: 410:         if(value&mask) {
+[e $ ! != & _value _mask -> -> -> 0 `i `l `ul 324  ]
+{
+"411
+[; ;src/driver/adf4351.c: 411:             *((PIN_SIO_DATA)->pPORT) |= (PIN_SIO_DATA)->mask;
+[e =| *U . *U _PIN_SIO_DATA 0 -> . *U _PIN_SIO_DATA 2 `uc ]
+"412
+[; ;src/driver/adf4351.c: 412:         } else {
+}
+[e $U 325  ]
+[e :U 324 ]
+{
+"413
+[; ;src/driver/adf4351.c: 413:             *((PIN_SIO_DATA)->pPORT) &= ~(PIN_SIO_DATA)->mask;
+[e =& *U . *U _PIN_SIO_DATA 0 -> ~ -> . *U _PIN_SIO_DATA 2 `i `uc ]
+"414
+[; ;src/driver/adf4351.c: 414:         }
+}
+[e :U 325 ]
+"415
+[; ;src/driver/adf4351.c: 415:         _delaywdt((unsigned long)((1)*(8000000/4000000.0)));
+[e ( __delaywdt (1 -> * -> -> 1 `i `d / -> -> 8000000 `l `d .4000000.0 `ul ]
+"416
+[; ;src/driver/adf4351.c: 416:         *((PIN_SIO_CLK)->pPORT) |= (PIN_SIO_CLK)->mask;
+[e =| *U . *U _PIN_SIO_CLK 0 -> . *U _PIN_SIO_CLK 2 `uc ]
+"417
+[; ;src/driver/adf4351.c: 417:         _delaywdt((unsigned long)((1)*(8000000/4000000.0)));
+[e ( __delaywdt (1 -> * -> -> 1 `i `d / -> -> 8000000 `l `d .4000000.0 `ul ]
+"418
+[; ;src/driver/adf4351.c: 418:         *((PIN_SIO_CLK)->pPORT) &= ~(PIN_SIO_CLK)->mask;
+[e =& *U . *U _PIN_SIO_CLK 0 -> ~ -> . *U _PIN_SIO_CLK 2 `i `uc ]
+"419
+[; ;src/driver/adf4351.c: 419:         _delaywdt((unsigned long)((1)*(8000000/4000000.0)));
+[e ( __delaywdt (1 -> * -> -> 1 `i `d / -> -> 8000000 `l `d .4000000.0 `ul ]
+"421
+[; ;src/driver/adf4351.c: 421:         mask >>= 1;
+[e =>> _mask -> -> 1 `i `ul ]
+"422
+[; ;src/driver/adf4351.c: 422:     }
+}
+[e :U 321 ]
+"409
+[; ;src/driver/adf4351.c: 409:     while(mask) {
+[e $ != _mask -> -> -> 0 `i `l `ul 322  ]
+[e :U 323 ]
+"425
+[; ;src/driver/adf4351.c: 425:  *((PIN_ADF_LE)->pPORT) |= (PIN_ADF_LE)->mask;
+[e =| *U . *U _PIN_ADF_LE 0 -> . *U _PIN_ADF_LE 2 `uc ]
+"426
+[; ;src/driver/adf4351.c: 426:  _delaywdt((unsigned long)((1)*(8000000/4000000.0)));
+[e ( __delaywdt (1 -> * -> -> 1 `i `d / -> -> 8000000 `l `d .4000000.0 `ul ]
+"427
+[; ;src/driver/adf4351.c: 427:  *((PIN_ADF_LE)->pPORT) &= ~(PIN_ADF_LE)->mask;
+[e =& *U . *U _PIN_ADF_LE 0 -> ~ -> . *U _PIN_ADF_LE 2 `i `uc ]
+"428
+[; ;src/driver/adf4351.c: 428:  _delaywdt((unsigned long)((50)*(8000000/4000000.0)));
+[e ( __delaywdt (1 -> * -> -> 50 `i `d / -> -> 8000000 `l `d .4000000.0 `ul ]
+"429
+[; ;src/driver/adf4351.c: 429: }
+[e :UE 320 ]
+}
+[p f _printf 8389776 ]
+[a 6C 65 68 70 52 51 53 49 32 110 111 116 32 105 110 105 116 105 97 108 105 122 101 100 10 0 ]
+[a 1C 65 68 70 52 51 53 49 32 117 110 108 111 99 107 101 100 10 0 ]
+[a 2C 65 68 70 52 51 53 49 32 108 111 99 107 101 100 10 0 ]
+[a 7C 10 61 61 61 32 65 68 70 52 51 53 49 32 114 101 103 105 115 116 101 114 115 32 61 61 61 10 0 ]
+[a 5C 65 68 70 52 51 53 49 58 32 67 97 110 110 111 116 32 117 115 101 32 112 102 100 32 111 102 32 37 108 117 32 107 72 122 32 40 98 115 99 100 105 118 32 116 111 111 32 104 105 103 104 41 46 10 0 ]
+[a 4C 65 68 70 52 51 53 49 58 32 67 97 110 110 111 116 32 114 101 97 99 104 32 80 70 68 32 111 102 32 37 105 32 107 72 122 32 119 105 116 104 32 82 69 70 32 111 102 32 37 105 32 107 72 122 32 40 100 105 118 32 116 111 111 32 104 105 103 104 41 46 10 0 ]
+[a 3C 65 68 70 52 51 53 49 58 32 67 97 110 110 111 116 32 114 101 97 99 104 32 80 70 68 32 111 102 32 37 105 32 107 72 122 32 119 105 116 104 32 82 69 70 32 111 102 32 37 105 32 107 72 122 32 40 110 111 116 32 100 105 118 105 100 101 97 98 108 101 41 46 10 0 ]
+[a 8C 110 111 116 32 105 109 112 108 101 109 101 110 116 101 100 32 121 101 116 33 10 0 ]

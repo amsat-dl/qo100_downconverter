@@ -1,0 +1,1510 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"37 src/driver/base/i2c.h
+[; ;src/driver/base/i2c.h: 37: struct i2c_dev__ { int unused; }; typedef struct i2c_dev__ *i2c_dev;
+[s S259 `i 1 ]
+[n S259 i2c_dev__ unused ]
+"48
+[; ;src/driver/base/i2c.h: 48: extern int i2c_probe_addr(i2c_dev dev, u8 addr);
+[v _i2c_probe_addr `(i ~T0 @X0 0 ef2`*S259`uc ]
+"111 /opt/microchip/xc8/v2.10/pic/include/c99/stdio.h
+[v _printf `(i ~T0 @X0 0 ev`*Cuc ]
+"13 src/driver/lcd.c
+[; ;src/driver/lcd.c: 13: void ssd1306_command(u8 *cmd, int len);
+[v _ssd1306_command `(v ~T0 @X0 0 ef2`*uc`i ]
+"14
+[; ;src/driver/lcd.c: 14: void ssd1306_commandbyte(u8 cmd);
+[v _ssd1306_commandbyte `(v ~T0 @X0 0 ef1`uc ]
+"18
+[; ;src/driver/lcd.c: 18: void lcd_clear_screen(u8 ystart);
+[v _lcd_clear_screen `(v ~T0 @X0 0 ef1`uc ]
+"20
+[; ;src/driver/lcd.c: 20: void print_string(char *s, u8 x, u8 y, u8 underline);
+[v _print_string `(v ~T0 @X0 0 ef4`*uc`uc`uc`uc ]
+"56 src/driver/base/i2c.h
+[; ;src/driver/base/i2c.h: 56: extern int smbus8_write_data (i2c_dev dev, u8 addr, u8 reg, const u8 *data, int len);
+[v _smbus8_write_data `(i ~T0 @X0 0 ef5`*S259`uc`uc`*Cuc`i ]
+"55
+[; ;src/driver/base/i2c.h: 55: extern int smbus8_write_byte (i2c_dev dev, u8 addr, u8 reg, u8 data);
+[v _smbus8_write_byte `(i ~T0 @X0 0 ef4`*S259`uc`uc`uc ]
+"29 /opt/microchip/xc8/v2.10/pic/include/c99/string.h
+[; ;/opt/microchip/xc8/v2.10/pic/include/c99/string.h: 29: void *memset (void *, int, size_t);
+[v _memset `(*v ~T0 @X0 0 ef3`*v`i`ui ]
+[v F3104 `Cuc ~T0 @X0 -> 8 `i t ]
+"24 src/driver/lcd.c
+[; ;src/driver/lcd.c: 24: extern const u8 font8x8_basic[97][8];
+[v _font8x8_basic `F3104 ~T0 @X0 -> 0 `x e ]
+"54 /opt/microchip/xc8/v2.10/pic/include/c99/string.h
+[; ;/opt/microchip/xc8/v2.10/pic/include/c99/string.h: 54: size_t strlen (const char *);
+[v _strlen `(ui ~T0 @X0 0 ef1`*Cuc ]
+"120 src/driver/adf4351.h
+[; ;src/driver/adf4351.h: 120: extern u8 adf4351_lockstat;
+[v _adf4351_lockstat `uc ~T0 @X0 0 e ]
+"12 src/driver/si5328.h
+[; ;src/driver/si5328.h: 12: extern u8 si5328locked;
+[v _si5328locked `uc ~T0 @X0 0 e ]
+"20 src/driver/lnb.h
+[; ;src/driver/lnb.h: 20: extern u8 LNB_laststat;
+[v _LNB_laststat `uc ~T0 @X0 0 e ]
+"21 src/driver/lcd.c
+[; ;src/driver/lcd.c: 21: char *itoa(int value);
+[v _itoa `(*uc ~T0 @X0 0 ef1`i ]
+"21 src/driver/lnb.h
+[; ;src/driver/lnb.h: 21: extern u8 LNB_error;
+[v _LNB_error `uc ~T0 @X0 0 e ]
+[v F2246 `(v ~T0 @X0 1 tf1`ul ]
+"189 /opt/microchip/xc8/v2.10/pic/include/pic18.h
+[v __delaywdt `JF2246 ~T0 @X0 0 e ]
+[p i __delaywdt ]
+"11 src/driver/si5328.h
+[; ;src/driver/si5328.h: 11: extern u8 actualADFswitch;
+[v _actualADFswitch `uc ~T0 @X0 0 e ]
+"10
+[; ;src/driver/si5328.h: 10: extern u8 currentLO;
+[v _currentLO `uc ~T0 @X0 0 e ]
+"22 src/gps.h
+[; ;src/gps.h: 22: extern u8 GPS_lock;
+[v _GPS_lock `uc ~T0 @X0 0 e ]
+"21
+[; ;src/gps.h: 21: extern u8 GPS_sat;
+[v _GPS_sat `uc ~T0 @X0 0 e ]
+"30 /opt/microchip/xc8/v2.10/pic/include/c99/string.h
+[; ;/opt/microchip/xc8/v2.10/pic/include/c99/string.h: 30: int memcmp (const void *, const void *, size_t);
+[v _memcmp `(i ~T0 @X0 0 ef3`*Cv`*Cv`ui ]
+"23 src/gps.h
+[; ;src/gps.h: 23: extern char GPS_lat[15];
+[v _GPS_lat `uc ~T0 @X0 -> 0 `x e ]
+"27 /opt/microchip/xc8/v2.10/pic/include/c99/string.h
+[; ;/opt/microchip/xc8/v2.10/pic/include/c99/string.h: 27: void *memcpy (void *restrict, const void *restrict, size_t);
+[v _memcpy `(*v ~T0 @X0 0 ef3`*v`*Cv`ui ]
+"24 src/gps.h
+[; ;src/gps.h: 24: extern char GPS_lon[15];
+[v _GPS_lon `uc ~T0 @X0 -> 0 `x e ]
+"54 /opt/microchip/xc8/v2.10/pic/include/pic18f2520.h
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 54: __asm("PORTA equ 0F80h");
+[; <" PORTA equ 0F80h ;# ">
+"273
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 273: __asm("PORTB equ 0F81h");
+[; <" PORTB equ 0F81h ;# ">
+"452
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 452: __asm("PORTC equ 0F82h");
+[; <" PORTC equ 0F82h ;# ">
+"627
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 627: __asm("PORTE equ 0F84h");
+[; <" PORTE equ 0F84h ;# ">
+"702
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 702: __asm("LATA equ 0F89h");
+[; <" LATA equ 0F89h ;# ">
+"814
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 814: __asm("LATB equ 0F8Ah");
+[; <" LATB equ 0F8Ah ;# ">
+"926
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 926: __asm("LATC equ 0F8Bh");
+[; <" LATC equ 0F8Bh ;# ">
+"1038
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1038: __asm("TRISA equ 0F92h");
+[; <" TRISA equ 0F92h ;# ">
+"1043
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1043: __asm("DDRA equ 0F92h");
+[; <" DDRA equ 0F92h ;# ">
+"1260
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1260: __asm("TRISB equ 0F93h");
+[; <" TRISB equ 0F93h ;# ">
+"1265
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1265: __asm("DDRB equ 0F93h");
+[; <" DDRB equ 0F93h ;# ">
+"1482
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1482: __asm("TRISC equ 0F94h");
+[; <" TRISC equ 0F94h ;# ">
+"1487
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1487: __asm("DDRC equ 0F94h");
+[; <" DDRC equ 0F94h ;# ">
+"1704
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1704: __asm("OSCTUNE equ 0F9Bh");
+[; <" OSCTUNE equ 0F9Bh ;# ">
+"1769
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1769: __asm("PIE1 equ 0F9Dh");
+[; <" PIE1 equ 0F9Dh ;# ">
+"1840
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1840: __asm("PIR1 equ 0F9Eh");
+[; <" PIR1 equ 0F9Eh ;# ">
+"1911
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1911: __asm("IPR1 equ 0F9Fh");
+[; <" IPR1 equ 0F9Fh ;# ">
+"1982
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1982: __asm("PIE2 equ 0FA0h");
+[; <" PIE2 equ 0FA0h ;# ">
+"2048
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2048: __asm("PIR2 equ 0FA1h");
+[; <" PIR2 equ 0FA1h ;# ">
+"2114
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2114: __asm("IPR2 equ 0FA2h");
+[; <" IPR2 equ 0FA2h ;# ">
+"2180
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2180: __asm("EECON1 equ 0FA6h");
+[; <" EECON1 equ 0FA6h ;# ">
+"2246
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2246: __asm("EECON2 equ 0FA7h");
+[; <" EECON2 equ 0FA7h ;# ">
+"2253
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2253: __asm("EEDATA equ 0FA8h");
+[; <" EEDATA equ 0FA8h ;# ">
+"2260
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2260: __asm("EEADR equ 0FA9h");
+[; <" EEADR equ 0FA9h ;# ">
+"2267
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2267: __asm("RCSTA equ 0FABh");
+[; <" RCSTA equ 0FABh ;# ">
+"2272
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2272: __asm("RCSTA1 equ 0FABh");
+[; <" RCSTA1 equ 0FABh ;# ">
+"2477
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2477: __asm("TXSTA equ 0FACh");
+[; <" TXSTA equ 0FACh ;# ">
+"2482
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2482: __asm("TXSTA1 equ 0FACh");
+[; <" TXSTA1 equ 0FACh ;# ">
+"2733
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2733: __asm("TXREG equ 0FADh");
+[; <" TXREG equ 0FADh ;# ">
+"2738
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2738: __asm("TXREG1 equ 0FADh");
+[; <" TXREG1 equ 0FADh ;# ">
+"2745
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2745: __asm("RCREG equ 0FAEh");
+[; <" RCREG equ 0FAEh ;# ">
+"2750
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2750: __asm("RCREG1 equ 0FAEh");
+[; <" RCREG1 equ 0FAEh ;# ">
+"2757
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2757: __asm("SPBRG equ 0FAFh");
+[; <" SPBRG equ 0FAFh ;# ">
+"2762
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2762: __asm("SPBRG1 equ 0FAFh");
+[; <" SPBRG1 equ 0FAFh ;# ">
+"2769
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2769: __asm("SPBRGH equ 0FB0h");
+[; <" SPBRGH equ 0FB0h ;# ">
+"2776
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2776: __asm("T3CON equ 0FB1h");
+[; <" T3CON equ 0FB1h ;# ">
+"2888
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2888: __asm("TMR3 equ 0FB2h");
+[; <" TMR3 equ 0FB2h ;# ">
+"2895
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2895: __asm("TMR3L equ 0FB2h");
+[; <" TMR3L equ 0FB2h ;# ">
+"2902
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2902: __asm("TMR3H equ 0FB3h");
+[; <" TMR3H equ 0FB3h ;# ">
+"2909
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2909: __asm("CMCON equ 0FB4h");
+[; <" CMCON equ 0FB4h ;# ">
+"2999
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2999: __asm("CVRCON equ 0FB5h");
+[; <" CVRCON equ 0FB5h ;# ">
+"3078
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3078: __asm("ECCP1AS equ 0FB6h");
+[; <" ECCP1AS equ 0FB6h ;# ">
+"3083
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3083: __asm("ECCPAS equ 0FB6h");
+[; <" ECCPAS equ 0FB6h ;# ">
+"3208
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3208: __asm("PWM1CON equ 0FB7h");
+[; <" PWM1CON equ 0FB7h ;# ">
+"3213
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3213: __asm("ECCP1DEL equ 0FB7h");
+[; <" ECCP1DEL equ 0FB7h ;# ">
+"3248
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3248: __asm("BAUDCON equ 0FB8h");
+[; <" BAUDCON equ 0FB8h ;# ">
+"3253
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3253: __asm("BAUDCTL equ 0FB8h");
+[; <" BAUDCTL equ 0FB8h ;# ">
+"3428
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3428: __asm("CCP2CON equ 0FBAh");
+[; <" CCP2CON equ 0FBAh ;# ">
+"3507
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3507: __asm("CCPR2 equ 0FBBh");
+[; <" CCPR2 equ 0FBBh ;# ">
+"3514
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3514: __asm("CCPR2L equ 0FBBh");
+[; <" CCPR2L equ 0FBBh ;# ">
+"3521
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3521: __asm("CCPR2H equ 0FBCh");
+[; <" CCPR2H equ 0FBCh ;# ">
+"3528
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3528: __asm("CCP1CON equ 0FBDh");
+[; <" CCP1CON equ 0FBDh ;# ">
+"3607
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3607: __asm("CCPR1 equ 0FBEh");
+[; <" CCPR1 equ 0FBEh ;# ">
+"3614
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3614: __asm("CCPR1L equ 0FBEh");
+[; <" CCPR1L equ 0FBEh ;# ">
+"3621
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3621: __asm("CCPR1H equ 0FBFh");
+[; <" CCPR1H equ 0FBFh ;# ">
+"3628
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3628: __asm("ADCON2 equ 0FC0h");
+[; <" ADCON2 equ 0FC0h ;# ">
+"3699
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3699: __asm("ADCON1 equ 0FC1h");
+[; <" ADCON1 equ 0FC1h ;# ">
+"3784
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3784: __asm("ADCON0 equ 0FC2h");
+[; <" ADCON0 equ 0FC2h ;# ">
+"3903
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3903: __asm("ADRES equ 0FC3h");
+[; <" ADRES equ 0FC3h ;# ">
+"3910
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3910: __asm("ADRESL equ 0FC3h");
+[; <" ADRESL equ 0FC3h ;# ">
+"3917
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3917: __asm("ADRESH equ 0FC4h");
+[; <" ADRESH equ 0FC4h ;# ">
+"3924
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3924: __asm("SSPCON2 equ 0FC5h");
+[; <" SSPCON2 equ 0FC5h ;# ">
+"4019
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4019: __asm("SSPCON1 equ 0FC6h");
+[; <" SSPCON1 equ 0FC6h ;# ">
+"4089
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4089: __asm("SSPSTAT equ 0FC7h");
+[; <" SSPSTAT equ 0FC7h ;# ">
+"4310
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4310: __asm("SSPADD equ 0FC8h");
+[; <" SSPADD equ 0FC8h ;# ">
+"4317
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4317: __asm("SSPBUF equ 0FC9h");
+[; <" SSPBUF equ 0FC9h ;# ">
+"4324
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4324: __asm("T2CON equ 0FCAh");
+[; <" T2CON equ 0FCAh ;# ">
+"4422
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4422: __asm("PR2 equ 0FCBh");
+[; <" PR2 equ 0FCBh ;# ">
+"4427
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4427: __asm("MEMCON equ 0FCBh");
+[; <" MEMCON equ 0FCBh ;# ">
+"4532
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4532: __asm("TMR2 equ 0FCCh");
+[; <" TMR2 equ 0FCCh ;# ">
+"4539
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4539: __asm("T1CON equ 0FCDh");
+[; <" T1CON equ 0FCDh ;# ">
+"4642
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4642: __asm("TMR1 equ 0FCEh");
+[; <" TMR1 equ 0FCEh ;# ">
+"4649
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4649: __asm("TMR1L equ 0FCEh");
+[; <" TMR1L equ 0FCEh ;# ">
+"4656
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4656: __asm("TMR1H equ 0FCFh");
+[; <" TMR1H equ 0FCFh ;# ">
+"4663
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4663: __asm("RCON equ 0FD0h");
+[; <" RCON equ 0FD0h ;# ">
+"4796
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4796: __asm("WDTCON equ 0FD1h");
+[; <" WDTCON equ 0FD1h ;# ">
+"4824
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4824: __asm("HLVDCON equ 0FD2h");
+[; <" HLVDCON equ 0FD2h ;# ">
+"4829
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4829: __asm("LVDCON equ 0FD2h");
+[; <" LVDCON equ 0FD2h ;# ">
+"5094
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5094: __asm("OSCCON equ 0FD3h");
+[; <" OSCCON equ 0FD3h ;# ">
+"5177
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5177: __asm("T0CON equ 0FD5h");
+[; <" T0CON equ 0FD5h ;# ">
+"5260
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5260: __asm("TMR0 equ 0FD6h");
+[; <" TMR0 equ 0FD6h ;# ">
+"5267
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5267: __asm("TMR0L equ 0FD6h");
+[; <" TMR0L equ 0FD6h ;# ">
+"5274
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5274: __asm("TMR0H equ 0FD7h");
+[; <" TMR0H equ 0FD7h ;# ">
+"5281
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5281: __asm("STATUS equ 0FD8h");
+[; <" STATUS equ 0FD8h ;# ">
+"5352
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5352: __asm("FSR2 equ 0FD9h");
+[; <" FSR2 equ 0FD9h ;# ">
+"5359
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5359: __asm("FSR2L equ 0FD9h");
+[; <" FSR2L equ 0FD9h ;# ">
+"5366
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5366: __asm("FSR2H equ 0FDAh");
+[; <" FSR2H equ 0FDAh ;# ">
+"5373
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5373: __asm("PLUSW2 equ 0FDBh");
+[; <" PLUSW2 equ 0FDBh ;# ">
+"5380
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5380: __asm("PREINC2 equ 0FDCh");
+[; <" PREINC2 equ 0FDCh ;# ">
+"5387
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5387: __asm("POSTDEC2 equ 0FDDh");
+[; <" POSTDEC2 equ 0FDDh ;# ">
+"5394
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5394: __asm("POSTINC2 equ 0FDEh");
+[; <" POSTINC2 equ 0FDEh ;# ">
+"5401
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5401: __asm("INDF2 equ 0FDFh");
+[; <" INDF2 equ 0FDFh ;# ">
+"5408
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5408: __asm("BSR equ 0FE0h");
+[; <" BSR equ 0FE0h ;# ">
+"5415
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5415: __asm("FSR1 equ 0FE1h");
+[; <" FSR1 equ 0FE1h ;# ">
+"5422
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5422: __asm("FSR1L equ 0FE1h");
+[; <" FSR1L equ 0FE1h ;# ">
+"5429
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5429: __asm("FSR1H equ 0FE2h");
+[; <" FSR1H equ 0FE2h ;# ">
+"5436
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5436: __asm("PLUSW1 equ 0FE3h");
+[; <" PLUSW1 equ 0FE3h ;# ">
+"5443
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5443: __asm("PREINC1 equ 0FE4h");
+[; <" PREINC1 equ 0FE4h ;# ">
+"5450
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5450: __asm("POSTDEC1 equ 0FE5h");
+[; <" POSTDEC1 equ 0FE5h ;# ">
+"5457
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5457: __asm("POSTINC1 equ 0FE6h");
+[; <" POSTINC1 equ 0FE6h ;# ">
+"5464
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5464: __asm("INDF1 equ 0FE7h");
+[; <" INDF1 equ 0FE7h ;# ">
+"5471
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5471: __asm("WREG equ 0FE8h");
+[; <" WREG equ 0FE8h ;# ">
+"5483
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5483: __asm("FSR0 equ 0FE9h");
+[; <" FSR0 equ 0FE9h ;# ">
+"5490
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5490: __asm("FSR0L equ 0FE9h");
+[; <" FSR0L equ 0FE9h ;# ">
+"5497
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5497: __asm("FSR0H equ 0FEAh");
+[; <" FSR0H equ 0FEAh ;# ">
+"5504
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5504: __asm("PLUSW0 equ 0FEBh");
+[; <" PLUSW0 equ 0FEBh ;# ">
+"5511
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5511: __asm("PREINC0 equ 0FECh");
+[; <" PREINC0 equ 0FECh ;# ">
+"5518
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5518: __asm("POSTDEC0 equ 0FEDh");
+[; <" POSTDEC0 equ 0FEDh ;# ">
+"5525
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5525: __asm("POSTINC0 equ 0FEEh");
+[; <" POSTINC0 equ 0FEEh ;# ">
+"5532
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5532: __asm("INDF0 equ 0FEFh");
+[; <" INDF0 equ 0FEFh ;# ">
+"5539
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5539: __asm("INTCON3 equ 0FF0h");
+[; <" INTCON3 equ 0FF0h ;# ">
+"5631
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5631: __asm("INTCON2 equ 0FF1h");
+[; <" INTCON2 equ 0FF1h ;# ">
+"5701
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5701: __asm("INTCON equ 0FF2h");
+[; <" INTCON equ 0FF2h ;# ">
+"5818
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5818: __asm("PROD equ 0FF3h");
+[; <" PROD equ 0FF3h ;# ">
+"5825
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5825: __asm("PRODL equ 0FF3h");
+[; <" PRODL equ 0FF3h ;# ">
+"5832
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5832: __asm("PRODH equ 0FF4h");
+[; <" PRODH equ 0FF4h ;# ">
+"5839
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5839: __asm("TABLAT equ 0FF5h");
+[; <" TABLAT equ 0FF5h ;# ">
+"5848
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5848: __asm("TBLPTR equ 0FF6h");
+[; <" TBLPTR equ 0FF6h ;# ">
+"5855
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5855: __asm("TBLPTRL equ 0FF6h");
+[; <" TBLPTRL equ 0FF6h ;# ">
+"5862
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5862: __asm("TBLPTRH equ 0FF7h");
+[; <" TBLPTRH equ 0FF7h ;# ">
+"5869
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5869: __asm("TBLPTRU equ 0FF8h");
+[; <" TBLPTRU equ 0FF8h ;# ">
+"5878
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5878: __asm("PCLAT equ 0FF9h");
+[; <" PCLAT equ 0FF9h ;# ">
+"5885
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5885: __asm("PC equ 0FF9h");
+[; <" PC equ 0FF9h ;# ">
+"5892
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5892: __asm("PCL equ 0FF9h");
+[; <" PCL equ 0FF9h ;# ">
+"5899
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5899: __asm("PCLATH equ 0FFAh");
+[; <" PCLATH equ 0FFAh ;# ">
+"5906
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5906: __asm("PCLATU equ 0FFBh");
+[; <" PCLATU equ 0FFBh ;# ">
+"5913
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5913: __asm("STKPTR equ 0FFCh");
+[; <" STKPTR equ 0FFCh ;# ">
+"5987
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5987: __asm("TOS equ 0FFDh");
+[; <" TOS equ 0FFDh ;# ">
+"5994
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5994: __asm("TOSL equ 0FFDh");
+[; <" TOSL equ 0FFDh ;# ">
+"6001
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 6001: __asm("TOSH equ 0FFEh");
+[; <" TOSH equ 0FFEh ;# ">
+"6008
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 6008: __asm("TOSU equ 0FFFh");
+[; <" TOSU equ 0FFFh ;# ">
+"29 src/driver/lcd.c
+[; ;src/driver/lcd.c: 29: u8 ssd1306_init_commands[27] = {
+[v _ssd1306_init_commands `uc ~T0 @X0 -> 27 `i e ]
+[i _ssd1306_init_commands
+:U ..
+-> -> 174 `i `uc
+-> -> 213 `i `uc
+-> -> 128 `i `uc
+-> -> 168 `i `uc
+-> -> 63 `i `uc
+-> -> 211 `i `uc
+-> -> 0 `i `uc
+-> -> 64 `i `uc
+-> -> 141 `i `uc
+-> -> 20 `i `uc
+-> -> 32 `i `uc
+-> -> 0 `i `uc
+-> | -> 160 `i -> 1 `i `uc
+-> -> 200 `i `uc
+-> -> 218 `i `uc
+-> -> 18 `i `uc
+-> -> 129 `i `uc
+-> -> 207 `i `uc
+-> -> 217 `i `uc
+-> -> 241 `i `uc
+-> -> 219 `i `uc
+-> -> 64 `i `uc
+-> -> 164 `i `uc
+-> -> 166 `i `uc
+-> -> 192 `i `uc
+-> -> 160 `i `uc
+-> -> 175 `i `uc
+..
+]
+"60
+[; ;src/driver/lcd.c: 60: i2c_dev lcd_i2c;
+[v _lcd_i2c `*S259 ~T0 @X0 1 e ]
+"61
+[; ;src/driver/lcd.c: 61: u8 lcd_addr;
+[v _lcd_addr `uc ~T0 @X0 1 e ]
+"62
+[; ;src/driver/lcd.c: 62: u8 lcd_available = 0;
+[v _lcd_available `uc ~T0 @X0 1 e ]
+[i _lcd_available
+-> -> 0 `i `uc
+]
+"64
+[; ;src/driver/lcd.c: 64: void lcd_init(i2c_dev i2c, u8 addr)
+[v _lcd_init `(v ~T0 @X0 1 ef2`*S259`uc ]
+"65
+[; ;src/driver/lcd.c: 65: {
+{
+[e :U _lcd_init ]
+"64
+[; ;src/driver/lcd.c: 64: void lcd_init(i2c_dev i2c, u8 addr)
+[v _i2c `*S259 ~T0 @X0 1 r1 ]
+[v _addr `uc ~T0 @X0 1 r2 ]
+"65
+[; ;src/driver/lcd.c: 65: {
+[f ]
+"66
+[; ;src/driver/lcd.c: 66:  int res = i2c_probe_addr(i2c, addr);
+[v _res `i ~T0 @X0 1 a ]
+[e = _res ( _i2c_probe_addr (2 , _i2c _addr ]
+"67
+[; ;src/driver/lcd.c: 67:     if(res != 0)
+[e $ ! != _res -> 0 `i 270  ]
+"68
+[; ;src/driver/lcd.c: 68:  {
+{
+"69
+[; ;src/driver/lcd.c: 69:         printf("OLED display not found.\n");
+[e ( _printf :s 1C ]
+"70
+[; ;src/driver/lcd.c: 70:   lcd_available = 0;
+[e = _lcd_available -> -> 0 `i `uc ]
+"71
+[; ;src/driver/lcd.c: 71:   return;
+[e $UE 269  ]
+"72
+[; ;src/driver/lcd.c: 72:     }
+}
+[e :U 270 ]
+"74
+[; ;src/driver/lcd.c: 74:  lcd_i2c = i2c;
+[e = _lcd_i2c _i2c ]
+"75
+[; ;src/driver/lcd.c: 75:  lcd_addr = addr;
+[e = _lcd_addr _addr ]
+"77
+[; ;src/driver/lcd.c: 77:  printf("OLED display found!\n");
+[e ( _printf :s 2C ]
+"78
+[; ;src/driver/lcd.c: 78:  lcd_available = 1;
+[e = _lcd_available -> -> 1 `i `uc ]
+"81
+[; ;src/driver/lcd.c: 81:  ssd1306_command(ssd1306_init_commands,sizeof(ssd1306_init_commands));
+[e ( _ssd1306_command (2 , &U _ssd1306_init_commands -> -> # _ssd1306_init_commands `ui `i ]
+"83
+[; ;src/driver/lcd.c: 83:  ssd1306_commandbyte(0x40 | 0x0);
+[e ( _ssd1306_commandbyte (1 -> | -> 64 `i -> 0 `i `uc ]
+"86
+[; ;src/driver/lcd.c: 86:  lcd_clear_screen(0);
+[e ( _lcd_clear_screen (1 -> -> 0 `i `uc ]
+"87
+[; ;src/driver/lcd.c: 87:  print_string("AMSAT-DL  QO-100",0,0,0);
+[e ( _print_string (4 , , , :s 3C -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"88
+[; ;src/driver/lcd.c: 88:  print_string("WELCOME to:",0,2,0);
+[e ( _print_string (4 , , , :s 4C -> -> 0 `i `uc -> -> 2 `i `uc -> -> 0 `i `uc ]
+"89
+[; ;src/driver/lcd.c: 89:  print_string("GPS/OCXO clock",0,4,0);
+[e ( _print_string (4 , , , :s 5C -> -> 0 `i `uc -> -> 4 `i `uc -> -> 0 `i `uc ]
+"90
+[; ;src/driver/lcd.c: 90:  print_string("LNB Controller",0,5,0);
+[e ( _print_string (4 , , , :s 6C -> -> 0 `i `uc -> -> 5 `i `uc -> -> 0 `i `uc ]
+"91
+[; ;src/driver/lcd.c: 91:  print_string("Downconverter",0,6,0);
+[e ( _print_string (4 , , , :s 7C -> -> 0 `i `uc -> -> 6 `i `uc -> -> 0 `i `uc ]
+"92
+[; ;src/driver/lcd.c: 92: }
+[e :UE 269 ]
+}
+"94
+[; ;src/driver/lcd.c: 94: void ssd1306_command(u8 *cmd, int len)
+[v _ssd1306_command `(v ~T0 @X0 1 ef2`*uc`i ]
+"95
+[; ;src/driver/lcd.c: 95: {
+{
+[e :U _ssd1306_command ]
+"94
+[; ;src/driver/lcd.c: 94: void ssd1306_command(u8 *cmd, int len)
+[v _cmd `*uc ~T0 @X0 1 r1 ]
+[v _len `i ~T0 @X0 1 r2 ]
+"95
+[; ;src/driver/lcd.c: 95: {
+[f ]
+"96
+[; ;src/driver/lcd.c: 96:  if(!lcd_available) return;
+[e $ ! ! != -> _lcd_available `i -> 0 `i 272  ]
+[e $UE 271  ]
+[e :U 272 ]
+"97
+[; ;src/driver/lcd.c: 97:  __asm(" clrwdt");
+[; <"  clrwdt ;# ">
+"98
+[; ;src/driver/lcd.c: 98:  smbus8_write_data(lcd_i2c, lcd_addr, 0x00, cmd, len);
+[e ( _smbus8_write_data (4 , , , , _lcd_i2c _lcd_addr -> -> 0 `i `uc -> _cmd `*Cuc _len ]
+"99
+[; ;src/driver/lcd.c: 99: }
+[e :UE 271 ]
+}
+"101
+[; ;src/driver/lcd.c: 101: void ssd1306_commandbyte(u8 cmd)
+[v _ssd1306_commandbyte `(v ~T0 @X0 1 ef1`uc ]
+"102
+[; ;src/driver/lcd.c: 102: {
+{
+[e :U _ssd1306_commandbyte ]
+"101
+[; ;src/driver/lcd.c: 101: void ssd1306_commandbyte(u8 cmd)
+[v _cmd `uc ~T0 @X0 1 r1 ]
+"102
+[; ;src/driver/lcd.c: 102: {
+[f ]
+"103
+[; ;src/driver/lcd.c: 103:  if(!lcd_available) return;
+[e $ ! ! != -> _lcd_available `i -> 0 `i 274  ]
+[e $UE 273  ]
+[e :U 274 ]
+"104
+[; ;src/driver/lcd.c: 104:  smbus8_write_byte(lcd_i2c, lcd_addr, 0x00, cmd);
+[e ( _smbus8_write_byte (4 , , , _lcd_i2c _lcd_addr -> -> 0 `i `uc _cmd ]
+"105
+[; ;src/driver/lcd.c: 105: }
+[e :UE 273 ]
+}
+"107
+[; ;src/driver/lcd.c: 107: void ssd1306_data(u8 *data, int len)
+[v _ssd1306_data `(v ~T0 @X0 1 ef2`*uc`i ]
+"108
+[; ;src/driver/lcd.c: 108: {
+{
+[e :U _ssd1306_data ]
+"107
+[; ;src/driver/lcd.c: 107: void ssd1306_data(u8 *data, int len)
+[v _data `*uc ~T0 @X0 1 r1 ]
+[v _len `i ~T0 @X0 1 r2 ]
+"108
+[; ;src/driver/lcd.c: 108: {
+[f ]
+"109
+[; ;src/driver/lcd.c: 109:  if(!lcd_available) return;
+[e $ ! ! != -> _lcd_available `i -> 0 `i 276  ]
+[e $UE 275  ]
+[e :U 276 ]
+"110
+[; ;src/driver/lcd.c: 110:  __asm(" clrwdt");
+[; <"  clrwdt ;# ">
+"111
+[; ;src/driver/lcd.c: 111:  smbus8_write_data(lcd_i2c, lcd_addr, 0x40, data, len);
+[e ( _smbus8_write_data (4 , , , , _lcd_i2c _lcd_addr -> -> 64 `i `uc -> _data `*Cuc _len ]
+"112
+[; ;src/driver/lcd.c: 112: }
+[e :UE 275 ]
+}
+"114
+[; ;src/driver/lcd.c: 114: void ssd1306_databyte(u8 data)
+[v _ssd1306_databyte `(v ~T0 @X0 1 ef1`uc ]
+"115
+[; ;src/driver/lcd.c: 115: {
+{
+[e :U _ssd1306_databyte ]
+"114
+[; ;src/driver/lcd.c: 114: void ssd1306_databyte(u8 data)
+[v _data `uc ~T0 @X0 1 r1 ]
+"115
+[; ;src/driver/lcd.c: 115: {
+[f ]
+"116
+[; ;src/driver/lcd.c: 116:  if(!lcd_available) return;
+[e $ ! ! != -> _lcd_available `i -> 0 `i 278  ]
+[e $UE 277  ]
+[e :U 278 ]
+"117
+[; ;src/driver/lcd.c: 117:  smbus8_write_data(lcd_i2c, lcd_addr, 0x40, &data, 1);
+[e ( _smbus8_write_data (4 , , , , _lcd_i2c _lcd_addr -> -> 64 `i `uc -> &U _data `*Cuc -> 1 `i ]
+"118
+[; ;src/driver/lcd.c: 118: }
+[e :UE 277 ]
+}
+"120
+[; ;src/driver/lcd.c: 120: void ssd1306_setpos(u8 x, u8 y)
+[v _ssd1306_setpos `(v ~T0 @X0 1 ef2`uc`uc ]
+"121
+[; ;src/driver/lcd.c: 121: {
+{
+[e :U _ssd1306_setpos ]
+"120
+[; ;src/driver/lcd.c: 120: void ssd1306_setpos(u8 x, u8 y)
+[v _x `uc ~T0 @X0 1 r1 ]
+[v _y `uc ~T0 @X0 1 r2 ]
+"121
+[; ;src/driver/lcd.c: 121: {
+[f ]
+[v F3126 `uc ~T0 @X0 -> 3 `i s ]
+[i F3126
+:U ..
+"122
+[; ;src/driver/lcd.c: 122:  u8 data[3] = {0xb0, 2, 0x10};
+-> -> 176 `i `uc
+-> -> 2 `i `uc
+-> -> 16 `i `uc
+..
+]
+[v _data `uc ~T0 @X0 -> 3 `i a ]
+[e = _data F3126 ]
+"124
+[; ;src/driver/lcd.c: 124:  data[0] += y;
+[e =+ *U + &U _data * -> -> -> 0 `i `ui `ux -> -> # *U &U _data `ui `ux -> _y `uc ]
+"125
+[; ;src/driver/lcd.c: 125:  x += 2;
+[e =+ _x -> -> 2 `i `uc ]
+"126
+[; ;src/driver/lcd.c: 126:  data[1] = x & 0x0f;
+[e = *U + &U _data * -> -> -> 1 `i `ui `ux -> -> # *U &U _data `ui `ux -> & -> _x `i -> 15 `i `uc ]
+"127
+[; ;src/driver/lcd.c: 127:  data[2] = 0x10 | (x>>4);
+[e = *U + &U _data * -> -> -> 2 `i `ui `ux -> -> # *U &U _data `ui `ux -> | -> 16 `i >> -> _x `i -> 4 `i `uc ]
+"129
+[; ;src/driver/lcd.c: 129:  ssd1306_command(data,3);
+[e ( _ssd1306_command (2 , &U _data -> 3 `i ]
+"130
+[; ;src/driver/lcd.c: 130: }
+[e :UE 279 ]
+}
+"132
+[; ;src/driver/lcd.c: 132: void lcd_clear_screen(u8 ystart)
+[v _lcd_clear_screen `(v ~T0 @X0 1 ef1`uc ]
+"133
+[; ;src/driver/lcd.c: 133: {
+{
+[e :U _lcd_clear_screen ]
+"132
+[; ;src/driver/lcd.c: 132: void lcd_clear_screen(u8 ystart)
+[v _ystart `uc ~T0 @X0 1 r1 ]
+"133
+[; ;src/driver/lcd.c: 133: {
+[f ]
+"134
+[; ;src/driver/lcd.c: 134:  u8 buf[128];
+[v _buf `uc ~T0 @X0 -> 128 `i a ]
+"135
+[; ;src/driver/lcd.c: 135:  memset(buf,0,128);
+[e ( _memset (3 , , -> &U _buf `*v -> 0 `i -> -> 128 `i `ui ]
+"137
+[; ;src/driver/lcd.c: 137:     for (u8 row=ystart; row<(64 / 8); row++)
+{
+[v _row `uc ~T0 @X0 1 a ]
+[e = _row _ystart ]
+[e $ < -> _row `i / -> 64 `i -> 8 `i 281  ]
+[e $U 282  ]
+[e :U 281 ]
+"138
+[; ;src/driver/lcd.c: 138:  {
+{
+"139
+[; ;src/driver/lcd.c: 139:   ssd1306_setpos(0,row);
+[e ( _ssd1306_setpos (2 , -> -> 0 `i `uc _row ]
+"141
+[; ;src/driver/lcd.c: 141:   ssd1306_data(buf,128);
+[e ( _ssd1306_data (2 , &U _buf -> 128 `i ]
+"142
+[; ;src/driver/lcd.c: 142:     }
+}
+[e ++ _row -> -> 1 `i `uc ]
+[e $ < -> _row `i / -> 64 `i -> 8 `i 281  ]
+[e :U 282 ]
+}
+"143
+[; ;src/driver/lcd.c: 143: }
+[e :UE 280 ]
+}
+"147
+[; ;src/driver/lcd.c: 147: void lcd_draw8x8(u8 *buffer, u8 x, u8 y)
+[v _lcd_draw8x8 `(v ~T0 @X0 1 ef3`*uc`uc`uc ]
+"148
+[; ;src/driver/lcd.c: 148: {
+{
+[e :U _lcd_draw8x8 ]
+"147
+[; ;src/driver/lcd.c: 147: void lcd_draw8x8(u8 *buffer, u8 x, u8 y)
+[v _buffer `*uc ~T0 @X0 1 r1 ]
+[v _x `uc ~T0 @X0 1 r2 ]
+[v _y `uc ~T0 @X0 1 r3 ]
+"148
+[; ;src/driver/lcd.c: 148: {
+[f ]
+"150
+[; ;src/driver/lcd.c: 150:  ssd1306_setpos(x,y);
+[e ( _ssd1306_setpos (2 , _x _y ]
+"152
+[; ;src/driver/lcd.c: 152:  ssd1306_data(buffer, 8);
+[e ( _ssd1306_data (2 , _buffer -> 8 `i ]
+"153
+[; ;src/driver/lcd.c: 153: }
+[e :UE 284 ]
+}
+"156
+[; ;src/driver/lcd.c: 156: void print_char(char c, u8 xpos, u8 ypos, u8 underline)
+[v _print_char `(v ~T0 @X0 1 ef4`uc`uc`uc`uc ]
+"157
+[; ;src/driver/lcd.c: 157: {
+{
+[e :U _print_char ]
+"156
+[; ;src/driver/lcd.c: 156: void print_char(char c, u8 xpos, u8 ypos, u8 underline)
+[v _c `uc ~T0 @X0 1 r1 ]
+[v _xpos `uc ~T0 @X0 1 r2 ]
+[v _ypos `uc ~T0 @X0 1 r3 ]
+[v _underline `uc ~T0 @X0 1 r4 ]
+"157
+[; ;src/driver/lcd.c: 157: {
+[f ]
+"158
+[; ;src/driver/lcd.c: 158:  u8 idx = c - ' ';
+[v _idx `uc ~T0 @X0 1 a ]
+[e = _idx -> - -> _c `ui -> 32 `ui `uc ]
+"159
+[; ;src/driver/lcd.c: 159:  if(idx >= 97) idx = 0;
+[e $ ! >= -> _idx `i -> 97 `i 286  ]
+[e = _idx -> -> 0 `i `uc ]
+[e :U 286 ]
+"162
+[; ;src/driver/lcd.c: 162:  u8 map[8];
+[v _map `uc ~T0 @X0 -> 8 `i a ]
+"163
+[; ;src/driver/lcd.c: 163:  memset(map,0,8);
+[e ( _memset (3 , , -> &U _map `*v -> 0 `i -> -> 8 `i `ui ]
+"165
+[; ;src/driver/lcd.c: 165:  for(u8 y=0; y<8; y++)
+{
+[v _y `uc ~T0 @X0 1 a ]
+[e = _y -> -> 0 `i `uc ]
+[e $ < -> _y `i -> 8 `i 287  ]
+[e $U 288  ]
+[e :U 287 ]
+"166
+[; ;src/driver/lcd.c: 166:  {
+{
+"167
+[; ;src/driver/lcd.c: 167:   for(u8 x=0; x<8; x++)
+{
+[v _x `uc ~T0 @X0 1 a ]
+[e = _x -> -> 0 `i `uc ]
+[e $ < -> _x `i -> 8 `i 290  ]
+[e $U 291  ]
+[e :U 290 ]
+"168
+[; ;src/driver/lcd.c: 168:   {
+{
+"169
+[; ;src/driver/lcd.c: 169:    u8 b = (font8x8_basic[idx][y] & (1<<x))?1:0;
+[v _b `uc ~T0 @X0 1 a ]
+[e = _b -> ? != & -> *U + &U *U + &U _font8x8_basic * -> _idx `ux -> * -> # *U &U *U &U _font8x8_basic `ui -> -> 8 `i `ui `ux * -> _y `ux -> -> # *U &U *U + &U _font8x8_basic * -> _idx `ux -> * -> # *U &U *U &U _font8x8_basic `ui -> -> 8 `i `ui `ux `ui `ux `i << -> 1 `i -> _x `i -> 0 `i : -> 1 `i -> 0 `i `uc ]
+"170
+[; ;src/driver/lcd.c: 170:    if(y==7 && underline) b=1;
+[e $ ! && == -> _y `i -> 7 `i != -> _underline `i -> 0 `i 293  ]
+[e = _b -> -> 1 `i `uc ]
+[e :U 293 ]
+"171
+[; ;src/driver/lcd.c: 171:    map[x] |= b<<y;
+[e =| *U + &U _map * -> _x `ux -> -> # *U &U _map `ui `ux -> << -> _b `i -> _y `i `uc ]
+"172
+[; ;src/driver/lcd.c: 172:   }
+}
+[e ++ _x -> -> 1 `i `uc ]
+[e $ < -> _x `i -> 8 `i 290  ]
+[e :U 291 ]
+}
+"173
+[; ;src/driver/lcd.c: 173:  }
+}
+[e ++ _y -> -> 1 `i `uc ]
+[e $ < -> _y `i -> 8 `i 287  ]
+[e :U 288 ]
+}
+"175
+[; ;src/driver/lcd.c: 175:  lcd_draw8x8(map,xpos,ypos);
+[e ( _lcd_draw8x8 (3 , , &U _map _xpos _ypos ]
+"176
+[; ;src/driver/lcd.c: 176: }
+[e :UE 285 ]
+}
+"178
+[; ;src/driver/lcd.c: 178: void print_string(char *s, u8 x, u8 y, u8 underline)
+[v _print_string `(v ~T0 @X0 1 ef4`*uc`uc`uc`uc ]
+"179
+[; ;src/driver/lcd.c: 179: {
+{
+[e :U _print_string ]
+"178
+[; ;src/driver/lcd.c: 178: void print_string(char *s, u8 x, u8 y, u8 underline)
+[v _s `*uc ~T0 @X0 1 r1 ]
+[v _x `uc ~T0 @X0 1 r2 ]
+[v _y `uc ~T0 @X0 1 r3 ]
+[v _underline `uc ~T0 @X0 1 r4 ]
+"179
+[; ;src/driver/lcd.c: 179: {
+[f ]
+"180
+[; ;src/driver/lcd.c: 180:  for(u8 i=0; i<strlen(s); i++)
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $U 298  ]
+[e :U 295 ]
+"181
+[; ;src/driver/lcd.c: 181:  {
+{
+"182
+[; ;src/driver/lcd.c: 182:   print_char(s[i],x+i*8,y,underline);
+[e ( _print_char (4 , , , *U + _s * -> _i `ux -> -> # *U _s `ui `ux -> + -> _x `i * -> _i `i -> 8 `i `uc _y _underline ]
+"183
+[; ;src/driver/lcd.c: 183:  }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e :U 298 ]
+[e $ < -> _i `ui ( _strlen (1 -> _s `*Cuc 295  ]
+[e :U 296 ]
+}
+"184
+[; ;src/driver/lcd.c: 184: }
+[e :UE 294 ]
+}
+"186
+[; ;src/driver/lcd.c: 186: static u8 LO[4] =
+[v _LO `uc ~T0 @X0 -> 4 `i s ]
+[i _LO
+:U ..
+-> -> 24 `i `uc
+-> -> 25 `i `uc
+-> -> 26 `i `uc
+-> -> 27 `i `uc
+..
+]
+"194
+[; ;src/driver/lcd.c: 194: static const u16 out_freq_table[10] = {
+[v _out_freq_table `Cus ~T0 @X0 -> 10 `i s ]
+[i _out_freq_table
+:U ..
+-> -> 3 `i `us
+-> -> 21 `i `us
+-> -> 28 `i `us
+-> -> 29 `i `us
+-> -> 50 `i `us
+-> -> 70 `i `us
+-> -> 144 `i `us
+-> -> 145 `i `us
+-> -> 435 `i `us
+-> -> 439 `i `us
+..
+]
+"209
+[; ;src/driver/lcd.c: 209: u8 booting = 0;
+[v _booting `uc ~T0 @X0 1 e ]
+[i _booting
+-> -> 0 `i `uc
+]
+"210
+[; ;src/driver/lcd.c: 210: void show_display()
+[v _show_display `(v ~T0 @X0 1 ef ]
+"211
+[; ;src/driver/lcd.c: 211: {
+{
+[e :U _show_display ]
+[f ]
+"212
+[; ;src/driver/lcd.c: 212:  if(!lcd_available) return;
+[e $ ! ! != -> _lcd_available `i -> 0 `i 300  ]
+[e $UE 299  ]
+[e :U 300 ]
+"214
+[; ;src/driver/lcd.c: 214:  static u8 old_GPS_lock = 0xff;
+[v F3158 `uc ~T0 @X0 1 s old_GPS_lock ]
+[i F3158
+-> -> 255 `i `uc
+]
+"215
+[; ;src/driver/lcd.c: 215:  static u16 old_outqrg = 0;
+[v F3159 `us ~T0 @X0 1 s old_outqrg ]
+[i F3159
+-> -> 0 `i `us
+]
+"216
+[; ;src/driver/lcd.c: 216:  static u8 old_lnbqrg = 0;
+[v F3160 `uc ~T0 @X0 1 s old_lnbqrg ]
+[i F3160
+-> -> 0 `i `uc
+]
+"217
+[; ;src/driver/lcd.c: 217:  static u8 old_GPS_sat = 0xff;
+[v F3161 `uc ~T0 @X0 1 s old_GPS_sat ]
+[i F3161
+-> -> 255 `i `uc
+]
+"218
+[; ;src/driver/lcd.c: 218:  static char old_GPS_lat[15] = {"             "};
+[v F3162 `uc ~T0 @X0 -> 15 `i s old_GPS_lat ]
+[i F3162
+:U ..
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 0 `c
+..
+]
+"219
+[; ;src/driver/lcd.c: 219:  static char old_GPS_lon[15] = {"             "};
+[v F3163 `uc ~T0 @X0 -> 15 `i s old_GPS_lon ]
+[i F3163
+:U ..
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 0 `c
+..
+]
+"222
+[; ;src/driver/lcd.c: 222:  if(booting == 2 && (!adf4351_lockstat || !si5328locked || !LNB_laststat))
+[e $ ! && == -> _booting `i -> 2 `i || || ! != -> _adf4351_lockstat `i -> 0 `i ! != -> _si5328locked `i -> 0 `i ! != -> _LNB_laststat `i -> 0 `i 301  ]
+"223
+[; ;src/driver/lcd.c: 223:   booting = 0;
+[e = _booting -> -> 0 `i `uc ]
+[e :U 301 ]
+"225
+[; ;src/driver/lcd.c: 225:  if(booting == 0)
+[e $ ! == -> _booting `i -> 0 `i 302  ]
+"226
+[; ;src/driver/lcd.c: 226:  {
+{
+"228
+[; ;src/driver/lcd.c: 228:   lcd_clear_screen(1);
+[e ( _lcd_clear_screen (1 -> -> 1 `i `uc ]
+"229
+[; ;src/driver/lcd.c: 229:   print_string("System SETUP ...",0,2,0);
+[e ( _print_string (4 , , , :s 8C -> -> 0 `i `uc -> -> 2 `i `uc -> -> 0 `i `uc ]
+"230
+[; ;src/driver/lcd.c: 230:   print_string("LNB-power:      ",0,4,0);
+[e ( _print_string (4 , , , :s 9C -> -> 0 `i `uc -> -> 4 `i `uc -> -> 0 `i `uc ]
+"231
+[; ;src/driver/lcd.c: 231:   print_string("Sysclock :      ",0,5,0);
+[e ( _print_string (4 , , , :s 10C -> -> 0 `i `uc -> -> 5 `i `uc -> -> 0 `i `uc ]
+"232
+[; ;src/driver/lcd.c: 232:   print_string("Downmixer:      ",0,6,0);
+[e ( _print_string (4 , , , :s 11C -> -> 0 `i `uc -> -> 6 `i `uc -> -> 0 `i `uc ]
+"233
+[; ;src/driver/lcd.c: 233:   booting = 1;
+[e = _booting -> -> 1 `i `uc ]
+"234
+[; ;src/driver/lcd.c: 234:   return;
+[e $UE 299  ]
+"235
+[; ;src/driver/lcd.c: 235:  }
+}
+[e :U 302 ]
+"238
+[; ;src/driver/lcd.c: 238:  adf4351_lockstat = 1;
+[e = _adf4351_lockstat -> -> 1 `i `uc ]
+"239
+[; ;src/driver/lcd.c: 239:  si5328locked = 1;
+[e = _si5328locked -> -> 1 `i `uc ]
+"240
+[; ;src/driver/lcd.c: 240:  LNB_laststat = 1;
+[e = _LNB_laststat -> -> 1 `i `uc ]
+"243
+[; ;src/driver/lcd.c: 243:  if(booting == 1 && (!adf4351_lockstat || !si5328locked || !LNB_laststat))
+[e $ ! && == -> _booting `i -> 1 `i || || ! != -> _adf4351_lockstat `i -> 0 `i ! != -> _si5328locked `i -> 0 `i ! != -> _LNB_laststat `i -> 0 `i 303  ]
+"244
+[; ;src/driver/lcd.c: 244:  {
+{
+"246
+[; ;src/driver/lcd.c: 246:   if(LNB_laststat) print_string("OK",11*8,4,0); else print_string(itoa(LNB_error),11*8,4,0);
+[e $ ! != -> _LNB_laststat `i -> 0 `i 304  ]
+[e ( _print_string (4 , , , :s 12C -> * -> 11 `i -> 8 `i `uc -> -> 4 `i `uc -> -> 0 `i `uc ]
+[e $U 305  ]
+[e :U 304 ]
+[e ( _print_string (4 , , , ( _itoa (1 -> _LNB_error `i -> * -> 11 `i -> 8 `i `uc -> -> 4 `i `uc -> -> 0 `i `uc ]
+[e :U 305 ]
+"247
+[; ;src/driver/lcd.c: 247:   if(si5328locked) print_string("LOCK",11*8,5,0); else print_string("wait",11*8,5,0);
+[e $ ! != -> _si5328locked `i -> 0 `i 306  ]
+[e ( _print_string (4 , , , :s 13C -> * -> 11 `i -> 8 `i `uc -> -> 5 `i `uc -> -> 0 `i `uc ]
+[e $U 307  ]
+[e :U 306 ]
+[e ( _print_string (4 , , , :s 14C -> * -> 11 `i -> 8 `i `uc -> -> 5 `i `uc -> -> 0 `i `uc ]
+[e :U 307 ]
+"248
+[; ;src/driver/lcd.c: 248:   if(adf4351_lockstat) print_string("LOCK",11*8,6,0); else print_string("wait",11*8,6,0);
+[e $ ! != -> _adf4351_lockstat `i -> 0 `i 308  ]
+[e ( _print_string (4 , , , :s 15C -> * -> 11 `i -> 8 `i `uc -> -> 6 `i `uc -> -> 0 `i `uc ]
+[e $U 309  ]
+[e :U 308 ]
+[e ( _print_string (4 , , , :s 16C -> * -> 11 `i -> 8 `i `uc -> -> 6 `i `uc -> -> 0 `i `uc ]
+[e :U 309 ]
+"249
+[; ;src/driver/lcd.c: 249:   _delaywdt((unsigned long)((1000)*(8000000/4000.0)));
+[e ( __delaywdt (1 -> * -> -> 1000 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"250
+[; ;src/driver/lcd.c: 250:   return;
+[e $UE 299  ]
+"251
+[; ;src/driver/lcd.c: 251:  }
+}
+[e $U 310  ]
+"252
+[; ;src/driver/lcd.c: 252:  else
+[e :U 303 ]
+"253
+[; ;src/driver/lcd.c: 253:  {
+{
+"254
+[; ;src/driver/lcd.c: 254:   if(booting != 2)
+[e $ ! != -> _booting `i -> 2 `i 311  ]
+"255
+[; ;src/driver/lcd.c: 255:   {
+{
+"257
+[; ;src/driver/lcd.c: 257:    lcd_clear_screen(1);
+[e ( _lcd_clear_screen (1 -> -> 1 `i `uc ]
+"258
+[; ;src/driver/lcd.c: 258:    booting = 2;
+[e = _booting -> -> 2 `i `uc ]
+"259
+[; ;src/driver/lcd.c: 259:    old_GPS_lock = 0xff;
+[e = F3158 -> -> 255 `i `uc ]
+"260
+[; ;src/driver/lcd.c: 260:    old_outqrg = 0;
+[e = F3159 -> -> 0 `i `us ]
+"261
+[; ;src/driver/lcd.c: 261:    old_lnbqrg = 0;
+[e = F3160 -> -> 0 `i `uc ]
+"262
+[; ;src/driver/lcd.c: 262:    old_GPS_sat = 0xff;
+[e = F3161 -> -> 255 `i `uc ]
+"263
+[; ;src/driver/lcd.c: 263:    *old_GPS_lat = 0;
+[e = *U &U F3162 -> -> 0 `i `uc ]
+"264
+[; ;src/driver/lcd.c: 264:    *old_GPS_lon = 0;
+[e = *U &U F3163 -> -> 0 `i `uc ]
+"265
+[; ;src/driver/lcd.c: 265:   }
+}
+[e :U 311 ]
+"266
+[; ;src/driver/lcd.c: 266:  }
+}
+[e :U 310 ]
+"270
+[; ;src/driver/lcd.c: 270:  char *p;
+[v _p `*uc ~T0 @X0 1 a ]
+"271
+[; ;src/driver/lcd.c: 271:  u8 xpos;
+[v _xpos `uc ~T0 @X0 1 a ]
+"273
+[; ;src/driver/lcd.c: 273:  u16 outqrg = out_freq_table[actualADFswitch];
+[v _outqrg `us ~T0 @X0 1 a ]
+[e = _outqrg *U + &U _out_freq_table * -> _actualADFswitch `ux -> -> # *U &U _out_freq_table `ui `ux ]
+"274
+[; ;src/driver/lcd.c: 274:  u8 lnbqrg = LO[currentLO-24];
+[v _lnbqrg `uc ~T0 @X0 1 a ]
+[e = _lnbqrg *U + &U _LO * -> -> - -> _currentLO `i -> 24 `i `ui `ux -> -> # *U &U _LO `ui `ux ]
+"276
+[; ;src/driver/lcd.c: 276:  if(old_GPS_lock != GPS_lock)
+[e $ ! != -> F3158 `i -> _GPS_lock `i 312  ]
+"277
+[; ;src/driver/lcd.c: 277:  {
+{
+"278
+[; ;src/driver/lcd.c: 278:   if(!GPS_lock)
+[e $ ! ! != -> _GPS_lock `i -> 0 `i 313  ]
+"279
+[; ;src/driver/lcd.c: 279:   {
+{
+"280
+[; ;src/driver/lcd.c: 280:    print_string("O/TCXO",10*8,0,0);
+[e ( _print_string (4 , , , :s 17C -> * -> 10 `i -> 8 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"282
+[; ;src/driver/lcd.c: 282:    print_string("                ",0,5,0);
+[e ( _print_string (4 , , , :s 18C -> -> 0 `i `uc -> -> 5 `i `uc -> -> 0 `i `uc ]
+"283
+[; ;src/driver/lcd.c: 283:    print_string("System ready    ",0,6,0);
+[e ( _print_string (4 , , , :s 19C -> -> 0 `i `uc -> -> 6 `i `uc -> -> 0 `i `uc ]
+"284
+[; ;src/driver/lcd.c: 284:    print_string("                ",0,7,0);
+[e ( _print_string (4 , , , :s 20C -> -> 0 `i `uc -> -> 7 `i `uc -> -> 0 `i `uc ]
+"285
+[; ;src/driver/lcd.c: 285:   }
+}
+[e $U 314  ]
+"286
+[; ;src/driver/lcd.c: 286:   else
+[e :U 313 ]
+"287
+[; ;src/driver/lcd.c: 287:   {
+{
+"288
+[; ;src/driver/lcd.c: 288:    print_string(" GPS  ",10*8,0,0);
+[e ( _print_string (4 , , , :s 21C -> * -> 10 `i -> 8 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"289
+[; ;src/driver/lcd.c: 289:    print_string("                ",0,5,0);
+[e ( _print_string (4 , , , :s 22C -> -> 0 `i `uc -> -> 5 `i `uc -> -> 0 `i `uc ]
+"290
+[; ;src/driver/lcd.c: 290:    print_string("                ",0,6,0);
+[e ( _print_string (4 , , , :s 23C -> -> 0 `i `uc -> -> 6 `i `uc -> -> 0 `i `uc ]
+"291
+[; ;src/driver/lcd.c: 291:    print_string("                ",0,7,0);
+[e ( _print_string (4 , , , :s 24C -> -> 0 `i `uc -> -> 7 `i `uc -> -> 0 `i `uc ]
+"292
+[; ;src/driver/lcd.c: 292:    old_GPS_sat = 0xff;
+[e = F3161 -> -> 255 `i `uc ]
+"293
+[; ;src/driver/lcd.c: 293:    *old_GPS_lat = 0;
+[e = *U &U F3162 -> -> 0 `i `uc ]
+"294
+[; ;src/driver/lcd.c: 294:    *old_GPS_lon = 0;
+[e = *U &U F3163 -> -> 0 `i `uc ]
+"295
+[; ;src/driver/lcd.c: 295:   }
+}
+[e :U 314 ]
+"297
+[; ;src/driver/lcd.c: 297:   old_GPS_lock = GPS_lock;
+[e = F3158 _GPS_lock ]
+"298
+[; ;src/driver/lcd.c: 298:  }
+}
+[e :U 312 ]
+"300
+[; ;src/driver/lcd.c: 300:  if(old_outqrg != outqrg)
+[e $ ! != -> F3159 `ui -> _outqrg `ui 315  ]
+"301
+[; ;src/driver/lcd.c: 301:  {
+{
+"302
+[; ;src/driver/lcd.c: 302:   print_string("OUT:     ",0,3,0);
+[e ( _print_string (4 , , , :s 25C -> -> 0 `i `uc -> -> 3 `i `uc -> -> 0 `i `uc ]
+"303
+[; ;src/driver/lcd.c: 303:   p = itoa(outqrg);
+[e = _p ( _itoa (1 -> _outqrg `i ]
+"304
+[; ;src/driver/lcd.c: 304:   xpos = 8-strlen(p);
+[e = _xpos -> - -> -> 8 `i `ui ( _strlen (1 -> _p `*Cuc `uc ]
+"305
+[; ;src/driver/lcd.c: 305:   print_string(p, xpos*8, 3, 0);
+[e ( _print_string (4 , , , _p -> * -> _xpos `i -> 8 `i `uc -> -> 3 `i `uc -> -> 0 `i `uc ]
+"306
+[; ;src/driver/lcd.c: 306:   print_string(".55", 8*8, 3, 0);
+[e ( _print_string (4 , , , :s 26C -> * -> 8 `i -> 8 `i `uc -> -> 3 `i `uc -> -> 0 `i `uc ]
+"307
+[; ;src/driver/lcd.c: 307:   print_string("MHz",12*8,3,0);
+[e ( _print_string (4 , , , :s 27C -> * -> 12 `i -> 8 `i `uc -> -> 3 `i `uc -> -> 0 `i `uc ]
+"309
+[; ;src/driver/lcd.c: 309:   old_outqrg = outqrg;
+[e = F3159 _outqrg ]
+"310
+[; ;src/driver/lcd.c: 310:  }
+}
+[e :U 315 ]
+"312
+[; ;src/driver/lcd.c: 312:  if(old_lnbqrg != lnbqrg)
+[e $ ! != -> F3160 `i -> _lnbqrg `i 316  ]
+"313
+[; ;src/driver/lcd.c: 313:  {
+{
+"314
+[; ;src/driver/lcd.c: 314:   print_string("LNB:",0,4,0);
+[e ( _print_string (4 , , , :s 28C -> -> 0 `i `uc -> -> 4 `i `uc -> -> 0 `i `uc ]
+"315
+[; ;src/driver/lcd.c: 315:   if(lnbqrg == 27)
+[e $ ! == -> _lnbqrg `i -> 27 `i 317  ]
+"316
+[; ;src/driver/lcd.c: 316:    print_string("25.45", 6*8, 4, 0);
+[e ( _print_string (4 , , , :s 29C -> * -> 6 `i -> 8 `i `uc -> -> 4 `i `uc -> -> 0 `i `uc ]
+[e $U 318  ]
+"317
+[; ;src/driver/lcd.c: 317:   else
+[e :U 317 ]
+"318
+[; ;src/driver/lcd.c: 318:   {
+{
+"319
+[; ;src/driver/lcd.c: 319:    print_string(itoa(lnbqrg), 6*8, 4, 0);
+[e ( _print_string (4 , , , ( _itoa (1 -> _lnbqrg `i -> * -> 6 `i -> 8 `i `uc -> -> 4 `i `uc -> -> 0 `i `uc ]
+"320
+[; ;src/driver/lcd.c: 320:    print_string(".00", 8*8, 4, 0);
+[e ( _print_string (4 , , , :s 30C -> * -> 8 `i -> 8 `i `uc -> -> 4 `i `uc -> -> 0 `i `uc ]
+"321
+[; ;src/driver/lcd.c: 321:   }
+}
+[e :U 318 ]
+"322
+[; ;src/driver/lcd.c: 322:   print_string("MHz",12*8,4,0);
+[e ( _print_string (4 , , , :s 31C -> * -> 12 `i -> 8 `i `uc -> -> 4 `i `uc -> -> 0 `i `uc ]
+"324
+[; ;src/driver/lcd.c: 324:   old_lnbqrg = lnbqrg;
+[e = F3160 _lnbqrg ]
+"325
+[; ;src/driver/lcd.c: 325:  }
+}
+[e :U 316 ]
+"327
+[; ;src/driver/lcd.c: 327:  if(GPS_lock)
+[e $ ! != -> _GPS_lock `i -> 0 `i 319  ]
+"328
+[; ;src/driver/lcd.c: 328:  {
+{
+"329
+[; ;src/driver/lcd.c: 329:   if(old_GPS_sat != GPS_sat)
+[e $ ! != -> F3161 `i -> _GPS_sat `i 320  ]
+"330
+[; ;src/driver/lcd.c: 330:   {
+{
+"331
+[; ;src/driver/lcd.c: 331:    print_string("SAT:",0,5,0);
+[e ( _print_string (4 , , , :s 32C -> -> 0 `i `uc -> -> 5 `i `uc -> -> 0 `i `uc ]
+"332
+[; ;src/driver/lcd.c: 332:    p = itoa(GPS_sat);
+[e = _p ( _itoa (1 -> _GPS_sat `i ]
+"333
+[; ;src/driver/lcd.c: 333:    xpos = 8-strlen(p);
+[e = _xpos -> - -> -> 8 `i `ui ( _strlen (1 -> _p `*Cuc `uc ]
+"334
+[; ;src/driver/lcd.c: 334:    print_string("       ",4*8,5,0);
+[e ( _print_string (4 , , , :s 33C -> * -> 4 `i -> 8 `i `uc -> -> 5 `i `uc -> -> 0 `i `uc ]
+"335
+[; ;src/driver/lcd.c: 335:    print_string(itoa(GPS_sat),xpos*8,5,0);
+[e ( _print_string (4 , , , ( _itoa (1 -> _GPS_sat `i -> * -> _xpos `i -> 8 `i `uc -> -> 5 `i `uc -> -> 0 `i `uc ]
+"337
+[; ;src/driver/lcd.c: 337:    old_GPS_sat = GPS_sat;
+[e = F3161 _GPS_sat ]
+"338
+[; ;src/driver/lcd.c: 338:   }
+}
+[e :U 320 ]
+"340
+[; ;src/driver/lcd.c: 340:   if(memcmp(old_GPS_lat,GPS_lat,15))
+[e $ ! != ( _memcmp (3 , , -> &U F3162 `*Cv -> &U _GPS_lat `*Cv -> -> 15 `i `ui -> 0 `i 321  ]
+"341
+[; ;src/driver/lcd.c: 341:   {
+{
+"342
+[; ;src/driver/lcd.c: 342:    print_string("LAT:",0,6,0);
+[e ( _print_string (4 , , , :s 34C -> -> 0 `i `uc -> -> 6 `i `uc -> -> 0 `i `uc ]
+"343
+[; ;src/driver/lcd.c: 343:    print_string(GPS_lat,8*6,6,0);
+[e ( _print_string (4 , , , &U _GPS_lat -> * -> 8 `i -> 6 `i `uc -> -> 6 `i `uc -> -> 0 `i `uc ]
+"345
+[; ;src/driver/lcd.c: 345:    memcpy(old_GPS_lat,GPS_lat,15);
+[e ( _memcpy (3 , , -> &U F3162 `*v -> &U _GPS_lat `*Cv -> -> 15 `i `ui ]
+"346
+[; ;src/driver/lcd.c: 346:   }
+}
+[e :U 321 ]
+"348
+[; ;src/driver/lcd.c: 348:   if(memcmp(old_GPS_lon,GPS_lon,15))
+[e $ ! != ( _memcmp (3 , , -> &U F3163 `*Cv -> &U _GPS_lon `*Cv -> -> 15 `i `ui -> 0 `i 322  ]
+"349
+[; ;src/driver/lcd.c: 349:   {
+{
+"350
+[; ;src/driver/lcd.c: 350:    print_string("LON:",0,7,0);
+[e ( _print_string (4 , , , :s 35C -> -> 0 `i `uc -> -> 7 `i `uc -> -> 0 `i `uc ]
+"351
+[; ;src/driver/lcd.c: 351:    print_string(GPS_lon,8*5,7,0);
+[e ( _print_string (4 , , , &U _GPS_lon -> * -> 8 `i -> 5 `i `uc -> -> 7 `i `uc -> -> 0 `i `uc ]
+"353
+[; ;src/driver/lcd.c: 353:    memcpy(old_GPS_lon,GPS_lon,15);
+[e ( _memcpy (3 , , -> &U F3163 `*v -> &U _GPS_lon `*Cv -> -> 15 `i `ui ]
+"354
+[; ;src/driver/lcd.c: 354:   }
+}
+[e :U 322 ]
+"355
+[; ;src/driver/lcd.c: 355:  }
+}
+[e :U 319 ]
+"356
+[; ;src/driver/lcd.c: 356: }
+[e :UE 299 ]
+}
+"359
+[; ;src/driver/lcd.c: 359: char *itoa(int value)
+[v _itoa `(*uc ~T0 @X0 1 ef1`i ]
+"360
+[; ;src/driver/lcd.c: 360: {
+{
+[e :U _itoa ]
+"359
+[; ;src/driver/lcd.c: 359: char *itoa(int value)
+[v _value `i ~T0 @X0 1 r1 ]
+"360
+[; ;src/driver/lcd.c: 360: {
+[f ]
+"361
+[; ;src/driver/lcd.c: 361:  static char buffer[12];
+[v F3170 `uc ~T0 @X0 -> 12 `i s buffer ]
+"362
+[; ;src/driver/lcd.c: 362:  u8 c = sizeof(buffer)-1;
+[v _c `uc ~T0 @X0 1 a ]
+[e = _c -> - -> # F3170 `ui -> -> 1 `i `ui `uc ]
+"364
+[; ;src/driver/lcd.c: 364:  memset(buffer,0,sizeof(buffer));
+[e ( _memset (3 , , -> &U F3170 `*v -> 0 `i -> # F3170 `ui ]
+"366
+[; ;src/driver/lcd.c: 366:  do
+[e :U 326 ]
+"367
+[; ;src/driver/lcd.c: 367:  {
+{
+"368
+[; ;src/driver/lcd.c: 368:   buffer[--c] = (value % 10) + '0';
+[e = *U + &U F3170 * -> =- _c -> -> 1 `i `uc `ux -> -> # *U &U F3170 `ui `ux -> + -> % _value -> 10 `i `ui -> 48 `ui `uc ]
+"369
+[; ;src/driver/lcd.c: 369:   value /= 10;
+[e =/ _value -> 10 `i ]
+"370
+[; ;src/driver/lcd.c: 370:  } while (value);
+}
+[e $ != _value -> 0 `i 326  ]
+[e :U 325 ]
+"372
+[; ;src/driver/lcd.c: 372:  return &buffer[c];
+[e ) &U *U + &U F3170 * -> _c `ux -> -> # *U &U F3170 `ui `ux ]
+[e $UE 323  ]
+"373
+[; ;src/driver/lcd.c: 373: }
+[e :UE 323 ]
+}
+[p f _printf 8388608 ]
+[a 27C 77 72 122 0 ]
+[a 31C 77 72 122 0 ]
+[a 14C 119 97 105 116 0 ]
+[a 16C 119 97 105 116 0 ]
+[a 7C 68 111 119 110 99 111 110 118 101 114 116 101 114 0 ]
+[a 6C 76 78 66 32 67 111 110 116 114 111 108 108 101 114 0 ]
+[a 5C 71 80 83 47 79 67 88 79 32 99 108 111 99 107 0 ]
+[a 17C 79 47 84 67 88 79 0 ]
+[a 12C 79 75 0 ]
+[a 13C 76 79 67 75 0 ]
+[a 15C 76 79 67 75 0 ]
+[a 4C 87 69 76 67 79 77 69 32 116 111 58 0 ]
+[a 32C 83 65 84 58 0 ]
+[a 34C 76 65 84 58 0 ]
+[a 35C 76 79 78 58 0 ]
+[a 28C 76 78 66 58 0 ]
+[a 26C 46 53 53 0 ]
+[a 29C 50 53 46 52 53 0 ]
+[a 3C 65 77 83 65 84 45 68 76 32 32 81 79 45 49 48 48 0 ]
+[a 30C 46 48 48 0 ]
+[a 8C 83 121 115 116 101 109 32 83 69 84 85 80 32 46 46 46 0 ]
+[a 21C 32 71 80 83 32 32 0 ]
+[a 19C 83 121 115 116 101 109 32 114 101 97 100 121 32 32 32 32 0 ]
+[a 25C 79 85 84 58 32 32 32 32 32 0 ]
+[a 11C 68 111 119 110 109 105 120 101 114 58 32 32 32 32 32 32 0 ]
+[a 9C 76 78 66 45 112 111 119 101 114 58 32 32 32 32 32 32 0 ]
+[a 10C 83 121 115 99 108 111 99 107 32 58 32 32 32 32 32 32 0 ]
+[a 18C 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 0 ]
+[a 20C 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 0 ]
+[a 22C 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 0 ]
+[a 23C 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 0 ]
+[a 24C 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 0 ]
+[a 33C 32 32 32 32 32 32 32 0 ]
+[a 1C 79 76 69 68 32 100 105 115 112 108 97 121 32 110 111 116 32 102 111 117 110 100 46 10 0 ]
+[a 2C 79 76 69 68 32 100 105 115 112 108 97 121 32 102 111 117 110 100 33 10 0 ]

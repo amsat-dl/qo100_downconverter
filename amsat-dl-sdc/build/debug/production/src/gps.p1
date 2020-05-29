@@ -1,0 +1,1439 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"54 /opt/microchip/xc8/v2.10/pic/include/c99/string.h
+[; ;/opt/microchip/xc8/v2.10/pic/include/c99/string.h: 54: size_t strlen (const char *);
+[v _strlen `(ui ~T0 @X0 0 ef1`*Cuc ]
+"34 /opt/microchip/xc8/v2.10/pic/include/c99/stdlib.h
+[; ;/opt/microchip/xc8/v2.10/pic/include/c99/stdlib.h: 34: long strtol (const char *restrict, char **restrict, int);
+[v _strtol `(l ~T0 @X0 0 ef3`*Cuc`**uc`i ]
+"45 /opt/microchip/xc8/v2.10/pic/include/c99/string.h
+[; ;/opt/microchip/xc8/v2.10/pic/include/c99/string.h: 45: char *strchr (const char *, int);
+[v _strchr `(*uc ~T0 @X0 0 ef2`*Cuc`i ]
+"29
+[; ;/opt/microchip/xc8/v2.10/pic/include/c99/string.h: 29: void *memset (void *, int, size_t);
+[v _memset `(*v ~T0 @X0 0 ef3`*v`i`ui ]
+"27
+[; ;/opt/microchip/xc8/v2.10/pic/include/c99/string.h: 27: void *memcpy (void *restrict, const void *restrict, size_t);
+[v _memcpy `(*v ~T0 @X0 0 ef3`*v`*Cv`ui ]
+"23 /opt/microchip/xc8/v2.10/pic/include/c99/stdlib.h
+[; ;/opt/microchip/xc8/v2.10/pic/include/c99/stdlib.h: 23: int atoi (const char *);
+[v _atoi `(i ~T0 @X0 0 ef1`*Cuc ]
+"17 src/timer.h
+[; ;src/timer.h: 17: extern u8 gps_init_timer;
+[v _gps_init_timer `uc ~T0 @X0 0 e ]
+"12 src/gps.c
+[; ;src/gps.c: 12: void send_UBX_string(u8 class, u8 id, u16 len, u8 *payload);
+[v _send_UBX_string `(v ~T0 @X0 0 ef4`uc`uc`us`*uc ]
+"111 /opt/microchip/xc8/v2.10/pic/include/c99/stdio.h
+[v _printf `(i ~T0 @X0 0 ev`*Cuc ]
+"12 src/driver/usart.h
+[; ;src/driver/usart.h: 12: void putgps(u8 c);
+[v _putgps `(v ~T0 @X0 0 ef1`uc ]
+"54 /opt/microchip/xc8/v2.10/pic/include/pic18f2520.h
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 54: __asm("PORTA equ 0F80h");
+[; <" PORTA equ 0F80h ;# ">
+"273
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 273: __asm("PORTB equ 0F81h");
+[; <" PORTB equ 0F81h ;# ">
+"452
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 452: __asm("PORTC equ 0F82h");
+[; <" PORTC equ 0F82h ;# ">
+"627
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 627: __asm("PORTE equ 0F84h");
+[; <" PORTE equ 0F84h ;# ">
+"702
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 702: __asm("LATA equ 0F89h");
+[; <" LATA equ 0F89h ;# ">
+"814
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 814: __asm("LATB equ 0F8Ah");
+[; <" LATB equ 0F8Ah ;# ">
+"926
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 926: __asm("LATC equ 0F8Bh");
+[; <" LATC equ 0F8Bh ;# ">
+"1038
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1038: __asm("TRISA equ 0F92h");
+[; <" TRISA equ 0F92h ;# ">
+"1043
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1043: __asm("DDRA equ 0F92h");
+[; <" DDRA equ 0F92h ;# ">
+"1260
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1260: __asm("TRISB equ 0F93h");
+[; <" TRISB equ 0F93h ;# ">
+"1265
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1265: __asm("DDRB equ 0F93h");
+[; <" DDRB equ 0F93h ;# ">
+"1482
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1482: __asm("TRISC equ 0F94h");
+[; <" TRISC equ 0F94h ;# ">
+"1487
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1487: __asm("DDRC equ 0F94h");
+[; <" DDRC equ 0F94h ;# ">
+"1704
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1704: __asm("OSCTUNE equ 0F9Bh");
+[; <" OSCTUNE equ 0F9Bh ;# ">
+"1769
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1769: __asm("PIE1 equ 0F9Dh");
+[; <" PIE1 equ 0F9Dh ;# ">
+"1840
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1840: __asm("PIR1 equ 0F9Eh");
+[; <" PIR1 equ 0F9Eh ;# ">
+"1911
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1911: __asm("IPR1 equ 0F9Fh");
+[; <" IPR1 equ 0F9Fh ;# ">
+"1982
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 1982: __asm("PIE2 equ 0FA0h");
+[; <" PIE2 equ 0FA0h ;# ">
+"2048
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2048: __asm("PIR2 equ 0FA1h");
+[; <" PIR2 equ 0FA1h ;# ">
+"2114
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2114: __asm("IPR2 equ 0FA2h");
+[; <" IPR2 equ 0FA2h ;# ">
+"2180
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2180: __asm("EECON1 equ 0FA6h");
+[; <" EECON1 equ 0FA6h ;# ">
+"2246
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2246: __asm("EECON2 equ 0FA7h");
+[; <" EECON2 equ 0FA7h ;# ">
+"2253
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2253: __asm("EEDATA equ 0FA8h");
+[; <" EEDATA equ 0FA8h ;# ">
+"2260
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2260: __asm("EEADR equ 0FA9h");
+[; <" EEADR equ 0FA9h ;# ">
+"2267
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2267: __asm("RCSTA equ 0FABh");
+[; <" RCSTA equ 0FABh ;# ">
+"2272
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2272: __asm("RCSTA1 equ 0FABh");
+[; <" RCSTA1 equ 0FABh ;# ">
+"2477
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2477: __asm("TXSTA equ 0FACh");
+[; <" TXSTA equ 0FACh ;# ">
+"2482
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2482: __asm("TXSTA1 equ 0FACh");
+[; <" TXSTA1 equ 0FACh ;# ">
+"2733
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2733: __asm("TXREG equ 0FADh");
+[; <" TXREG equ 0FADh ;# ">
+"2738
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2738: __asm("TXREG1 equ 0FADh");
+[; <" TXREG1 equ 0FADh ;# ">
+"2745
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2745: __asm("RCREG equ 0FAEh");
+[; <" RCREG equ 0FAEh ;# ">
+"2750
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2750: __asm("RCREG1 equ 0FAEh");
+[; <" RCREG1 equ 0FAEh ;# ">
+"2757
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2757: __asm("SPBRG equ 0FAFh");
+[; <" SPBRG equ 0FAFh ;# ">
+"2762
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2762: __asm("SPBRG1 equ 0FAFh");
+[; <" SPBRG1 equ 0FAFh ;# ">
+"2769
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2769: __asm("SPBRGH equ 0FB0h");
+[; <" SPBRGH equ 0FB0h ;# ">
+"2776
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2776: __asm("T3CON equ 0FB1h");
+[; <" T3CON equ 0FB1h ;# ">
+"2888
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2888: __asm("TMR3 equ 0FB2h");
+[; <" TMR3 equ 0FB2h ;# ">
+"2895
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2895: __asm("TMR3L equ 0FB2h");
+[; <" TMR3L equ 0FB2h ;# ">
+"2902
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2902: __asm("TMR3H equ 0FB3h");
+[; <" TMR3H equ 0FB3h ;# ">
+"2909
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2909: __asm("CMCON equ 0FB4h");
+[; <" CMCON equ 0FB4h ;# ">
+"2999
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 2999: __asm("CVRCON equ 0FB5h");
+[; <" CVRCON equ 0FB5h ;# ">
+"3078
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3078: __asm("ECCP1AS equ 0FB6h");
+[; <" ECCP1AS equ 0FB6h ;# ">
+"3083
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3083: __asm("ECCPAS equ 0FB6h");
+[; <" ECCPAS equ 0FB6h ;# ">
+"3208
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3208: __asm("PWM1CON equ 0FB7h");
+[; <" PWM1CON equ 0FB7h ;# ">
+"3213
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3213: __asm("ECCP1DEL equ 0FB7h");
+[; <" ECCP1DEL equ 0FB7h ;# ">
+"3248
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3248: __asm("BAUDCON equ 0FB8h");
+[; <" BAUDCON equ 0FB8h ;# ">
+"3253
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3253: __asm("BAUDCTL equ 0FB8h");
+[; <" BAUDCTL equ 0FB8h ;# ">
+"3428
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3428: __asm("CCP2CON equ 0FBAh");
+[; <" CCP2CON equ 0FBAh ;# ">
+"3507
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3507: __asm("CCPR2 equ 0FBBh");
+[; <" CCPR2 equ 0FBBh ;# ">
+"3514
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3514: __asm("CCPR2L equ 0FBBh");
+[; <" CCPR2L equ 0FBBh ;# ">
+"3521
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3521: __asm("CCPR2H equ 0FBCh");
+[; <" CCPR2H equ 0FBCh ;# ">
+"3528
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3528: __asm("CCP1CON equ 0FBDh");
+[; <" CCP1CON equ 0FBDh ;# ">
+"3607
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3607: __asm("CCPR1 equ 0FBEh");
+[; <" CCPR1 equ 0FBEh ;# ">
+"3614
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3614: __asm("CCPR1L equ 0FBEh");
+[; <" CCPR1L equ 0FBEh ;# ">
+"3621
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3621: __asm("CCPR1H equ 0FBFh");
+[; <" CCPR1H equ 0FBFh ;# ">
+"3628
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3628: __asm("ADCON2 equ 0FC0h");
+[; <" ADCON2 equ 0FC0h ;# ">
+"3699
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3699: __asm("ADCON1 equ 0FC1h");
+[; <" ADCON1 equ 0FC1h ;# ">
+"3784
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3784: __asm("ADCON0 equ 0FC2h");
+[; <" ADCON0 equ 0FC2h ;# ">
+"3903
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3903: __asm("ADRES equ 0FC3h");
+[; <" ADRES equ 0FC3h ;# ">
+"3910
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3910: __asm("ADRESL equ 0FC3h");
+[; <" ADRESL equ 0FC3h ;# ">
+"3917
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3917: __asm("ADRESH equ 0FC4h");
+[; <" ADRESH equ 0FC4h ;# ">
+"3924
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 3924: __asm("SSPCON2 equ 0FC5h");
+[; <" SSPCON2 equ 0FC5h ;# ">
+"4019
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4019: __asm("SSPCON1 equ 0FC6h");
+[; <" SSPCON1 equ 0FC6h ;# ">
+"4089
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4089: __asm("SSPSTAT equ 0FC7h");
+[; <" SSPSTAT equ 0FC7h ;# ">
+"4310
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4310: __asm("SSPADD equ 0FC8h");
+[; <" SSPADD equ 0FC8h ;# ">
+"4317
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4317: __asm("SSPBUF equ 0FC9h");
+[; <" SSPBUF equ 0FC9h ;# ">
+"4324
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4324: __asm("T2CON equ 0FCAh");
+[; <" T2CON equ 0FCAh ;# ">
+"4422
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4422: __asm("PR2 equ 0FCBh");
+[; <" PR2 equ 0FCBh ;# ">
+"4427
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4427: __asm("MEMCON equ 0FCBh");
+[; <" MEMCON equ 0FCBh ;# ">
+"4532
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4532: __asm("TMR2 equ 0FCCh");
+[; <" TMR2 equ 0FCCh ;# ">
+"4539
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4539: __asm("T1CON equ 0FCDh");
+[; <" T1CON equ 0FCDh ;# ">
+"4642
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4642: __asm("TMR1 equ 0FCEh");
+[; <" TMR1 equ 0FCEh ;# ">
+"4649
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4649: __asm("TMR1L equ 0FCEh");
+[; <" TMR1L equ 0FCEh ;# ">
+"4656
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4656: __asm("TMR1H equ 0FCFh");
+[; <" TMR1H equ 0FCFh ;# ">
+"4663
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4663: __asm("RCON equ 0FD0h");
+[; <" RCON equ 0FD0h ;# ">
+"4796
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4796: __asm("WDTCON equ 0FD1h");
+[; <" WDTCON equ 0FD1h ;# ">
+"4824
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4824: __asm("HLVDCON equ 0FD2h");
+[; <" HLVDCON equ 0FD2h ;# ">
+"4829
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 4829: __asm("LVDCON equ 0FD2h");
+[; <" LVDCON equ 0FD2h ;# ">
+"5094
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5094: __asm("OSCCON equ 0FD3h");
+[; <" OSCCON equ 0FD3h ;# ">
+"5177
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5177: __asm("T0CON equ 0FD5h");
+[; <" T0CON equ 0FD5h ;# ">
+"5260
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5260: __asm("TMR0 equ 0FD6h");
+[; <" TMR0 equ 0FD6h ;# ">
+"5267
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5267: __asm("TMR0L equ 0FD6h");
+[; <" TMR0L equ 0FD6h ;# ">
+"5274
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5274: __asm("TMR0H equ 0FD7h");
+[; <" TMR0H equ 0FD7h ;# ">
+"5281
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5281: __asm("STATUS equ 0FD8h");
+[; <" STATUS equ 0FD8h ;# ">
+"5352
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5352: __asm("FSR2 equ 0FD9h");
+[; <" FSR2 equ 0FD9h ;# ">
+"5359
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5359: __asm("FSR2L equ 0FD9h");
+[; <" FSR2L equ 0FD9h ;# ">
+"5366
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5366: __asm("FSR2H equ 0FDAh");
+[; <" FSR2H equ 0FDAh ;# ">
+"5373
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5373: __asm("PLUSW2 equ 0FDBh");
+[; <" PLUSW2 equ 0FDBh ;# ">
+"5380
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5380: __asm("PREINC2 equ 0FDCh");
+[; <" PREINC2 equ 0FDCh ;# ">
+"5387
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5387: __asm("POSTDEC2 equ 0FDDh");
+[; <" POSTDEC2 equ 0FDDh ;# ">
+"5394
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5394: __asm("POSTINC2 equ 0FDEh");
+[; <" POSTINC2 equ 0FDEh ;# ">
+"5401
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5401: __asm("INDF2 equ 0FDFh");
+[; <" INDF2 equ 0FDFh ;# ">
+"5408
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5408: __asm("BSR equ 0FE0h");
+[; <" BSR equ 0FE0h ;# ">
+"5415
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5415: __asm("FSR1 equ 0FE1h");
+[; <" FSR1 equ 0FE1h ;# ">
+"5422
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5422: __asm("FSR1L equ 0FE1h");
+[; <" FSR1L equ 0FE1h ;# ">
+"5429
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5429: __asm("FSR1H equ 0FE2h");
+[; <" FSR1H equ 0FE2h ;# ">
+"5436
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5436: __asm("PLUSW1 equ 0FE3h");
+[; <" PLUSW1 equ 0FE3h ;# ">
+"5443
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5443: __asm("PREINC1 equ 0FE4h");
+[; <" PREINC1 equ 0FE4h ;# ">
+"5450
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5450: __asm("POSTDEC1 equ 0FE5h");
+[; <" POSTDEC1 equ 0FE5h ;# ">
+"5457
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5457: __asm("POSTINC1 equ 0FE6h");
+[; <" POSTINC1 equ 0FE6h ;# ">
+"5464
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5464: __asm("INDF1 equ 0FE7h");
+[; <" INDF1 equ 0FE7h ;# ">
+"5471
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5471: __asm("WREG equ 0FE8h");
+[; <" WREG equ 0FE8h ;# ">
+"5483
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5483: __asm("FSR0 equ 0FE9h");
+[; <" FSR0 equ 0FE9h ;# ">
+"5490
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5490: __asm("FSR0L equ 0FE9h");
+[; <" FSR0L equ 0FE9h ;# ">
+"5497
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5497: __asm("FSR0H equ 0FEAh");
+[; <" FSR0H equ 0FEAh ;# ">
+"5504
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5504: __asm("PLUSW0 equ 0FEBh");
+[; <" PLUSW0 equ 0FEBh ;# ">
+"5511
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5511: __asm("PREINC0 equ 0FECh");
+[; <" PREINC0 equ 0FECh ;# ">
+"5518
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5518: __asm("POSTDEC0 equ 0FEDh");
+[; <" POSTDEC0 equ 0FEDh ;# ">
+"5525
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5525: __asm("POSTINC0 equ 0FEEh");
+[; <" POSTINC0 equ 0FEEh ;# ">
+"5532
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5532: __asm("INDF0 equ 0FEFh");
+[; <" INDF0 equ 0FEFh ;# ">
+"5539
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5539: __asm("INTCON3 equ 0FF0h");
+[; <" INTCON3 equ 0FF0h ;# ">
+"5631
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5631: __asm("INTCON2 equ 0FF1h");
+[; <" INTCON2 equ 0FF1h ;# ">
+"5701
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5701: __asm("INTCON equ 0FF2h");
+[; <" INTCON equ 0FF2h ;# ">
+"5818
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5818: __asm("PROD equ 0FF3h");
+[; <" PROD equ 0FF3h ;# ">
+"5825
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5825: __asm("PRODL equ 0FF3h");
+[; <" PRODL equ 0FF3h ;# ">
+"5832
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5832: __asm("PRODH equ 0FF4h");
+[; <" PRODH equ 0FF4h ;# ">
+"5839
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5839: __asm("TABLAT equ 0FF5h");
+[; <" TABLAT equ 0FF5h ;# ">
+"5848
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5848: __asm("TBLPTR equ 0FF6h");
+[; <" TBLPTR equ 0FF6h ;# ">
+"5855
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5855: __asm("TBLPTRL equ 0FF6h");
+[; <" TBLPTRL equ 0FF6h ;# ">
+"5862
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5862: __asm("TBLPTRH equ 0FF7h");
+[; <" TBLPTRH equ 0FF7h ;# ">
+"5869
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5869: __asm("TBLPTRU equ 0FF8h");
+[; <" TBLPTRU equ 0FF8h ;# ">
+"5878
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5878: __asm("PCLAT equ 0FF9h");
+[; <" PCLAT equ 0FF9h ;# ">
+"5885
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5885: __asm("PC equ 0FF9h");
+[; <" PC equ 0FF9h ;# ">
+"5892
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5892: __asm("PCL equ 0FF9h");
+[; <" PCL equ 0FF9h ;# ">
+"5899
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5899: __asm("PCLATH equ 0FFAh");
+[; <" PCLATH equ 0FFAh ;# ">
+"5906
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5906: __asm("PCLATU equ 0FFBh");
+[; <" PCLATU equ 0FFBh ;# ">
+"5913
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5913: __asm("STKPTR equ 0FFCh");
+[; <" STKPTR equ 0FFCh ;# ">
+"5987
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5987: __asm("TOS equ 0FFDh");
+[; <" TOS equ 0FFDh ;# ">
+"5994
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 5994: __asm("TOSL equ 0FFDh");
+[; <" TOSL equ 0FFDh ;# ">
+"6001
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 6001: __asm("TOSH equ 0FFEh");
+[; <" TOSH equ 0FFEh ;# ">
+"6008
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic18f2520.h: 6008: __asm("TOSU equ 0FFFh");
+[; <" TOSU equ 0FFFh ;# ">
+"15 src/gps.c
+[; ;src/gps.c: 15: u8 GPS_lock = 0;
+[v _GPS_lock `uc ~T0 @X0 1 e ]
+[i _GPS_lock
+-> -> 0 `i `uc
+]
+"16
+[; ;src/gps.c: 16: u8 GPS_fix = 0;
+[v _GPS_fix `uc ~T0 @X0 1 e ]
+[i _GPS_fix
+-> -> 0 `i `uc
+]
+"17
+[; ;src/gps.c: 17: u8 GPS_sat = 0;
+[v _GPS_sat `uc ~T0 @X0 1 e ]
+[i _GPS_sat
+-> -> 0 `i `uc
+]
+"18
+[; ;src/gps.c: 18: char GPS_lat[15] = {"        "};
+[v _GPS_lat `uc ~T0 @X0 -> 15 `i e ]
+[i _GPS_lat
+:U ..
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 0 `c
+..
+]
+"19
+[; ;src/gps.c: 19: char GPS_lon[15] = {"        "};
+[v _GPS_lon `uc ~T0 @X0 -> 15 `i e ]
+[i _GPS_lon
+:U ..
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 0 `c
+..
+]
+"20
+[; ;src/gps.c: 20: char GPS_time[9] = {" "};
+[v _GPS_time `uc ~T0 @X0 -> 9 `i e ]
+[i _GPS_time
+:U ..
+-> 32 `c
+-> 0 `c
+..
+]
+"21
+[; ;src/gps.c: 21: u8 ubx_ack = 0;
+[v _ubx_ack `uc ~T0 @X0 1 e ]
+[i _ubx_ack
+-> -> 0 `i `uc
+]
+"23
+[; ;src/gps.c: 23: void eval_gps(char *gpsbuf)
+[v _eval_gps `(v ~T0 @X0 1 ef1`*uc ]
+"24
+[; ;src/gps.c: 24: {
+{
+[e :U _eval_gps ]
+"23
+[; ;src/gps.c: 23: void eval_gps(char *gpsbuf)
+[v _gpsbuf `*uc ~T0 @X0 1 r1 ]
+"24
+[; ;src/gps.c: 24: {
+[f ]
+[v F2844 `uc ~T0 @X0 -> 16 `i t ]
+"25
+[; ;src/gps.c: 25: char elem[15][16];
+[v _elem `F2844 ~T0 @X0 -> 15 `i a ]
+"26
+[; ;src/gps.c: 26: u8 eidx=0;
+[v _eidx `uc ~T0 @X0 1 a ]
+[e = _eidx -> -> 0 `i `uc ]
+"30
+[; ;src/gps.c: 30:  if(strlen(gpsbuf) < 20 || strlen(gpsbuf) > 100)
+[e $ ! || < ( _strlen (1 -> _gpsbuf `*Cuc -> -> 20 `i `ui > ( _strlen (1 -> _gpsbuf `*Cuc -> -> 100 `i `ui 258  ]
+"31
+[; ;src/gps.c: 31:   return;
+[e $UE 257  ]
+[e :U 258 ]
+"34
+[; ;src/gps.c: 34:  u8 chksum = gpsbuf[0];
+[v _chksum `uc ~T0 @X0 1 a ]
+[e = _chksum -> *U + _gpsbuf * -> -> 0 `i `x -> -> # *U _gpsbuf `i `x `uc ]
+"35
+[; ;src/gps.c: 35:  for(u8 i=1; i<strlen(gpsbuf)-3; i++)
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 1 `i `uc ]
+[e $U 262  ]
+[e :U 259 ]
+"36
+[; ;src/gps.c: 36:   chksum ^= gpsbuf[i];
+[e =^ _chksum -> *U + _gpsbuf * -> _i `ux -> -> # *U _gpsbuf `ui `ux `uc ]
+[e ++ _i -> -> 1 `i `uc ]
+[e :U 262 ]
+[e $ < -> _i `ui - ( _strlen (1 -> _gpsbuf `*Cuc -> -> 3 `i `ui 259  ]
+[e :U 260 ]
+}
+"38
+[; ;src/gps.c: 38:  u8 chksumgps = strtol(gpsbuf + (strlen(gpsbuf)-2),((void*)0),16);
+[v _chksumgps `uc ~T0 @X0 1 a ]
+[e = _chksumgps -> ( _strtol (3 , , -> + _gpsbuf * -> - ( _strlen (1 -> _gpsbuf `*Cuc -> -> 2 `i `ui `ux -> -> # *U _gpsbuf `ui `ux `*Cuc -> -> -> 0 `i `*v `**uc -> 16 `i `uc ]
+"39
+[; ;src/gps.c: 39:  if(chksumgps != chksum) return;
+[e $ ! != -> _chksumgps `i -> _chksum `i 263  ]
+[e $UE 257  ]
+[e :U 263 ]
+"42
+[; ;src/gps.c: 42:  if(gpsbuf[2] == 'G' && gpsbuf[3] == 'G' && gpsbuf[4] == 'A')
+[e $ ! && && == -> *U + _gpsbuf * -> -> 2 `i `x -> -> # *U _gpsbuf `i `x `ui -> 71 `ui == -> *U + _gpsbuf * -> -> 3 `i `x -> -> # *U _gpsbuf `i `x `ui -> 71 `ui == -> *U + _gpsbuf * -> -> 4 `i `x -> -> # *U _gpsbuf `i `x `ui -> 65 `ui 264  ]
+"43
+[; ;src/gps.c: 43:  {
+{
+"48
+[; ;src/gps.c: 48:   char *ps = gpsbuf;
+[v _ps `*uc ~T0 @X0 1 a ]
+[e = _ps _gpsbuf ]
+"49
+[; ;src/gps.c: 49:   while(1)
+[e :U 266 ]
+"50
+[; ;src/gps.c: 50:   {
+{
+"51
+[; ;src/gps.c: 51:    char *pe = strchr(ps,',');
+[v _pe `*uc ~T0 @X0 1 a ]
+[e = _pe ( _strchr (2 , -> _ps `*Cuc -> -> 44 `ui `i ]
+"52
+[; ;src/gps.c: 52:    if(pe == ((void*)0)) break;
+[e $ ! == _pe -> -> -> 0 `i `*v `*uc 268  ]
+[e $U 267  ]
+[e :U 268 ]
+"53
+[; ;src/gps.c: 53:    memset(elem[eidx],0,16);
+[e ( _memset (3 , , -> &U *U + &U _elem * -> _eidx `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux `*v -> 0 `i -> -> 16 `i `ui ]
+"54
+[; ;src/gps.c: 54:    memcpy(elem[eidx++],ps,pe-ps);
+[e ( _memcpy (3 , , -> &U *U + &U _elem * -> ++ _eidx -> -> 1 `i `uc `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux `*v -> _ps `*Cv -> / - -> _pe `x -> _ps `x -> -> # *U _pe `i `x `ui ]
+"55
+[; ;src/gps.c: 55:    ps = pe+1;
+[e = _ps + _pe * -> -> 1 `i `x -> -> # *U _pe `i `x ]
+"56
+[; ;src/gps.c: 56:    if(ps >= (gpsbuf + strlen(gpsbuf))) break;
+[e $ ! >= _ps + _gpsbuf * -> ( _strlen (1 -> _gpsbuf `*Cuc `ux -> -> # *U _gpsbuf `ui `ux 269  ]
+[e $U 267  ]
+[e :U 269 ]
+"57
+[; ;src/gps.c: 57:    if(eidx >= 15) break;
+[e $ ! >= -> _eidx `i -> 15 `i 270  ]
+[e $U 267  ]
+[e :U 270 ]
+"58
+[; ;src/gps.c: 58:    __asm(" clrwdt");
+[; <"  clrwdt ;# ">
+"59
+[; ;src/gps.c: 59:   }
+}
+[e :U 265 ]
+[e $U 266  ]
+[e :U 267 ]
+"71
+[; ;src/gps.c: 71:   GPS_time[0] = elem[1][0];
+[e = *U + &U _GPS_time * -> -> -> 0 `i `ui `ux -> -> # *U &U _GPS_time `ui `ux *U + &U *U + &U _elem * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _elem * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux `ui `ux ]
+"72
+[; ;src/gps.c: 72:   GPS_time[1] = elem[1][1];
+[e = *U + &U _GPS_time * -> -> -> 1 `i `ui `ux -> -> # *U &U _GPS_time `ui `ux *U + &U *U + &U _elem * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux * -> -> -> 1 `i `ui `ux -> -> # *U &U *U + &U _elem * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux `ui `ux ]
+"73
+[; ;src/gps.c: 73:   GPS_time[2] = ':';
+[e = *U + &U _GPS_time * -> -> -> 2 `i `ui `ux -> -> # *U &U _GPS_time `ui `ux -> -> 58 `ui `uc ]
+"74
+[; ;src/gps.c: 74:   GPS_time[3] = elem[1][2];
+[e = *U + &U _GPS_time * -> -> -> 3 `i `ui `ux -> -> # *U &U _GPS_time `ui `ux *U + &U *U + &U _elem * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux * -> -> -> 2 `i `ui `ux -> -> # *U &U *U + &U _elem * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux `ui `ux ]
+"75
+[; ;src/gps.c: 75:   GPS_time[4] = elem[1][3];
+[e = *U + &U _GPS_time * -> -> -> 4 `i `ui `ux -> -> # *U &U _GPS_time `ui `ux *U + &U *U + &U _elem * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux * -> -> -> 3 `i `ui `ux -> -> # *U &U *U + &U _elem * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux `ui `ux ]
+"76
+[; ;src/gps.c: 76:   GPS_time[5] = ':';
+[e = *U + &U _GPS_time * -> -> -> 5 `i `ui `ux -> -> # *U &U _GPS_time `ui `ux -> -> 58 `ui `uc ]
+"77
+[; ;src/gps.c: 77:   GPS_time[6] = elem[1][4];
+[e = *U + &U _GPS_time * -> -> -> 6 `i `ui `ux -> -> # *U &U _GPS_time `ui `ux *U + &U *U + &U _elem * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux * -> -> -> 4 `i `ui `ux -> -> # *U &U *U + &U _elem * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux `ui `ux ]
+"78
+[; ;src/gps.c: 78:   GPS_time[7] = elem[1][5];
+[e = *U + &U _GPS_time * -> -> -> 7 `i `ui `ux -> -> # *U &U _GPS_time `ui `ux *U + &U *U + &U _elem * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux * -> -> -> 5 `i `ui `ux -> -> # *U &U *U + &U _elem * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux `ui `ux ]
+"79
+[; ;src/gps.c: 79:   GPS_time[8] = 0;
+[e = *U + &U _GPS_time * -> -> -> 8 `i `ui `ux -> -> # *U &U _GPS_time `ui `ux -> -> 0 `i `uc ]
+"81
+[; ;src/gps.c: 81:   if(elem[6][0] != '1' && elem[6][0] != '2')
+[e $ ! && != -> *U + &U *U + &U _elem * -> -> -> 6 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _elem * -> -> -> 6 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux `ui `ux `ui -> 49 `ui != -> *U + &U *U + &U _elem * -> -> -> 6 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _elem * -> -> -> 6 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux `ui `ux `ui -> 50 `ui 271  ]
+"82
+[; ;src/gps.c: 82:   {
+{
+"84
+[; ;src/gps.c: 84:    GPS_lock = 0;
+[e = _GPS_lock -> -> 0 `i `uc ]
+"85
+[; ;src/gps.c: 85:    GPS_sat = 0;
+[e = _GPS_sat -> -> 0 `i `uc ]
+"86
+[; ;src/gps.c: 86:    *GPS_lat = 0;
+[e = *U &U _GPS_lat -> -> 0 `i `uc ]
+"87
+[; ;src/gps.c: 87:    *GPS_lon = 0;
+[e = *U &U _GPS_lon -> -> 0 `i `uc ]
+"88
+[; ;src/gps.c: 88:    return;
+[e $UE 257  ]
+"89
+[; ;src/gps.c: 89:   }
+}
+[e :U 271 ]
+"90
+[; ;src/gps.c: 90:   GPS_lock = 1;
+[e = _GPS_lock -> -> 1 `i `uc ]
+"92
+[; ;src/gps.c: 92:   GPS_sat = atoi(elem[7]);
+[e = _GPS_sat -> ( _atoi (1 -> &U *U + &U _elem * -> -> -> 7 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux `*Cuc `uc ]
+"94
+[; ;src/gps.c: 94:   memcpy(GPS_lat,elem[2],2);
+[e ( _memcpy (3 , , -> &U _GPS_lat `*v -> &U *U + &U _elem * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux `*Cv -> -> 2 `i `ui ]
+"95
+[; ;src/gps.c: 95:   GPS_lat[2] = 'd';
+[e = *U + &U _GPS_lat * -> -> -> 2 `i `ui `ux -> -> # *U &U _GPS_lat `ui `ux -> -> 100 `ui `uc ]
+"96
+[; ;src/gps.c: 96:   memcpy(GPS_lat+3,elem[2]+2,5);
+[e ( _memcpy (3 , , -> + &U _GPS_lat * -> -> 3 `i `x -> -> # *U &U _GPS_lat `i `x `*v -> + &U *U + &U _elem * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux * -> -> 2 `i `x -> -> # *U &U *U + &U _elem * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux `i `x `*Cv -> -> 5 `i `ui ]
+"97
+[; ;src/gps.c: 97:   GPS_lat[8] = elem[3][0];
+[e = *U + &U _GPS_lat * -> -> -> 8 `i `ui `ux -> -> # *U &U _GPS_lat `ui `ux *U + &U *U + &U _elem * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _elem * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux `ui `ux ]
+"98
+[; ;src/gps.c: 98:   GPS_lat[9] = 0;
+[e = *U + &U _GPS_lat * -> -> -> 9 `i `ui `ux -> -> # *U &U _GPS_lat `ui `ux -> -> 0 `i `uc ]
+"100
+[; ;src/gps.c: 100:   memcpy(GPS_lon,elem[4],3);
+[e ( _memcpy (3 , , -> &U _GPS_lon `*v -> &U *U + &U _elem * -> -> -> 4 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux `*Cv -> -> 3 `i `ui ]
+"101
+[; ;src/gps.c: 101:   GPS_lon[3] = 'd';
+[e = *U + &U _GPS_lon * -> -> -> 3 `i `ui `ux -> -> # *U &U _GPS_lon `ui `ux -> -> 100 `ui `uc ]
+"102
+[; ;src/gps.c: 102:   memcpy(GPS_lon+4,elem[4]+3,5);
+[e ( _memcpy (3 , , -> + &U _GPS_lon * -> -> 4 `i `x -> -> # *U &U _GPS_lon `i `x `*v -> + &U *U + &U _elem * -> -> -> 4 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux * -> -> 3 `i `x -> -> # *U &U *U + &U _elem * -> -> -> 4 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux `i `x `*Cv -> -> 5 `i `ui ]
+"103
+[; ;src/gps.c: 103:   GPS_lon[9] = elem[5][0];
+[e = *U + &U _GPS_lon * -> -> -> 9 `i `ui `ux -> -> # *U &U _GPS_lon `ui `ux *U + &U *U + &U _elem * -> -> -> 5 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _elem * -> -> -> 5 `i `ui `ux -> * -> # *U &U *U &U _elem `ui -> -> 16 `i `ui `ux `ui `ux ]
+"104
+[; ;src/gps.c: 104:   GPS_lon[10] = 0;
+[e = *U + &U _GPS_lon * -> -> -> 10 `i `ui `ux -> -> # *U &U _GPS_lon `ui `ux -> -> 0 `i `uc ]
+"105
+[; ;src/gps.c: 105:  }
+}
+[e :U 264 ]
+"106
+[; ;src/gps.c: 106: }
+[e :UE 257 ]
+}
+"108
+[; ;src/gps.c: 108: u8 ubx_class = 0;
+[v _ubx_class `uc ~T0 @X0 1 e ]
+[i _ubx_class
+-> -> 0 `i `uc
+]
+"109
+[; ;src/gps.c: 109: u8 ubx_id = 0;
+[v _ubx_id `uc ~T0 @X0 1 e ]
+[i _ubx_id
+-> -> 0 `i `uc
+]
+"110
+[; ;src/gps.c: 110: u16 ubx_len = 0;
+[v _ubx_len `us ~T0 @X0 1 e ]
+[i _ubx_len
+-> -> 0 `i `us
+]
+"111
+[; ;src/gps.c: 111: u16 p_len = 0;
+[v _p_len `us ~T0 @X0 1 e ]
+[i _p_len
+-> -> 0 `i `us
+]
+"112
+[; ;src/gps.c: 112: u8 payload[50];
+[v _payload `uc ~T0 @X0 -> 50 `i e ]
+"113
+[; ;src/gps.c: 113: char gpsbuf[85];
+[v _gpsbuf `uc ~T0 @X0 -> 85 `i e ]
+"114
+[; ;src/gps.c: 114: u8 gpsbufidx = 0xff;
+[v _gpsbufidx `uc ~T0 @X0 1 e ]
+[i _gpsbufidx
+-> -> 255 `i `uc
+]
+"116
+[; ;src/gps.c: 116: void rx_gps(int c)
+[v _rx_gps `(v ~T0 @X0 1 ef1`i ]
+"117
+[; ;src/gps.c: 117: {
+{
+[e :U _rx_gps ]
+"116
+[; ;src/gps.c: 116: void rx_gps(int c)
+[v _c `i ~T0 @X0 1 r1 ]
+"117
+[; ;src/gps.c: 117: {
+[f ]
+"118
+[; ;src/gps.c: 118: static u8 stat = 0;
+[v F2877 `uc ~T0 @X0 1 s stat ]
+[i F2877
+-> -> 0 `i `uc
+]
+"119
+[; ;src/gps.c: 119: static u16 len_lsb;
+[v F2878 `us ~T0 @X0 1 s len_lsb ]
+"121
+[; ;src/gps.c: 121:  switch(stat)
+[e $U 274  ]
+"122
+[; ;src/gps.c: 122:  {
+{
+"123
+[; ;src/gps.c: 123:  case 0:
+[e :U 275 ]
+"124
+[; ;src/gps.c: 124:   if(c == 0xb5)
+[e $ ! == _c -> 181 `i 276  ]
+"125
+[; ;src/gps.c: 125:   {
+{
+"126
+[; ;src/gps.c: 126:    stat++;
+[e ++ F2877 -> -> 1 `i `uc ]
+"127
+[; ;src/gps.c: 127:   }
+}
+[e :U 276 ]
+"128
+[; ;src/gps.c: 128:   if(c == '$')
+[e $ ! == -> _c `ui -> 36 `ui 277  ]
+"129
+[; ;src/gps.c: 129:   {
+{
+"130
+[; ;src/gps.c: 130:    gpsbufidx = 0;
+[e = _gpsbufidx -> -> 0 `i `uc ]
+"131
+[; ;src/gps.c: 131:    stat = 100;
+[e = F2877 -> -> 100 `i `uc ]
+"132
+[; ;src/gps.c: 132:   }
+}
+[e :U 277 ]
+"133
+[; ;src/gps.c: 133:   break;
+[e $U 273  ]
+"135
+[; ;src/gps.c: 135:  case 1:
+[e :U 278 ]
+"136
+[; ;src/gps.c: 136:   if(c == 0x62)
+[e $ ! == _c -> 98 `i 279  ]
+"137
+[; ;src/gps.c: 137:    stat++;
+[e ++ F2877 -> -> 1 `i `uc ]
+[e $U 280  ]
+"138
+[; ;src/gps.c: 138:   else
+[e :U 279 ]
+"139
+[; ;src/gps.c: 139:    stat = 0;
+[e = F2877 -> -> 0 `i `uc ]
+[e :U 280 ]
+"140
+[; ;src/gps.c: 140:   break;
+[e $U 273  ]
+"142
+[; ;src/gps.c: 142:  case 2:
+[e :U 281 ]
+"143
+[; ;src/gps.c: 143:   ubx_class = c;
+[e = _ubx_class -> _c `uc ]
+"144
+[; ;src/gps.c: 144:   if(c==1 || c==2 || c==4 || c==5 || c==6 || c==9 || c==0x0a || c==0x0b || c==0x0d || c==0x10 || c==0x13 || c==0x21 || c==0x27 || c==0x28)
+[e $ ! || || || || || || || || || || || || || == _c -> 1 `i == _c -> 2 `i == _c -> 4 `i == _c -> 5 `i == _c -> 6 `i == _c -> 9 `i == _c -> 10 `i == _c -> 11 `i == _c -> 13 `i == _c -> 16 `i == _c -> 19 `i == _c -> 33 `i == _c -> 39 `i == _c -> 40 `i 282  ]
+"145
+[; ;src/gps.c: 145:    stat++;
+[e ++ F2877 -> -> 1 `i `uc ]
+[e $U 283  ]
+"146
+[; ;src/gps.c: 146:   else
+[e :U 282 ]
+"147
+[; ;src/gps.c: 147:    stat = 0;
+[e = F2877 -> -> 0 `i `uc ]
+[e :U 283 ]
+"148
+[; ;src/gps.c: 148:   break;
+[e $U 273  ]
+"150
+[; ;src/gps.c: 150:  case 3:
+[e :U 284 ]
+"151
+[; ;src/gps.c: 151:   ubx_id = c;
+[e = _ubx_id -> _c `uc ]
+"153
+[; ;src/gps.c: 153:   stat ++;
+[e ++ F2877 -> -> 1 `i `uc ]
+"154
+[; ;src/gps.c: 154:   break;
+[e $U 273  ]
+"156
+[; ;src/gps.c: 156:  case 4:
+[e :U 285 ]
+"157
+[; ;src/gps.c: 157:   len_lsb = c;
+[e = F2878 -> _c `us ]
+"158
+[; ;src/gps.c: 158:   stat++;
+[e ++ F2877 -> -> 1 `i `uc ]
+"159
+[; ;src/gps.c: 159:   break;
+[e $U 273  ]
+"161
+[; ;src/gps.c: 161:  case 5:
+[e :U 286 ]
+"162
+[; ;src/gps.c: 162:   ubx_len = c;
+[e = _ubx_len -> _c `us ]
+"163
+[; ;src/gps.c: 163:   ubx_len <<= 8;
+[e =<< _ubx_len -> -> 8 `i `us ]
+"164
+[; ;src/gps.c: 164:   ubx_len |= len_lsb;
+[e =| _ubx_len -> F2878 `us ]
+"166
+[; ;src/gps.c: 166:   if(ubx_len == 0 || ubx_len >= sizeof(gpsbuf))
+[e $ ! || == -> _ubx_len `ui -> -> 0 `i `ui >= -> _ubx_len `ui -> # _gpsbuf `ui 287  ]
+"167
+[; ;src/gps.c: 167:    stat = 0;
+[e = F2877 -> -> 0 `i `uc ]
+[e $U 288  ]
+"168
+[; ;src/gps.c: 168:   else
+[e :U 287 ]
+"169
+[; ;src/gps.c: 169:   {
+{
+"170
+[; ;src/gps.c: 170:    stat++;
+[e ++ F2877 -> -> 1 `i `uc ]
+"171
+[; ;src/gps.c: 171:    p_len = 0;
+[e = _p_len -> -> 0 `i `us ]
+"172
+[; ;src/gps.c: 172:   }
+}
+[e :U 288 ]
+"173
+[; ;src/gps.c: 173:   break;
+[e $U 273  ]
+"175
+[; ;src/gps.c: 175:  case 6:
+[e :U 289 ]
+"176
+[; ;src/gps.c: 176:   if(ubx_class == 5)
+[e $ ! == -> _ubx_class `i -> 5 `i 290  ]
+"177
+[; ;src/gps.c: 177:   {
+{
+"178
+[; ;src/gps.c: 178:    gpsbuf[p_len++] = c;
+[e = *U + &U _gpsbuf * -> ++ _p_len -> -> 1 `i `us `ux -> -> # *U &U _gpsbuf `ui `ux -> _c `uc ]
+"179
+[; ;src/gps.c: 179:    if(p_len >= sizeof(gpsbuf) || p_len == ubx_len)
+[e $ ! || >= -> _p_len `ui -> # _gpsbuf `ui == -> _p_len `ui -> _ubx_len `ui 291  ]
+"180
+[; ;src/gps.c: 180:    {
+{
+"181
+[; ;src/gps.c: 181:     ubx_ack = 1;
+[e = _ubx_ack -> -> 1 `i `uc ]
+"184
+[; ;src/gps.c: 184:     stat = 0;
+[e = F2877 -> -> 0 `i `uc ]
+"185
+[; ;src/gps.c: 185:    }
+}
+[e :U 291 ]
+"187
+[; ;src/gps.c: 187:   }
+}
+[e $U 292  ]
+"188
+[; ;src/gps.c: 188:   else
+[e :U 290 ]
+"189
+[; ;src/gps.c: 189:    stat = 0;
+[e = F2877 -> -> 0 `i `uc ]
+[e :U 292 ]
+"190
+[; ;src/gps.c: 190:   break;
+[e $U 273  ]
+"194
+[; ;src/gps.c: 194:  case 100:
+[e :U 293 ]
+"195
+[; ;src/gps.c: 195:   if(c == '\n' || c == '\r')
+[e $ ! || == -> _c `ui -> 10 `ui == -> _c `ui -> 13 `ui 294  ]
+"196
+[; ;src/gps.c: 196:   {
+{
+"198
+[; ;src/gps.c: 198:    gpsbuf[gpsbufidx] = 0;
+[e = *U + &U _gpsbuf * -> _gpsbufidx `ux -> -> # *U &U _gpsbuf `ui `ux -> -> 0 `i `uc ]
+"199
+[; ;src/gps.c: 199:    eval_gps(gpsbuf);
+[e ( _eval_gps (1 &U _gpsbuf ]
+"200
+[; ;src/gps.c: 200:    stat = 0;
+[e = F2877 -> -> 0 `i `uc ]
+"201
+[; ;src/gps.c: 201:   }
+}
+[e $U 295  ]
+"202
+[; ;src/gps.c: 202:   else
+[e :U 294 ]
+"203
+[; ;src/gps.c: 203:   {
+{
+"204
+[; ;src/gps.c: 204:    if(gpsbufidx >= sizeof(gpsbuf))
+[e $ ! >= -> _gpsbufidx `ui -> # _gpsbuf `ui 296  ]
+"205
+[; ;src/gps.c: 205:    {
+{
+"207
+[; ;src/gps.c: 207:     stat = 0;
+[e = F2877 -> -> 0 `i `uc ]
+"208
+[; ;src/gps.c: 208:     return;
+[e $UE 272  ]
+"209
+[; ;src/gps.c: 209:    }
+}
+[e :U 296 ]
+"210
+[; ;src/gps.c: 210:    gpsbuf[gpsbufidx++] = c;
+[e = *U + &U _gpsbuf * -> ++ _gpsbufidx -> -> 1 `i `uc `ux -> -> # *U &U _gpsbuf `ui `ux -> _c `uc ]
+"213
+[; ;src/gps.c: 213:    if(gpsbufidx == 5 && (gpsbuf[2] != 'G' || gpsbuf[3] != 'G' || gpsbuf[4] != 'A'))
+[e $ ! && == -> _gpsbufidx `i -> 5 `i || || != -> *U + &U _gpsbuf * -> -> -> 2 `i `ui `ux -> -> # *U &U _gpsbuf `ui `ux `ui -> 71 `ui != -> *U + &U _gpsbuf * -> -> -> 3 `i `ui `ux -> -> # *U &U _gpsbuf `ui `ux `ui -> 71 `ui != -> *U + &U _gpsbuf * -> -> -> 4 `i `ui `ux -> -> # *U &U _gpsbuf `ui `ux `ui -> 65 `ui 297  ]
+"214
+[; ;src/gps.c: 214:    {
+{
+"216
+[; ;src/gps.c: 216:     stat = 0;
+[e = F2877 -> -> 0 `i `uc ]
+"217
+[; ;src/gps.c: 217:     return;
+[e $UE 272  ]
+"218
+[; ;src/gps.c: 218:    }
+}
+[e :U 297 ]
+"219
+[; ;src/gps.c: 219:   }
+}
+[e :U 295 ]
+"220
+[; ;src/gps.c: 220:   break;
+[e $U 273  ]
+"221
+[; ;src/gps.c: 221:  }
+}
+[e $U 273  ]
+[e :U 274 ]
+[e [\ -> F2877 `i , $ -> 0 `i 275
+ , $ -> 1 `i 278
+ , $ -> 2 `i 281
+ , $ -> 3 `i 284
+ , $ -> 4 `i 285
+ , $ -> 5 `i 286
+ , $ -> 6 `i 289
+ , $ -> 100 `i 293
+ 273 ]
+[e :U 273 ]
+"222
+[; ;src/gps.c: 222: }
+[e :UE 272 ]
+}
+"228
+[; ;src/gps.c: 228: u8 gps_config_data[] =
+[v _gps_config_data `uc ~T0 @X0 -> 32 `i e ]
+[i _gps_config_data
+:U ..
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 50 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> & + -> 19000000 `l -> -> 35 `i `l -> -> 255 `i `l `uc
+-> & >> + -> 19000000 `l -> -> 35 `i `l -> 8 `i -> -> 255 `i `l `uc
+-> & >> + -> 19000000 `l -> -> 35 `i `l -> 16 `i -> -> 255 `i `l `uc
+-> & >> + -> 19000000 `l -> -> 35 `i `l -> 24 `i -> -> 255 `i `l `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 128 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 128 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 239 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+..
+]
+"284
+[; ;src/gps.c: 284: void clear_GPS_shift()
+[v _clear_GPS_shift `(v ~T0 @X0 1 ef ]
+"285
+[; ;src/gps.c: 285: {
+{
+[e :U _clear_GPS_shift ]
+[f ]
+"286
+[; ;src/gps.c: 286:  u8 idx = 12;
+[v _idx `uc ~T0 @X0 1 a ]
+[e = _idx -> -> 12 `i `uc ]
+"287
+[; ;src/gps.c: 287:  gps_config_data[idx++] = (u8)(19000000 & 0xff);
+[e = *U + &U _gps_config_data * -> ++ _idx -> -> 1 `i `uc `ux -> -> # *U &U _gps_config_data `ui `ux -> & -> 19000000 `l -> -> 255 `i `l `uc ]
+"288
+[; ;src/gps.c: 288:  gps_config_data[idx++] = (u8)((19000000>>8)&0xff);
+[e = *U + &U _gps_config_data * -> ++ _idx -> -> 1 `i `uc `ux -> -> # *U &U _gps_config_data `ui `ux -> & >> -> 19000000 `l -> 8 `i -> -> 255 `i `l `uc ]
+"289
+[; ;src/gps.c: 289:  gps_config_data[idx++] = (u8)((19000000>>16)&0xff);
+[e = *U + &U _gps_config_data * -> ++ _idx -> -> 1 `i `uc `ux -> -> # *U &U _gps_config_data `ui `ux -> & >> -> 19000000 `l -> 16 `i -> -> 255 `i `l `uc ]
+"290
+[; ;src/gps.c: 290:  gps_config_data[idx++] = (u8)((19000000>>24)&0xff);
+[e = *U + &U _gps_config_data * -> ++ _idx -> -> 1 `i `uc `ux -> -> # *U &U _gps_config_data `ui `ux -> & >> -> 19000000 `l -> 24 `i -> -> 255 `i `l `uc ]
+"291
+[; ;src/gps.c: 291: }
+[e :UE 298 ]
+}
+"294
+[; ;src/gps.c: 294: u32 getGPSfrequency()
+[v _getGPSfrequency `(ul ~T0 @X0 1 ef ]
+"295
+[; ;src/gps.c: 295: {
+{
+[e :U _getGPSfrequency ]
+[f ]
+"296
+[; ;src/gps.c: 296:  u32 gf = gps_config_data[15];
+[v _gf `ul ~T0 @X0 1 a ]
+[e = _gf -> *U + &U _gps_config_data * -> -> -> 15 `i `ui `ux -> -> # *U &U _gps_config_data `ui `ux `ul ]
+"297
+[; ;src/gps.c: 297:  gf <<= 8;
+[e =<< _gf -> -> 8 `i `ul ]
+"298
+[; ;src/gps.c: 298:  gf |= gps_config_data[14];
+[e =| _gf -> *U + &U _gps_config_data * -> -> -> 14 `i `ui `ux -> -> # *U &U _gps_config_data `ui `ux `ul ]
+"299
+[; ;src/gps.c: 299:  gf <<= 8;
+[e =<< _gf -> -> 8 `i `ul ]
+"300
+[; ;src/gps.c: 300:  gf |= gps_config_data[13];
+[e =| _gf -> *U + &U _gps_config_data * -> -> -> 13 `i `ui `ux -> -> # *U &U _gps_config_data `ui `ux `ul ]
+"301
+[; ;src/gps.c: 301:  gf <<= 8;
+[e =<< _gf -> -> 8 `i `ul ]
+"302
+[; ;src/gps.c: 302:  gf |= gps_config_data[12];
+[e =| _gf -> *U + &U _gps_config_data * -> -> -> 12 `i `ui `ux -> -> # *U &U _gps_config_data `ui `ux `ul ]
+"306
+[; ;src/gps.c: 306:  return gf;
+[e ) _gf ]
+[e $UE 299  ]
+"307
+[; ;src/gps.c: 307: }
+[e :UE 299 ]
+}
+"312
+[; ;src/gps.c: 312: void init_gps()
+[v _init_gps `(v ~T0 @X0 1 ef ]
+"313
+[; ;src/gps.c: 313: {
+{
+[e :U _init_gps ]
+[f ]
+"314
+[; ;src/gps.c: 314:  if(gps_init_timer == 1 && ubx_ack == 0)
+[e $ ! && == -> _gps_init_timer `i -> 1 `i == -> _ubx_ack `i -> 0 `i 301  ]
+"315
+[; ;src/gps.c: 315:  {
+{
+"316
+[; ;src/gps.c: 316:   gps_init_timer = 0;
+[e = _gps_init_timer -> -> 0 `i `uc ]
+"318
+[; ;src/gps.c: 318:   send_UBX_string(6,0x31,sizeof(gps_config_data),gps_config_data);
+[e ( _send_UBX_string (4 , , , -> -> 6 `i `uc -> -> 49 `i `uc -> -> # _gps_config_data `ui `us &U _gps_config_data ]
+"320
+[; ;src/gps.c: 320:  }
+}
+[e :U 301 ]
+"321
+[; ;src/gps.c: 321: }
+[e :UE 300 ]
+}
+"323
+[; ;src/gps.c: 323: void send_UBX_string(u8 class, u8 id, u16 len, u8 *payload)
+[v _send_UBX_string `(v ~T0 @X0 1 ef4`uc`uc`us`*uc ]
+"324
+[; ;src/gps.c: 324: {
+{
+[e :U _send_UBX_string ]
+"323
+[; ;src/gps.c: 323: void send_UBX_string(u8 class, u8 id, u16 len, u8 *payload)
+[v _class `uc ~T0 @X0 1 r1 ]
+[v _id `uc ~T0 @X0 1 r2 ]
+[v _len `us ~T0 @X0 1 r3 ]
+[v _payload `*uc ~T0 @X0 1 r4 ]
+"324
+[; ;src/gps.c: 324: {
+[f ]
+"325
+[; ;src/gps.c: 325:  u8 txbuf[50];
+[v _txbuf `uc ~T0 @X0 -> 50 `i a ]
+"326
+[; ;src/gps.c: 326:  int idx = 0;
+[v _idx `i ~T0 @X0 1 a ]
+[e = _idx -> 0 `i ]
+"327
+[; ;src/gps.c: 327:  static u8 giveup = 0;
+[v F2892 `uc ~T0 @X0 1 s giveup ]
+[i F2892
+-> -> 0 `i `uc
+]
+"329
+[; ;src/gps.c: 329:  if(giveup == 100) printf("GPS:not found\n");
+[e $ ! == -> F2892 `i -> 100 `i 303  ]
+[e ( _printf :s 1C ]
+[e :U 303 ]
+"330
+[; ;src/gps.c: 330:  if(++giveup > 100) return;
+[e $ ! > -> =+ F2892 -> -> 1 `i `uc `i -> 100 `i 304  ]
+[e $UE 302  ]
+[e :U 304 ]
+"332
+[; ;src/gps.c: 332:  printf("GPS:init Ublox %d of 100\n",giveup);
+[e ( _printf , (. :s 2C -> F2892 `i ]
+"334
+[; ;src/gps.c: 334:  txbuf[idx++] = 0xb5;
+[e = *U + &U _txbuf * -> -> ++ _idx -> 1 `i `ui `ux -> -> # *U &U _txbuf `ui `ux -> -> 181 `i `uc ]
+"335
+[; ;src/gps.c: 335:  txbuf[idx++] = 0x62;
+[e = *U + &U _txbuf * -> -> ++ _idx -> 1 `i `ui `ux -> -> # *U &U _txbuf `ui `ux -> -> 98 `i `uc ]
+"336
+[; ;src/gps.c: 336:  txbuf[idx++] = class;
+[e = *U + &U _txbuf * -> -> ++ _idx -> 1 `i `ui `ux -> -> # *U &U _txbuf `ui `ux _class ]
+"337
+[; ;src/gps.c: 337:  txbuf[idx++] = id;
+[e = *U + &U _txbuf * -> -> ++ _idx -> 1 `i `ui `ux -> -> # *U &U _txbuf `ui `ux _id ]
+"338
+[; ;src/gps.c: 338:  txbuf[idx++] = (u8)(len & 0xff);
+[e = *U + &U _txbuf * -> -> ++ _idx -> 1 `i `ui `ux -> -> # *U &U _txbuf `ui `ux -> & -> _len `ui -> -> 255 `i `ui `uc ]
+"339
+[; ;src/gps.c: 339:  txbuf[idx++] = (u8)(len >> 8);
+[e = *U + &U _txbuf * -> -> ++ _idx -> 1 `i `ui `ux -> -> # *U &U _txbuf `ui `ux -> >> -> _len `ui -> 8 `i `uc ]
+"340
+[; ;src/gps.c: 340:  for(int i=0; i<len; i++)
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $U 308  ]
+[e :U 305 ]
+"341
+[; ;src/gps.c: 341:  {
+{
+"342
+[; ;src/gps.c: 342:   txbuf[idx++] = payload[i];
+[e = *U + &U _txbuf * -> -> ++ _idx -> 1 `i `ui `ux -> -> # *U &U _txbuf `ui `ux *U + _payload * -> _i `x -> -> # *U _payload `i `x ]
+"343
+[; ;src/gps.c: 343:  }
+}
+[e ++ _i -> 1 `i ]
+[e :U 308 ]
+[e $ < -> _i `ui -> _len `ui 305  ]
+[e :U 306 ]
+}
+"346
+[; ;src/gps.c: 346:  u8 CK_A = 0, CK_B = 0;
+[v _CK_A `uc ~T0 @X0 1 a ]
+[e = _CK_A -> -> 0 `i `uc ]
+[v _CK_B `uc ~T0 @X0 1 a ]
+[e = _CK_B -> -> 0 `i `uc ]
+"347
+[; ;src/gps.c: 347:  for(int i=2; i<idx; i++)
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 2 `i ]
+[e $U 312  ]
+[e :U 309 ]
+"348
+[; ;src/gps.c: 348:  {
+{
+"349
+[; ;src/gps.c: 349:   CK_A = CK_A + txbuf[i];
+[e = _CK_A -> + -> _CK_A `i -> *U + &U _txbuf * -> -> _i `ui `ux -> -> # *U &U _txbuf `ui `ux `i `uc ]
+"350
+[; ;src/gps.c: 350:   CK_B = CK_B + CK_A;
+[e = _CK_B -> + -> _CK_B `i -> _CK_A `i `uc ]
+"351
+[; ;src/gps.c: 351:  }
+}
+[e ++ _i -> 1 `i ]
+[e :U 312 ]
+[e $ < _i _idx 309  ]
+[e :U 310 ]
+}
+"352
+[; ;src/gps.c: 352:  txbuf[idx++] = CK_A;
+[e = *U + &U _txbuf * -> -> ++ _idx -> 1 `i `ui `ux -> -> # *U &U _txbuf `ui `ux _CK_A ]
+"353
+[; ;src/gps.c: 353:  txbuf[idx++] = CK_B;
+[e = *U + &U _txbuf * -> -> ++ _idx -> 1 `i `ui `ux -> -> # *U &U _txbuf `ui `ux _CK_B ]
+"355
+[; ;src/gps.c: 355:  if(idx >= 50)
+[e $ ! >= _idx -> 50 `i 313  ]
+"356
+[; ;src/gps.c: 356:   return;
+[e $UE 302  ]
+[e :U 313 ]
+"358
+[; ;src/gps.c: 358:  for(int i=0; i<idx; i++)
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $U 317  ]
+[e :U 314 ]
+"359
+[; ;src/gps.c: 359:   putgps(txbuf[i]);
+[e ( _putgps (1 *U + &U _txbuf * -> -> _i `ui `ux -> -> # *U &U _txbuf `ui `ux ]
+[e ++ _i -> 1 `i ]
+[e :U 317 ]
+[e $ < _i _idx 314  ]
+[e :U 315 ]
+}
+"361
+[; ;src/gps.c: 361:  printf("\n");
+[e ( _printf :s 3C ]
+"362
+[; ;src/gps.c: 362: }
+[e :UE 302 ]
+}
+"382
+[; ;src/gps.c: 382: char *CalculateGridSquare()
+[v _CalculateGridSquare `(*uc ~T0 @X0 1 ef ]
+"383
+[; ;src/gps.c: 383: {
+{
+[e :U _CalculateGridSquare ]
+[f ]
+"384
+[; ;src/gps.c: 384: static char grid[7];
+[v F2899 `uc ~T0 @X0 -> 7 `i s grid ]
+"387
+[; ;src/gps.c: 387:  u32 lon = ((GPS_lon[0]-'0')*100) + ((GPS_lon[1]-'0')*10) + ((GPS_lon[2]-'0')*1);
+[v _lon `ul ~T0 @X0 1 a ]
+[e = _lon -> + + * - -> *U + &U _GPS_lon * -> -> -> 0 `i `ui `ux -> -> # *U &U _GPS_lon `ui `ux `ui -> 48 `ui -> -> 100 `i `ui * - -> *U + &U _GPS_lon * -> -> -> 1 `i `ui `ux -> -> # *U &U _GPS_lon `ui `ux `ui -> 48 `ui -> -> 10 `i `ui * - -> *U + &U _GPS_lon * -> -> -> 2 `i `ui `ux -> -> # *U &U _GPS_lon `ui `ux `ui -> 48 `ui -> -> 1 `i `ui `ul ]
+"388
+[; ;src/gps.c: 388:  u32 lon_min = ((GPS_lon[4]-'0')*10) + ((GPS_lon[5]-'0')*1);
+[v _lon_min `ul ~T0 @X0 1 a ]
+[e = _lon_min -> + * - -> *U + &U _GPS_lon * -> -> -> 4 `i `ui `ux -> -> # *U &U _GPS_lon `ui `ux `ui -> 48 `ui -> -> 10 `i `ui * - -> *U + &U _GPS_lon * -> -> -> 5 `i `ui `ux -> -> # *U &U _GPS_lon `ui `ux `ui -> 48 `ui -> -> 1 `i `ui `ul ]
+"389
+[; ;src/gps.c: 389:  lon_min *= 100;
+[e =* _lon_min -> -> -> 100 `i `l `ul ]
+"390
+[; ;src/gps.c: 390:  lon_min += (((GPS_lon[7]-'0')*10) + ((GPS_lon[8]-'0')*1));
+[e =+ _lon_min -> + * - -> *U + &U _GPS_lon * -> -> -> 7 `i `ui `ux -> -> # *U &U _GPS_lon `ui `ux `ui -> 48 `ui -> -> 10 `i `ui * - -> *U + &U _GPS_lon * -> -> -> 8 `i `ui `ux -> -> # *U &U _GPS_lon `ui `ux `ui -> 48 `ui -> -> 1 `i `ui `ul ]
+"391
+[; ;src/gps.c: 391:  lon_min = (lon_min * 100) / 60;
+[e = _lon_min / * _lon_min -> -> -> 100 `i `l `ul -> -> -> 60 `i `l `ul ]
+"392
+[; ;src/gps.c: 392:  lon = lon*10000 + lon_min;
+[e = _lon + * _lon -> -> -> 10000 `i `l `ul _lon_min ]
+"395
+[; ;src/gps.c: 395:     if(GPS_lon[9] == 'W') lon = -lon;
+[e $ ! == -> *U + &U _GPS_lon * -> -> -> 9 `i `ui `ux -> -> # *U &U _GPS_lon `ui `ux `ui -> 87 `ui 319  ]
+[e = _lon -U _lon ]
+[e :U 319 ]
+"397
+[; ;src/gps.c: 397:     lon += 1800000;
+[e =+ _lon -> -> 1800000 `l `ul ]
+"400
+[; ;src/gps.c: 400:  u32 lat = ((GPS_lat[0]-'0')*10) + ((GPS_lat[1]-'0')*1);
+[v _lat `ul ~T0 @X0 1 a ]
+[e = _lat -> + * - -> *U + &U _GPS_lat * -> -> -> 0 `i `ui `ux -> -> # *U &U _GPS_lat `ui `ux `ui -> 48 `ui -> -> 10 `i `ui * - -> *U + &U _GPS_lat * -> -> -> 1 `i `ui `ux -> -> # *U &U _GPS_lat `ui `ux `ui -> 48 `ui -> -> 1 `i `ui `ul ]
+"401
+[; ;src/gps.c: 401:  u32 lat_min = ((GPS_lat[3]-'0')*10) + ((GPS_lat[4]-'0')*1);
+[v _lat_min `ul ~T0 @X0 1 a ]
+[e = _lat_min -> + * - -> *U + &U _GPS_lat * -> -> -> 3 `i `ui `ux -> -> # *U &U _GPS_lat `ui `ux `ui -> 48 `ui -> -> 10 `i `ui * - -> *U + &U _GPS_lat * -> -> -> 4 `i `ui `ux -> -> # *U &U _GPS_lat `ui `ux `ui -> 48 `ui -> -> 1 `i `ui `ul ]
+"402
+[; ;src/gps.c: 402:  lat_min *= 100;
+[e =* _lat_min -> -> -> 100 `i `l `ul ]
+"403
+[; ;src/gps.c: 403:  lat_min += (((GPS_lat[6]-'0')*10) + ((GPS_lat[7]-'0')*1));
+[e =+ _lat_min -> + * - -> *U + &U _GPS_lat * -> -> -> 6 `i `ui `ux -> -> # *U &U _GPS_lat `ui `ux `ui -> 48 `ui -> -> 10 `i `ui * - -> *U + &U _GPS_lat * -> -> -> 7 `i `ui `ux -> -> # *U &U _GPS_lat `ui `ux `ui -> 48 `ui -> -> 1 `i `ui `ul ]
+"404
+[; ;src/gps.c: 404:  lat_min = (lat_min * 100) / 60;
+[e = _lat_min / * _lat_min -> -> -> 100 `i `l `ul -> -> -> 60 `i `l `ul ]
+"405
+[; ;src/gps.c: 405:  lat = lat*10000 + lat_min;
+[e = _lat + * _lat -> -> -> 10000 `i `l `ul _lat_min ]
+"409
+[; ;src/gps.c: 409:     if(GPS_lat[8] == 'S') lat = -lat;
+[e $ ! == -> *U + &U _GPS_lat * -> -> -> 8 `i `ui `ux -> -> # *U &U _GPS_lat `ui `ux `ui -> 83 `ui 320  ]
+[e = _lat -U _lat ]
+[e :U 320 ]
+"411
+[; ;src/gps.c: 411:     lat += 900000;
+[e =+ _lat -> -> 900000 `l `ul ]
+"413
+[; ;src/gps.c: 413:     u32 lonm = lon * 60L;
+[v _lonm `ul ~T0 @X0 1 a ]
+[e = _lonm * _lon -> -> 60 `l `ul ]
+"414
+[; ;src/gps.c: 414:     u32 longf = lonm / (20L*60L*10000L);
+[v _longf `ul ~T0 @X0 1 a ]
+[e = _longf / _lonm -> * * -> 20 `l -> 60 `l -> 10000 `l `ul ]
+"415
+[; ;src/gps.c: 415:     u32 lonrest1 = lonm - longf*(20L*60L*10000L);
+[v _lonrest1 `ul ~T0 @X0 1 a ]
+[e = _lonrest1 - _lonm * _longf -> * * -> 20 `l -> 60 `l -> 10000 `l `ul ]
+"416
+[; ;src/gps.c: 416:     u32 lonmid = lonrest1 / (2L*60L*10000L);
+[v _lonmid `ul ~T0 @X0 1 a ]
+[e = _lonmid / _lonrest1 -> * * -> 2 `l -> 60 `l -> 10000 `l `ul ]
+"418
+[; ;src/gps.c: 418:     u32 latm = lat * 60L;
+[v _latm `ul ~T0 @X0 1 a ]
+[e = _latm * _lat -> -> 60 `l `ul ]
+"419
+[; ;src/gps.c: 419:     u32 latgf = latm / (10L*60L*10000L);
+[v _latgf `ul ~T0 @X0 1 a ]
+[e = _latgf / _latm -> * * -> 10 `l -> 60 `l -> 10000 `l `ul ]
+"420
+[; ;src/gps.c: 420:     u32 latrest1 = latm - latgf*(10L*60L*10000L);
+[v _latrest1 `ul ~T0 @X0 1 a ]
+[e = _latrest1 - _latm * _latgf -> * * -> 10 `l -> 60 `l -> 10000 `l `ul ]
+"421
+[; ;src/gps.c: 421:     u32 latmid = latrest1 / (1L*60L*10000L);
+[v _latmid `ul ~T0 @X0 1 a ]
+[e = _latmid / _latrest1 -> * * -> 1 `l -> 60 `l -> 10000 `l `ul ]
+"423
+[; ;src/gps.c: 423:     grid[0] = 'A' + longf;
+[e = *U + &U F2899 * -> -> -> 0 `i `ui `ux -> -> # *U &U F2899 `ui `ux -> + -> -> 65 `ui `ul _longf `uc ]
+"424
+[; ;src/gps.c: 424:     grid[2] = '0' + lonmid;
+[e = *U + &U F2899 * -> -> -> 2 `i `ui `ux -> -> # *U &U F2899 `ui `ux -> + -> -> 48 `ui `ul _lonmid `uc ]
+"425
+[; ;src/gps.c: 425:     grid[4] = 'A' + ((lonrest1 - lonmid*(2L*60L*10000L)) / (5L*10000L));
+[e = *U + &U F2899 * -> -> -> 4 `i `ui `ux -> -> # *U &U F2899 `ui `ux -> + -> -> 65 `ui `ul / - _lonrest1 * _lonmid -> * * -> 2 `l -> 60 `l -> 10000 `l `ul -> * -> 5 `l -> 10000 `l `ul `uc ]
+"427
+[; ;src/gps.c: 427:     grid[1] = 'A' + latgf;
+[e = *U + &U F2899 * -> -> -> 1 `i `ui `ux -> -> # *U &U F2899 `ui `ux -> + -> -> 65 `ui `ul _latgf `uc ]
+"428
+[; ;src/gps.c: 428:     grid[3] = '0' + latmid;
+[e = *U + &U F2899 * -> -> -> 3 `i `ui `ux -> -> # *U &U F2899 `ui `ux -> + -> -> 48 `ui `ul _latmid `uc ]
+"429
+[; ;src/gps.c: 429:     grid[5] = 'A' + ((latrest1 - latmid*(1L*60L*10000L)) / (25L*1000L));
+[e = *U + &U F2899 * -> -> -> 5 `i `ui `ux -> -> # *U &U F2899 `ui `ux -> + -> -> 65 `ui `ul / - _latrest1 * _latmid -> * * -> 1 `l -> 60 `l -> 10000 `l `ul -> * -> 25 `l -> 1000 `l `ul `uc ]
+"431
+[; ;src/gps.c: 431:     grid[6] = 0;
+[e = *U + &U F2899 * -> -> -> 6 `i `ui `ux -> -> # *U &U F2899 `ui `ux -> -> 0 `i `uc ]
+"433
+[; ;src/gps.c: 433:  return grid;
+[e ) &U F2899 ]
+[e $UE 318  ]
+"434
+[; ;src/gps.c: 434: }
+[e :UE 318 ]
+}
+[p f _printf 8388736 ]
+[a 1C 71 80 83 58 110 111 116 32 102 111 117 110 100 10 0 ]
+[a 2C 71 80 83 58 105 110 105 116 32 85 98 108 111 120 32 37 100 32 111 102 32 49 48 48 10 0 ]
+[a 3C 10 0 ]
